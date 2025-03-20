@@ -1,4 +1,4 @@
-import keybert
+from keybert import KeyBERT
 from transformers import AutoModel
 
 # Load the model
