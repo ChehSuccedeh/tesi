@@ -2,9 +2,8 @@
 RANDOM_STATE = 42 
 REDUCE_DATASET = True
 #%%
-import pandas as pd
-from sklearn.model_selection import train_test_split
-from datasets import load_dataset
+
+from datasets import load_dataset, Value
 
 df = load_dataset("csv", data_files='csic_database.csv', split='train')
 
@@ -31,6 +30,11 @@ print(df)
 labels = ["Normal", "Anomalous"]
 id2label = {i: label for i, label in enumerate(labels)}
 label2id = {label: i for i, label in enumerate(labels)}
+
+new_features = df.features.copy()
+new_features["Label"] = Value(dtype="int32")
+# df = df.cast(new_features)
+# print(df.features)
 # print(df_train, df_test)
 # print(label2id, id2label, labels)
 
@@ -39,12 +43,18 @@ df = df.train_test_split(test_size=0.2, seed=RANDOM_STATE, )
 #%%
 from transformers import AutoTokenizer
 
+def str_to_int(label):
+    if label == "Normal":
+        return 0
+    else:
+        return 1
+
 tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
 def tokenize_function(data):
     # print(data)
     to_tokenize = data["Payload"]
     encode = tokenizer(to_tokenize, padding="max_length", truncation=True)
-    
+    encode["Label"] = [str_to_int(label) for label in data["Label"]]
     return encode
     
 
@@ -78,6 +88,36 @@ training_args = TrainingArguments(
     load_best_model_at_end=True,
     metric_for_best_model='accuracy',
 )
+#%%
+import torch
+import numpy as np
+from sklearn.metrics import accuracy_score
+
+def metrics(predictions, labels, threshold=0.5):
+    sigmoid = torch.nn.Sigmoid()
+    predictions = sigmoid(torch.Tensor(predictions))
+    # translate prediction to 0 or 1
+    y_pred = np.zeros(predictions.shape)
+    y_pred[np.where(predictions >= threshold)] = 1
+    y_true = labels
+    # calculate metrics
+    accuracy = accuracy_score(y_true, y_pred)
+    metrics = {
+        "accuracy": accuracy,
+    }
+    return metrics
+
+def compute_metrics(eval_pred):
+    preds = eval_pred.predictions[0] if isinstance(eval_pred.predictions, tuple) else eval_pred.predictions
+    result = metrics(predictions=preds, labels=eval_pred.label_ids)
+    return result
+
+#%%
+# print(encoded_dataset["train"][0]["Label"].type())
+print(encoded_dataset["train"]["input_ids"][0])
+
+output = model(input_ids=encoded_dataset["train"]["input_ids"][0].unsqueeze(0), labels=encoded_dataset["train"][0]["Label"])
+print(output)
 
 #%%
 trainer = Trainer(
