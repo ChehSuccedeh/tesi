@@ -14,7 +14,7 @@ def tokenize_function(data):
     
     return encode
 """
-CODE_TO_TEST = js_code
+CODE_TO_TEST = python_code
 #! pip install transformers, keybert, bertviz
 
 #%% 
