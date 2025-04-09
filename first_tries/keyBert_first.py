@@ -12,6 +12,10 @@ doc = """I live in a house near the mountains. I have two brothers and one siste
 My family is very important to me. We do lots of things together. My brothers and I like to go on long walks in the mountains. My sister likes to cook with my grandmother. On the weekends we all play board games together. We laugh and always have a good time. I love my family very much.
 """
 
+doc_embeddings, word_embeddings = model.extract_embeddings(doc)
+print(f"{doc_embeddings=}")
+print(f"{word_embeddings=}")
+
 keywords = model.extract_keywords(doc)
 print(keywords)
 
