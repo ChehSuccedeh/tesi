@@ -13,6 +13,7 @@ def ciao():
 """
 CODE_TO_TEST = python_code
 DEBUGGING = True
+SEPARATOR = "-"*64
 #! pip install transformers, keybert, bertviz
 
 #%% 
@@ -96,7 +97,8 @@ explainer = LimeTextExplainer(class_names=class_names)
 
 explaination = explainer.explain_instance(CODE_TO_TEST, prediction, num_features=15, num_samples=100, top_labels=1)
 
-# print(explaination.available_labels())
+important_words = explaination.as_list(label=explaination.top_labels[0])
+# print(important_words)
 explaination.show_in_notebook(text=CODE_TO_TEST)
 
 #%%
@@ -160,17 +162,49 @@ def printAST(node, indent=0):
     for child in node.children:
         printAST(child, indent + 1)
 
-def find_errors(node):
-    if node.type == "error":
-        print(f"Error found at {node.start_point} - {node.end_point}: {node.text.decode('utf-8')}")
+def find_errors(node, words, error_found= False):
+    if node.type == "ERROR":
+        if error_found:
+            print(SEPARATOR)
+        text = node.text.decode("utf-8").replace("\n", "\\n")
+        print(f"Error found at {node.start_point} - {node.end_point}: \"{text}\"")
+        error_found = True
+        for word in words:
+            if word[0] in node.text.decode("utf-8"):
+                print(f"Important word found: {word[0]} - LIME value: {word[1]}")
     for child in node.children:
-        find_errors(child)
+        error_found = find_errors(child, words, error_found)
+    return error_found
+# Print whole tree     
 if DEBUGGING:
+    print(SEPARATOR)
     print("Printing AST")
     printAST(tree.root_node)
-print("Finding errors")
-find_errors(tree.root_node)
-#%%
 
+# Print only errors
+print(SEPARATOR)    
+print("Finding errors:")
+has_errors = find_errors(tree.root_node, important_words)
+print(has_errors)
+#%%
+# Find correct language
+def iterate_languages(attempts):
+    for guess in attempts:
+        parser = Parser(select_language(guess["label"]))
+        tree = parser.parse(bytes(CODE_TO_TEST, "utf8"))
+        
+        print(f"Trying {guess['label']} language:")
+        if DEBUGGING:
+            printAST(tree.root_node)
+        found = find_errors(tree.root_node, important_words)
+        if not found:
+            print(f"No errors found, {guess['label']} is the correct language")
+            break
+        print(SEPARATOR)
+
+if not has_errors:
+    print("No errors found, guess was correct")
+else:
+    iterate_languages(results[1:])
 
 # %%
