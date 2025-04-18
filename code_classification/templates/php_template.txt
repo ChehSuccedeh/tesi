@@ -1,0 +1,122 @@
+Node type: program | Node text: function calcolaOperazioni($base, $modificatore) {\n    // Dichiarazione e assegnazione di variabili\n    return [\n        "somma" => $base + $modificatore,\n        "differenza" => $base - $modificatore,\n        "prodotto" => $base * $modificatore,\n        "divisione" => $base / $modificatore,\n        "potenza" => pow($base, $modificatore),\n        "radice" => sqrt($modificatore)\n    ];\n}
+	Node type: function_definition | Node text: function calcolaOperazioni($base, $modificatore) {\n    // Dichiarazione e assegnazione di variabili\n    return [\n        "somma" => $base + $modificatore,\n        "differenza" => $base - $modificatore,\n        "prodotto" => $base * $modificatore,\n        "divisione" => $base / $modificatore,\n        "potenza" => pow($base, $modificatore),\n        "radice" => sqrt($modificatore)\n    ];\n}
+		Node type: function | Node text: function
+		Node type: name | Node text: calcolaOperazioni
+		Node type: formal_parameters | Node text: ($base, $modificatore)
+			Node type: ( | Node text: (
+			Node type: simple_parameter | Node text: $base
+				Node type: variable_name | Node text: $base
+					Node type: $ | Node text: $
+					Node type: name | Node text: base
+			Node type: , | Node text: ,
+			Node type: simple_parameter | Node text: $modificatore
+				Node type: variable_name | Node text: $modificatore
+					Node type: $ | Node text: $
+					Node type: name | Node text: modificatore
+			Node type: ) | Node text: )
+		Node type: compound_statement | Node text: {\n    // Dichiarazione e assegnazione di variabili\n    return [\n        "somma" => $base + $modificatore,\n        "differenza" => $base - $modificatore,\n        "prodotto" => $base * $modificatore,\n        "divisione" => $base / $modificatore,\n        "potenza" => pow($base, $modificatore),\n        "radice" => sqrt($modificatore)\n    ];\n}
+			Node type: { | Node text: {
+			Node type: comment | Node text: // Dichiarazione e assegnazione di variabili
+			Node type: return_statement | Node text: return [\n        "somma" => $base + $modificatore,\n        "differenza" => $base - $modificatore,\n        "prodotto" => $base * $modificatore,\n        "divisione" => $base / $modificatore,\n        "potenza" => pow($base, $modificatore),\n        "radice" => sqrt($modificatore)\n    ];
+				Node type: return | Node text: return
+				Node type: array_creation_expression | Node text: [\n        "somma" => $base + $modificatore,\n        "differenza" => $base - $modificatore,\n        "prodotto" => $base * $modificatore,\n        "divisione" => $base / $modificatore,\n        "potenza" => pow($base, $modificatore),\n        "radice" => sqrt($modificatore)\n    ]
+					Node type: [ | Node text: [
+					Node type: array_element_initializer | Node text: "somma" => $base + $modificatore
+						Node type: encapsed_string | Node text: "somma"
+							Node type: " | Node text: "
+							Node type: string_content | Node text: somma
+							Node type: " | Node text: "
+						Node type: => | Node text: =>
+						Node type: binary_expression | Node text: $base + $modificatore
+							Node type: variable_name | Node text: $base
+								Node type: $ | Node text: $
+								Node type: name | Node text: base
+							Node type: + | Node text: +
+							Node type: variable_name | Node text: $modificatore
+								Node type: $ | Node text: $
+								Node type: name | Node text: modificatore
+					Node type: , | Node text: ,
+					Node type: array_element_initializer | Node text: "differenza" => $base - $modificatore
+						Node type: encapsed_string | Node text: "differenza"
+							Node type: " | Node text: "
+							Node type: string_content | Node text: differenza
+							Node type: " | Node text: "
+						Node type: => | Node text: =>
+						Node type: binary_expression | Node text: $base - $modificatore
+							Node type: variable_name | Node text: $base
+								Node type: $ | Node text: $
+								Node type: name | Node text: base
+							Node type: - | Node text: -
+							Node type: variable_name | Node text: $modificatore
+								Node type: $ | Node text: $
+								Node type: name | Node text: modificatore
+					Node type: , | Node text: ,
+					Node type: array_element_initializer | Node text: "prodotto" => $base * $modificatore
+						Node type: encapsed_string | Node text: "prodotto"
+							Node type: " | Node text: "
+							Node type: string_content | Node text: prodotto
+							Node type: " | Node text: "
+						Node type: => | Node text: =>
+						Node type: binary_expression | Node text: $base * $modificatore
+							Node type: variable_name | Node text: $base
+								Node type: $ | Node text: $
+								Node type: name | Node text: base
+							Node type: * | Node text: *
+							Node type: variable_name | Node text: $modificatore
+								Node type: $ | Node text: $
+								Node type: name | Node text: modificatore
+					Node type: , | Node text: ,
+					Node type: array_element_initializer | Node text: "divisione" => $base / $modificatore
+						Node type: encapsed_string | Node text: "divisione"
+							Node type: " | Node text: "
+							Node type: string_content | Node text: divisione
+							Node type: " | Node text: "
+						Node type: => | Node text: =>
+						Node type: binary_expression | Node text: $base / $modificatore
+							Node type: variable_name | Node text: $base
+								Node type: $ | Node text: $
+								Node type: name | Node text: base
+							Node type: / | Node text: /
+							Node type: variable_name | Node text: $modificatore
+								Node type: $ | Node text: $
+								Node type: name | Node text: modificatore
+					Node type: , | Node text: ,
+					Node type: array_element_initializer | Node text: "potenza" => pow($base, $modificatore)
+						Node type: encapsed_string | Node text: "potenza"
+							Node type: " | Node text: "
+							Node type: string_content | Node text: potenza
+							Node type: " | Node text: "
+						Node type: => | Node text: =>
+						Node type: function_call_expression | Node text: pow($base, $modificatore)
+							Node type: name | Node text: pow
+							Node type: arguments | Node text: ($base, $modificatore)
+								Node type: ( | Node text: (
+								Node type: argument | Node text: $base
+									Node type: variable_name | Node text: $base
+										Node type: $ | Node text: $
+										Node type: name | Node text: base
+								Node type: , | Node text: ,
+								Node type: argument | Node text: $modificatore
+									Node type: variable_name | Node text: $modificatore
+										Node type: $ | Node text: $
+										Node type: name | Node text: modificatore
+								Node type: ) | Node text: )
+					Node type: , | Node text: ,
+					Node type: array_element_initializer | Node text: "radice" => sqrt($modificatore)
+						Node type: encapsed_string | Node text: "radice"
+							Node type: " | Node text: "
+							Node type: string_content | Node text: radice
+							Node type: " | Node text: "
+						Node type: => | Node text: =>
+						Node type: function_call_expression | Node text: sqrt($modificatore)
+							Node type: name | Node text: sqrt
+							Node type: arguments | Node text: ($modificatore)
+								Node type: ( | Node text: (
+								Node type: argument | Node text: $modificatore
+									Node type: variable_name | Node text: $modificatore
+										Node type: $ | Node text: $
+										Node type: name | Node text: modificatore
+								Node type: ) | Node text: )
+					Node type: ] | Node text: ]
+				Node type: ; | Node text: ;
+			Node type: } | Node text: }

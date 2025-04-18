@@ -47,11 +47,11 @@ results = pipeline(CODE_TO_TEST)
 print(results)
 #%% 
 # trying keyBert
-
 from keybert import KeyBERT
-kb_model = KeyBERT(model=model)
 
-kb_model.extract_keywords(CODE_TO_TEST, highlight=True)
+if not DEBUGGING:
+    kb_model = KeyBERT(model=model)
+    kb_model.extract_keywords(CODE_TO_TEST, highlight=True)
 #%%
 # trying Bertviz
 
@@ -140,12 +140,12 @@ def select_language(language):
     return output
         
 # Assume correct label
-language = select_language(results[0]["label"])
-parser = Parser(language)
+guess_language = select_language(results[0]["label"])
+parser = Parser(guess_language)
 #%%
 # Parse the code, look for errors
-tree = parser.parse(bytes(CODE_TO_TEST, "utf8"))
-print(tree.root_node)
+guess_tree = parser.parse(bytes(CODE_TO_TEST, "utf8"))
+print(guess_tree.root_node)
 
 
 
@@ -177,14 +177,13 @@ def find_errors(node, words, error_found= False):
     return error_found
 # Print whole tree     
 if DEBUGGING:
-    print(SEPARATOR)
     print("Printing AST")
-    printAST(tree.root_node)
+    printAST(guess_tree.root_node)
 
 # Print only errors
 print(SEPARATOR)    
 print("Finding errors:")
-has_errors = find_errors(tree.root_node, important_words)
+has_errors = find_errors(guess_tree.root_node, important_words)
 print(has_errors)
 #%%
 # Find correct language
@@ -199,12 +198,115 @@ def iterate_languages(attempts):
         found = find_errors(tree.root_node, important_words)
         if not found:
             print(f"No errors found, {guess['label']} is the correct language")
-            break
+            return tree, guess["label"]
         print(SEPARATOR)
 
 if not has_errors:
     print("No errors found, guess was correct")
 else:
-    iterate_languages(results[1:])
+    correct_tree, correct_language = iterate_languages(results[1:])
 
+# %%
+# Get all error nodes with associated important words
+def get_errors(node, words):
+    errors = []
+    if node.type == "ERROR":
+        for child in node.children:
+            error = {"text": child.text.decode("utf-8"), "start": child.start_point, "end": child.end_point, "important_words": [], "node": child}
+            for word in words:
+                if word[0] in child.text.decode("utf-8"):
+                    error["important_words"].append(word)
+            errors.append(error)
+    else:
+        for child in node.children:
+            errors += get_errors(child, words)
+    return errors
+
+error_nodes = get_errors(guess_tree.root_node, important_words)
+print(error_nodes)
+#%%
+# Get nodes with important words in the correct language tree
+def get_nodes_with_important_words(node, words):
+    nodes = []
+    to_append = {
+                "text": node.text.decode("utf-8"),
+                "start": node.start_point,
+                "end": node.end_point,
+                "important_words": [],
+                "node": node
+    }
+    for word in words:
+        if word in node.text.decode("utf-8"):
+            to_append["important_words"].append(word)
+    
+    if len(to_append["important_words"]) > 0:
+        nodes.append(to_append)
+    for child in node.children:
+        nodes += get_nodes_with_important_words(child, words)
+    return nodes
+
+error_words = []
+for x in error_nodes:
+    error_words.append(x["text"])
+
+correct_nodes = get_nodes_with_important_words(correct_tree.root_node, error_words)
+for w in correct_nodes:
+    print(w)
+#%%
+# Eliminate bigger blocks from tree
+
+if has_errors:    
+    correspondence = []
+    for nodex in error_nodes:
+        found = False
+        for nodey in correct_nodes:
+            if nodex["text"] == nodey["text"]:
+                found = True
+                correspondence.append({"correct_language": nodey, "wrong_language": nodex})
+                break
+        if not found:
+            correspondence.append({"correct_language": None, "wrong_language": nodex, "error": True})
+
+    for x in correspondence:
+        if x["correct_language"] is not None:
+            print(f"Found Correspondence for error \"{x['wrong_language']['text']}\": Node type in correct language is {x['correct_language']['node'].type}")
+        else:
+            print(f"Missing correspondence for: {x['wrong_language']['text']} - {x['wrong_language']['start']} - {x['wrong_language']['end']}")
+
+        print(SEPARATOR)
+
+
+
+# %%
+# Check if in the wrong language there are node kind compatible with the correct language
+if has_errors:
+    for i in range(1, guess_language.node_kind_count):
+        if guess_language.node_kind_for_id(i) in [n["correct_language"]["node"].type for n in correspondence]:
+            print(f"Node kind {guess_language.node_kind_for_id(i)} exists also in wrong language")
+            
+
+# %%
+# Check if within errors there are some keywords
+
+def check_keywords(errors, keywords):
+    for error in errors:
+        if error in keywords:
+            print(f"Keyword found: {error}")
+        else:
+            print(f"Not a keyword: {error}")
+
+keywords = open(f"./keywords/{results[0]['label']}.txt", "r").readlines()
+keywords = [x.strip() for x in keywords]
+print(keywords)
+
+check_keywords([n["correct_language"]["text"] for n in correspondence], keywords)
+#%%
+# Check other errors to analyse manually
+
+def check_other_errors(errors, keywords):
+    for error in errors:
+        if error["text"] not in keywords:
+            print(f"Error to analyse: {error['text']}")
+            
+check_other_errors([n["wrong_language"] for n in correspondence], keywords)
 # %%

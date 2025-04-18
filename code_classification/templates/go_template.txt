@@ -1,0 +1,131 @@
+Node type: source_file | Node text: func calcolaOperazioni(base, modificatore float64) map[string]float64 {\n	// Dichiarazione e assegnazione di variabili\n	risultati := map[string]float64{\n		"somma":      base + modificatore,\n		"differenza": base - modificatore,\n		"prodotto":   base * modificatore,\n		"divisione":  base / modificatore,\n		"potenza":    math.Pow(base, modificatore),\n		"radice":     math.Sqrt(modificatore),\n	}\n\n	return risultati\n}\n
+	Node type: function_declaration | Node text: func calcolaOperazioni(base, modificatore float64) map[string]float64 {\n	// Dichiarazione e assegnazione di variabili\n	risultati := map[string]float64{\n		"somma":      base + modificatore,\n		"differenza": base - modificatore,\n		"prodotto":   base * modificatore,\n		"divisione":  base / modificatore,\n		"potenza":    math.Pow(base, modificatore),\n		"radice":     math.Sqrt(modificatore),\n	}\n\n	return risultati\n}
+		Node type: func | Node text: func
+		Node type: identifier | Node text: calcolaOperazioni
+		Node type: parameter_list | Node text: (base, modificatore float64)
+			Node type: ( | Node text: (
+			Node type: parameter_declaration | Node text: base, modificatore float64
+				Node type: identifier | Node text: base
+				Node type: , | Node text: ,
+				Node type: identifier | Node text: modificatore
+				Node type: type_identifier | Node text: float64
+			Node type: ) | Node text: )
+		Node type: map_type | Node text: map[string]float64
+			Node type: map | Node text: map
+			Node type: [ | Node text: [
+			Node type: type_identifier | Node text: string
+			Node type: ] | Node text: ]
+			Node type: type_identifier | Node text: float64
+		Node type: block | Node text: {\n	// Dichiarazione e assegnazione di variabili\n	risultati := map[string]float64{\n		"somma":      base + modificatore,\n		"differenza": base - modificatore,\n		"prodotto":   base * modificatore,\n		"divisione":  base / modificatore,\n		"potenza":    math.Pow(base, modificatore),\n		"radice":     math.Sqrt(modificatore),\n	}\n\n	return risultati\n}
+			Node type: { | Node text: {
+			Node type: comment | Node text: // Dichiarazione e assegnazione di variabili
+			Node type: short_var_declaration | Node text: risultati := map[string]float64{\n		"somma":      base + modificatore,\n		"differenza": base - modificatore,\n		"prodotto":   base * modificatore,\n		"divisione":  base / modificatore,\n		"potenza":    math.Pow(base, modificatore),\n		"radice":     math.Sqrt(modificatore),\n	}
+				Node type: expression_list | Node text: risultati
+					Node type: identifier | Node text: risultati
+				Node type: := | Node text: :=
+				Node type: expression_list | Node text: map[string]float64{\n		"somma":      base + modificatore,\n		"differenza": base - modificatore,\n		"prodotto":   base * modificatore,\n		"divisione":  base / modificatore,\n		"potenza":    math.Pow(base, modificatore),\n		"radice":     math.Sqrt(modificatore),\n	}
+					Node type: composite_literal | Node text: map[string]float64{\n		"somma":      base + modificatore,\n		"differenza": base - modificatore,\n		"prodotto":   base * modificatore,\n		"divisione":  base / modificatore,\n		"potenza":    math.Pow(base, modificatore),\n		"radice":     math.Sqrt(modificatore),\n	}
+						Node type: map_type | Node text: map[string]float64
+							Node type: map | Node text: map
+							Node type: [ | Node text: [
+							Node type: type_identifier | Node text: string
+							Node type: ] | Node text: ]
+							Node type: type_identifier | Node text: float64
+						Node type: literal_value | Node text: {\n		"somma":      base + modificatore,\n		"differenza": base - modificatore,\n		"prodotto":   base * modificatore,\n		"divisione":  base / modificatore,\n		"potenza":    math.Pow(base, modificatore),\n		"radice":     math.Sqrt(modificatore),\n	}
+							Node type: { | Node text: {
+							Node type: keyed_element | Node text: "somma":      base + modificatore
+								Node type: literal_element | Node text: "somma"
+									Node type: interpreted_string_literal | Node text: "somma"
+										Node type: " | Node text: "
+										Node type: interpreted_string_literal_content | Node text: somma
+										Node type: " | Node text: "
+								Node type: : | Node text: :
+								Node type: literal_element | Node text: base + modificatore
+									Node type: binary_expression | Node text: base + modificatore
+										Node type: identifier | Node text: base
+										Node type: + | Node text: +
+										Node type: identifier | Node text: modificatore
+							Node type: , | Node text: ,
+							Node type: keyed_element | Node text: "differenza": base - modificatore
+								Node type: literal_element | Node text: "differenza"
+									Node type: interpreted_string_literal | Node text: "differenza"
+										Node type: " | Node text: "
+										Node type: interpreted_string_literal_content | Node text: differenza
+										Node type: " | Node text: "
+								Node type: : | Node text: :
+								Node type: literal_element | Node text: base - modificatore
+									Node type: binary_expression | Node text: base - modificatore
+										Node type: identifier | Node text: base
+										Node type: - | Node text: -
+										Node type: identifier | Node text: modificatore
+							Node type: , | Node text: ,
+							Node type: keyed_element | Node text: "prodotto":   base * modificatore
+								Node type: literal_element | Node text: "prodotto"
+									Node type: interpreted_string_literal | Node text: "prodotto"
+										Node type: " | Node text: "
+										Node type: interpreted_string_literal_content | Node text: prodotto
+										Node type: " | Node text: "
+								Node type: : | Node text: :
+								Node type: literal_element | Node text: base * modificatore
+									Node type: binary_expression | Node text: base * modificatore
+										Node type: identifier | Node text: base
+										Node type: * | Node text: *
+										Node type: identifier | Node text: modificatore
+							Node type: , | Node text: ,
+							Node type: keyed_element | Node text: "divisione":  base / modificatore
+								Node type: literal_element | Node text: "divisione"
+									Node type: interpreted_string_literal | Node text: "divisione"
+										Node type: " | Node text: "
+										Node type: interpreted_string_literal_content | Node text: divisione
+										Node type: " | Node text: "
+								Node type: : | Node text: :
+								Node type: literal_element | Node text: base / modificatore
+									Node type: binary_expression | Node text: base / modificatore
+										Node type: identifier | Node text: base
+										Node type: / | Node text: /
+										Node type: identifier | Node text: modificatore
+							Node type: , | Node text: ,
+							Node type: keyed_element | Node text: "potenza":    math.Pow(base, modificatore)
+								Node type: literal_element | Node text: "potenza"
+									Node type: interpreted_string_literal | Node text: "potenza"
+										Node type: " | Node text: "
+										Node type: interpreted_string_literal_content | Node text: potenza
+										Node type: " | Node text: "
+								Node type: : | Node text: :
+								Node type: literal_element | Node text: math.Pow(base, modificatore)
+									Node type: call_expression | Node text: math.Pow(base, modificatore)
+										Node type: selector_expression | Node text: math.Pow
+											Node type: identifier | Node text: math
+											Node type: . | Node text: .
+											Node type: field_identifier | Node text: Pow
+										Node type: argument_list | Node text: (base, modificatore)
+											Node type: ( | Node text: (
+											Node type: identifier | Node text: base
+											Node type: , | Node text: ,
+											Node type: identifier | Node text: modificatore
+											Node type: ) | Node text: )
+							Node type: , | Node text: ,
+							Node type: keyed_element | Node text: "radice":     math.Sqrt(modificatore)
+								Node type: literal_element | Node text: "radice"
+									Node type: interpreted_string_literal | Node text: "radice"
+										Node type: " | Node text: "
+										Node type: interpreted_string_literal_content | Node text: radice
+										Node type: " | Node text: "
+								Node type: : | Node text: :
+								Node type: literal_element | Node text: math.Sqrt(modificatore)
+									Node type: call_expression | Node text: math.Sqrt(modificatore)
+										Node type: selector_expression | Node text: math.Sqrt
+											Node type: identifier | Node text: math
+											Node type: . | Node text: .
+											Node type: field_identifier | Node text: Sqrt
+										Node type: argument_list | Node text: (modificatore)
+											Node type: ( | Node text: (
+											Node type: identifier | Node text: modificatore
+											Node type: ) | Node text: )
+							Node type: , | Node text: ,
+							Node type: } | Node text: }
+			Node type: return_statement | Node text: return risultati
+				Node type: return | Node text: return
+				Node type: expression_list | Node text: risultati
+					Node type: identifier | Node text: risultati
+			Node type: } | Node text: }

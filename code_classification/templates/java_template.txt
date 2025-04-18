@@ -1,0 +1,174 @@
+Node type: program | Node text: public static Map<String, Double> calcolaOperazioni(double base, double modificatore) {\n    Map<String, Double> risultati = new HashMap<>();\n    risultati.put("somma", base + modificatore);\n    risultati.put("differenza", base - modificatore);\n    risultati.put("prodotto", base * modificatore);\n    risultati.put("divisione", base / modificatore);\n    risultati.put("potenza", Math.pow(base, modificatore));\n    risultati.put("radice", Math.sqrt(modificatore));\n\n    return risultati;\n}\n
+	Node type: method_declaration | Node text: public static Map<String, Double> calcolaOperazioni(double base, double modificatore) {\n    Map<String, Double> risultati = new HashMap<>();\n    risultati.put("somma", base + modificatore);\n    risultati.put("differenza", base - modificatore);\n    risultati.put("prodotto", base * modificatore);\n    risultati.put("divisione", base / modificatore);\n    risultati.put("potenza", Math.pow(base, modificatore));\n    risultati.put("radice", Math.sqrt(modificatore));\n\n    return risultati;\n}
+		Node type: modifiers | Node text: public static
+			Node type: public | Node text: public
+			Node type: static | Node text: static
+		Node type: generic_type | Node text: Map<String, Double>
+			Node type: type_identifier | Node text: Map
+			Node type: type_arguments | Node text: <String, Double>
+				Node type: < | Node text: <
+				Node type: type_identifier | Node text: String
+				Node type: , | Node text: ,
+				Node type: type_identifier | Node text: Double
+				Node type: > | Node text: >
+		Node type: identifier | Node text: calcolaOperazioni
+		Node type: formal_parameters | Node text: (double base, double modificatore)
+			Node type: ( | Node text: (
+			Node type: formal_parameter | Node text: double base
+				Node type: floating_point_type | Node text: double
+					Node type: double | Node text: double
+				Node type: identifier | Node text: base
+			Node type: , | Node text: ,
+			Node type: formal_parameter | Node text: double modificatore
+				Node type: floating_point_type | Node text: double
+					Node type: double | Node text: double
+				Node type: identifier | Node text: modificatore
+			Node type: ) | Node text: )
+		Node type: block | Node text: {\n    Map<String, Double> risultati = new HashMap<>();\n    risultati.put("somma", base + modificatore);\n    risultati.put("differenza", base - modificatore);\n    risultati.put("prodotto", base * modificatore);\n    risultati.put("divisione", base / modificatore);\n    risultati.put("potenza", Math.pow(base, modificatore));\n    risultati.put("radice", Math.sqrt(modificatore));\n\n    return risultati;\n}
+			Node type: { | Node text: {
+			Node type: local_variable_declaration | Node text: Map<String, Double> risultati = new HashMap<>();
+				Node type: generic_type | Node text: Map<String, Double>
+					Node type: type_identifier | Node text: Map
+					Node type: type_arguments | Node text: <String, Double>
+						Node type: < | Node text: <
+						Node type: type_identifier | Node text: String
+						Node type: , | Node text: ,
+						Node type: type_identifier | Node text: Double
+						Node type: > | Node text: >
+				Node type: variable_declarator | Node text: risultati = new HashMap<>()
+					Node type: identifier | Node text: risultati
+					Node type: = | Node text: =
+					Node type: object_creation_expression | Node text: new HashMap<>()
+						Node type: new | Node text: new
+						Node type: generic_type | Node text: HashMap<>
+							Node type: type_identifier | Node text: HashMap
+							Node type: type_arguments | Node text: <>
+								Node type: < | Node text: <
+								Node type: > | Node text: >
+						Node type: argument_list | Node text: ()
+							Node type: ( | Node text: (
+							Node type: ) | Node text: )
+				Node type: ; | Node text: ;
+			Node type: expression_statement | Node text: risultati.put("somma", base + modificatore);
+				Node type: method_invocation | Node text: risultati.put("somma", base + modificatore)
+					Node type: identifier | Node text: risultati
+					Node type: . | Node text: .
+					Node type: identifier | Node text: put
+					Node type: argument_list | Node text: ("somma", base + modificatore)
+						Node type: ( | Node text: (
+						Node type: string_literal | Node text: "somma"
+							Node type: " | Node text: "
+							Node type: string_fragment | Node text: somma
+							Node type: " | Node text: "
+						Node type: , | Node text: ,
+						Node type: binary_expression | Node text: base + modificatore
+							Node type: identifier | Node text: base
+							Node type: + | Node text: +
+							Node type: identifier | Node text: modificatore
+						Node type: ) | Node text: )
+				Node type: ; | Node text: ;
+			Node type: expression_statement | Node text: risultati.put("differenza", base - modificatore);
+				Node type: method_invocation | Node text: risultati.put("differenza", base - modificatore)
+					Node type: identifier | Node text: risultati
+					Node type: . | Node text: .
+					Node type: identifier | Node text: put
+					Node type: argument_list | Node text: ("differenza", base - modificatore)
+						Node type: ( | Node text: (
+						Node type: string_literal | Node text: "differenza"
+							Node type: " | Node text: "
+							Node type: string_fragment | Node text: differenza
+							Node type: " | Node text: "
+						Node type: , | Node text: ,
+						Node type: binary_expression | Node text: base - modificatore
+							Node type: identifier | Node text: base
+							Node type: - | Node text: -
+							Node type: identifier | Node text: modificatore
+						Node type: ) | Node text: )
+				Node type: ; | Node text: ;
+			Node type: expression_statement | Node text: risultati.put("prodotto", base * modificatore);
+				Node type: method_invocation | Node text: risultati.put("prodotto", base * modificatore)
+					Node type: identifier | Node text: risultati
+					Node type: . | Node text: .
+					Node type: identifier | Node text: put
+					Node type: argument_list | Node text: ("prodotto", base * modificatore)
+						Node type: ( | Node text: (
+						Node type: string_literal | Node text: "prodotto"
+							Node type: " | Node text: "
+							Node type: string_fragment | Node text: prodotto
+							Node type: " | Node text: "
+						Node type: , | Node text: ,
+						Node type: binary_expression | Node text: base * modificatore
+							Node type: identifier | Node text: base
+							Node type: * | Node text: *
+							Node type: identifier | Node text: modificatore
+						Node type: ) | Node text: )
+				Node type: ; | Node text: ;
+			Node type: expression_statement | Node text: risultati.put("divisione", base / modificatore);
+				Node type: method_invocation | Node text: risultati.put("divisione", base / modificatore)
+					Node type: identifier | Node text: risultati
+					Node type: . | Node text: .
+					Node type: identifier | Node text: put
+					Node type: argument_list | Node text: ("divisione", base / modificatore)
+						Node type: ( | Node text: (
+						Node type: string_literal | Node text: "divisione"
+							Node type: " | Node text: "
+							Node type: string_fragment | Node text: divisione
+							Node type: " | Node text: "
+						Node type: , | Node text: ,
+						Node type: binary_expression | Node text: base / modificatore
+							Node type: identifier | Node text: base
+							Node type: / | Node text: /
+							Node type: identifier | Node text: modificatore
+						Node type: ) | Node text: )
+				Node type: ; | Node text: ;
+			Node type: expression_statement | Node text: risultati.put("potenza", Math.pow(base, modificatore));
+				Node type: method_invocation | Node text: risultati.put("potenza", Math.pow(base, modificatore))
+					Node type: identifier | Node text: risultati
+					Node type: . | Node text: .
+					Node type: identifier | Node text: put
+					Node type: argument_list | Node text: ("potenza", Math.pow(base, modificatore))
+						Node type: ( | Node text: (
+						Node type: string_literal | Node text: "potenza"
+							Node type: " | Node text: "
+							Node type: string_fragment | Node text: potenza
+							Node type: " | Node text: "
+						Node type: , | Node text: ,
+						Node type: method_invocation | Node text: Math.pow(base, modificatore)
+							Node type: identifier | Node text: Math
+							Node type: . | Node text: .
+							Node type: identifier | Node text: pow
+							Node type: argument_list | Node text: (base, modificatore)
+								Node type: ( | Node text: (
+								Node type: identifier | Node text: base
+								Node type: , | Node text: ,
+								Node type: identifier | Node text: modificatore
+								Node type: ) | Node text: )
+						Node type: ) | Node text: )
+				Node type: ; | Node text: ;
+			Node type: expression_statement | Node text: risultati.put("radice", Math.sqrt(modificatore));
+				Node type: method_invocation | Node text: risultati.put("radice", Math.sqrt(modificatore))
+					Node type: identifier | Node text: risultati
+					Node type: . | Node text: .
+					Node type: identifier | Node text: put
+					Node type: argument_list | Node text: ("radice", Math.sqrt(modificatore))
+						Node type: ( | Node text: (
+						Node type: string_literal | Node text: "radice"
+							Node type: " | Node text: "
+							Node type: string_fragment | Node text: radice
+							Node type: " | Node text: "
+						Node type: , | Node text: ,
+						Node type: method_invocation | Node text: Math.sqrt(modificatore)
+							Node type: identifier | Node text: Math
+							Node type: . | Node text: .
+							Node type: identifier | Node text: sqrt
+							Node type: argument_list | Node text: (modificatore)
+								Node type: ( | Node text: (
+								Node type: identifier | Node text: modificatore
+								Node type: ) | Node text: )
+						Node type: ) | Node text: )
+				Node type: ; | Node text: ;
+			Node type: return_statement | Node text: return risultati;
+				Node type: return | Node text: return
+				Node type: identifier | Node text: risultati
+				Node type: ; | Node text: ;
+			Node type: } | Node text: }

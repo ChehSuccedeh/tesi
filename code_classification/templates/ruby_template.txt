@@ -1,0 +1,106 @@
+Node type: program | Node text: def calcola_operazioni(base, modificatore)\n  # Dichiarazione e assegnazione di variabili\n  somma = base + modificatore\n  differenza = base - modificatore\n  prodotto = moltiplica(base, modificatore)\n  divisione = divide(base, modificatore)\n\n  # Operazioni avanzate con chiamate a funzioni esterne (non definite qui)\n  potenza = eleva_a_potenza(base, modificatore)\n  radice = calcola_radice(modificatore)\n\n  # Ritorno di valori in un hash per maggiore chiarezza\n  return {\n    somma: somma,\n    differenza: differenza,\n    prodotto: prodotto,\n    divisione: divisione,\n    potenza: potenza,\n    radice: radice\n  }\nend
+	Node type: method | Node text: def calcola_operazioni(base, modificatore)\n  # Dichiarazione e assegnazione di variabili\n  somma = base + modificatore\n  differenza = base - modificatore\n  prodotto = moltiplica(base, modificatore)\n  divisione = divide(base, modificatore)\n\n  # Operazioni avanzate con chiamate a funzioni esterne (non definite qui)\n  potenza = eleva_a_potenza(base, modificatore)\n  radice = calcola_radice(modificatore)\n\n  # Ritorno di valori in un hash per maggiore chiarezza\n  return {\n    somma: somma,\n    differenza: differenza,\n    prodotto: prodotto,\n    divisione: divisione,\n    potenza: potenza,\n    radice: radice\n  }\nend
+		Node type: def | Node text: def
+		Node type: identifier | Node text: calcola_operazioni
+		Node type: method_parameters | Node text: (base, modificatore)
+			Node type: ( | Node text: (
+			Node type: identifier | Node text: base
+			Node type: , | Node text: ,
+			Node type: identifier | Node text: modificatore
+			Node type: ) | Node text: )
+		Node type: comment | Node text: # Dichiarazione e assegnazione di variabili
+		Node type: body_statement | Node text: somma = base + modificatore\n  differenza = base - modificatore\n  prodotto = moltiplica(base, modificatore)\n  divisione = divide(base, modificatore)\n\n  # Operazioni avanzate con chiamate a funzioni esterne (non definite qui)\n  potenza = eleva_a_potenza(base, modificatore)\n  radice = calcola_radice(modificatore)\n\n  # Ritorno di valori in un hash per maggiore chiarezza\n  return {\n    somma: somma,\n    differenza: differenza,\n    prodotto: prodotto,\n    divisione: divisione,\n    potenza: potenza,\n    radice: radice\n  }
+			Node type: assignment | Node text: somma = base + modificatore
+				Node type: identifier | Node text: somma
+				Node type: = | Node text: =
+				Node type: binary | Node text: base + modificatore
+					Node type: identifier | Node text: base
+					Node type: + | Node text: +
+					Node type: identifier | Node text: modificatore
+			Node type: assignment | Node text: differenza = base - modificatore
+				Node type: identifier | Node text: differenza
+				Node type: = | Node text: =
+				Node type: binary | Node text: base - modificatore
+					Node type: identifier | Node text: base
+					Node type: - | Node text: -
+					Node type: identifier | Node text: modificatore
+			Node type: assignment | Node text: prodotto = moltiplica(base, modificatore)
+				Node type: identifier | Node text: prodotto
+				Node type: = | Node text: =
+				Node type: call | Node text: moltiplica(base, modificatore)
+					Node type: identifier | Node text: moltiplica
+					Node type: argument_list | Node text: (base, modificatore)
+						Node type: ( | Node text: (
+						Node type: identifier | Node text: base
+						Node type: , | Node text: ,
+						Node type: identifier | Node text: modificatore
+						Node type: ) | Node text: )
+			Node type: assignment | Node text: divisione = divide(base, modificatore)
+				Node type: identifier | Node text: divisione
+				Node type: = | Node text: =
+				Node type: call | Node text: divide(base, modificatore)
+					Node type: identifier | Node text: divide
+					Node type: argument_list | Node text: (base, modificatore)
+						Node type: ( | Node text: (
+						Node type: identifier | Node text: base
+						Node type: , | Node text: ,
+						Node type: identifier | Node text: modificatore
+						Node type: ) | Node text: )
+			Node type: comment | Node text: # Operazioni avanzate con chiamate a funzioni esterne (non definite qui)
+			Node type: assignment | Node text: potenza = eleva_a_potenza(base, modificatore)
+				Node type: identifier | Node text: potenza
+				Node type: = | Node text: =
+				Node type: call | Node text: eleva_a_potenza(base, modificatore)
+					Node type: identifier | Node text: eleva_a_potenza
+					Node type: argument_list | Node text: (base, modificatore)
+						Node type: ( | Node text: (
+						Node type: identifier | Node text: base
+						Node type: , | Node text: ,
+						Node type: identifier | Node text: modificatore
+						Node type: ) | Node text: )
+			Node type: assignment | Node text: radice = calcola_radice(modificatore)
+				Node type: identifier | Node text: radice
+				Node type: = | Node text: =
+				Node type: call | Node text: calcola_radice(modificatore)
+					Node type: identifier | Node text: calcola_radice
+					Node type: argument_list | Node text: (modificatore)
+						Node type: ( | Node text: (
+						Node type: identifier | Node text: modificatore
+						Node type: ) | Node text: )
+			Node type: comment | Node text: # Ritorno di valori in un hash per maggiore chiarezza
+			Node type: return | Node text: return {\n    somma: somma,\n    differenza: differenza,\n    prodotto: prodotto,\n    divisione: divisione,\n    potenza: potenza,\n    radice: radice\n  }
+				Node type: return | Node text: return
+				Node type: argument_list | Node text: {\n    somma: somma,\n    differenza: differenza,\n    prodotto: prodotto,\n    divisione: divisione,\n    potenza: potenza,\n    radice: radice\n  }
+					Node type: hash | Node text: {\n    somma: somma,\n    differenza: differenza,\n    prodotto: prodotto,\n    divisione: divisione,\n    potenza: potenza,\n    radice: radice\n  }
+						Node type: { | Node text: {
+						Node type: pair | Node text: somma: somma
+							Node type: hash_key_symbol | Node text: somma
+							Node type: : | Node text: :
+							Node type: identifier | Node text: somma
+						Node type: , | Node text: ,
+						Node type: pair | Node text: differenza: differenza
+							Node type: hash_key_symbol | Node text: differenza
+							Node type: : | Node text: :
+							Node type: identifier | Node text: differenza
+						Node type: , | Node text: ,
+						Node type: pair | Node text: prodotto: prodotto
+							Node type: hash_key_symbol | Node text: prodotto
+							Node type: : | Node text: :
+							Node type: identifier | Node text: prodotto
+						Node type: , | Node text: ,
+						Node type: pair | Node text: divisione: divisione
+							Node type: hash_key_symbol | Node text: divisione
+							Node type: : | Node text: :
+							Node type: identifier | Node text: divisione
+						Node type: , | Node text: ,
+						Node type: pair | Node text: potenza: potenza
+							Node type: hash_key_symbol | Node text: potenza
+							Node type: : | Node text: :
+							Node type: identifier | Node text: potenza
+						Node type: , | Node text: ,
+						Node type: pair | Node text: radice: radice
+							Node type: hash_key_symbol | Node text: radice
+							Node type: : | Node text: :
+							Node type: identifier | Node text: radice
+						Node type: } | Node text: }
+		Node type: end | Node text: end

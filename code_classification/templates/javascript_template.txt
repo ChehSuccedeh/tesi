@@ -1,0 +1,78 @@
+Node type: program | Node text: function calcolaOperazioni(base, modificatore) {\n    return {\n        somma: base + modificatore,\n        differenza: base - modificatore,\n        prodotto: base * modificatore,\n        divisione: base / modificatore,\n        potenza: Math.pow(base, modificatore),\n        radice: Math.sqrt(modificatore)\n    };\n}
+	Node type: function_declaration | Node text: function calcolaOperazioni(base, modificatore) {\n    return {\n        somma: base + modificatore,\n        differenza: base - modificatore,\n        prodotto: base * modificatore,\n        divisione: base / modificatore,\n        potenza: Math.pow(base, modificatore),\n        radice: Math.sqrt(modificatore)\n    };\n}
+		Node type: function | Node text: function
+		Node type: identifier | Node text: calcolaOperazioni
+		Node type: formal_parameters | Node text: (base, modificatore)
+			Node type: ( | Node text: (
+			Node type: identifier | Node text: base
+			Node type: , | Node text: ,
+			Node type: identifier | Node text: modificatore
+			Node type: ) | Node text: )
+		Node type: statement_block | Node text: {\n    return {\n        somma: base + modificatore,\n        differenza: base - modificatore,\n        prodotto: base * modificatore,\n        divisione: base / modificatore,\n        potenza: Math.pow(base, modificatore),\n        radice: Math.sqrt(modificatore)\n    };\n}
+			Node type: { | Node text: {
+			Node type: return_statement | Node text: return {\n        somma: base + modificatore,\n        differenza: base - modificatore,\n        prodotto: base * modificatore,\n        divisione: base / modificatore,\n        potenza: Math.pow(base, modificatore),\n        radice: Math.sqrt(modificatore)\n    };
+				Node type: return | Node text: return
+				Node type: object | Node text: {\n        somma: base + modificatore,\n        differenza: base - modificatore,\n        prodotto: base * modificatore,\n        divisione: base / modificatore,\n        potenza: Math.pow(base, modificatore),\n        radice: Math.sqrt(modificatore)\n    }
+					Node type: { | Node text: {
+					Node type: pair | Node text: somma: base + modificatore
+						Node type: property_identifier | Node text: somma
+						Node type: : | Node text: :
+						Node type: binary_expression | Node text: base + modificatore
+							Node type: identifier | Node text: base
+							Node type: + | Node text: +
+							Node type: identifier | Node text: modificatore
+					Node type: , | Node text: ,
+					Node type: pair | Node text: differenza: base - modificatore
+						Node type: property_identifier | Node text: differenza
+						Node type: : | Node text: :
+						Node type: binary_expression | Node text: base - modificatore
+							Node type: identifier | Node text: base
+							Node type: - | Node text: -
+							Node type: identifier | Node text: modificatore
+					Node type: , | Node text: ,
+					Node type: pair | Node text: prodotto: base * modificatore
+						Node type: property_identifier | Node text: prodotto
+						Node type: : | Node text: :
+						Node type: binary_expression | Node text: base * modificatore
+							Node type: identifier | Node text: base
+							Node type: * | Node text: *
+							Node type: identifier | Node text: modificatore
+					Node type: , | Node text: ,
+					Node type: pair | Node text: divisione: base / modificatore
+						Node type: property_identifier | Node text: divisione
+						Node type: : | Node text: :
+						Node type: binary_expression | Node text: base / modificatore
+							Node type: identifier | Node text: base
+							Node type: / | Node text: /
+							Node type: identifier | Node text: modificatore
+					Node type: , | Node text: ,
+					Node type: pair | Node text: potenza: Math.pow(base, modificatore)
+						Node type: property_identifier | Node text: potenza
+						Node type: : | Node text: :
+						Node type: call_expression | Node text: Math.pow(base, modificatore)
+							Node type: member_expression | Node text: Math.pow
+								Node type: identifier | Node text: Math
+								Node type: . | Node text: .
+								Node type: property_identifier | Node text: pow
+							Node type: arguments | Node text: (base, modificatore)
+								Node type: ( | Node text: (
+								Node type: identifier | Node text: base
+								Node type: , | Node text: ,
+								Node type: identifier | Node text: modificatore
+								Node type: ) | Node text: )
+					Node type: , | Node text: ,
+					Node type: pair | Node text: radice: Math.sqrt(modificatore)
+						Node type: property_identifier | Node text: radice
+						Node type: : | Node text: :
+						Node type: call_expression | Node text: Math.sqrt(modificatore)
+							Node type: member_expression | Node text: Math.sqrt
+								Node type: identifier | Node text: Math
+								Node type: . | Node text: .
+								Node type: property_identifier | Node text: sqrt
+							Node type: arguments | Node text: (modificatore)
+								Node type: ( | Node text: (
+								Node type: identifier | Node text: modificatore
+								Node type: ) | Node text: )
+					Node type: } | Node text: }
+				Node type: ; | Node text: ;
+			Node type: } | Node text: }
