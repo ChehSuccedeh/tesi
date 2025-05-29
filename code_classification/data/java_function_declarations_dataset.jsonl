@@ -1,0 +1,955 @@
+{"language": "java", "text": "RET detachAll(final Object iPojo, boolean returnNonProxiedInstance) {"}
+{"language": "java", "text": "public static String usage() {"}
+{"language": "java", "text": "public static String getAltField(String field, String streamId) {"}
+{"language": "java", "text": "Check if the up move is valid\n        if (emptyY != 0)\n        {"}
+{"language": "java", "text": "Check if the down move is valid\n        if (emptyY != 2)\n        {"}
+{"language": "java", "text": "Check if the left move is valid\n        if (emptyX != 0)\n        {"}
+{"language": "java", "text": "Check if the right move is valid\n        if (emptyX != 2)\n        {"}
+{"language": "java", "text": "set the order\n    if (needToSwap) {"}
+{"language": "java", "text": "private Control createDefaultPage(FormToolkit kit) {"}
+{"language": "java", "text": "new SelectionAdapter() {"}
+{"language": "java", "text": "public void widgetSelected(SelectionEvent e) {"}
+{"language": "java", "text": "new IMenuListener() {"}
+{"language": "java", "text": "public void menuAboutToShow(IMenuManager mgr) {"}
+{"language": "java", "text": "Override\n    public AttributesRow getRow(int[] columnTypes, Object[] values) {"}
+{"language": "java", "text": "public static String from(BufferedImage qrcodeImage) {"}
+{"language": "java", "text": "static private long computeStrides(int[] shape, int[] stride) {"}
+{"language": "java", "text": "private Properties takeFreeArgsAsProperties(Properties properties, int from)\n    {"}
+{"language": "java", "text": "T getObject(String path, TypeRef<T> typeRef) {"}
+{"language": "java", "text": "private static String getSymbolFromFormat(final Cell cell) {"}
+{"language": "java", "text": "public String getNamespaceId(String namespaceName) {"}
+{"language": "java", "text": "private void handleStageError(ErrorCode errorCode, Exception e) {"}
+{"language": "java", "text": "public void running()\n    {"}
+{"language": "java", "text": "public static Result internalServerError(File content, boolean inline) {"}
+{"language": "java", "text": "public HttpClientConfig httpClientFactory(HttpClientFactory httpClientFactory) {"}
+{"language": "java", "text": "private void showNode(TreeModel tree, Object node) {"}
+{"language": "java", "text": "public static Date getDateUsingDemarkatedMatch( String dateString, String dateFormatString, char demark )\n  {"}
+{"language": "java", "text": "private static long getUUIDTime() {"}
+{"language": "java", "text": "s for this timestamp\n        if (_counter + 1 >= MILLI_MULT) {"}
+{"language": "java", "text": "public E get() {"}
+{"language": "java", "text": "public static Map getSuperClassesAbstractMethodsFromInterface(CtClass sbbAbstractClass) {"}
+{"language": "java", "text": "get super interfaces\n    \t\t\tfor(CtClass anotherCtClass : ctClass.getInterfaces()) {"}
+{"language": "java", "text": "look for exact match\r\n    if (contains(gds, oldName))  {"}
+{"language": "java", "text": "else if (isGrib2) {"}
+{"language": "java", "text": "match against NCEP dataset\r\n    if (mbean != null) {"}
+{"language": "java", "text": "protected void adjustGridLayout() {"}
+{"language": "java", "text": "else if (product.contains(\"USRADHF\")) {"}
+{"language": "java", "text": "start of the image sequence\r\n            if ((convertunsignedByte2Short(b[t1 + 110]) != 0xF0) || (convertunsignedByte2Short(b[t1 + 111]) != 0x0c)) {"}
+{"language": "java", "text": "T constructMap(final Class<T> type) {"}
+{"language": "java", "text": "Override\n\tpublic void put(final K key, final V object, final long timeout) {"}
+{"language": "java", "text": "public static String cleanup(byte[] h) {"}
+{"language": "java", "text": "public CalendarDate getReferenceDate() {"}
+{"language": "java", "text": "public Field getFieldByName(String fieldNameParam) {"}
+{"language": "java", "text": "public Response post(Object object) {"}
+{"language": "java", "text": "public ArrayStructure getArrayStructure(int recnum, StructureMembers.Member m) {"}
+{"language": "java", "text": "public void sizeRegion(Region<?,?> region, int numEntries) {"}
+{"language": "java", "text": "public static boolean isJavaType(Class<?> clazz) {"}
+{"language": "java", "text": "public void setTimeout(int value) {"}
+{"language": "java", "text": "else if (ncssParams.getTime() != null) {"}
+{"language": "java", "text": "else if (ncssParams.getTimeRange() != null) {"}
+{"language": "java", "text": "else if (ncssParams.isTrue(SubsetParams.timeAll )) {"}
+{"language": "java", "text": "Index permute(int[] dims) {"}
+{"language": "java", "text": "static private int countOpenParens(String s, int pos) {"}
+{"language": "java", "text": "which are just literals\n            if (isInsideCharClass(s, m.start())) {"}
+{"language": "java", "text": "Deprecated\n  public static void flash(String key, String value) {"}
+{"language": "java", "text": "public Timeout schedule(long time, TimeoutTarget target)\n   {"}
+{"language": "java", "text": "public synchronized static JMX reconnect()\n\t{"}
+{"language": "java", "text": "public static String getURL(HttpHost targetHost, String uri) {"}
+{"language": "java", "text": "public static Result requestHeaderFieldsTooLarge(Path content, boolean inline) {"}
+{"language": "java", "text": "public void closeSession() {"}
+{"language": "java", "text": "public void initializeDataModel(HollowSchema... schemas) {"}
+{"language": "java", "text": "private CacheValue computeCacheValueByContent(final String content) {"}
+{"language": "java", "text": "public static String getExprInXml(String expression) {"}
+{"language": "java", "text": "protected String removeToFrom(String sql) {"}
+{"language": "java", "text": "Experimental\n    public static Scheduler from(@NonNull Executor executor, boolean interruptibleWorker) {"}
+{"language": "java", "text": "private void initGaugeIfNeeded() {"}
+{"language": "java", "text": "private TextEditor escapeSpecialCharsWithinTagAttributes(TextEditor text) {"}
+{"language": "java", "text": "public void from(WebContext context) {"}
+{"language": "java", "text": "else if (elementName.equals(GraphMLTokens.NODE)) {"}
+{"language": "java", "text": "else if (elementName.equals(GraphMLTokens.EDGE)) {"}
+{"language": "java", "text": "inVertex\n              if (vertexIdKey == null) {"}
+{"language": "java", "text": "else if (elementName.equals(GraphMLTokens.DATA)) {"}
+{"language": "java", "text": "else if (attributeName.equalsIgnoreCase(LABELS)) {"}
+{"language": "java", "text": "else if (inEdge) {"}
+{"language": "java", "text": "else if (eventType.equals(XMLEvent.END_ELEMENT)) {"}
+{"language": "java", "text": "else if (elementName.equals(GraphMLTokens.EDGE)) {"}
+{"language": "java", "text": "private void setParams() {"}
+{"language": "java", "text": "standard lat 2\n          if (Double.compare(xt2, (double) McIDASUtil.MCMISSING) == 0 || (xt2 == 0)) {"}
+{"language": "java", "text": "Statistics fromParquetStatisticsInternal\n      (String createdBy, Statistics formatStats, PrimitiveType type, SortOrder typeSortOrder) {"}
+{"language": "java", "text": "max statistics over the former one if it is filled\n      if (formatStats.isSetMin_value() && formatStats.isSetMax_value()) {"}
+{"language": "java", "text": "public static String shuffle(String str, Random rnd)\n\t{"}
+{"language": "java", "text": "stop\r\n          if(getSize() != start || getStride() != stride || getStop() != stop) {"}
+{"language": "java", "text": "protected String resolveAttributeName(final Node node, final Attribute attribute) {"}
+{"language": "java", "text": "public boolean result(final Object iRecord) {"}
+{"language": "java", "text": "public void add(ThreddsMetadata tmd, boolean includeInherited) {"}
+{"language": "java", "text": "public void readXMLasynch(String uriString, CatalogSetCallback callback) {"}
+{"language": "java", "text": "public boolean isTopLevel()\n    {"}
+{"language": "java", "text": "protected T setTarget(final InputStream target) {"}
+{"language": "java", "text": "public SDVariable zerosLike(String name, SDVariable input) {"}
+{"language": "java", "text": "protected void resolveMadvocConfigClass() {"}
+{"language": "java", "text": "public static String getDTypeForName(DataBuffer.Type allocationMode) {"}
+{"language": "java", "text": "public String toString2() {"}
+{"language": "java", "text": "protected boolean insert(E element, boolean unlockAndBlock)\n    {"}
+{"language": "java", "text": "public boolean stopReplay(final long replaySessionId, final long correlationId, final long controlSessionId)\n    {"}
+{"language": "java", "text": "Override\n            public int compare(T o1, T o2) {"}
+{"language": "java", "text": "else if (v1.getTime() > v2.getTime()) {"}
+{"language": "java", "text": "public void updateRuleStatus(Auditable rule, RuleStatus status) {"}
+{"language": "java", "text": "private void mergeImageConfigurationWithContainerSpec(List<Container> containers) {"}
+{"language": "java", "text": "private void configureEndpoints(final Deployment dep, final JBossWebMetaData jbossWebMD) {"}
+{"language": "java", "text": "fix servlet class names for endpoints\n        for (final ServletMetaData servletMD : jbossWebMD.getServlets()) {"}
+{"language": "java", "text": "exclude JSP\n                if (epNames.contains(endpointClassName)) {"}
+{"language": "java", "text": "else if (endpointClassName.startsWith(\"org.apache.cxf\")) {"}
+{"language": "java", "text": "public boolean isValidLocalTld(String lTld) {"}
+{"language": "java", "text": "LibraryDescriptor getSpecsDescriptor() {"}
+{"language": "java", "text": "private int findClosest(double target) {"}
+{"language": "java", "text": "public String asSqlType(String type, Integer length, Integer scale) {"}
+{"language": "java", "text": "else if (SubStyleType.UUID.equals(type)) {"}
+{"language": "java", "text": "else if (SubStyleType.ENUM.equals(type)) {"}
+{"language": "java", "text": "else if (SubStyleType.INT.equals(type)) {"}
+{"language": "java", "text": "else if (SubStyleType.LONG.equals(type)) {"}
+{"language": "java", "text": "else if (SubStyleType.BIGINT.equals(type)) {"}
+{"language": "java", "text": "else if (SubStyleType.DOUBLE.equals(type)) {"}
+{"language": "java", "text": "else if (SubStyleType.DECIMAL.equals(type)) {"}
+{"language": "java", "text": "else if (SubStyleType.CHAR.equals(type)) {"}
+{"language": "java", "text": "else if (SubStyleType.VARCHAR.equals(type)) {"}
+{"language": "java", "text": "else if (SubStyleType.TEXT.equals(type)) {"}
+{"language": "java", "text": "else if (SubStyleType.BOOLEAN.equals(type)) {"}
+{"language": "java", "text": "else if (SubStyleType.DATETIME_STRING.equals(type)) {"}
+{"language": "java", "text": "else if (SubStyleType.DATE_STRING.equals(type)) {"}
+{"language": "java", "text": "else if (SubStyleType.TIME_STRING.equals(type)) {"}
+{"language": "java", "text": "else if (SubStyleType.DATETIME.equals(type)) {"}
+{"language": "java", "text": "else if (SubStyleType.TIMESTAMP.equals(type)) {"}
+{"language": "java", "text": "else if (SubStyleType.DATE.equals(type)) {"}
+{"language": "java", "text": "else if (SubStyleType.TIME.equals(type)) {"}
+{"language": "java", "text": "else if (SubStyleType.CLOB.equals(type)) {"}
+{"language": "java", "text": "else if (SubStyleType.BLOB.equals(type)) {"}
+{"language": "java", "text": "else if (SubStyleType.INPUTSTREAM.equals(type)) {"}
+{"language": "java", "text": "void renderDataTables(DTCriterias criterias, Page<E> datas) {"}
+{"language": "java", "text": "public void port(final String port) {"}
+{"language": "java", "text": "void register(ObservableList<T> observable, ListChangeListener<? super T> listener) {"}
+{"language": "java", "text": "new ChannelFutureListener() {"}
+{"language": "java", "text": "public static Boolean parseBooleanValue(String value) {"}
+{"language": "java", "text": "public boolean result(final Object iRecord) {"}
+{"language": "java", "text": "public void copyValuesTo(M model) {"}
+{"language": "java", "text": "Override\n\tpublic void setCountry(Country country) {"}
+{"language": "java", "text": "public float atIndex(int index, float element) {"}
+{"language": "java", "text": "public static void handleErrors(Throwable exception, ActionErrors errors)\n    {"}
+{"language": "java", "text": "Check if the exception is a user readable exception\n        if (exception instanceof UserReadableError)\n        {"}
+{"language": "java", "text": "Check that it contains a user readable message\n            if (userError.isUserReadable())\n            {"}
+{"language": "java", "text": "Check if there is an error message key to use\n                if (userError.getUserMessageKey() != null)\n                {"}
+{"language": "java", "text": "public String sendMail(final Email email) {"}
+{"language": "java", "text": "public static H264Decoder createH264DecoderFromCodecPrivate(ByteBuffer codecPrivate) {"}
+{"language": "java", "text": "else if (nu.type == NALUnitType.PPS) {"}
+{"language": "java", "text": "public static LongList toLongList(Collection<?> inputList, String propertyPath) {"}
+{"language": "java", "text": "static public void printArray(Array array, PrintWriter pw) {"}
+{"language": "java", "text": "private void nonword(int dir, State lp, State rp) {"}
+{"language": "java", "text": "private static String getEventStreamSessionID(String requestPath) {"}
+{"language": "java", "text": "public static Map addDefaultContext(Object root, ClassResolver classResolver, Map context)\n    {"}
+{"language": "java", "text": "public Functor queryConversion()\n    {"}
+{"language": "java", "text": "protected boolean findFosterNodes(final Node node) {"}
+{"language": "java", "text": "if inside table\n\t\t\tif (node.getNodeType() == Node.NodeType.TEXT) {"}
+{"language": "java", "text": "if inside the table\n\t\t\t\tif (!lastTables.isEmpty()) {"}
+{"language": "java", "text": "public Rectangular replaceY(Rectangular other)\n    {"}
+{"language": "java", "text": "private boolean isCoordinate(Variable v) {"}
+{"language": "java", "text": "public static String from(URL qrcodeUrl) {"}
+{"language": "java", "text": "public static void setLoggerProvider(final LoggerProvider loggerProvider) {"}
+{"language": "java", "text": "Override\n    public void startField(String field, int index) {"}
+{"language": "java", "text": "else if (index == 0) {"}
+{"language": "java", "text": "else if (index == size() - 1) {"}
+{"language": "java", "text": "public DbSqlBuilder findById(final Object entityType, final Object id) {"}
+{"language": "java", "text": "public static IComplexNDArray center(IComplexNDArray arr, long[] shape) {"}
+{"language": "java", "text": "new ExchangeCompletionListener() {"}
+{"language": "java", "text": "Override\n            public void exchangeEvent(HttpServerExchange exchange, NextListener nextListener) {"}
+{"language": "java", "text": "toASCII but we want to skip the entire call\n        if (isOnlyASCII(line)) {"}
+{"language": "java", "text": "public Joiner ignoreEmptyStrings()\n\t{"}
+{"language": "java", "text": "public static Lang forCode(String code) {"}
+{"language": "java", "text": "public void\n    expand()\n    {"}
+{"language": "java", "text": "Process the queue in prefix order\n        while(queue.size() > 0) {"}
+{"language": "java", "text": "TreePath makeTreePath(TreeNode node) {"}
+{"language": "java", "text": "private int rotateLeft(int value, int bits) {"}
+{"language": "java", "text": "Override\n    public void replaceUnsolvedElements(NamedConcreteElement element) {"}
+{"language": "java", "text": "public static String percentToStr(Double amount, Language lang, Pennies pennies) {"}
+{"language": "java", "text": "else if (Double.valueOf(amount * NUM10).floatValue() == Double.valueOf(amount * NUM10).intValue()) {"}
+{"language": "java", "text": "else if (Double.valueOf(amount * NUM100).floatValue() == Double.valueOf(amount * NUM100).intValue()) {"}
+{"language": "java", "text": "else if (Double.valueOf(amount * NUM1000).floatValue() == Double.valueOf(amount * NUM1000).intValue()) {"}
+{"language": "java", "text": "public void execute(FunctionContext<Object> fc)\r\n\t{"}
+{"language": "java", "text": "public final void setJwsAlgorithmResolver(Function<ClientRegistration, JwsAlgorithm> jwsAlgorithmResolver) {"}
+{"language": "java", "text": "public void addReader(String mimeType, CatalogReader reader) {"}
+{"language": "java", "text": "public BufferedImage getNextImage(boolean forward) {"}
+{"language": "java", "text": "public void setAsText(final String text)\n   {"}
+{"language": "java", "text": "public static String getFileType(File file){"}
+{"language": "java", "text": "public static void main(String[] args) {"}
+{"language": "java", "text": "else if (\"-p\".equalsIgnoreCase(args[i]) || \"--port\".equalsIgnoreCase(args[i])) {"}
+{"language": "java", "text": "else if (\"-q\".equalsIgnoreCase(args[i]) || \"--quiet\".equalsIgnoreCase(args[i])) {"}
+{"language": "java", "text": "else if (\"-d\".equalsIgnoreCase(args[i]) || \"--dir\".equalsIgnoreCase(args[i])) {"}
+{"language": "java", "text": "else if (args[i].startsWith(\"--cors\")) {"}
+{"language": "java", "text": "else if (\"--licence\".equalsIgnoreCase(args[i])) {"}
+{"language": "java", "text": "else if (args[i].startsWith(\"-X:\")) {"}
+{"language": "java", "text": "public void setReihenhaus(JAXBElement<Object> value) {"}
+{"language": "java", "text": "public static String trimLeadingCharacter(String str, CharacterChecker checker)\n   {"}
+{"language": "java", "text": "protected String unfoldArray(String prefix, Object[] array, PropertyEditor editor)\r\n\t{"}
+{"language": "java", "text": "void okcolors(Nfa nfa) {"}
+{"language": "java", "text": "else if (sco == co) {"}
+{"language": "java", "text": "else if (cd.getNChars() == 0) {"}
+{"language": "java", "text": "public CodeCondition and(CodeCondition anotherCodeCondition) {"}
+{"language": "java", "text": "Override\n    public IComplexNDArray complexOnes(int[] shape) {"}
+{"language": "java", "text": "Override\n    public void run(T configuration, Environment environment) {"}
+{"language": "java", "text": "public UberNode getFirstByRel(String rel) {"}
+{"language": "java", "text": "TODO consider less naive impl\n        for (UberNode node : data) {"}
+{"language": "java", "text": "private ScriptableObject createContext(final ScriptableObject initialScope) {"}
+{"language": "java", "text": "T convert(String value, Class<T> type) {"}
+{"language": "java", "text": "path\n        if (value == null) {"}
+{"language": "java", "text": "new WebSecurityConfigurerAdapter() {"}
+{"language": "java", "text": "static private void transferGroup(NetcdfFile ds, NetcdfDataset targetDs, Group src, Group targetGroup, ReplaceVariableCheck replaceCheck) {"}
+{"language": "java", "text": "dimensions\n    for (Dimension d : src.getDimensions()) {"}
+{"language": "java", "text": "variables\n    for (Variable v : src.getVariables()) {"}
+{"language": "java", "text": "replaceCheck not currently used\n\n      if (replace || (null == targetV)) {"}
+{"language": "java", "text": "replace it\n        if ((v instanceof Structure) && !(v instanceof StructureDS)) {"}
+{"language": "java", "text": "else if (!(v instanceof VariableDS)) {"}
+{"language": "java", "text": "else if (!targetV.hasCachedData() && (targetVe.getOriginalVariable() == null)) {"}
+{"language": "java", "text": "check if target already has it\n    for (Group srcNested : src.getGroups()) {"}
+{"language": "java", "text": "public static DMatrixRMaj toHomogeneous( Se3_F64 se, DMatrixRMaj ret ) {"}
+{"language": "java", "text": "public static ArchivingMediaDriver launch(final MediaDriver.Context driverCtx, final Archive.Context archiveCtx)\n    {"}
+{"language": "java", "text": "private AccessDecisionManager getAccessDecisionManager(H http) {"}
+{"language": "java", "text": "public static final Class getArgClass(Object arg)\n    {"}
+{"language": "java", "text": "else if (c.getSuperclass() == Number.class) {"}
+{"language": "java", "text": "public synchronized void add(ClassConclusionTimer timer) {"}
+{"language": "java", "text": "public Date getDate() {"}
+{"language": "java", "text": "protected static void swap(final Swapper swapper, int a, int b, final int n) {"}
+{"language": "java", "text": "void validateClass(String name) {"}
+{"language": "java", "text": "Override\n\tpublic Object loadAdapter(Class adapter, IProgressMonitor monitor) {"}
+{"language": "java", "text": "Override\r\n  public REC previous() {"}
+{"language": "java", "text": "ITERATE UNTIL THE PREVIOUS GOOD RECORD\r\n    while (hasPrevious()) {"}
+{"language": "java", "text": "public static void addJarsToJob(Configuration conf, Class ...klasses) {"}
+{"language": "java", "text": "protected String checkPath(String path){"}
+{"language": "java", "text": "public String remove(Integer col, Integer row)\n    {"}
+{"language": "java", "text": "protected void enterClause(Clause clause)\n    {"}
+{"language": "java", "text": "public String getHtml() {"}
+{"language": "java", "text": "public boolean hasMapping(String tableName, long baseId, long relatedId) {"}
+{"language": "java", "text": "public Rational getTimeBase() {"}
+{"language": "java", "text": "public static void appendBitStrings(BitVector bv, String[] bs){"}
+{"language": "java", "text": "else if (match.startsWith(FILES) && wantDatasets.contains(FeatureCollectionConfig.FmrcDatasetType.Files)) {"}
+{"language": "java", "text": "public boolean contains(ProjectionPoint point) {"}
+{"language": "java", "text": "Type getSupportedVideoPixelFormat(int index) {"}
+{"language": "java", "text": "private void initializeSearchPaths()\n  {"}
+{"language": "java", "text": "else if (outputStream != null) {"}
+{"language": "java", "text": "public Variable addVariable(Group g, String shortName, DataType dataType, List<Dimension> dims) {"}
+{"language": "java", "text": "Override\n    public IComplexNDArray put(int i, IComplexNDArray element) {"}
+{"language": "java", "text": "public static boolean equivilantName(String name1, String name2) {"}
+{"language": "java", "text": "public static Result badRequest(Path content, boolean inline) {"}
+{"language": "java", "text": "public HttpRequest open(final HttpConnection httpConnection) {"}
+{"language": "java", "text": "protected VertCoordType getLevelType(int code) {"}
+{"language": "java", "text": "public static void cublasZsymm(char side, char uplo, int m, int n, cuDoubleComplex alpha, Pointer A, int lda, Pointer B, int ldb, cuDoubleComplex beta, Pointer C, int ldc)\r\n    {"}
+{"language": "java", "text": "private static boolean isPointInPolygon(Point p, Point[] v )\n\t{"}
+{"language": "java", "text": "public File getFile(String fileLocation) {"}
+{"language": "java", "text": "public final Disposable subscribe() {"}
+{"language": "java", "text": "Benchmark\n    public String encode_Apache_Base64() {"}
+{"language": "java", "text": "Override\n  public void start() {"}
+{"language": "java", "text": "public void setIndex(final int newIndex) {"}
+{"language": "java", "text": "else if (newIndex < index) {"}
+{"language": "java", "text": "static public boolean contextHasStatusListener(Context context) {"}
+{"language": "java", "text": "NonNull\n    public static Disposable fromSubscription(@NonNull Subscription subscription) {"}
+{"language": "java", "text": "public static void cublasCtpsv(char uplo, char trans, char diag, int n, Pointer AP, Pointer x, int incx)\r\n    {"}
+{"language": "java", "text": "public int size()\r\n    {"}
+{"language": "java", "text": "sum over all inner maps \r\n        for ( Iterator<K1> keys1 = maps.keySet().iterator(); keys1.hasNext(); )\r\n        {"}
+{"language": "java", "text": "private String capFirst(String anyName) {"}
+{"language": "java", "text": "Universal\n    public static String slc( String str, int start ) {"}
+{"language": "java", "text": "public DbEntityColumnDescriptor findByPropertyName(final String propertyName) {"}
+{"language": "java", "text": "InjectionPoint getInternalConstructor() {"}
+{"language": "java", "text": "public Object execute(final Map<Object, Object> iArgs) {"}
+{"language": "java", "text": "public static String underBarCase( String inStr ) {"}
+{"language": "java", "text": "public static int lastIndexOfIgnoreCase(String s, String substr) {"}
+{"language": "java", "text": "public void consumerCommit(String offset) {"}
+{"language": "java", "text": "public static KountConfiguration fromJson(JSONObject json) {"}
+{"language": "java", "text": "public static int getIndexOfChannelInLayout(AudioChannel.Layout layout, AudioChannel.Type channel) {"}
+{"language": "java", "text": "public DatasetNode getSelectedDataset() {"}
+{"language": "java", "text": "private void handlePullResults(final Map<Repository, Object> resultsMap) {"}
+{"language": "java", "text": "void findCoordinateTransform(Group g, String nameStartsWith, int levelType) {"}
+{"language": "java", "text": "public boolean requireTransaction() {"}
+{"language": "java", "text": "else if (doc.isFeedback()) {"}
+{"language": "java", "text": "else if (doc.isTransfer()) {"}
+{"language": "java", "text": "private InputStream openURL(URL url) {"}
+{"language": "java", "text": "public Variable acceptTransformer(TermTransformer transformer)\n    {"}
+{"language": "java", "text": "private Access findAccessByDataFormatType(List<Access> accessList, DataFormatType type) {"}
+{"language": "java", "text": "public boolean listRecording(final long recordingId, final long correlationId, final long controlSessionId)\n    {"}
+{"language": "java", "text": "public static void cublasZherk(char uplo, char trans, int n, int k, double alpha, Pointer A, int lda, double beta, Pointer C, int ldc)\r\n    {"}
+{"language": "java", "text": "public static String join(final Object[] array, final String separator) {"}
+{"language": "java", "text": "private final int order() {"}
+{"language": "java", "text": "Override\n    public final void onSubscribe(Subscription s) {"}
+{"language": "java", "text": "private static String cleanPath(String path) {"}
+{"language": "java", "text": "public static String resolveLocaleCode(final Locale locale) {"}
+{"language": "java", "text": "ScaleOffset calcScaleOffsetSkipMissingData(Array a, double missingValue, int nbits) {"}
+{"language": "java", "text": "those that are interested in this event\r\n        for (int i = listeners.length-2; i>=0; i-=2) {"}
+{"language": "java", "text": "private static boolean supportsDnD()\r\n    {"}
+{"language": "java", "text": "Static Boolean\r\n        if( supportsDnD == null )\r\n        {"}
+{"language": "java", "text": "end try\r\n            catch( Exception e )\r\n            {"}
+{"language": "java", "text": "protected int swapTileToLocationCountingIllegal(char t, int x, int y)\n    {"}
+{"language": "java", "text": "public static double div(final double v1,final double v2,int scale,int roundingMode){"}
+{"language": "java", "text": "public InetSocketAddress receive(final ByteBuffer buffer)\n    {"}
+{"language": "java", "text": "protected final void clearAuthenticationAttributes(HttpServletRequest request) {"}
+{"language": "java", "text": "public void setParam(String field, Object value) {"}
+{"language": "java", "text": "private URL getResource(String filename, ClassLoader myClassLoader, boolean updateStatus) {"}
+{"language": "java", "text": "public static Object create(Class superclass, Class interfaces[], Callback callback) {"}
+{"language": "java", "text": "public static int poisson(double lambda)\n  {"}
+{"language": "java", "text": "public static void newArray(final MethodVisitor mv, final Class componentType) {"}
+{"language": "java", "text": "public boolean log(String filename, int lineNo, Logger.Level level, String format) {"}
+{"language": "java", "text": "public static BitStreamFilter make(String filtername) {"}
+{"language": "java", "text": "else if (r0 instanceof BufferedReader) {"}
+{"language": "java", "text": "expect LF next\n                if (c1 != '\\n') {"}
+{"language": "java", "text": "else if (!is32BitChar && statetable[i + 1] == c1) {"}
+{"language": "java", "text": "else if (theState == S_NCR && (c == 'x' || c == 'X')) {"}
+{"language": "java", "text": "else if (theState == S_ENT && Character.isLetterOrDigit(c)) {"}
+{"language": "java", "text": "else if (theState == S_NCR && Character.isDigit(c)) {"}
+{"language": "java", "text": "else if (theState == S_XNCR && (Character.isDigit(c) || \"abcdefABCDEF\".indexOf(c) != -1)) {"}
+{"language": "java", "text": "else if (ent >= 0xD800 && ent <= 0xDFFF) {"}
+{"language": "java", "text": "else if (ent <= 0xFFFF) {"}
+{"language": "java", "text": "public boolean checkConnection(String addr) {"}
+{"language": "java", "text": "public static long getTime() {"}
+{"language": "java", "text": "public static boolean isEmptyFlags(Flags flags) {"}
+{"language": "java", "text": "public void add(File dest, File file, int position) {"}
+{"language": "java", "text": "protected void addExtraAttributes(GridParameter param, Variable v) {"}
+{"language": "java", "text": "Check that the index is not too large\n        if (index >= data.size())\n        {"}
+{"language": "java", "text": "Get the key for the index by scanning through the key to index mapping\n        for (K nextKey : keyToIndex.keySet())\n        {"}
+{"language": "java", "text": "now remove it\n            if (index == nextIndex)\n            {"}
+{"language": "java", "text": "public static String stripTrailingChar(final String string, final char c) {"}
+{"language": "java", "text": "public String queryCatalogClassName () {"}
+{"language": "java", "text": "private void enlarge() {"}
+{"language": "java", "text": "public void destroy() {"}
+{"language": "java", "text": "public HollowHistoricalStateDataAccess createHistoricalStateFromDoubleSnapshot(long version, HollowReadStateEngine previous, HollowReadStateEngine current, DiffEqualityMappingOrdinalRemapper ordinalRemapper) {"}
+{"language": "java", "text": "Override\n  public Date deserializeFromByteBufferObject(ByteBuffer buffer) {"}
+{"language": "java", "text": "protected String checkForClassInSchema(final String className) {"}
+{"language": "java", "text": "Override public OClass call(final OrientBaseGraph g) {"}
+{"language": "java", "text": "public void finish( boolean addButtons, String where) {"}
+{"language": "java", "text": "public int compare(LayoutComponent o1, LayoutComponent o2) {"}
+{"language": "java", "text": "public boolean equals(Object o1) {"}
+{"language": "java", "text": "public int compare(LayoutComponent o1, LayoutComponent o2) {"}
+{"language": "java", "text": "public boolean equals(Object o1) {"}
+{"language": "java", "text": "else if ((lc.comp == null)) {"}
+{"language": "java", "text": "else if (lc.comp instanceof String) {"}
+{"language": "java", "text": "else if (lc.comp instanceof Component) {"}
+{"language": "java", "text": "new ActionListener() {"}
+{"language": "java", "text": "public void actionPerformed(ActionEvent evt) {"}
+{"language": "java", "text": "public static Configuration getConfiguration(JobContext context) {"}
+{"language": "java", "text": "public void filter(MediaPacket packet, String args) {"}
+{"language": "java", "text": "public void setIds(StringList v) {"}
+{"language": "java", "text": "public void sort( List list ) {"}
+{"language": "java", "text": "Override\n      public OClass call(final OrientBaseGraph g) {"}
+{"language": "java", "text": "READ PARAMETERS\n        for (Parameter<?, ?> p : indexParameters) {"}
+{"language": "java", "text": "else if (p.getKey().toString().startsWith(\"metadata.\")) {"}
+{"language": "java", "text": "public static boolean isValidUTF8( ByteBuffer data, int off ) {"}
+{"language": "java", "text": "public static void initializeNamingManager() {"}
+{"language": "java", "text": "else if(!Arrays.asList(property.split(\":\")).contains(PACKAGE_PREFIXES)) {"}
+{"language": "java", "text": "protected Object session(Type type, String name) {"}
+{"language": "java", "text": "return parameter(type, name, new Function<String, Object>() {"}
+{"language": "java", "text": "public Object apply(String name) {"}
+{"language": "java", "text": "return 0 as number of pending files\n    if (current == null || rollMode.isCurrentAcceptable(current.getPath().getFileName().toString())) {"}
+{"language": "java", "text": "public static void mult(DMatrixRMaj P, GeoTuple4D_F64 X, GeoTuple3D_F64 mod ) {"}
+{"language": "java", "text": "public static ObjectMapper getMapper() {"}
+{"language": "java", "text": "public static long addCap(long a, long b) {"}
+{"language": "java", "text": "public final String getTypeString()\n    {"}
+{"language": "java", "text": "static public Structure findStructureWithDimensions(NetcdfDataset ds, Dimension dim0, Dimension dim1) {"}
+{"language": "java", "text": "protected void printBefore(final ActionRequest request) {"}
+{"language": "java", "text": "public ReplicationResult trigger() {"}
+{"language": "java", "text": "public static int intersect(Triangle3D_F64 T , LineSegment3D_F64 R , Point3D_F64 output ) {"}
+{"language": "java", "text": "public static void cublasDsyr2k(char uplo, char trans, int n, int k, double alpha, Pointer A, int lda, Pointer B, int ldb, double beta, Pointer C, int ldc)\r\n    {"}
+{"language": "java", "text": "Override\n\tpublic boolean accept(final List<Node> currentResults, final Node node, final int index) {"}
+{"language": "java", "text": "memory version\r\n        \t\tif (logger.isDebugEnabled()) {"}
+{"language": "java", "text": "final void copyFrom(final Frame frame) {"}
+{"language": "java", "text": "protected FeatureStyle getFeatureStyle(FeatureRow featureRow, GeometryType geometryType) {"}
+{"language": "java", "text": "void decreaseProperty(final Class entityType, final ID id, final String name, final Number delta) {"}
+{"language": "java", "text": "public OrientEdge getEdge(final Object id) {"}
+{"language": "java", "text": "Override\n    public void upgradeFromPreviousVersion(OpenImmoDocument doc) {"}
+{"language": "java", "text": "Override\r\n    public V get(Object key)\r\n    {"}
+{"language": "java", "text": "public void append(final float element) {"}
+{"language": "java", "text": "public XmlPathConfig features(Map<String, Boolean> features) {"}
+{"language": "java", "text": "public ApiClient setDPMBaseURL(String dpmBaseURL) {"}
+{"language": "java", "text": "public static MediaType parse(String input)\n\t{"}
+{"language": "java", "text": "private void initChartsMap(final Workbook wb) {"}
+{"language": "java", "text": "public static Response newFixedLengthResponse(IStatus status, String mimeType, InputStream data, long totalBytes) {"}
+{"language": "java", "text": "T fromMap(final Map<String, Object> map, final Class<T> cls) {"}
+{"language": "java", "text": "else if ( Typ.isBasicType(value) ) {"}
+{"language": "java", "text": "else if ( value instanceof Map ) {"}
+{"language": "java", "text": "else if ( value instanceof Collection) {"}
+{"language": "java", "text": "else if ( value instanceof Map[] ) {"}
+{"language": "java", "text": "public static double distance( LineSegment2D_F64 line, double x , double y) {"}
+{"language": "java", "text": "public static int indexOfIgnoreCase(final String src, char c, int startIndex, int endIndex) {"}
+{"language": "java", "text": "T unwrap(Class<T> type)\n\t{"}
+{"language": "java", "text": "static public String\n    join(String[] array, String sep, int from, int upto)\n    {"}
+{"language": "java", "text": "public Q setTimestamp(final int index, final Timestamp value) {"}
+{"language": "java", "text": "public TypenHausKategorienTyp getObjektkategorie2() {"}
+{"language": "java", "text": "Nullable\n    synchronized Record getRecordAt(SubsetParams coords) {"}
+{"language": "java", "text": "public Request getObjectsAsync(final @NonNull List<String> objectIDs, @NonNull CompletionHandler completionHandler) {"}
+{"language": "java", "text": "return getClient().new AsyncTaskRequest(completionHandler) {"}
+{"language": "java", "text": "public Element getChildElement(final int index) {"}
+{"language": "java", "text": "public void invalidateLayout(Container target){"}
+{"language": "java", "text": "public static String repeat(final String s, final String separator, final int repeat) {"}
+{"language": "java", "text": "public Object execute(final Map<Object, Object> iArgs) {"}
+{"language": "java", "text": "else if (query != null) {"}
+{"language": "java", "text": "public static String canonicalURL(String urlName)\n  {"}
+{"language": "java", "text": "public static byte getDataTypeAsByte(DataBuffer.Type type) {"}
+{"language": "java", "text": "private void doWork()\n   {"}
+{"language": "java", "text": "if any\n         if (work != null)\n         {"}
+{"language": "java", "text": "private void handleResourceRequest(EventModel eventModel) {"}
+{"language": "java", "text": "Override public void columnAdded(TableColumnModelEvent e) {"}
+{"language": "java", "text": "private Element writeAxis(CoordinateAxis axis) {"}
+{"language": "java", "text": "attributes\r\n\t\tfor (Attribute att : axis.getAttributes()) {"}
+{"language": "java", "text": "public static Integer validateRequiredNonNegativeInteger(String elementName, String attributeName, String value){"}
+{"language": "java", "text": "public static Result unsupportedMediaType(File content, boolean inline) {"}
+{"language": "java", "text": "public void displayResult() {"}
+{"language": "java", "text": "ID getSupportedCodecId(int n) {"}
+{"language": "java", "text": "public void addDataPoint (final DataPoint dataPoint)\n  {"}
+{"language": "java", "text": "compare\n\n\t\tif (len1 != len2) {"}
+{"language": "java", "text": "else if (lockingStrategy == OStorage.LOCKING_STRATEGY.KEEP_EXCLUSIVE_LOCK) {"}
+{"language": "java", "text": "public ModelAndView monitor ( @PathVariable ( \"id\" ) final String id)\n    {"}
+{"language": "java", "text": "public int update(final UpdateQuery query) {"}
+{"language": "java", "text": "public Integer perform(QueryRunner queryRunner) {"}
+{"language": "java", "text": "static Integer validateNonNegativeInteger(String elementName, String attributeName, String value){"}
+{"language": "java", "text": "public static void showMesage(String message, String title, ImageIcon icon)\n  {"}
+{"language": "java", "text": "public final CalendarDate getReferenceDate() {"}
+{"language": "java", "text": "public void crawlDataset(InvDataset ds, CancelTask task, PrintWriter out, Object context, boolean release) {"}
+{"language": "java", "text": "public static String encodeBASE64(String value) {"}
+{"language": "java", "text": "public static CPUArch getCPUArch(String javaCPU)\n  {"}
+{"language": "java", "text": "private void setData(String objectKey, Recorder recorder) {"}
+{"language": "java", "text": "public Prop setProp() {"}
+{"language": "java", "text": "public XmlPathConfig feature(String uri, boolean enabled) {"}
+{"language": "java", "text": "protected Object getPreAuthenticatedPrincipal(HttpServletRequest request) {"}
+{"language": "java", "text": "protected static BeanInfo getTempBeanInfo(ConfigVisitor visitor, String className) {"}
+{"language": "java", "text": "private String computeRepeatingSql(String repeatingSql, int requiredRepetitions) {"}
+{"language": "java", "text": "public Token getAccessToken() {"}
+{"language": "java", "text": "public static long sRescale(long origValue, Rational origBase, Rational newBase, Rational.Rounding rounding) {"}
+{"language": "java", "text": "void sort( T[] array ) {"}
+{"language": "java", "text": "public FSTObjectOutput getObjectOutput(OutputStream out) {"}
+{"language": "java", "text": "public SDVariable sconv2d(String name, SDVariable[] inputs, Conv2DConfig conv2DConfig) {"}
+{"language": "java", "text": "private boolean drawShape(double simplifyTolerance, BoundingBox boundingBox, ProjectionTransform transform, FeatureTileCanvas canvas, FeatureRow featureRow, Geometry geometry) {"}
+{"language": "java", "text": "public boolean matches(String propertyName) {"}
+{"language": "java", "text": "protected String buildFormatString(@Nullable final String name, @Nullable final String[] keys) {"}
+{"language": "java", "text": "public short getScalarShort(StructureMembers.Member m) {"}
+{"language": "java", "text": "private void changeDirectory(final File dir) {"}
+{"language": "java", "text": "else if (!dir.isDirectory()) {"}
+{"language": "java", "text": "public final Completable delaySubscription(long delay, TimeUnit unit) {"}
+{"language": "java", "text": "public String formatSqlException(SQLException ex) {"}
+{"language": "java", "text": "public JsonPathConfig gsonObjectMapperFactory(GsonObjectMapperFactory gsonObjectMapperFactory) {"}
+{"language": "java", "text": "Deprecated\n  public static void error(String message, Object... args) {"}
+{"language": "java", "text": "public FeatureStyles getFeatureStyles(FeatureRow featureRow) {"}
+{"language": "java", "text": "Key getCompleteKey(final P pojo) {"}
+{"language": "java", "text": "public GuiceApplicationBuilder withConfigLoader(Function<Environment, Config> load) {"}
+{"language": "java", "text": "void dumpnfa() {"}
+{"language": "java", "text": "public void setMDCPropertyMap(Map<String, String> map) {"}
+{"language": "java", "text": "void fail() {"}
+{"language": "java", "text": "Void defaultVisit(ElkObjectPropertyExpression expression) {"}
+{"language": "java", "text": "Override\n\t\t\tpublic Void visit(ElkObjectPropertyChain expression) {"}
+{"language": "java", "text": "Override\n\t\t\tpublic Void visit(ElkObjectInverseOf expression) {"}
+{"language": "java", "text": "Override\n\t\t\tpublic Void visit(ElkObjectProperty expression) {"}
+{"language": "java", "text": "public FastDoubleBuffer append(final FastDoubleBuffer buff) {"}
+{"language": "java", "text": "public SDVariable conv1d(SDVariable[] inputs, Conv1DConfig conv1DConfig) {"}
+{"language": "java", "text": "public static JsonFactory getJsonFactory() {"}
+{"language": "java", "text": "public void init(SimpleNode node, Object source, boolean setOperation)\n    {"}
+{"language": "java", "text": "public static String defaultIfEmpty(final String s, final String defaultStr) {"}
+{"language": "java", "text": "static void error(String message, Throwable t) {"}
+{"language": "java", "text": "Override\n    public Object element() {"}
+{"language": "java", "text": "protected int hashEntry(Object key, Object value) {"}
+{"language": "java", "text": "public static long parseLong( String buffer, int from, int to ) {"}
+{"language": "java", "text": "Override\n    public DataSet next() {"}
+{"language": "java", "text": "public static String arrayEscape(String string) {"}
+{"language": "java", "text": "void findServices(List<InvService> result, InvDataset ds) {"}
+{"language": "java", "text": "look for access elements with unresolved services\n    for (InvAccess a : ds.getAccess()) {"}
+{"language": "java", "text": "recurse into nested datasets\n    for (InvDataset nested : ds.getDatasets()) {"}
+{"language": "java", "text": "public static void cublasDsyrk(char uplo, char trans, int n, int k, double alpha, Pointer A, int lda, double beta, Pointer C, int ldc)\r\n    {"}
+{"language": "java", "text": "public Process getProcessByVersion(String name, Integer version) {"}
+{"language": "java", "text": "public static ResourceDefinition getElytronRealmResourceDefinition() {"}
+{"language": "java", "text": "public C antMatchers(String... antPatterns) {"}
+{"language": "java", "text": "public FeatureIndexResults query(BoundingBox boundingBox, Projection projection) {"}
+{"language": "java", "text": "Override\n    public DseCluster getCluster(String hostsAndPorts, String username, String password) {"}
+{"language": "java", "text": "public static String getClasspathItemBaseDir(final File classpathItem) {"}
+{"language": "java", "text": "T asObject(String string, Class<T> valueType) {"}
+{"language": "java", "text": "private void scheduleClose() {"}
+{"language": "java", "text": "new TimerTask() {"}
+{"language": "java", "text": "public void run() {"}
+{"language": "java", "text": "Override\n  public Object getId() {"}
+{"language": "java", "text": "public static JsonNode toJson(final Object data) {"}
+{"language": "java", "text": "public static boolean matches(final String text, final String wildcard) {"}
+{"language": "java", "text": "protected int countEscapes(final String template, int macroIndex) {"}
+{"language": "java", "text": "public String doLayout(ILoggingEvent event) {"}
+{"language": "java", "text": "protected List expandThisLevel( InvDataset dataset, String prefixUrlPath )\n  {"}
+{"language": "java", "text": "public static int addDataForArr(FlatBufferBuilder bufferBuilder, INDArray arr) {"}
+{"language": "java", "text": "public static String readContentAsString(InputStream is, String encoding) {"}
+{"language": "java", "text": "public static ImageDescriptor getImageDescriptor(String path) {"}
+{"language": "java", "text": "public void registerEndpointConfig(final String endpointClass, final EndpointConfig config) {"}
+{"language": "java", "text": "final boolean tryExternalUnpush(ForkJoinTask<?> task) {"}
+{"language": "java", "text": "public Emitter off(String event) {"}
+{"language": "java", "text": "public static Date getDateUsingSimpleDateFormat( String dateString, String dateFormatString )\n  {"}
+{"language": "java", "text": "public void setBufferedImage( BufferedImage img, String statusMessage  ) {"}
+{"language": "java", "text": "public static ForwardedHeader of(String source) {"}
+{"language": "java", "text": "public int count(GeometryEnvelope envelope) {"}
+{"language": "java", "text": "public double getValue() {"}
+{"language": "java", "text": "T load(final BaseEntity<com.google.cloud.datastore.Key> ent, final LoadContext ctx) {"}
+{"language": "java", "text": "public static DataType nextLarger(DataType dataType) {"}
+{"language": "java", "text": "public void analyze(AnalyzeContext context) {"}
+{"language": "java", "text": "优先处理tmpHits中的hit\r\n\t\t\tif(!this.tmpHits.isEmpty()){"}
+{"language": "java", "text": "else if(hit.isUnmatch()){"}
+{"language": "java", "text": "同时也是词前缀\r\n\t\t\t\tif(singleCharHit.isPrefix()){"}
+{"language": "java", "text": "else if(singleCharHit.isPrefix()){"}
+{"language": "java", "text": "判断缓冲区是否已经读完\r\n\t\tif(context.isBufferConsumed()){"}
+{"language": "java", "text": "判断是否锁定缓冲区\r\n\t\tif(this.tmpHits.size() == 0){"}
+{"language": "java", "text": "public String getLatLonBoundaryAsWKT(int maxPointsInYEdge, int maxPointsInXEdge) {"}
+{"language": "java", "text": "public final void persist() {"}
+{"language": "java", "text": "Compare new and old file\r\n            if (FileUtils.contentEquals(tmpFile, file)) {"}
+{"language": "java", "text": "public void mergeSort(int index, int lo, int hi, Comparator cmp) {"}
+{"language": "java", "text": "public void set(long index, byte value) {"}
+{"language": "java", "text": "Override\n    public boolean containsResourcesFromSource(String sourceID) {"}
+{"language": "java", "text": "public boolean swap(int index, OIdentifiable newValue) {"}
+{"language": "java", "text": "private String saveTmpFile(ByteBuffer b, int offset, int len, String filename_hint) {"}
+{"language": "java", "text": "public static void registerPseudoClass(final Class<? extends PseudoClass> pseudoClassType) {"}
+{"language": "java", "text": "public Object getValue()\n   {"}
+{"language": "java", "text": "Override public void transactionCreated(AbstractTransaction transaction, CreatedBy createdBy) {"}
+{"language": "java", "text": "public boolean contains(String id) {"}
+{"language": "java", "text": "private boolean runningOnGaeStandard() {"}
+{"language": "java", "text": "public void addAsPlaceHolder(String varName) {"}
+{"language": "java", "text": "public static String setupNonRequestContext() {"}
+{"language": "java", "text": "public static void join(final Thread thread) {"}
+{"language": "java", "text": "it means the report has not finished generating\n      if (!root.has(\"error\")) {"}
+{"language": "java", "text": "Get requests\n        if (root.get(\"error\").textValue().equals(\"report_not_ready\")) {"}
+{"language": "java", "text": "protected Variable makeParamVariable(GempakParameter param, List<Dimension> dims) {"}
+{"language": "java", "text": "public void log(String message, Throwable exception) {"}
+{"language": "java", "text": "public synchronized boolean canThreadDecoding(Thread t) {"}
+{"language": "java", "text": "public Request buildFromFiles(@NonNull final File settingsFile, @NonNull final File[] objectFiles, @Nullable CompletionHandler completionHandler) {"}
+{"language": "java", "text": "return getClient().new AsyncTaskRequest(completionHandler, getClient().localBuildExecutorService) {"}
+{"language": "java", "text": "public final Self configure(String key, Object value) {"}
+{"language": "java", "text": "protected void addField(FieldEditor editor) {"}
+{"language": "java", "text": "public ResultSet execute() {"}
+{"language": "java", "text": "public void start(PrintStream writer, String[] params) {"}
+{"language": "java", "text": "protected T loginPage(String loginPage) {"}
+{"language": "java", "text": "public void visitEnum(final String name, final String descriptor, final String value) {"}
+{"language": "java", "text": "public boolean collectResponse(final ODistributedResponse response) {"}
+{"language": "java", "text": "else if (rgPayload != null) {"}
+{"language": "java", "text": "else if (rgPayload instanceof Collection && responsePayload instanceof Collection) {"}
+{"language": "java", "text": "Override\n  public String getSubCenterName(int subcenter) {"}
+{"language": "java", "text": "public void setValue(SizeT value) {"}
+{"language": "java", "text": "transition then replay\n                if (r == COMPLETED_MASK) {"}
+{"language": "java", "text": "public static void runAndWrapException(final CallableVoid callable) {"}
+{"language": "java", "text": "public void actionPerformed(ActionEvent event)\n    {"}
+{"language": "java", "text": "Check if the state is NOT_SAVED\n            if (state.getState().equals(WorkPanelState.NOT_SAVED))\n            {"}
+{"language": "java", "text": "else if (\"Cancel\".equals(action))\n        {"}
+{"language": "java", "text": "Check if the state is NOT_SAVED\n            if (state.getState().equals(WorkPanelState.NOT_SAVED))\n            {"}
+{"language": "java", "text": "else if (\"Apply\".equals(action))\n        {"}
+{"language": "java", "text": "Check if the state is NOT_SAVED\n            if (state.getState().equals(WorkPanelState.NOT_SAVED))\n            {"}
+{"language": "java", "text": "private static void prepareGui() {"}
+{"language": "java", "text": "new Thread() {"}
+{"language": "java", "text": "Override\r\n                public void run() {"}
+{"language": "java", "text": "public boolean apply(String input) {"}
+{"language": "java", "text": "public URL apply(String from) {"}
+{"language": "java", "text": "static public int convertToDODSType(DataType dataType)\n  {"}
+{"language": "java", "text": "public Class getType() {"}
+{"language": "java", "text": "else if (readMethodDescriptor != null) {"}
+{"language": "java", "text": "else if (writeMethodDescriptor != null) {"}
+{"language": "java", "text": "protected String extractRememberMeCookie(HttpServletRequest request) {"}
+{"language": "java", "text": "public static Date getLastDate(long day) {"}
+{"language": "java", "text": "T invoke(MethodHandle methodHandle, Object... params) {"}
+{"language": "java", "text": "protected QName toQName(String namespaceUri, String qualifiedName) {"}
+{"language": "java", "text": "public static boolean containsBackslashCharacters(String string) {"}
+{"language": "java", "text": "public void addLayoutComponent(String name, Component comp)\n    {"}
+{"language": "java", "text": "public static Scheduler getInstance(Map stormConf) {"}
+{"language": "java", "text": "public static synchronized String getEncodeByUtil(File file) {"}
+{"language": "java", "text": "public static String parseSocketAddressToString(SocketAddress socketAddress) {"}
+{"language": "java", "text": "else if (includeFields) {"}
+{"language": "java", "text": "public Description describe() {"}
+{"language": "java", "text": "private NotificationCategory getNotificationCategory(PortletRequest request) {"}
+{"language": "java", "text": "public Exception getException() {"}
+{"language": "java", "text": "Only wrap if needed\n        if((t != null) && (! (t instanceof Exception))) {"}
+{"language": "java", "text": "public static void returnType(final MethodVisitor mv, final MethodInfo methodInfo) {"}
+{"language": "java", "text": "as this breaks excludes\n\n        for (final ModuleIdentifier moduleIdentifier : JAVA_EE_API_MODULES) {"}
+{"language": "java", "text": "public static void draw_tkp_T()\n  {"}
+{"language": "java", "text": "public void add(ServerSideFunction function) {"}
+{"language": "java", "text": "Override\n\tprotected int pruneCache() {"}
+{"language": "java", "text": "public void contributeToToolBar(IToolBarManager toolBarManager) {"}
+{"language": "java", "text": "private long getPhysicalMemorySize() {"}
+{"language": "java", "text": "private void setKey(final P pojo, final IncompleteKey key, final LoadContext ctx, final Path containerPath) {"}
+{"language": "java", "text": "public BitCounterUncompressed makeNested(DataDescriptor subKey, int n, int row, int replicationCountSize) {"}
+{"language": "java", "text": "Password addPasswordField(String fldName, String label, String defValue) {"}
+{"language": "java", "text": "public static InputStream openStream(String resource) {"}
+{"language": "java", "text": "private String replaceVariables(final String css, final Map<String, String> variables) {"}
+{"language": "java", "text": "private String forceChild(String url)\n\t{"}
+{"language": "java", "text": "public void setMaxDauer(MaxMietdauer.MaxDauer value) {"}
+{"language": "java", "text": "public void initDatabaseInstance() {"}
+{"language": "java", "text": "else if (database.isClosed()) {"}
+{"language": "java", "text": "else if (dataType == DataType.FLOAT) {"}
+{"language": "java", "text": "else if (dataType.getPrimitiveClassType() == long.class) {"}
+{"language": "java", "text": "else if (dataType.getPrimitiveClassType() == int.class) {"}
+{"language": "java", "text": "else if (dataType.getPrimitiveClassType() == short.class) {"}
+{"language": "java", "text": "else if (dataType == DataType.CHAR) {"}
+{"language": "java", "text": "else if (dataType.getPrimitiveClassType() == byte.class) {"}
+{"language": "java", "text": "else if (dataType == DataType.BOOLEAN) {"}
+{"language": "java", "text": "void setEntityId(final DbEntityDescriptor<E> ded, final E entity, final ID newIdValue) {"}
+{"language": "java", "text": "public static ReferencedData getWrappedData(final String ref, final byte[] data)\n    {"}
+{"language": "java", "text": "protected double getDouble(dap4.core.util.Index idx)\n    {"}
+{"language": "java", "text": "public Request searchAsync(@Nullable Query query, @Nullable CompletionHandler completionHandler) {"}
+{"language": "java", "text": "public void setFlag(Coder.Flag flag, boolean value) {"}
+{"language": "java", "text": "public OClass getLinkedClass() {"}
+{"language": "java", "text": "public static void collectPayPalDeviceData(final BraintreeFragment fragment, final BraintreeResponseListener<String> listener) {"}
+{"language": "java", "text": "public Counts get(final File file) {"}
+{"language": "java", "text": "public String replaceObjectNameParameters (String pattern, MBeanLocationParameterSource parameterSource) {"}
+{"language": "java", "text": "final void accept(final MethodVisitor methodVisitor, final boolean visitLineNumbers) {"}
+{"language": "java", "text": "private JestClient createJestClient(String uri) {"}
+{"language": "java", "text": "Override\r\n\tpublic ValueWriter getValueWriter(ContentType contentType) {"}
+{"language": "java", "text": "protected static void write(List<Is24CsvRecord> records, OutputStream output) {"}
+{"language": "java", "text": "public String getEscapedShortName()\n    {"}
+{"language": "java", "text": "ProjectionImpl  nowrad(int hoff, float rlat1, float rlon1, float rlat2, float rlon2, float dlat, float dlon, Date dd) {"}
+{"language": "java", "text": "public double getEstimate(AttributeValues wordform) {"}
+{"language": "java", "text": "public static void parse(String[] args) {"}
+{"language": "java", "text": "public void initTransfer(Properties properties)\n\t{"}
+{"language": "java", "text": "private void refreshDataForCell(Row row, String fullSaveAttr) {"}
+{"language": "java", "text": "public static String formatHeader(int[] maximums, String[] headers) {"}
+{"language": "java", "text": "protected void execute(TaskWrapper wrapper)\n   {"}
+{"language": "java", "text": "sslSocket is now ready\n\n\t\tif (secureEnabledProtocols != null) {"}
+{"language": "java", "text": "set SSL parameters to allow host name verifier\n\n\t\tif (verifyHttpsHost) {"}
+{"language": "java", "text": "final public Token getToken(int index) {"}
+{"language": "java", "text": "public boolean encodeForLZMA2() {"}
+{"language": "java", "text": "private static String getSignature(Method method) {"}
+{"language": "java", "text": "public int getTimeout() {"}
+{"language": "java", "text": "public static IComplexNDArray expi(IComplexNDArray toExp) {"}
+{"language": "java", "text": "protected int search(char[] chs, int offset, int tailLen) {"}
+{"language": "java", "text": "private void displayCompiledQuery(Term query)\n    {"}
+{"language": "java", "text": "Override\r\n  public LatLonPoint projToLatLon(ProjectionPoint world, LatLonPointImpl result) {"}
+{"language": "java", "text": "public SimTok decode(final String token) {"}
+{"language": "java", "text": "Create Exception with error message if the xml document is invalid\n        if (!isValid && !strict) {"}
+{"language": "java", "text": "public void onTabChange(final TabChangeEvent event) {"}
+{"language": "java", "text": "search system property\n    if (!configured) {"}
+{"language": "java", "text": "search assets\n    if (!configured) {"}
+{"language": "java", "text": "Override\n\tpublic Collection values() {"}
+{"language": "java", "text": "WeakValues instead of value objects\n\t\tif (values == null) {"}
+{"language": "java", "text": "new AbstractCollection() {"}
+{"language": "java", "text": "Override\n\t\t\t\tpublic Iterator iterator() {"}
+{"language": "java", "text": "return new Iterator() {"}
+{"language": "java", "text": "Override\n\t\t\t\t\t\tpublic boolean hasNext() {"}
+{"language": "java", "text": "Override\n\t\t\t\t\t\tpublic Object next() {"}
+{"language": "java", "text": "Override\n\t\t\t\t\t\tpublic void remove() {"}
+{"language": "java", "text": "Override\n\t\t\t\tpublic int size() {"}
+{"language": "java", "text": "Override\n\t\t\t\tpublic boolean contains(Object v) {"}
+{"language": "java", "text": "public Q setString(final int index, final String value) {"}
+{"language": "java", "text": "new CoordinateFunction() {"}
+{"language": "java", "text": "Override\n            public void process(long[]... coord) {"}
+{"language": "java", "text": "T find(final QueryMapper<T> queryMapper) {"}
+{"language": "java", "text": "protected JtxTransaction propNotSupported(final JtxTransaction currentTx, final JtxTransactionMode mode, final Object scope) {"}
+{"language": "java", "text": "public StructureData getStructureData(int index) {"}
+{"language": "java", "text": "Request searchDisjunctiveFacetingAsync(@NonNull Query query, @NonNull final Collection<String> disjunctiveFacets, @NonNull final Map<String, T> refinements, @NonNull final CompletionHandler completionHandler) {"}
+{"language": "java", "text": "return multipleQueriesAsync(queries, new CompletionHandler() {"}
+{"language": "java", "text": "Override\n            public void requestCompleted(JSONObject content, AlgoliaException error) {"}
+{"language": "java", "text": "public static double evaluate( double x , double y , EllipseRotated_F64 ellipse ) {"}
+{"language": "java", "text": "private void addLineString(double simplifyTolerance, BoundingBox boundingBox, ProjectionTransform transform, Path path, LineString lineString) {"}
+{"language": "java", "text": "public static INDArray eq(INDArray x, INDArray y, INDArray z, int... dimensions) {"}
+{"language": "java", "text": "public IdentityTrustManager getIdentityTrustManager(String securityDomain) {"}
+{"language": "java", "text": "public static long getOpNum(String name, Op.Type type) {"}
+{"language": "java", "text": "else if (type == Op.Type.RETURN) {"}
+{"language": "java", "text": "else if (type == Op.Type.IF) {"}
+{"language": "java", "text": "else if (type == Op.Type.CONDITIONAL) {"}
+{"language": "java", "text": "else if (type == Op.Type.MERGE) {"}
+{"language": "java", "text": "else if (type == Op.Type.LOOP_COND) {"}
+{"language": "java", "text": "else if (type == Op.Type.NEXT_ITERATION) {"}
+{"language": "java", "text": "else if (type == Op.Type.EXIT) {"}
+{"language": "java", "text": "else if (type == Op.Type.ENTER) {"}
+{"language": "java", "text": "else if (type == Op.Type.CUSTOM) {"}
+{"language": "java", "text": "public void move(Number amount)\n  {"}
+{"language": "java", "text": "public float getScalarFloat(StructureMembers.Member m) {"}
+{"language": "java", "text": "Override\r\n  public VertCoordType getVertUnit(int code) {"}
+{"language": "java", "text": "public void logIfNeeded(boolean granted, AccessControlEntry ace) {"}
+{"language": "java", "text": "else if (!granted && auditableAce.isAuditFailure()) {"}
+{"language": "java", "text": "is set\n    if (graphQLRequest == null) {"}
+{"language": "java", "text": "is set\n    if (file == null) {"}
+{"language": "java", "text": "private static ObjectName getRegionObjectName(String regionName,JMX jmx)\n\t{"}
+{"language": "java", "text": "else if (str.toUpperCase().matches(\"RNA[1-9][0-9]*\")) {"}
+{"language": "java", "text": "else if (str.toUpperCase().matches(\"BLOB[1-9][0-9]*\")) {"}
+{"language": "java", "text": "else if (str.toUpperCase().matches(\"CHEM[1-9][0-9]*\")) {"}
+{"language": "java", "text": "else if (str.toUpperCase().matches(\"G[1-9][0-9]*\")) {"}
+{"language": "java", "text": "public LatLonPoint projToLatLon(ProjectionPoint world, LatLonPointImpl result) {"}
+{"language": "java", "text": "public Row executeOne(PreparedStatement stm, Object... bindValues) {"}
+{"language": "java", "text": "Type getRollupComputer(RollupType srcType, Granularity srcGran) {"}
+{"language": "java", "text": "public void show(Formatter f) {"}
+{"language": "java", "text": "public Splitter ignorePrefix(String prefix)\n\t{"}
+{"language": "java", "text": "public static Object convert(MultiTypeData d, Class c)\n    {"}
+{"language": "java", "text": "else if (((d.typeFlags & INT) != 0) && (Integer.TYPE.equals(c) || Integer.class.equals(c)))\n        {"}
+{"language": "java", "text": "else if (((d.typeFlags & CHAR) != 0) && (Character.TYPE.equals(c) || Character.class.equals(c)))\n        {"}
+{"language": "java", "text": "else if (((d.typeFlags & BYTE) != 0) && (Byte.TYPE.equals(c) || Byte.class.equals(c)))\n        {"}
+{"language": "java", "text": "else if (((d.typeFlags & SHORT) != 0) && (Short.TYPE.equals(c) || Short.class.equals(c)))\n        {"}
+{"language": "java", "text": "else if (((d.typeFlags & LONG) != 0) && (Long.TYPE.equals(c) || Long.class.equals(c)))\n        {"}
+{"language": "java", "text": "else if (((d.typeFlags & FLOAT) != 0) && (Float.TYPE.equals(c) || Float.class.equals(c)))\n        {"}
+{"language": "java", "text": "else if (((d.typeFlags & DOUBLE) != 0) && (Double.TYPE.equals(c) || Double.class.equals(c)))\n        {"}
+{"language": "java", "text": "else if (((d.typeFlags & STRING) != 0) && String.class.equals(c))\n        {"}
+{"language": "java", "text": "else if (((d.typeFlags & OBJECT) != 0) && d.objectValue.getClass().equals(c))\n        {"}
+{"language": "java", "text": "public double getValue(double lat, double lon) {"}
+{"language": "java", "text": "public Object get(Class cls, String attr)\n    {"}
+{"language": "java", "text": "private static Configuration getAppConfiguration() {"}
+{"language": "java", "text": "public static void main(String[] args)\n    {"}
+{"language": "java", "text": "public void putBean(String key, Object newValue) {"}
+{"language": "java", "text": "public static IdleStrategy agentIdleStrategy(final String strategyName, final StatusIndicator controllableStatus)\n    {"}
+{"language": "java", "text": "private int removeTagByName(List<TagReference> tags, String tagName) {"}
+{"language": "java", "text": "else if (Constants.EXCEPTIONS.equals(attributeName)) {"}
+{"language": "java", "text": "else if (Constants.SIGNATURE.equals(attributeName)) {"}
+{"language": "java", "text": "else if (Constants.DEPRECATED.equals(attributeName)) {"}
+{"language": "java", "text": "else if (Constants.RUNTIME_VISIBLE_ANNOTATIONS.equals(attributeName)) {"}
+{"language": "java", "text": "else if (Constants.RUNTIME_VISIBLE_TYPE_ANNOTATIONS.equals(attributeName)) {"}
+{"language": "java", "text": "else if (Constants.ANNOTATION_DEFAULT.equals(attributeName)) {"}
+{"language": "java", "text": "else if (Constants.SYNTHETIC.equals(attributeName)) {"}
+{"language": "java", "text": "else if (Constants.RUNTIME_INVISIBLE_ANNOTATIONS.equals(attributeName)) {"}
+{"language": "java", "text": "else if (Constants.RUNTIME_INVISIBLE_TYPE_ANNOTATIONS.equals(attributeName)) {"}
+{"language": "java", "text": "else if (Constants.RUNTIME_VISIBLE_PARAMETER_ANNOTATIONS.equals(attributeName)) {"}
+{"language": "java", "text": "else if (Constants.RUNTIME_INVISIBLE_PARAMETER_ANNOTATIONS.equals(attributeName)) {"}
+{"language": "java", "text": "else if (Constants.METHOD_PARAMETERS.equals(attributeName)) {"}
+{"language": "java", "text": "private static INDArray exec(TransformOp op) {"}
+{"language": "java", "text": "Override\n    public UserCustomRow getRow(int[] columnTypes, Object[] values) {"}
+{"language": "java", "text": "protected void refreshVisuals() {"}
+{"language": "java", "text": "else if (method.equals(\"HEAD\") && statusCode == HTTP_OK) {"}
+{"language": "java", "text": "else if (contentLength != null) {"}
+{"language": "java", "text": "else if ((statusCode >= 100 && statusCode < 200) || statusCode == HTTP_NO_CONTENT || statusCode == HTTP_NOT_MODIFIED) {"}
+{"language": "java", "text": "new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8))) {"}
+{"language": "java", "text": "public static boolean needClassFileTransformer(PersistenceUnitMetadata pu) {"}
+{"language": "java", "text": "else if (isHibernateProvider(provider)) {"}
+{"language": "java", "text": "public XmlConfig disableLoadingOfExternalDtd() {"}
+{"language": "java", "text": "public BeanReferences buildDefaultReference(final PropertyDescriptor propertyDescriptor) {"}
+{"language": "java", "text": "public static boolean isSchemaChangeRecord(Record metadataRecord) {"}
+{"language": "java", "text": "public static boolean allowJoinedUnsyncPersistenceContext(EntityManagerFactory emf, Map targetEntityManagerProperties) {"}
+{"language": "java", "text": "properties\n        if(targetEntityManagerProperties != null && targetEntityManagerProperties.containsKey(ALLOWJOINEDUNSYNCPC)) {"}
+{"language": "java", "text": "else if(emf.getProperties() != null && emf.getProperties().containsKey(ALLOWJOINEDUNSYNCPC)) {"}
+{"language": "java", "text": "public BackwardLink getConclusion(BackwardLink.Factory factory) {"}
+{"language": "java", "text": "public static SampleEntry createMOVSampleEntryFromBytes(ByteBuffer codecPrivate) {"}
+{"language": "java", "text": "public void addClientInterceptor(InterceptorFactory interceptorFactory, int priority) {"}
+{"language": "java", "text": "private void handleArchive(BlobId blobId) {"}
+{"language": "java", "text": "public static double mul(final double v1,final double v2){"}
+{"language": "java", "text": "public static WroRuntimeException wrap(final Exception e, final String message) {"}
+{"language": "java", "text": "Deprecated\n    public final Completable toCompletable() {"}
+{"language": "java", "text": "If there is a matching zoom level\n            if (requestZoomLevel != null) {"}
+{"language": "java", "text": "build the possible zoom levels in order to request\n                if (scaling != null && scaling.getScalingType() != null) {"}
+{"language": "java", "text": "else if (zoomOutLevels.isEmpty()) {"}
+{"language": "java", "text": "Build a list of tile matrices that exist for the zoom levels\n                for (long zoomLevel : zoomLevels) {"}
+{"language": "java", "text": "private RhinoScriptBuilder initScriptBuilder() {"}
+{"language": "java", "text": "public long skip(long n) {"}
+{"language": "java", "text": "public static boolean isConvex( Polygon2D_I32 poly ) {"}
+{"language": "java", "text": "public Order startInstanceByName(String name, Integer version) {"}
+{"language": "java", "text": "public boolean evaluate(Term term)\n    {"}
+{"language": "java", "text": "public static boolean matches( Object obj, Criteria... exp ) {"}
+{"language": "java", "text": "boolean pushVariableReference(String name) {"}
+{"language": "java", "text": "looking for a scope node that knows about a given variable\n        for (Node node : getContext().getValueStack()) {"}
+{"language": "java", "text": "public static EmailAddress of(String address) {"}
+{"language": "java", "text": "private OIndexSearchResult createIndexedProperty(final OSQLFilterCondition iCondition, final Object iItem, OCommandContext ctx) {"}
+{"language": "java", "text": "else if (operator instanceof OQueryOperatorContains) {"}
+{"language": "java", "text": "else if (operator instanceof OQueryOperatorMajor) {"}
+{"language": "java", "text": "else if (operator instanceof OQueryOperatorMinor) {"}
+{"language": "java", "text": "else if (operator instanceof OQueryOperatorMajorEquals) {"}
+{"language": "java", "text": "else if (operator instanceof OQueryOperatorMinorEquals) {"}
+{"language": "java", "text": "public FSArray getCandidateAnswers() {"}
+{"language": "java", "text": "public static void cublasCtrmm(char side, char uplo, char transa, char diag, int m, int n, cuComplex alpha, Pointer A, int lda, Pointer B, int ldb)\r\n    {"}
+{"language": "java", "text": "public void empty() {"}
+{"language": "java", "text": "public static void injectViewModel(final View view, ViewModel viewModel) {"}
+{"language": "java", "text": "Override\n\tpublic void contextInitialized(final ServletContextEvent servletContextEvent) {"}
+{"language": "java", "text": "Override\n    public IComplexNDArray epsi(INDArray other) {"}
+{"language": "java", "text": "public static Reference createReference(final ServiceName service, Class<? extends ServiceReferenceObjectFactory> factory) {"}
+{"language": "java", "text": "public File getFile(String remaining) {"}
+{"language": "java", "text": "public static void forceLoad(final Class type)\n   {"}
+{"language": "java", "text": "public boolean isParent(Group other) {"}
+{"language": "java", "text": "public DecoderConfig defaultCharsetForContentType(String charset, String contentType) {"}
+{"language": "java", "text": "public Object getValue(final int pos) {"}
+{"language": "java", "text": "else if (val instanceof List) {"}
+{"language": "java", "text": "Override\n      public File get() {"}
+{"language": "java", "text": "private static HttpRequestBase getHttpMethod(RequestMethod method, String uri) {"}
+{"language": "java", "text": "else if (Types.isKindOf(type, InputStream.class)) {"}
+{"language": "java", "text": "A getAnnotationAnywhere(Class<A> annotationType) {"}
+{"language": "java", "text": "static String getFormDefaultValue(XsdAbstractElement parent) {"}
+{"language": "java", "text": "清理Cache\n        if (cookie_user != null) {"}
+{"language": "java", "text": "private RedisSession getSession(String id, boolean allowExpired) {"}
+{"language": "java", "text": "protected void calculateOperationAnalysisMap() {"}
+{"language": "java", "text": "Map the operations\n        for (int i = 0; i < operations.length; ++i) {"}
+{"language": "java", "text": "Map the attributes\n        for (int i = 0; i < attributes.length; ++i) {"}
+{"language": "java", "text": "the attribute is not in a remote interface\n            if (oa != null) {"}
+{"language": "java", "text": "Override\n    public IComplexNDArray scalar(IComplexFloat value) {"}
+{"language": "java", "text": "NCHW\n        for (int i = 0; i < dataFormat.length(); i++) {"}
+{"language": "java", "text": "public static Object convertValue(char value, Class toType, boolean preventNull)\n    {"}
+{"language": "java", "text": "public static void validateSessionIdRange(final int low, final int high)\n    {"}
+{"language": "java", "text": "public InvCatalogImpl readXML(InputStream docIs, URI uri) {"}
+{"language": "java", "text": "do executeUpdate per record\n    if (hikariConfigBean.getConnectionString().toLowerCase().startsWith(\"jdbc:sqlserver\")) {"}
+{"language": "java", "text": "public void setValue(Object target, Object value, OCommandContext ctx) {"}
+{"language": "java", "text": "else if (target instanceof List) {"}
+{"language": "java", "text": "else if (OMultiValue.isMultiValue(value)) {"}
+{"language": "java", "text": "T max( T[] array, String sortBy ) {"}
+{"language": "java", "text": "public void addEntry(CatalogEntry entry) {"}
+{"language": "java", "text": "else if (type == CATALOG) {"}
+{"language": "java", "text": "else if (type == PUBLIC) {"}
+{"language": "java", "text": "else if (type == SYSTEM) {"}
+{"language": "java", "text": "else if (type == URI) {"}
+{"language": "java", "text": "else if (type == DOCUMENT) {"}
+{"language": "java", "text": "else if (type == OVERRIDE) {"}
+{"language": "java", "text": "else if (type == SGMLDECL) {"}
+{"language": "java", "text": "else if (type == DELEGATE_PUBLIC) {"}
+{"language": "java", "text": "else if (type == DELEGATE_SYSTEM) {"}
+{"language": "java", "text": "else if (type == DELEGATE_URI) {"}
+{"language": "java", "text": "else if (type == REWRITE_SYSTEM) {"}
+{"language": "java", "text": "else if (type == REWRITE_URI) {"}
+{"language": "java", "text": "else if (type == DOCTYPE) {"}
+{"language": "java", "text": "else if (type == DTDDECL) {"}
+{"language": "java", "text": "else if (type == ENTITY) {"}
+{"language": "java", "text": "else if (type == LINKTYPE) {"}
+{"language": "java", "text": "else if (type == NOTATION) {"}
+{"language": "java", "text": "public synchronized void init(ReadMode readMode, PreferencesExt prefs) {"}
+{"language": "java", "text": "public static MessageType getSchemaForRead(MessageType fileMessageType, String partialReadSchemaString) {"}
+{"language": "java", "text": "public void setupProperties(LoggerContext context) {"}
+{"language": "java", "text": "public void showStatus(Formatter f) {"}
+{"language": "java", "text": "Level jodd2log4j2(final Logger.Level level) {"}
+{"language": "java", "text": "public static final SSDB pool(String host, int port, int timeout, Object config) {"}
+{"language": "java", "text": "public static boolean conformable(int[] shapeA, int[] shapeB) {"}
+{"language": "java", "text": "RET parse(OCommandRequest iRequest) {"}
+{"language": "java", "text": "else if (iRequest instanceof OSQLAsynchQuery) {"}
+{"language": "java", "text": "public static long compareDate(Date nearDate, Date farDate) {"}
+{"language": "java", "text": "public static ARCHType calculateArch() {"}
+{"language": "java", "text": "for x64 fallback to x86 if an exe was not found\n        if (file == null && options.isX32ExecutableFallback() && options.getHardwareArchitecture() == HardwareArchitecture.X64) {"}
+{"language": "java", "text": "new FileOutputStream(fileOutName)) {"}
+{"language": "java", "text": "XmlTransient\n\tpublic String getElasticSearchFieldType()\n\t{"}
+{"language": "java", "text": "int getMovedPosition(E[] d, int del) {"}
+{"language": "java", "text": "ReadState restore(long versionDesired, HollowConsumer.BlobRetriever blobRetriever) {"}
+{"language": "java", "text": "protected JsonResult login() {"}
+{"language": "java", "text": "public static boolean isNumeric(final String str) {"}
+{"language": "java", "text": "public final Completable switchMapCompletableDelayError(@NonNull Function<? super T, ? extends CompletableSource> mapper) {"}
+{"language": "java", "text": "public static MockMvcFactory of(Object[] controllerOrMockMvcConfigurers) {"}
+{"language": "java", "text": "private void showDeclaration(BeanTable from, boolean isNcml) {"}
+{"language": "java", "text": "public void writeIntPacked(long data) {"}
+{"language": "java", "text": "public static String removeDomain(String str) {"}
+{"language": "java", "text": "NonNull\n    public static Scheduler initNewThreadScheduler(@NonNull Callable<Scheduler> defaultScheduler) {"}
+{"language": "java", "text": "public static void insertAnyPrimitive(Any any, Object primitive) {"}
+{"language": "java", "text": "public static int equalsOne(final String src, final String... dest) {"}
+{"language": "java", "text": "public T get(Lang lang) {"}
+{"language": "java", "text": "private void refreshCachedCellsInCurrentPage(final FacesContext facesContext, final String tblName) {"}
+{"language": "java", "text": "synchronized static public void loadLibrary(String name, Options options, Integer majorVersion) {"}
+{"language": "java", "text": "temporarily prepend library path to load library if found\n        if (f != null) {"}
+{"language": "java", "text": "public static void resolveAllVariables(final Properties prop) {"}
+{"language": "java", "text": "public static double intersection( LineParametric2D_F64 target, LineSegment2D_F64 l ) {"}
+{"language": "java", "text": "Deprecated\n    public String getName()\n    {"}
+{"language": "java", "text": "Override\n  public Long deserializeFromByteBufferObject(ByteBuffer buffer, OWALChanges walChanges, int offset) {"}
+{"language": "java", "text": "Override\n\tprotected Buffer buffer(final boolean fullResponse) {"}
+{"language": "java", "text": "static public String makeString(byte[] b)\n    {"}
+{"language": "java", "text": "public FlowStepRuleListing getExitRulesByStep(FlowStep flowStepParam)\n    {"}
+{"language": "java", "text": "protected StackableOperator createTermOperator(Term argument, int pos, Functor functor)\n    {"}
+{"language": "java", "text": "public boolean isInside( Point2D_F64 p ) {"}
+{"language": "java", "text": "public static JPAConfig of(String n1, String u1, String n2, String u2) {"}
+{"language": "java", "text": "public Task rejectTask(ProcessModel model, Task currentTask) {"}
+{"language": "java", "text": "private void gatherDisjunctions(Disjunction disjunction, List<Term> expressions)\n    {"}
+{"language": "java", "text": "public final T blockingGet() {"}
+{"language": "java", "text": "public IContentAssistant getContentAssistant(ISourceViewer sourceViewer) {"}
+{"language": "java", "text": "public static String printBooleanValue(Boolean value) {"}
+{"language": "java", "text": "Station pick(Point2D pickPt) {"}
+{"language": "java", "text": "static public boolean isCompatible(String unitString1, String unitString2) {"}
+{"language": "java", "text": "read the part names\n    for (int i = 0; i < numParts; i++) {"}
+{"language": "java", "text": "read the part header lengths\n    for (int i = 0; i < numParts; i++) {"}
+{"language": "java", "text": "read the part types\n    for (int i = 0; i < numParts; i++) {"}
+{"language": "java", "text": "read parameter names\n    for (int i = 0; i < numParts; i++) {"}
+{"language": "java", "text": "read the scale\n    for (int i = 0; i < numParts; i++) {"}
+{"language": "java", "text": "read the offset\n    for (int i = 0; i < numParts; i++) {"}
+{"language": "java", "text": "read the nbits\n    for (int i = 0; i < numParts; i++) {"}
+{"language": "java", "text": "public static void floatValue(final MethodVisitor mv) {"}
+{"language": "java", "text": "public void start() {"}
+{"language": "java", "text": "public ChannelUriStringBuilder linger(final Long lingerNs)\n    {"}
+{"language": "java", "text": "public CalendarDate subtract(CalendarPeriod period) {"}
+{"language": "java", "text": "new IRunnableWithProgress() {"}
+{"language": "java", "text": "public static void rawTailVolatile(final UnsafeBuffer metadataBuffer, final int partitionIndex, final long rawTail)\n    {"}
+{"language": "java", "text": "else if(basetype.isStructType()) {"}
+{"language": "java", "text": "Add the fields\n            for(DapVariable field : dapstruct.getFields()) {"}
+{"language": "java", "text": "else if(basetype.isSeqType()) {"}
+{"language": "java", "text": "Add the fields\n            for(DapVariable field : dapseq.getFields()) {"}
+{"language": "java", "text": "then add warning attribute\n            if(dapvar.getRank() > 0) {"}
+{"language": "java", "text": "1 for vlen\n        for(int i = 0; i < rank; i++) {"}
+{"language": "java", "text": "s attributes\n        for(String key : dapvar.getAttributes().keySet()) {"}
+{"language": "java", "text": "protected ResourceBundle getBundle(final String bundleName, final Locale locale, final ClassLoader classLoader) {"}
+{"language": "java", "text": "protected void doDeploy(ServiceTarget target, DeploymentUnit unit) {"}
+{"language": "java", "text": "s\n            if (X2 == bitsmv1[NB[i]]) {"}
+{"language": "java", "text": "end for i\n\n    if (bitmap != null) {"}
+{"language": "java", "text": "private int pruneToRemove() {"}
+{"language": "java", "text": "public DictionaryPageReadStore getNextDictionaryReader() {"}
+{"language": "java", "text": "Override\n    protected void handleIQResult(IQ iq) {"}
+{"language": "java", "text": "public StatValue getStatValue(String name) {"}
+{"language": "java", "text": "public static String getEndpointName(final ServletMetaData servletMD) {"}
+{"language": "java", "text": "public static String concat(final String parent, final String child) {"}
+{"language": "java", "text": "private boolean isMinimalQuery(QueryPlanningInfo info) {"}
+{"language": "java", "text": "public Array getArray(String memberName) {"}
+{"language": "java", "text": "public ResultSetFuture putAsync(Locator locator, long collectionTime, Rollup rollup, Granularity granularity, int ttl) {"}
+{"language": "java", "text": "Override\r\n\tprotected void addExamples(PrintWriter out) {"}
+{"language": "java", "text": "public Object getScalarObject(String memberName) {"}
+{"language": "java", "text": "public void setBlockingModeString(String name)\n   {"}
+{"language": "java", "text": "public static String format(Date date, String format)\n\t{"}
+{"language": "java", "text": "no reference is ever ever created\n\t\t\t\tif (ach != null && ActivityFlags.hasRequestSleeActivityGCCallback(activityFlags)) {"}
+{"language": "java", "text": "public void setTemporaryScaleType(final ScaleType scaleType) {"}
+{"language": "java", "text": "public void bindParameters(final Map<Object, Object> iArgs) {"}
+{"language": "java", "text": "public static ByteBuffer putTimeOnlyAsString(ByteBuffer buffer, long value, boolean includeMilliseconds)\n    {"}
+{"language": "java", "text": "static private void quickSort(String a[], int lo0, int hi0) {"}
+{"language": "java", "text": "loop through the array until indices cross\n            while (lo <= hi) {"}
+{"language": "java", "text": "swap\n                if (lo <= hi) {"}
+{"language": "java", "text": "public void close(final Objectify ofy) {"}
+{"language": "java", "text": "private Date stringAsSchedulerDate(final String date, final String timerId) {"}
+{"language": "java", "text": "else if (lookupResult.isSuccessful()) {"}
+{"language": "java", "text": "protected AccessBuilder readAccess(DatasetBuilder dataset, Element accessElem) {"}
+{"language": "java", "text": "final public void clearFormattingInSelection(RTEditText editor) {"}
+{"language": "java", "text": "public boolean isAuthorized(final String username, final String resource) {"}
+{"language": "java", "text": "public void checkForErrorResponse()\n    {"}
+{"language": "java", "text": "Override\n    public void updatePlayInfo(Volume volume) {"}
+{"language": "java", "text": "public String getPrincipal() {"}
+{"language": "java", "text": "else if (authentication instanceof AnonymousAuthenticationToken) {"}
+{"language": "java", "text": "public static Element getDAVChild(Element parent) {"}
+{"language": "java", "text": "private static Object invoke(Method methodParam, Object objParam)\n\t{"}
+{"language": "java", "text": "int isZlibHed( byte[] buf ){"}
+{"language": "java", "text": "just make a copy of the base if spec is empty\r\n\t\tif (p_uriSpec == null || p_uriSpec.length() == 0) {"}
+{"language": "java", "text": "host to empty string\r\n\t\t\tif (index > startPos) {"}
+{"language": "java", "text": "RFC specifications\r\n\t\tif (p_base != null) {"}
+{"language": "java", "text": "identified this as a bug in the RFC\r\n\t\t\tif (m_path.length() == 0 && m_scheme == null && m_host == null) {"}
+{"language": "java", "text": "re done\r\n\t\t\tif (m_scheme == null) {"}
+{"language": "java", "text": "re done\r\n\t\t\tif (m_host == null) {"}
+{"language": "java", "text": "5\r\n\t\t\tif (m_path.length() > 0 && m_path.startsWith(\"/\")) {"}
+{"language": "java", "text": "get all but the last segment of the base URI path\r\n\t\t\tif (basePath != null) {"}
+{"language": "java", "text": "as a complete path segment\r\n\t\t\tif (path.endsWith(\"/.\")) {"}
+{"language": "java", "text": "complete path segment\r\n\t\t\tif (path.endsWith(\"/..\")) {"}
+{"language": "java", "text": "public StreamedContent getPicture() {"}
+{"language": "java", "text": "protected InputSource resolveSystemIDasURL(String systemId, boolean trace)\n  {"}
+{"language": "java", "text": "public void setWsapiUrls(String[] wsapi) {"}
+{"language": "java", "text": "public static TerminationValidator terminationValidator()\n    {"}
+{"language": "java", "text": "public Dimension preferredLayoutSize(Container parent){"}
+{"language": "java", "text": "public void error(String msg, Throwable t) {"}
+{"language": "java", "text": "Override\n  public void stopTransaction(final Conclusion conclusion) {"}
+{"language": "java", "text": "else if (cls.isInterface()) {"}
+{"language": "java", "text": "else if (Exception.class.isAssignableFrom(cls)) {"}
+{"language": "java", "text": "new MyStreamFilter())) {"}
+{"language": "java", "text": "private static void printWelcomeBanner() {"}
+{"language": "java", "text": "protected Dimension getMinimumThumbSize()\n    {"}
+{"language": "java", "text": "public void begin(InterpretationContext ec, String localName, Attributes attributes) {"}
+{"language": "java", "text": "public void setRequestHeaderField(String fieldName, String fieldValue) {"}
+{"language": "java", "text": "public static String getFieldNameByGetMethod(Method method) {"}
+{"language": "java", "text": "public static IComplexFloat exp(IComplexFloat d) {"}
+{"language": "java", "text": "private ArrayByte replaceMissingValuesAndScale(IsMissingEvaluator grid, Array data, MAMath.MinMax dataMinMax) {"}
+{"language": "java", "text": "public static Result parseResponse(Context context, Request request, Intent data) {"}
+{"language": "java", "text": "else if (data != null && data.getExtras() != null && !data.getExtras().isEmpty()) {"}
+{"language": "java", "text": "no attributes\n        if (reader.getAttributeCount() > 0) {"}
+{"language": "java", "text": "public static Element getNextSibling(Element element, String[] names) {"}
+{"language": "java", "text": "public static void describe(StringBuffer buffer, Object object)\n   {"}
+{"language": "java", "text": "public static void closeQuietly(Closeable closeable) {"}
+{"language": "java", "text": "private CalendarPeriod findRangeAdjustment(String fmtString) {"}
+{"language": "java", "text": "public Address toAddress() {"}
+{"language": "java", "text": "public static void cublasCsyr2k(char uplo, char trans, int n, int k, cuComplex alpha, Pointer A, int lda, Pointer B, int ldb, cuComplex beta, Pointer C, int ldc)\r\n    {"}
+{"language": "java", "text": "private int findSingleHit(ArrayDouble.D2 boundsForRun, double target) {"}
+{"language": "java", "text": "public static boolean equalsOrDie(int[] expected, int[] got) {"}
+{"language": "java", "text": "public void init(Stage.Context context, String prefix, List<Stage.ConfigIssue> issues) {"}
+{"language": "java", "text": "public static double min( double[] values, final int start, final int length ) {"}
+{"language": "java", "text": "public boolean removeDimension(String dimName) {"}
+{"language": "java", "text": "public static String printContentValue(String value) {"}
+{"language": "java", "text": "static public Date getStandardDate(String text) {"}
+{"language": "java", "text": "public static INDArray max(INDArray first, INDArray second, boolean dup) {"}
+{"language": "java", "text": "private boolean argumentMatches(String classType, String propertyType) {"}
+{"language": "java", "text": "public boolean setProperty(String propname, boolean value)\n    {"}
+{"language": "java", "text": "public String findMessage(String bundleName, final Locale locale, final String key) {"}
+{"language": "java", "text": "default bundles\n\t\tfor (String bname : defaultBundles) {"}
+{"language": "java", "text": "private static Resource getOrCreateResource(final Resource parent, final PathElement element) {"}
+{"language": "java", "text": "public String getFormattedMessage() {"}
+{"language": "java", "text": "public ResponseSpecBuilder expectResponseTime(Matcher<Long> matcher, TimeUnit timeUnit) {"}
+{"language": "java", "text": "private void createLoginConfig(final Deployment dep, final JBossWebMetaData jbossWebMD) {"}
+{"language": "java", "text": "public void setZeiteinheit(PreisZeiteinheit.Zeiteinheit value) {"}
+{"language": "java", "text": "private File getStnFile(String location) {"}
+{"language": "java", "text": "public void compact() {"}
+{"language": "java", "text": "public static boolean containsOnlyWhitespaces(final CharSequence string) {"}
+{"language": "java", "text": "T fromMap( Map<String, Object> map, Class<T> clazz, String... excludeProperties ) {"}
+{"language": "java", "text": "else if (i >= 0)\n         {"}
+{"language": "java", "text": "then return it as an array\n      if (list.size() != 0)\n      {"}
+{"language": "java", "text": "private String generateFinalKey( String in ) {"}
+{"language": "java", "text": "public MediaType withParameter(String attribute, String value)\n\t{"}
+{"language": "java", "text": "public static void logLocation(){"}

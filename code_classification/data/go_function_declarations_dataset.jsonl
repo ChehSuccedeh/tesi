@@ -1,0 +1,337 @@
+{"language": "go", "text": "func goFileInfo(path, rel string)"}
+{"language": "go", "text": "func New(repo, pkg, name string)"}
+{"language": "go", "text": "func getHost(hostPort string)"}
+{"language": "go", "text": "func DumpProfile(profiles []*cover.Profile, writer io.Writer)"}
+{"language": "go", "text": "func NewGoogleClientFromSecret(bucket string) (Client, error)"}
+{"language": "go", "text": "func SetVariableValue(scopeNumber int64, variableName string, newValue *runtime.CallArgument, callFrameID CallFrameID)"}
+{"language": "go", "text": "func IsConnCanceled(err error)"}
+{"language": "go", "text": "func SetPaused(animations []string, paused bool)"}
+{"language": "go", "text": "func NewLeaseRevokeCommand()"}
+{"language": "go", "text": "func NewLoggingServeMux(conf Config)"}
+{"language": "go", "text": "func VerifyFormKV(key string, values ...string)"}
+{"language": "go", "text": "func ReplaceF(old, new string, n int) func(string)"}
+{"language": "go", "text": "func CreateImage(w, h, depth, channels int)"}
+{"language": "go", "text": "func CommandFilter(body string)"}
+{"language": "go", "text": "func getPipelineInfo(pachClient *client.APIClient, env *serviceenv.ServiceEnv) (*pps.PipelineInfo, error)"}
+{"language": "go", "text": "func New(s *etcdserver.EtcdServer)"}
+{"language": "go", "text": "func RemoveDuplicatesFromString(s string, sep string)"}
+{"language": "go", "text": "func LaunchContainers(c lxd.ContainerServer, count int, parallel int, image string, privileged bool, start bool, freeze bool) (time.Duration, error)"}
+{"language": "go", "text": "func NewGoogleClientFromEnv() (Client, error)"}
+{"language": "go", "text": "func NewValueParser(v interface{})"}
+{"language": "go", "text": "func newRoot()"}
+{"language": "go", "text": "func frameRangeMatches(frange string) ([][]string, error)"}
+{"language": "go", "text": "func PrintRepoHeader(w io.Writer, printAuth bool)"}
+{"language": "go", "text": "func fixMangledMediaType(mtype, sep string)"}
+{"language": "go", "text": "func convert(project, details string, url gcs.Path, result downloadResult) (resultstore.Invocation, resultstore.Target, resultstore.Test)"}
+{"language": "go", "text": "func NewPeer(name mesh.PeerName, uid mesh.PeerUID, logger mesh.Logger)"}
+{"language": "go", "text": "func NewTallyReporter(scope tally.Scope)"}
+{"language": "go", "text": "func HasPrefix(p, prefix string)"}
+{"language": "go", "text": "func typeToTyp3(rt reflect.Type, opts FieldOptions)"}
+{"language": "go", "text": "func GetByName(name string) (*App, error)"}
+{"language": "go", "text": "func NewAmazonClientFromSecret(bucket string, reversed ...bool) (Client, error)"}
+{"language": "go", "text": "func containerLoadFromAllProjects(s *state.State) ([]container, error)"}
+{"language": "go", "text": "func getBool(form url.Values, key string) (b bool, err error)"}
+{"language": "go", "text": "func MustSync(st, prevst pb.HardState, entsnum int)"}
+{"language": "go", "text": "func ParseUintHex(b []byte) (uint64, error)"}
+{"language": "go", "text": "func CompareInt(this, that unsafe.Pointer)"}
+{"language": "go", "text": "func defaultEnv(c *coreapi.Container, rawEnv map[string]string)"}
+{"language": "go", "text": "func NewProwJobWithAnnotation(spec prowapi.ProwJobSpec, labels, annotations map[string]string)"}
+{"language": "go", "text": "func prodOnlyMain(cfg config.Getter, o options, mux *http.ServeMux)"}
+{"language": "go", "text": "func authEnableCommandFunc(cmd *cobra.Command, args []string)"}
+{"language": "go", "text": "func GoogleServiceAccountCredentialsJSON(buf []byte)"}
+{"language": "go", "text": "func GetSystemErrorMessage(err error)"}
+{"language": "go", "text": "func setupMetadata() (result map[string]*metadata.Resource)"}
+{"language": "go", "text": "func ParseByteSizeString(input string) (int64, error)"}
+{"language": "go", "text": "func TraceQuad(t Liner, quad []float64, flatteningThreshold float64)"}
+{"language": "go", "text": "func MakeRaw(fd int) (*State, error)"}
+{"language": "go", "text": "func FileUploadWithMetadata(file string, metadata map[string]string)"}
+{"language": "go", "text": "func v2KeysURL(ep url.URL, prefix, key string)"}
+{"language": "go", "text": "func r1r2(word *snowballword.SnowballWord) (r1start, r2start int)"}
+{"language": "go", "text": "func RegisterPullRequestHandler(name string, fn PullRequestHandler, help HelpProvider)"}
+{"language": "go", "text": "func zfsPoolVolumeCreate(dataset string, properties ...string) (string, error)"}
+{"language": "go", "text": "func isLess(x, y reflect.Value)"}
+{"language": "go", "text": "func NewClient(config *ClientConfig) (*Client, error)"}
+{"language": "go", "text": "func CompareBS(this, that unsafe.Pointer)"}
+{"language": "go", "text": "func WrapHTML(s string, tag string, attrs map[string]string)"}
+{"language": "go", "text": "func ContourArea(contour *Seq, slice Slice, oriented int)"}
+{"language": "go", "text": "func fileExists(file string)"}
+{"language": "go", "text": "func RegisterInterruptHandler(h InterruptHandler)"}
+{"language": "go", "text": "func machineDestroy(w http.ResponseWriter, r *http.Request, token auth.Token) (err error)"}
+{"language": "go", "text": "func SetProgressReportInterval(newTimeout time.Duration)"}
+{"language": "go", "text": "func CreateMsgType(alist []AttrListTuple, familyId uint16)"}
+{"language": "go", "text": "func NewWatcher(ctx context.Context, client *etcd.Client, trimPrefix, prefix string, template proto.Message, opts ...OpOption) (Watcher, error)"}
+{"language": "go", "text": "func NewDryRunProwJobClient(deckURL string)"}
+{"language": "go", "text": "func SortSlices(lessFunc interface{})"}
+{"language": "go", "text": "func defaultArguments(t *buildv1alpha1.TemplateInstantiationSpec, rawEnv map[string]string)"}
+{"language": "go", "text": "func loadFromFile(filename string) (*clientcmdConfig, error)"}
+{"language": "go", "text": "func Open(dir string) (*sql.DB, error)"}
+{"language": "go", "text": "func EachLike(content interface{}, minRequired int)"}
+{"language": "go", "text": "func NewOptionalBool(b bool)"}
+{"language": "go", "text": "func formatTime(tm time.Time)"}
+{"language": "go", "text": "func before(i, j ScheduleItem)"}
+{"language": "go", "text": "func fromContext(ctx netcontext.Context)"}
+{"language": "go", "text": "func NewValue(typ querypb.Type, val []byte) (v Value, err error)"}
+{"language": "go", "text": "func setPeerURLsHeader(req *http.Request, urls types.URLs)"}
+{"language": "go", "text": "func Embedded(orig, flat json.RawMessage) (*Document, error)"}
+{"language": "go", "text": "func PathToTree(path string, numTrees int64)"}
+{"language": "go", "text": "func cleanDescription(doc string)"}
+{"language": "go", "text": "func StorageVolumeConfigClear(tx *sql.Tx, volumeID int64)"}
+{"language": "go", "text": "func Copy(a []byte)"}
+{"language": "go", "text": "func RegisterReviewEventHandler(name string, fn ReviewEventHandler, help HelpProvider)"}
+{"language": "go", "text": "func GetSHA256(name string)"}
+{"language": "go", "text": "func unlinkGRs()"}
+{"language": "go", "text": "func ContainerConfigInsert(tx *sql.Tx, id int, config map[string]string)"}
+{"language": "go", "text": "func Camelize(s string)"}
+{"language": "go", "text": "func FixLoads(f *rule.File, knownLoads []rule.LoadInfo)"}
+{"language": "go", "text": "func destructivelyPrioritizeReplacementCandidatesWithMax(cs []CandidateWithTime, primaryDigest, uncompressedDigest digest.Digest, maxCandidates int)"}
+{"language": "go", "text": "func LoginCmd(noMetrics, noPortForwarding *bool)"}
+{"language": "go", "text": "func DetermineRaftNode(tx *db.NodeTx) (*db.RaftNode, error)"}
+{"language": "go", "text": "func endpointMemoryMetrics(host string)"}
+{"language": "go", "text": "func WriteTarget(t string)"}
+{"language": "go", "text": "func Bootstrap(state *state.State, gateway *Gateway, name string)"}
+{"language": "go", "text": "func RegisterIssueCommentHandler(name string, fn IssueCommentHandler, help HelpProvider)"}
+{"language": "go", "text": "func backoff(rand *rand.Rand, attempt int, min, max time.Duration)"}
+{"language": "go", "text": "func ClearData(name string, muts ...interface{}) (result ManageDataBuilder)"}
+{"language": "go", "text": "func StartContainers(c lxd.ContainerServer, containers []api.Container, parallel int) (time.Duration, error)"}
+{"language": "go", "text": "func DiscoverDNS(address string) ([]string, error)"}
+{"language": "go", "text": "func SetPflagsFromEnv(prefix string, fs *pflag.FlagSet)"}
+{"language": "go", "text": "func createSystemdLogfile(service string, outputMode string, outputDir string)"}
+{"language": "go", "text": "func New(ja *jobs.JobAgent, cfg config.Getter, c *storage.Client, ctx context.Context)"}
+{"language": "go", "text": "func NewApprovers(owners Owners)"}
+{"language": "go", "text": "func Normalize(payload APIParams, name string, v interface{}) (APIParams, error)"}
+{"language": "go", "text": "func GetStateCmd(noMetrics, noPortForwarding *bool)"}
+{"language": "go", "text": "func checkMultiArg(v reflect.Value) (m multiArgType, elemType reflect.Type)"}
+{"language": "go", "text": "func determineTimeout(spec *buildv1alpha1.BuildSpec, dc *prowjobv1.DecorationConfig, defaultTimeout time.Duration)"}
+{"language": "go", "text": "func Wrap(w http.ResponseWriter, hooks Hooks)"}
+{"language": "go", "text": "func CountAll(tx *sql.Tx) (map[string]int, error)"}
+{"language": "go", "text": "func ExecutableFolder() (string, error)"}
+{"language": "go", "text": "func Core(proc *core.Process) (p *Process, err error)"}
+{"language": "go", "text": "func Or(a, b *Authorizer)"}
+{"language": "go", "text": "func checkBalance(tokens []ExpressionToken)"}
+{"language": "go", "text": "func serverCdromPath(dcid, srvid, cdid string)"}
+{"language": "go", "text": "func MatchRegexp(regexp string, args ...interface{})"}
+{"language": "go", "text": "func NewPlanValue(node Expr) (sqltypes.PlanValue, error)"}
+{"language": "go", "text": "func ServerTLSConfig(cert *shared.CertInfo)"}
+{"language": "go", "text": "func NewStringFormatter(format string) (Formatter, error)"}
+{"language": "go", "text": "func acquireDirectoryLock(dirPath string, pidFileName string, readOnly bool) (*directoryLockGuard, error)"}
+{"language": "go", "text": "func Open(addr, dbname string) (storage *Storage, err error)"}
+{"language": "go", "text": "func findRegions(word *snowballword.SnowballWord) (r1start, r2start, rvstart int)"}
+{"language": "go", "text": "func NewLockCommand()"}
+{"language": "go", "text": "func applyChangeSet(build *Manifest, changeSet *pb.ManifestChangeSet)"}
+{"language": "go", "text": "func getReleaseNote(body string)"}
+{"language": "go", "text": "func parseDosTime(t uint32)"}
+{"language": "go", "text": "func newPRMExactRepository(dockerRepository string) (*prmExactRepository, error)"}
+{"language": "go", "text": "func checkStreamSupport(v *semver.Version, t streamType)"}
+{"language": "go", "text": "func Wrap(max int, strs ...string)"}
+{"language": "go", "text": "func queryCurrentVersion(tx *sql.Tx) (int, error)"}
+{"language": "go", "text": "func NewAngularWriter() (*AngularWriter, error)"}
+{"language": "go", "text": "func Add(src1, src2, dst *IplImage)"}
+{"language": "go", "text": "func NewLexerString(s string, posix, whitespacesplit bool)"}
+{"language": "go", "text": "func NewGetCommand()"}
+{"language": "go", "text": "func NewBlockAPIServer(dir string, cacheBytes int64, backend string, etcdAddress string) (BlockAPIServer, error)"}
+{"language": "go", "text": "func NewInlineQueryResultArticle(id, title, text string)"}
+{"language": "go", "text": "func APICall(ctx context.Context, service, method string, in, out proto.Message)"}
+{"language": "go", "text": "func PresubmitToJobSpec(pre config.Presubmit)"}
+{"language": "go", "text": "func SetDeviceMetricsOverride(width int64, height int64, deviceScaleFactor float64, mobile bool)"}
+{"language": "go", "text": "func DefaultCache(sys *types.SystemContext)"}
+{"language": "go", "text": "func NewWatcher(w clientv3.Watcher, prefix string)"}
+{"language": "go", "text": "func AddDummyV2S1Signature(manifest []byte) ([]byte, error)"}
+{"language": "go", "text": "func NewAmazonClientFromEnv() (Client, error)"}
+{"language": "go", "text": "func APIURL(uuid string, labels []string, env string)"}
+{"language": "go", "text": "func NewSharder(discoveryClient discovery.Client, numShards uint64, namespace string)"}
+{"language": "go", "text": "func findFakeFunctionFor(fako string) func()"}
+{"language": "go", "text": "func Match(rules []*rule.Rule, x *rule.Rule, info rule.KindInfo) (*rule.Rule, error)"}
+{"language": "go", "text": "func StreamClientInterceptor()"}
+{"language": "go", "text": "func AcquireApplicationLockWait(appName string, owner string, reason string, timeout time.Duration) (bool, error)"}
+{"language": "go", "text": "func NewCronInput(name string, spec string)"}
+{"language": "go", "text": "func CloseAndReportTraces()"}
+{"language": "go", "text": "func OpenDir(path string) (*os.File, error)"}
+{"language": "go", "text": "func New(handler http.Handler, options ...Option) (h *Handler)"}
+{"language": "go", "text": "func OAuthConsumerKey(c context.Context) (string, error)"}
+{"language": "go", "text": "func localCreateListener(path string, group string) (net.Listener, error)"}
+{"language": "go", "text": "func printInternalRaftRequest(entry raftpb.Entry)"}
+{"language": "go", "text": "func GetNoDial(ctx context.Context) (nodial bool, reason string)"}
+{"language": "go", "text": "func clean(p string)"}
+{"language": "go", "text": "func SetLogger(out io.Writer, prefix string, flag int, debug bool)"}
+{"language": "go", "text": "func ReplacePattern(s, pattern, repl string)"}
+{"language": "go", "text": "func loggingMiddleware(next http.Handler)"}
+{"language": "go", "text": "func MarshalPrivateKey(k PrivKey) ([]byte, error)"}
+{"language": "go", "text": "func newVM(mem []byte)"}
+{"language": "go", "text": "func serve(jc *jenkins.Client)"}
+{"language": "go", "text": "func GoTemplateEngine(input string, data map[string]interface{}, helpers map[string]interface{}) (string, error)"}
+{"language": "go", "text": "func load(data []byte) (*clientcmdConfig, error)"}
+{"language": "go", "text": "func LoadSecrets(paths []string) (map[string][]byte, error)"}
+{"language": "go", "text": "func validIndexNameOrDocID(s string)"}
+{"language": "go", "text": "func parseSequenceOf(bytes []byte, sliceType reflect.Type, elemType reflect.Type) (ret reflect.Value, err error)"}
+{"language": "go", "text": "func IsEnabled()"}
+{"language": "go", "text": "func String(s string, args ...interface{})"}
+{"language": "go", "text": "func RespondWithJSONEncodedPtr(statusCode *int, object interface{}, optionalHeader ...http.Header)"}
+{"language": "go", "text": "func GetHashTreeTag(pachClient *client.APIClient, storageRoot string, treeRef *pfs.Tag) (HashTree, error)"}
+{"language": "go", "text": "func New(apiKey string) (*TelegramBotAPI, error)"}
+{"language": "go", "text": "func IsUnexportedField(field reflect.StructField)"}
+{"language": "go", "text": "func JUnitReportXML(report *parser.Report, noXMLHeader bool, goVersion string, w io.Writer)"}
+{"language": "go", "text": "func VerifyProtoRepresenting(expected proto.Message)"}
+{"language": "go", "text": "func patchShrinkLogsDBFile(name string, d *Daemon)"}
+{"language": "go", "text": "func NewConsumerFromClient(client *Client, groupID string, topics []string) (*Consumer, error)"}
+{"language": "go", "text": "func autoScaleHistoryHandler(w http.ResponseWriter, r *http.Request, t auth.Token)"}
+{"language": "go", "text": "func JoinPage(url string, options ...Option)"}
+{"language": "go", "text": "func decodeYaml(r io.Reader, v interface{})"}
+{"language": "go", "text": "func TokenHandler(next http.Handler, cnf web.Config)"}
+{"language": "go", "text": "func newBoundaryReader(reader *bufio.Reader, boundary string)"}
+{"language": "go", "text": "func writeClean(buf *bytes.Buffer, v string)"}
+{"language": "go", "text": "func storagePoolVolumeTypePost(d *Daemon, r *http.Request, volumeTypeName string)"}
+{"language": "go", "text": "func Open(opt Options) (db *DB, err error)"}
+{"language": "go", "text": "func Printf(format string, val ...interface{})"}
+{"language": "go", "text": "func Open(dbpath string)"}
+{"language": "go", "text": "func IsDirWriteable(dir string)"}
+{"language": "go", "text": "func ChompRight(s, suffix string)"}
+{"language": "go", "text": "func WriteTabularData(interval time.Duration, r results.ResultSet, w io.Writer)"}
+{"language": "go", "text": "func New(opts *Options) (*genny.Generator, error)"}
+{"language": "go", "text": "func NewCert(certfile, keyfile string, parseFunc func([]byte, []byte) (tls.Certificate, error)) (*tls.Certificate, error)"}
+{"language": "go", "text": "func ForwardedResponseIfContainerIsRemote(d *Daemon, r *http.Request, project, name string) (Response, error)"}
+{"language": "go", "text": "func ConfigKeyChecker(key string) (func(value string) error, error)"}
+{"language": "go", "text": "func NewDelCommand()"}
+{"language": "go", "text": "func validateActivationCode(code string) (expiration time.Time, err error)"}
+{"language": "go", "text": "func shouldPrune(log *logrus.Entry) func(github.IssueComment)"}
+{"language": "go", "text": "func Images(opts *AssetOpts)"}
+{"language": "go", "text": "func newImageDestination(ref ostreeReference, tmpDirPath string) (types.ImageDestination, error)"}
+{"language": "go", "text": "func FileSequence_Index(id FileSeqId, frame int)"}
+{"language": "go", "text": "func dirname(path string)"}
+{"language": "go", "text": "func NewTrackedBuffer(nodeFormatter NodeFormatter)"}
+{"language": "go", "text": "func containerCreateAsEmpty(d *Daemon, args db.ContainerArgs) (container, error)"}
+{"language": "go", "text": "func Read(lg *zap.Logger, snapname string) (*raftpb.Snapshot, error)"}
+{"language": "go", "text": "func findGoTool()"}
+{"language": "go", "text": "func ConvertImage(src, dst unsafe.Pointer, flags int)"}
+{"language": "go", "text": "func removeStr(ss *[]string, s string)"}
+{"language": "go", "text": "func DescribeEntries(ents []pb.Entry, f EntryFormatter)"}
+{"language": "go", "text": "func SetMockService(m *MockService)"}
+{"language": "go", "text": "func GetExecutablePath() (string, error)"}
+{"language": "go", "text": "func newObjBlockAPIServer(dir string, cacheBytes int64, etcdAddress string, objClient obj.Client, test bool) (*objBlockAPIServer, error)"}
+{"language": "go", "text": "func platformAdd(w http.ResponseWriter, r *http.Request, t auth.Token) (err error)"}
+{"language": "go", "text": "func parseFuncName(fnName string) (packagePath, signature string)"}
+{"language": "go", "text": "func NewRoundTripper(tlsInfo transport.TLSInfo, dialTimeout time.Duration) (http.RoundTripper, error)"}
+{"language": "go", "text": "func OpenManaged(opts Options) (*DB, error)"}
+{"language": "go", "text": "func Lease(c context.Context, maxTasks int, queueName string, leaseTime int) ([]*Task, error)"}
+{"language": "go", "text": "func URLsFromFlag(fs *flag.FlagSet, urlsFlagName string)"}
+{"language": "go", "text": "func newMinioWriter(ctx context.Context, client *minioClient, name string)"}
+{"language": "go", "text": "func LimitListener(l net.Listener, n int)"}
+{"language": "go", "text": "func NewMemoryStore(config MemoryConfig) (*MemoryStore, error)"}
+{"language": "go", "text": "func EncodeValue(buf *bytes.Buffer, value *querypb.BindVariable)"}
+{"language": "go", "text": "func NewClientWriter() (*ClientWriter, error)"}
+{"language": "go", "text": "func DispatchSyncEvent(origin string, registrationID RegistrationID, tag string, lastChance bool)"}
+{"language": "go", "text": "func Warnf(format string, args ...interface{})"}
+{"language": "go", "text": "func Match(s, pattern string)"}
+{"language": "go", "text": "func NewStorage(r storage.PersistenceLayer, storage string) (*Storage, error)"}
+{"language": "go", "text": "func DialTimeout(ctx context.Context, protocol, addr string, timeout time.Duration) (*Conn, error)"}
+{"language": "go", "text": "func newCommitment(commitCh chan struct{}, configuration Configuration, startIndex uint64)"}
+{"language": "go", "text": "func GRPCServer(s Server, options ...grpc.ServerOption)"}
+{"language": "go", "text": "func Decode(expected VersionByte, src string) ([]byte, error)"}
+{"language": "go", "text": "func WithBlacklist(b Blacklist)"}
+{"language": "go", "text": "func yamlToConfig(path string, nc interface{})"}
+{"language": "go", "text": "func newPRSignedByKeyPath(keyType sbKeyType, keyPath string, signedIdentity PolicyReferenceMatch) (*prSignedBy, error)"}
+{"language": "go", "text": "func NewV1()"}
+{"language": "go", "text": "func newImageDestination(imageRef storageReference) (*storageImageDestination, error)"}
+{"language": "go", "text": "func createUntarTempDir(ref ociArchiveReference) (tempDirOCIRef, error)"}
+{"language": "go", "text": "func NewCharsetReader(charset string, input io.Reader) (io.Reader, error)"}
+{"language": "go", "text": "func tryMount(src string, dst string, fs string, flags uintptr, options string)"}
+{"language": "go", "text": "func NewEvaluableExpressionWithFunctions(expression string, functions map[string]ExpressionFunction) (*EvaluableExpression, error)"}
+{"language": "go", "text": "func concatArgs(args ...interface{})"}
+{"language": "go", "text": "func newApplySource(seed string)"}
+{"language": "go", "text": "func Find(x tree.Node, p pathexpr.PathExpr)"}
+{"language": "go", "text": "func NoErrorWithinTRetry(tb testing.TB, t time.Duration, f func() error, msgAndArgs ...interface{})"}
+{"language": "go", "text": "func DecodeFloat32(bz []byte) (f float32, n int, err error)"}
+{"language": "go", "text": "func storagePoolValidateClusterConfig(reqConfig map[string]string)"}
+{"language": "go", "text": "func FrameSet_String(id FrameSetId) (str *C.char)"}
+{"language": "go", "text": "func TriggerIncidentKeyWithDetails(description string, key string, details map[string]interface{}) (incidentKey string, err error)"}
+{"language": "go", "text": "func Mmap(fd *os.File, writable bool, size int64) ([]byte, error)"}
+{"language": "go", "text": "func Humanize(s string)"}
+{"language": "go", "text": "func Parse(pkg *ast.Package, name string) (*Mapping, error)"}
+{"language": "go", "text": "func GetPrivateHostIPs() ([]net.IP, error)"}
+{"language": "go", "text": "func upsertConfig(tx *sql.Tx, table string, values map[string]string)"}
+{"language": "go", "text": "func RightF(n int) func(string)"}
+{"language": "go", "text": "func storagePoolVolumesGet(d *Daemon, r *http.Request)"}
+{"language": "go", "text": "func StreamClientInterceptor(log ttnlog.Interface)"}
+{"language": "go", "text": "func reconcile(c reconciler, key string)"}
+{"language": "go", "text": "func derefPointers(rv reflect.Value) (drv reflect.Value, isPtr bool, isNilPtr bool)"}
+{"language": "go", "text": "func WithExecutor(parent context.Context, executor Executor)"}
+{"language": "go", "text": "func Get(name string) (Router, error)"}
+{"language": "go", "text": "func LoadMacroData(path, pkg, defName string, data []byte) (*File, error)"}
+{"language": "go", "text": "func NewEvaluableExpressionFromTokens(tokens []ExpressionToken) (*EvaluableExpression, error)"}
+{"language": "go", "text": "func FinalHandlerFunc(h func(w http.ResponseWriter, r *http.Request)) func(http.Handler)"}
+{"language": "go", "text": "func CreateMatND(sizes []int, type_ int)"}
+{"language": "go", "text": "func ErrorHandler(errs Errors, resp http.ResponseWriter)"}
+{"language": "go", "text": "func getIDs(lg *zap.Logger, snap *raftpb.Snapshot, ents []raftpb.Entry)"}
+{"language": "go", "text": "func newFlash(session *Session)"}
+{"language": "go", "text": "func ParseEndpoint(endpoint string) (proto string, host string, scheme string)"}
+{"language": "go", "text": "func HTTPClient(client *http.Client)"}
+{"language": "go", "text": "func ModifyLease(c context.Context, task *Task, queueName string, leaseTime int)"}
+{"language": "go", "text": "func readstr(pos uint32)"}
+{"language": "go", "text": "func FrameSet_Start(id FrameSetId)"}
+{"language": "go", "text": "func serviceInstance(w http.ResponseWriter, r *http.Request, t auth.Token)"}
+{"language": "go", "text": "func Pad(s, c string, n int)"}
+{"language": "go", "text": "func NewAPIAnalyzer(version, clientName string, resources, types map[string]map[string]interface{})"}
+{"language": "go", "text": "func ExplainCmd()"}
+{"language": "go", "text": "func RetryNotify(operation Operation, b BackOff, notify Notify)"}
+{"language": "go", "text": "func NewWindow(name string, flags ...int)"}
+{"language": "go", "text": "func LookupIP(ctx context.Context, host string) (addrs []net.IP, err error)"}
+{"language": "go", "text": "func NewCreateAccountResult(code CreateAccountResultCode, value interface{}) (result CreateAccountResult, err error)"}
+{"language": "go", "text": "func UserId(name string) (int, error)"}
+{"language": "go", "text": "func addSSHKeys(paths []string) ([]string, error)"}
+{"language": "go", "text": "func NewStore(lg *zap.Logger, b backend.Backend, le lease.Lessor, ig ConsistentIndexGetter)"}
+{"language": "go", "text": "func Template(c string, names ...string)"}
+{"language": "go", "text": "func remapError(err error)"}
+{"language": "go", "text": "func NewBase(configs ...baseConfigFunc)"}
+{"language": "go", "text": "func NewChildCursor(tx *bolt.Tx, path string)"}
+{"language": "go", "text": "func NewFrame(payloadCapacity int)"}
+{"language": "go", "text": "func LoadConfig(path string) (*ClientConfig, error)"}
+{"language": "go", "text": "func ParseToken(header string) (string, error)"}
+{"language": "go", "text": "func delCommandFunc(cmd *cobra.Command, args []string)"}
+{"language": "go", "text": "func advanceToFirstEntry(scanner *bufio.Scanner)"}
+{"language": "go", "text": "func ParseExec(xpstr string, t tree.Node, opts ...FuncOpts) (tree.Result, error)"}
+{"language": "go", "text": "func Extractor(e request.Extractor)"}
+{"language": "go", "text": "func NewHTTPError(code int, formatStr string, args ...interface{})"}
+{"language": "go", "text": "func Repair(lg *zap.Logger, dirpath string)"}
+{"language": "go", "text": "func DetectCompression(input io.Reader) (DecompressorFunc, io.Reader, error)"}
+{"language": "go", "text": "func getCredentials(o options)"}
+{"language": "go", "text": "func NewMicrosoftClientFromSecret(container string) (Client, error)"}
+{"language": "go", "text": "func NewStorage(objC obj.Client, prefix string)"}
+{"language": "go", "text": "func NewS64(seed uint64) (xx *XXHash64)"}
+{"language": "go", "text": "func readuint32(pos uint32)"}
+{"language": "go", "text": "func readFilter5Data(br bitReader) (int, error)"}
+{"language": "go", "text": "func CloneLogPath(logMount coreapi.VolumeMount)"}
+{"language": "go", "text": "func DataSize(str string)"}
+{"language": "go", "text": "func NewSMTP(filename string, environment string) (s *SMTP, err error)"}
+{"language": "go", "text": "func ChunkReader(r io.Reader, f func([]byte) error) (int, error)"}
+{"language": "go", "text": "func PadFrameRange(frange *C.char, pad int)"}
+{"language": "go", "text": "func imports(ctxt *build.Context, srcDir string, gopath []string) (map[string]string, error)"}
+{"language": "go", "text": "func readFromHTTP(targetURL *url.URL) (string, error)"}
+{"language": "go", "text": "func LoadClusterConfigs(kubeconfig, buildCluster string) (map[string]rest.Config, error)"}
+{"language": "go", "text": "func makeShield(subject, status, color string)"}
+{"language": "go", "text": "func Claimer(c func(claims *jwt.StandardClaims) jwt.Claims)"}
+{"language": "go", "text": "func NewWrappedSystemError(code SystemErrCode, wrapped error)"}
+{"language": "go", "text": "func GetTags(prefix rune, str string, terminator ...rune) (tags []Tag)"}
+{"language": "go", "text": "func safeCgoName(s string, spaces bool)"}
+{"language": "go", "text": "func NewStreamEncoder(e Emitter)"}
+{"language": "go", "text": "func NewWatcher()"}
+{"language": "go", "text": "func NewFile(rawurl string, c *Config) (*File, error)"}
+{"language": "go", "text": "func PeriodicToJobSpec(periodic config.Periodic)"}
+{"language": "go", "text": "func ValidateConfig(configs []common.ResourcesConfig, resources []common.Resource)"}
+{"language": "go", "text": "func updateNodeVersion(tx *sql.Tx, address string, apiExtensions int)"}
+{"language": "go", "text": "func Validate(svc *parser.Service)"}
+{"language": "go", "text": "func selectPackage(c *config.Config, dir string, packageMap map[string]*goPackage) (*goPackage, error)"}
+{"language": "go", "text": "func getContainerMountPoint(project string, poolName string, containerName string)"}
+{"language": "go", "text": "func profilesGet(d *Daemon, r *http.Request)"}
+{"language": "go", "text": "func GetIdmapSet()"}
+{"language": "go", "text": "func main()"}
+{"language": "go", "text": "func listAppRouters(w http.ResponseWriter, r *http.Request, t auth.Token)"}
+{"language": "go", "text": "func AddRule(styleSheetID StyleSheetID, ruleText string, location *SourceRange)"}
+{"language": "go", "text": "func parseUTCTime(bytes []byte) (ret time.Time, err error)"}
+{"language": "go", "text": "func cloneEnv(opt clonerefs.Options) ([]coreapi.EnvVar, error)"}
+{"language": "go", "text": "func coalesceInterveningIdentical(groups []diffStats, windowSize int)"}
+{"language": "go", "text": "func findRegions(word *snowballword.SnowballWord) (r1start, r2start, rvstart int)"}
+{"language": "go", "text": "func ModifyAdminsCmd(noMetrics, noPortForwarding *bool)"}
+{"language": "go", "text": "func MinAreaRect(points unsafe.Pointer)"}
+{"language": "go", "text": "func nodeHealingRead(w http.ResponseWriter, r *http.Request, t auth.Token)"}
+{"language": "go", "text": "func Register(registrar tchannel.Registrar, funcs Handlers, onError func(context.Context, error))"}
+{"language": "go", "text": "func NewZipWalker(zipFile string)"}
+{"language": "go", "text": "func LogClose(c io.Closer)"}

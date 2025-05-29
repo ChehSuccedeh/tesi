@@ -1,0 +1,817 @@
+{"language": "javascript", "text": "function Node(type, parent)"}
+{"language": "javascript", "text": "function bind(fn)"}
+{"language": "javascript", "text": "function sortImages()"}
+{"language": "javascript", "text": "function convertToJSContent(script, template, style, fileName, filePath)"}
+{"language": "javascript", "text": "function getCurrentScriptBase()"}
+{"language": "javascript", "text": "function compileNode(ast)"}
+{"language": "javascript", "text": "function multiresNodeSort(a, b)"}
+{"language": "javascript", "text": "function parse(str)"}
+{"language": "javascript", "text": "function StoreManager(options)"}
+{"language": "javascript", "text": "function toImageData (colors)"}
+{"language": "javascript", "text": "function disableOthers(list, track)"}
+{"language": "javascript", "text": "function getTouchingWord(sourceFile, position)"}
+{"language": "javascript", "text": "function ExecutionProfile(name, options)"}
+{"language": "javascript", "text": "function findSourceFile(fileName, isDefaultLib, refFile, refPos, refEnd)"}
+{"language": "javascript", "text": "function getSourceFileFromCache(fileName, useAbsolutePath)"}
+{"language": "javascript", "text": "function Bucket (index, routingTable)"}
+{"language": "javascript", "text": "function encodeName(name)"}
+{"language": "javascript", "text": "function abort (q, err)"}
+{"language": "javascript", "text": "function TableMetadata(name)"}
+{"language": "javascript", "text": "function preorder(node, nodeIndex, parent)"}
+{"language": "javascript", "text": "function getKnexInstance(config, registry = _registry, logger = console)"}
+{"language": "javascript", "text": "function get_data (callback)"}
+{"language": "javascript", "text": "function status(job)"}
+{"language": "javascript", "text": "function addSignatureHeaders(body, headers, keyId, key)"}
+{"language": "javascript", "text": "function concatenateFactory()"}
+{"language": "javascript", "text": "function concatenate(node, index, parent)"}
+{"language": "javascript", "text": "function one(node)"}
+{"language": "javascript", "text": "function done()"}
+{"language": "javascript", "text": "function checkAssociatedType(desc, o)"}
+{"language": "javascript", "text": "function setDOM (oldNode, newNode)"}
+{"language": "javascript", "text": "function fp()"}
+{"language": "javascript", "text": "function pushStringParam(string, type)"}
+{"language": "javascript", "text": "function iterate(value, callback, accumulate, assign)"}
+{"language": "javascript", "text": "function newIteration(index)"}
+{"language": "javascript", "text": "function aboutMessage(event)"}
+{"language": "javascript", "text": "function doGet(store, key, options = {})"}
+{"language": "javascript", "text": "function Lru(options)"}
+{"language": "javascript", "text": "function suiteHeader(name, depth)"}
+{"language": "javascript", "text": "function parse(tokens)"}
+{"language": "javascript", "text": "function describeModuleFactory (modulePath, specDefinitions)"}
+{"language": "javascript", "text": "function es2020 (filename, options)"}
+{"language": "javascript", "text": "function write (buf, enc, next)"}
+{"language": "javascript", "text": "function end ()"}
+{"language": "javascript", "text": "function createListeners(handlerList)"}
+{"language": "javascript", "text": "function loop(func)"}
+{"language": "javascript", "text": "function Message (opts)"}
+{"language": "javascript", "text": "function readConfigFile(fileName, readFile)"}
+{"language": "javascript", "text": "function Node(val, type, parent)"}
+{"language": "javascript", "text": "function popupWithPost(url, postData, name, options, callback)"}
+{"language": "javascript", "text": "function openWithPostData(popupUrl, popupName, optionsString)"}
+{"language": "javascript", "text": "function Group(options)"}
+{"language": "javascript", "text": "function initData(tx, data)"}
+{"language": "javascript", "text": "function castQueryParams (relId, data, { relationships })"}
+{"language": "javascript", "text": "function explode(store, data)"}
+{"language": "javascript", "text": "function ReduceComputedProperty(options)"}
+{"language": "javascript", "text": "function initTouchEvent(touchEvent, type, touches)"}
+{"language": "javascript", "text": "function isInAstralSet(code, set)"}
+{"language": "javascript", "text": "function generateSignature(secretKey, method, contentMd5, contentType, date, canonicalizedHeaders, canonicalizedResource)"}
+{"language": "javascript", "text": "function findSlotable(slot)"}
+{"language": "javascript", "text": "function indexOfIgnoringCase(string, value)"}
+{"language": "javascript", "text": "function isBetween(p, left, right)"}
+{"language": "javascript", "text": "function fetchBranches(repoState, driver)"}
+{"language": "javascript", "text": "function refreshWorkingStates(repoState)"}
+{"language": "javascript", "text": "function remarkHljs({ aliases })"}
+{"language": "javascript", "text": "function unbatchedUpdates(fn)"}
+{"language": "javascript", "text": "function render(type, quality)"}
+{"language": "javascript", "text": "function Seven(_a)"}
+{"language": "javascript", "text": "function formatSet(value, options)"}
+{"language": "javascript", "text": "function toggleClass(element, classToToggle, predicate)"}
+{"language": "javascript", "text": "function pcorr()"}
+{"language": "javascript", "text": "function parseFragment(markup, contextElement)"}
+{"language": "javascript", "text": "function Response(options)"}
+{"language": "javascript", "text": "function createComplexTemplate ( templateLanguage, options )"}
+{"language": "javascript", "text": "function checkValue (val, expectedType, name)"}
+{"language": "javascript", "text": "function applyMultiSignatures(_txObj, i, signatures, redeemScript)"}
+{"language": "javascript", "text": "function copyTemplateMulti (fromDir, toDir, nameGlob)"}
+{"language": "javascript", "text": "function PluginInfo(dirname)"}
+{"language": "javascript", "text": "function each(obj, cb)"}
+{"language": "javascript", "text": "function PubSub (pub, sub)"}
+{"language": "javascript", "text": "function start()"}
+{"language": "javascript", "text": "function _constructor(host, port, schema, adapter, user, password, database, identity)"}
+{"language": "javascript", "text": "function pushFileToRealDevice (device, remotePath, base64Data)"}
+{"language": "javascript", "text": "function getTokenAtPositionWorker(sourceFile, position, allowPositionInLeadingTrivia, includeItemAtEndPosition)"}
+{"language": "javascript", "text": "function callOnce (fn)"}
+{"language": "javascript", "text": "function onceWrapper (err)"}
+{"language": "javascript", "text": "function addPropertiesAndMethodsToModule(sModuleId, aDependencies, fpCallback)"}
+{"language": "javascript", "text": "function success(mapping)"}
+{"language": "javascript", "text": "function convert(integer)"}
+{"language": "javascript", "text": "function processEach(value, data)"}
+{"language": "javascript", "text": "function multipart (handler, done, opts)"}
+{"language": "javascript", "text": "function wrap (field, file, filename, encoding, mimetype)"}
+{"language": "javascript", "text": "function waitForFiles (err)"}
+{"language": "javascript", "text": "function TransportDecorator (Transport)"}
+{"language": "javascript", "text": "function TelemetryTransport (contact, options)"}
+{"language": "javascript", "text": "function registerClass(nameOrOpts, claz)"}
+{"language": "javascript", "text": "function requireBrocfile(brocfilePath)"}
+{"language": "javascript", "text": "function resolve(name)"}
+{"language": "javascript", "text": "function aggregateOwnedThrowStatements(node)"}
+{"language": "javascript", "text": "function aggregate(node)"}
+{"language": "javascript", "text": "function Event(name, attributes)"}
+{"language": "javascript", "text": "function alter_query_object(mode, query_object, alter_params)"}
+{"language": "javascript", "text": "function selectBestInvalidOverloadIndex(candidates, argumentCount)"}
+{"language": "javascript", "text": "function possiblyFetch (id, plugins_dir, options)"}
+{"language": "javascript", "text": "function getBucketTagging(params, callback)"}
+{"language": "javascript", "text": "function tryExit(state, depth)"}
+{"language": "javascript", "text": "function http_basic (username, password)"}
+{"language": "javascript", "text": "function Connection(uri, options)"}
+{"language": "javascript", "text": "function DescriptionsButton(player, options, ready)"}
+{"language": "javascript", "text": "function getElmPackageSourceDirectories(baseDir, currentDir)"}
+{"language": "javascript", "text": "function textTracksToJson(tech)"}
+{"language": "javascript", "text": "function sigletonify (inst)"}
+{"language": "javascript", "text": "function _cssFromMediaObject(mediaMap, options)"}
+{"language": "javascript", "text": "function gulpRebound(options)"}
+{"language": "javascript", "text": "function checkLazyElements(force)"}
+{"language": "javascript", "text": "function createCliOptions(cliObject)"}
+{"language": "javascript", "text": "function collect(val, memo)"}
+{"language": "javascript", "text": "function getModuleFileByShortName(lmdDir, shortName)"}
+{"language": "javascript", "text": "function copyFileSync(source, destination)"}
+{"language": "javascript", "text": "function Queue (opts)"}
+{"language": "javascript", "text": "function transform (opts)"}
+{"language": "javascript", "text": "function RpcMessage(opts)"}
+{"language": "javascript", "text": "function uniqNoSet(arr)"}
+{"language": "javascript", "text": "function getImageSearchResults(searchTerm, callback, start, num)"}
+{"language": "javascript", "text": "function onDocumentKeyPress(event)"}
+{"language": "javascript", "text": "function inspectProgram(emitted)"}
+{"language": "javascript", "text": "function inspectProgramChild(programChild)"}
+{"language": "javascript", "text": "function report(messageText)"}
+{"language": "javascript", "text": "function postcss()"}
+{"language": "javascript", "text": "function valueParserNodesLength (length, operator = '===')"}
+{"language": "javascript", "text": "function run(inch_args, options)"}
+{"language": "javascript", "text": "function Change(options)"}
+{"language": "javascript", "text": "function toNLCST(tree, file, Parser)"}
+{"language": "javascript", "text": "function find(node)"}
+{"language": "javascript", "text": "function findAll(children)"}
+{"language": "javascript", "text": "function flatten(node)"}
+{"language": "javascript", "text": "function flattenAll(children)"}
+{"language": "javascript", "text": "function add(node)"}
+{"language": "javascript", "text": "function implicit(children)"}
+{"language": "javascript", "text": "function one(node)"}
+{"language": "javascript", "text": "function all(children)"}
+{"language": "javascript", "text": "function patch(nodes, location, offset)"}
+{"language": "javascript", "text": "function oscillatorPlayer (ctx, defaultOptions)"}
+{"language": "javascript", "text": "function clearCache()"}
+{"language": "javascript", "text": "function SchemaFunction()"}
+{"language": "javascript", "text": "function exponential(str, options, fn)"}
+{"language": "javascript", "text": "function offset(array, node)"}
+{"language": "javascript", "text": "function merge_or_apply(defaults, source)"}
+{"language": "javascript", "text": "function bnpCopyTo(r)"}
+{"language": "javascript", "text": "function buildCf(options, cmd)"}
+{"language": "javascript", "text": "function executeConcurrent(client, query, parameters, options)"}
+{"language": "javascript", "text": "function _addMetamorphCheck()"}
+{"language": "javascript", "text": "function setSelectedOption(el, value, parser)"}
+{"language": "javascript", "text": "function\n\t\t\t\t\tif (options.removeFields[rf].test(obj[k], k))"}
+{"language": "javascript", "text": "function splitHeader(content)"}
+{"language": "javascript", "text": "function optionsToString(options)"}
+{"language": "javascript", "text": "function processOption(key)"}
+{"language": "javascript", "text": "function putBucketCors(params, callback)"}
+{"language": "javascript", "text": "function KeyboardArrows()"}
+{"language": "javascript", "text": "function onup(ev)"}
+{"language": "javascript", "text": "function ondown(ev)"}
+{"language": "javascript", "text": "function getState()"}
+{"language": "javascript", "text": "function detectWindowWidth()"}
+{"language": "javascript", "text": "function uploadSliceList(params, cb)"}
+{"language": "javascript", "text": "function privKeyToPubKey(privKey)"}
+{"language": "javascript", "text": "function selected()"}
+{"language": "javascript", "text": "function XOR128(x, y, z, w)"}
+{"language": "javascript", "text": "function confirm (msg, callback)"}
+{"language": "javascript", "text": "function mergeOptions()"}
+{"language": "javascript", "text": "function createAnchorLink(name, heading)"}
+{"language": "javascript", "text": "function parseConfig(contents, config)"}
+{"language": "javascript", "text": "function completeAssign(target /*..sources*/)"}
+{"language": "javascript", "text": "function registerOAuth2 (providerName, Strategy)"}
+{"language": "javascript", "text": "function CustomAnimation(init)"}
+{"language": "javascript", "text": "function getExampleCode(comment)"}
+{"language": "javascript", "text": "function cb(err, result)"}
+{"language": "javascript", "text": "function isValidIPv4Mapped(buffer)"}
+{"language": "javascript", "text": "function formatColumn(text, width, offsetLeft, offsetRight)"}
+{"language": "javascript", "text": "function dangerousStyleValue(name, value, isCustomProperty)"}
+{"language": "javascript", "text": "function reduce(object, fn)"}
+{"language": "javascript", "text": "function noInner(node, type)"}
+{"language": "javascript", "text": "function killAttrs(model, attrs)"}
+{"language": "javascript", "text": "function reset()"}
+{"language": "javascript", "text": "function enable(namespaces)"}
+{"language": "javascript", "text": "function Contact (options)"}
+{"language": "javascript", "text": "function replaceNewlines(str)"}
+{"language": "javascript", "text": "function findWord(keyinfo)"}
+{"language": "javascript", "text": "function log()"}
+{"language": "javascript", "text": "function processOptions(isPreview)"}
+{"language": "javascript", "text": "function updateState(watcher, func)"}
+{"language": "javascript", "text": "function addRoutes( pies, pie, routes, app )"}
+{"language": "javascript", "text": "function sentiment(options)"}
+{"language": "javascript", "text": "function transformer(node)"}
+{"language": "javascript", "text": "function getRobotsFile (options, callback)"}
+{"language": "javascript", "text": "function sliceCopyFile(params, callback)"}
+{"language": "javascript", "text": "function getSystemBucket(config)"}
+{"language": "javascript", "text": "function __ENFORCETYPE(a, ...types)"}
+{"language": "javascript", "text": "function mergeFunctionArgs(argv, start, end)"}
+{"language": "javascript", "text": "function cpdirSyncRecursive(sourceDir, destDir, opts)"}
+{"language": "javascript", "text": "function symbolPhase2(val)"}
+{"language": "javascript", "text": "function filterSource(src)"}
+{"language": "javascript", "text": "function processMessage(message)"}
+{"language": "javascript", "text": "function makeActionCreator(type)"}
+{"language": "javascript", "text": "function writeTemplateFileSync(source, context, destination)"}
+{"language": "javascript", "text": "function random32ByteBuffer({cpuEntropyBits = 0, safe = true} = {})"}
+{"language": "javascript", "text": "function sessionData(req, res, session, cb)"}
+{"language": "javascript", "text": "function getIp(cb)"}
+{"language": "javascript", "text": "function getLocation(cb)"}
+{"language": "javascript", "text": "function getSystem(cb)"}
+{"language": "javascript", "text": "function addStylesheet(sheet, elementImpl)"}
+{"language": "javascript", "text": "function memoize(fun)"}
+{"language": "javascript", "text": "function transformSuite(name, suite, depth, indentCodeBlocks)"}
+{"language": "javascript", "text": "function getField()"}
+{"language": "javascript", "text": "function readDirectory(reader)"}
+{"language": "javascript", "text": "function fileReadSuccess(file, fullPath)"}
+{"language": "javascript", "text": "function readError(fileError)"}
+{"language": "javascript", "text": "function decrement()"}
+{"language": "javascript", "text": "function ArticleTranslation(parent, definition)"}
+{"language": "javascript", "text": "function rest(array, callback)"}
+{"language": "javascript", "text": "function eatArray (i, key, args)"}
+{"language": "javascript", "text": "function GracefulExpress(options)"}
+{"language": "javascript", "text": "function validateDataInput(chartProps)"}
+{"language": "javascript", "text": "function synchronizeSelection(options, configuration, watcher)"}
+{"language": "javascript", "text": "function cssValues(property, value)"}
+{"language": "javascript", "text": "function Client(options)"}
+{"language": "javascript", "text": "function getMergedTreeEntries(workingState)"}
+{"language": "javascript", "text": "function toTreeEntry(change)"}
+{"language": "javascript", "text": "function fixGitIgnore(ignorePattern)"}
+{"language": "javascript", "text": "function hook()"}
+{"language": "javascript", "text": "function hybrid(fn, cb)"}
+{"language": "javascript", "text": "function hideNodeContextMenu(event)"}
+{"language": "javascript", "text": "function factory (type, opts)"}
+{"language": "javascript", "text": "function removeTagRefinement(tag)"}
+{"language": "javascript", "text": "function iterator(traverse, obj, options)"}
+{"language": "javascript", "text": "function reduce(stack, entity)"}
+{"language": "javascript", "text": "function enforceArrayBuffer(b, encoding)"}
+{"language": "javascript", "text": "function JSONPPolling (opts)"}
+{"language": "javascript", "text": "function PureComponent(props, context, updater)"}
+{"language": "javascript", "text": "function PlaybackRateMenuButton(player, options)"}
+{"language": "javascript", "text": "function GameSession(node)"}
+{"language": "javascript", "text": "function extractEncoding(headers)"}
+{"language": "javascript", "text": "function offsetToViewPort()"}
+{"language": "javascript", "text": "function makeSignature(params)"}
+{"language": "javascript", "text": "function runGithubTasks()"}
+{"language": "javascript", "text": "function writeHeader(header)"}
+{"language": "javascript", "text": "function interpolateConfigStrings(config, data)"}
+{"language": "javascript", "text": "function AkamaiQueueLength(username, password)"}
+{"language": "javascript", "text": "function readImports(file)"}
+{"language": "javascript", "text": "function wrapEvent(eventTarget, event)"}
+{"language": "javascript", "text": "function random(number = 1)"}
+{"language": "javascript", "text": "function Ref(props)"}
+{"language": "javascript", "text": "function connect (url, next)"}
+{"language": "javascript", "text": "function checkRevision(compilerInfo)"}
+{"language": "javascript", "text": "function template(templateSpec, env)"}
+{"language": "javascript", "text": "function invokePartialWrapper(partial, context, options)"}
+{"language": "javascript", "text": "function strict(obj, name)"}
+{"language": "javascript", "text": "function lookup(depths, name)"}
+{"language": "javascript", "text": "function lambda(current, context)"}
+{"language": "javascript", "text": "function fn(i)"}
+{"language": "javascript", "text": "function program(i, data, declaredBlockParams, blockParams, depths)"}
+{"language": "javascript", "text": "function data(value, depth)"}
+{"language": "javascript", "text": "function merge(param, common)"}
+{"language": "javascript", "text": "function ret(context)"}
+{"language": "javascript", "text": "function main(context /*, options*/)"}
+{"language": "javascript", "text": "function wrapProgram(container, i, fn, data, declaredBlockParams, blockParams, depths)"}
+{"language": "javascript", "text": "function prog(context)"}
+{"language": "javascript", "text": "function resolvePartial(partial, context, options)"}
+{"language": "javascript", "text": "function invokePartial(partial, context, options)"}
+{"language": "javascript", "text": "function noop()"}
+{"language": "javascript", "text": "function initData(context, data)"}
+{"language": "javascript", "text": "function executeDecorators(fn, prog, container, depths, data, blockParams)"}
+{"language": "javascript", "text": "function copySliceItem(params, callback)"}
+{"language": "javascript", "text": "function _clearNumericRefinements(attribute)"}
+{"language": "javascript", "text": "function map (fn, list)"}
+{"language": "javascript", "text": "function readRecursive(repoState, dirName)"}
+{"language": "javascript", "text": "function slideNext (speed = this.params.speed, runCallbacks = true, internal)"}
+{"language": "javascript", "text": "function process(ast, scope)"}
+{"language": "javascript", "text": "function createTrackHelper(self, kind, label, language)"}
+{"language": "javascript", "text": "function destroy(opts, cb)"}
+{"language": "javascript", "text": "function onZoomChanged()"}
+{"language": "javascript", "text": "function extend(target)"}
+{"language": "javascript", "text": "function decodeASCII(str)"}
+{"language": "javascript", "text": "function parseOptions(str, map)"}
+{"language": "javascript", "text": "function getMainFieldAsArray(main)"}
+{"language": "javascript", "text": "function dashedKeyAlternatives ( hash )"}
+{"language": "javascript", "text": "function checkTypeParameters(typeParameterDeclarations)"}
+{"language": "javascript", "text": "function emptyDirectory (dir, fn)"}
+{"language": "javascript", "text": "function adjustLiklihood(x)"}
+{"language": "javascript", "text": "function write(path, str)"}
+{"language": "javascript", "text": "function asyncForEach (array, iterator, done)"}
+{"language": "javascript", "text": "function Router(options)"}
+{"language": "javascript", "text": "function allProjects(done)"}
+{"language": "javascript", "text": "function redolent (fn, opts)"}
+{"language": "javascript", "text": "function done (er, res)"}
+{"language": "javascript", "text": "function getVer(root)"}
+{"language": "javascript", "text": "function AstNode(type, token)"}
+{"language": "javascript", "text": "function getType()"}
+{"language": "javascript", "text": "function getToken()"}
+{"language": "javascript", "text": "function getChildren()"}
+{"language": "javascript", "text": "function setToken(t)"}
+{"language": "javascript", "text": "function isLeaf()"}
+{"language": "javascript", "text": "function addChild(childNode)"}
+{"language": "javascript", "text": "function print(nArg)"}
+{"language": "javascript", "text": "function propertyNameToAttribute(name)"}
+{"language": "javascript", "text": "function setupDataBigWatcher(watcher)"}
+{"language": "javascript", "text": "function ArangoStore( options, readyCallback )"}
+{"language": "javascript", "text": "function transform (opts)"}
+{"language": "javascript", "text": "function checkCallExpression(node)"}
+{"language": "javascript", "text": "function onCycle(event)"}
+{"language": "javascript", "text": "function normalizePropertyDescriptor(attributes)"}
+{"language": "javascript", "text": "function updateStdout()"}
+{"language": "javascript", "text": "function removeDimArrays(props)"}
+{"language": "javascript", "text": "function hasData(el)"}
+{"language": "javascript", "text": "function off(elem, type, fn)"}
+{"language": "javascript", "text": "function removeType(t)"}
+{"language": "javascript", "text": "function FeedSummary(props)"}
+{"language": "javascript", "text": "function subscribe(oSubscriber)"}
+{"language": "javascript", "text": "function generatePatterns(patterns, offset, orthogonal)"}
+{"language": "javascript", "text": "function proxy(config)"}
+{"language": "javascript", "text": "function fn(key, val)"}
+{"language": "javascript", "text": "function BearerTokenType(accessToken, accessTokenLifetime, refreshToken, scope, customAttributes)"}
+{"language": "javascript", "text": "function transformerFactory(fileSet, info)"}
+{"language": "javascript", "text": "function transformer(ast, file)"}
+{"language": "javascript", "text": "function mark(node)"}
+{"language": "javascript", "text": "function remove(repoState, filepath)"}
+{"language": "javascript", "text": "function proxyRequest(req, res, rule)"}
+{"language": "javascript", "text": "function errorCallback(err, proxyRequest, proxyResponse)"}
+{"language": "javascript", "text": "function accept($, type)"}
+{"language": "javascript", "text": "function RawZipkinTracer(scribeClient, category)"}
+{"language": "javascript", "text": "function filterArray (arr, toKeep)"}
+{"language": "javascript", "text": "function videojs(id, options, ready)"}
+{"language": "javascript", "text": "function removeSWF(id)"}
+{"language": "javascript", "text": "function onInit()"}
+{"language": "javascript", "text": "function eatNargs (i, key, args)"}
+{"language": "javascript", "text": "function _rotateToOrientaion(img, orientation)"}
+{"language": "javascript", "text": "function getPlatformApi (platform, platformRootDir)"}
+{"language": "javascript", "text": "function MaterializedView(name)"}
+{"language": "javascript", "text": "function getIEPos(node)"}
+{"language": "javascript", "text": "function MultiresNode(vertices, side, level, x, y, path)"}
+{"language": "javascript", "text": "function getStartOffset(line, pos, prefix)"}
+{"language": "javascript", "text": "function clear(except, options)"}
+{"language": "javascript", "text": "function setProtocolDependentDefaults(options, version)"}
+{"language": "javascript", "text": "function currentTreeEmpty(info)"}
+{"language": "javascript", "text": "function getNested(obj, prop)"}
+{"language": "javascript", "text": "function modifier (action, state)"}
+{"language": "javascript", "text": "function getPointRenderData(props, datum, idx)"}
+{"language": "javascript", "text": "function getColorGrad(pct, col, maxBri)"}
+{"language": "javascript", "text": "function toArrayBuffer(str)"}
+{"language": "javascript", "text": "function getNodeId(nodeId)"}
+{"language": "javascript", "text": "function getProvider(pathname)"}
+{"language": "javascript", "text": "function execute(template, data)"}
+{"language": "javascript", "text": "function normListedCommit(ghCommit)"}
+{"language": "javascript", "text": "function isJSON(value)"}
+{"language": "javascript", "text": "function getTimeWithTicks(date, ticks)"}
+{"language": "javascript", "text": "function findIndex(predicate, context)"}
+{"language": "javascript", "text": "function getUpdateInfo(update)"}
+{"language": "javascript", "text": "function DeleteResponse(options)"}
+{"language": "javascript", "text": "function start(oModuleId, oIdInstance, oData, oSingle)"}
+{"language": "javascript", "text": "function _removeSubscribers(aSubscribers, oSubscriber)"}
+{"language": "javascript", "text": "function extendApi(api)"}
+{"language": "javascript", "text": "function humanReadableArgName(arg)"}
+{"language": "javascript", "text": "function findChild(info, children, handler, reverse)"}
+{"language": "javascript", "text": "function isNumericRefined(attribute, operator, value)"}
+{"language": "javascript", "text": "function ControlConnection(options, profileManager, context)"}
+{"language": "javascript", "text": "function getDefinitionAtPosition(fileName, position)"}
+{"language": "javascript", "text": "function sortReadingFrames(a, b)"}
+{"language": "javascript", "text": "function publicS3URI(string)"}
+{"language": "javascript", "text": "function processBootStrap(file)"}
+{"language": "javascript", "text": "function reqo(func, requiredKeys, optionsIndex = 0, context = undefined)"}
+{"language": "javascript", "text": "function safelyCallComponentWillUnmount(current$$1, instance)"}
+{"language": "javascript", "text": "function executeEach(node, data, result)"}
+{"language": "javascript", "text": "function iterateCursor(request, cursorConstructor, recordCallback)"}
+{"language": "javascript", "text": "function normalizeIso8601TimeZone(value)"}
+{"language": "javascript", "text": "function promisify(fn)"}
+{"language": "javascript", "text": "function mapOfMaps ()"}
+{"language": "javascript", "text": "function findTokenOnLeftOfPosition(file, position)"}
+{"language": "javascript", "text": "function targetControl(targetControl)"}
+{"language": "javascript", "text": "function isNegation(node)"}
+{"language": "javascript", "text": "function map(obj, source, target, isRecursive = true)"}
+{"language": "javascript", "text": "function findPackageFor(filepath)"}
+{"language": "javascript", "text": "function cssDependencies(file, instance, options)"}
+{"language": "javascript", "text": "function patternMatchCompareTo(match1, match2)"}
+{"language": "javascript", "text": "function checkTypeNodeAsExpression(node)"}
+{"language": "javascript", "text": "function any(fp, patterns, opts)"}
+{"language": "javascript", "text": "function getLineRenderData(props, data, idx)"}
+{"language": "javascript", "text": "function httpTransaction(req, res)"}
+{"language": "javascript", "text": "function kissmetrics_client(options)"}
+{"language": "javascript", "text": "function normCreatedCommit(ghCommit)"}
+{"language": "javascript", "text": "function getSha(o) { return o.sha; })"}
+{"language": "javascript", "text": "function checkRepetition(rLen, str)"}
+{"language": "javascript", "text": "function scopeUrl(options, inst)"}
+{"language": "javascript", "text": "function set(store, key, value, options)"}
+{"language": "javascript", "text": "function getInnerLibraryConfigField(name, libName)"}
+{"language": "javascript", "text": "function encode(string)"}
+{"language": "javascript", "text": "function hex(code)"}
+{"language": "javascript", "text": "function BackoffStrategy(options)"}
+{"language": "javascript", "text": "function register(root)"}
+{"language": "javascript", "text": "function showSuccessInfo(options)"}
+{"language": "javascript", "text": "function wrapper()"}
+{"language": "javascript", "text": "function destructuringAssignOrJsonValue()"}
+{"language": "javascript", "text": "function Container(container_directory, package_json)"}
+{"language": "javascript", "text": "function parseVehicleID($, item)"}
+{"language": "javascript", "text": "function uuids_for(couch)"}
+{"language": "javascript", "text": "function copySymbol(symbol, meaning)"}
+{"language": "javascript", "text": "function isWriteAccess(node)"}
+{"language": "javascript", "text": "function createLabel(platform: string)"}
+{"language": "javascript", "text": "function Router(options)"}
+{"language": "javascript", "text": "function Item (key, value, publisher, timestamp)"}
+{"language": "javascript", "text": "function FullscreenToggle(player, options)"}
+{"language": "javascript", "text": "function fromJSON(object)"}
+{"language": "javascript", "text": "function validate_chart_model(modelStr)"}
+{"language": "javascript", "text": "function toHaveText()"}
+{"language": "javascript", "text": "function compare(element, text)"}
+{"language": "javascript", "text": "function isIgnored(file)"}
+{"language": "javascript", "text": "function convertData(options, configuration)"}
+{"language": "javascript", "text": "function addTop($, top)"}
+{"language": "javascript", "text": "function on(that, listenerList, root, eventType, selector, eventData, handler)"}
+{"language": "javascript", "text": "function parseTryStatement()"}
+{"language": "javascript", "text": "function stick ()"}
+{"language": "javascript", "text": "function bnShiftLeft(n)"}
+{"language": "javascript", "text": "function extend(target, options)"}
+{"language": "javascript", "text": "function determineKesClass(options, Kes)"}
+{"language": "javascript", "text": "function defineType(type, validator)"}
+{"language": "javascript", "text": "function processSitemap (options, document, callback)"}
+{"language": "javascript", "text": "function parse(messageType, args)"}
+{"language": "javascript", "text": "function readBackupGPT(primaryGPT)"}
+{"language": "javascript", "text": "function _cloneArray(source, depth, hook, nest)"}
+{"language": "javascript", "text": "function tryApplyUpdates ()"}
+{"language": "javascript", "text": "function onUp(ev)"}
+{"language": "javascript", "text": "function _registerCacheAlias( namespaceObject, instanceCachePropertyName )"}
+{"language": "javascript", "text": "function getApplicationHookScripts (hook, opts)"}
+{"language": "javascript", "text": "function _save()"}
+{"language": "javascript", "text": "function nodeCall (nodeFunc /* args... */)"}
+{"language": "javascript", "text": "function nodeResolver (err, value)"}
+{"language": "javascript", "text": "function bnpInvDigit()"}
+{"language": "javascript", "text": "function parseNumericLiteral(AST)"}
+{"language": "javascript", "text": "function getData(el)"}
+{"language": "javascript", "text": "function subDirectoriesWithFile(base, filename)"}
+{"language": "javascript", "text": "function parseAssetSymbol(assetSymbol)"}
+{"language": "javascript", "text": "function unsubscribeFrom(sChannelId, sEventType, oSubscriber)"}
+{"language": "javascript", "text": "function checkID (expectedIdAndVersion, pinfo)"}
+{"language": "javascript", "text": "function getTypeFromBindingPattern(pattern, includePatternInType)"}
+{"language": "javascript", "text": "function pipeTransforms (stream, transforms)"}
+{"language": "javascript", "text": "function updateDisplay(cm, changes, viewPort)"}
+{"language": "javascript", "text": "function assignUserAccess(doc, oldDoc, documentDefinition)"}
+{"language": "javascript", "text": "function isSourceFileLevelDeclarationInSystemJsModule(node, isExported)"}
+{"language": "javascript", "text": "function calculateFieldColor(selectedColor, nonSelectedColor, focusedColor, index, out)"}
+{"language": "javascript", "text": "function enterSnapshot(state, node)"}
+{"language": "javascript", "text": "function main()"}
+{"language": "javascript", "text": "function MenuButton(player)"}
+{"language": "javascript", "text": "function filterAndSort (args, adapters)"}
+{"language": "javascript", "text": "function deepClone(object)"}
+{"language": "javascript", "text": "function Metadata (options, controlConnection)"}
+{"language": "javascript", "text": "function register(sModuleId, aDependencies, fpCreator)"}
+{"language": "javascript", "text": "function anonProject(req, res, next)"}
+{"language": "javascript", "text": "function injectCode()"}
+{"language": "javascript", "text": "function addTagRefinement(tag)"}
+{"language": "javascript", "text": "function getDependencyURL ({ repositoryURL, dependency })"}
+{"language": "javascript", "text": "function RequestFunnel()"}
+{"language": "javascript", "text": "function validateObjectProperties(propertyValidators, allowUnknownProperties, ignoreInternalProperties)"}
+{"language": "javascript", "text": "function applyMiddleware(middleware, name, instance, container)"}
+{"language": "javascript", "text": "function getWithMiddlewear()"}
+{"language": "javascript", "text": "function nextMiddleware(err)"}
+{"language": "javascript", "text": "function doSpawn(method, command, args, options)"}
+{"language": "javascript", "text": "function HooksRunner (projectRoot)"}
+{"language": "javascript", "text": "function resolve()"}
+{"language": "javascript", "text": "function returnError(message)"}
+{"language": "javascript", "text": "function cryptoJsDecrypt(message, key, iv)"}
+{"language": "javascript", "text": "function translate(load)"}
+{"language": "javascript", "text": "function smtpSendMail( callback, email )"}
+{"language": "javascript", "text": "function arrayProperty (values, indentLength = 1, inArray = 0)"}
+{"language": "javascript", "text": "function transformEncode(chunk, encoding, cb)"}
+{"language": "javascript", "text": "function css(files, output, options)"}
+{"language": "javascript", "text": "function nameLookup(parent, name /* , type*/)"}
+{"language": "javascript", "text": "function removeButtons(ids)"}
+{"language": "javascript", "text": "function load(store, key, url, options)"}
+{"language": "javascript", "text": "function getBusinessId(doc, oldDoc)"}
+{"language": "javascript", "text": "function setQueryParameters(params)"}
+{"language": "javascript", "text": "function mergeWith(newInstance)"}
+{"language": "javascript", "text": "function partial( mu, sigma, rand )"}
+{"language": "javascript", "text": "function draw()"}
+{"language": "javascript", "text": "function init(_options)"}
+{"language": "javascript", "text": "function render (req, res, body)"}
+{"language": "javascript", "text": "function peek(p)"}
+{"language": "javascript", "text": "function canOptimizeSorting(expectedSortingDirection, order)"}
+{"language": "javascript", "text": "function getStartRow(id)"}
+{"language": "javascript", "text": "function writeFile(fileName, isJSON, contents )"}
+{"language": "javascript", "text": "function TextTrackButton(player)"}
+{"language": "javascript", "text": "function PC(source, config)"}
+{"language": "javascript", "text": "function Grid(props)"}
+{"language": "javascript", "text": "function markdownToSnapshot(content)"}
+{"language": "javascript", "text": "function currentTreeRootSecondChildExcludingDragging()"}
+{"language": "javascript", "text": "function parsePhysicsModel( xml )"}
+{"language": "javascript", "text": "function cb(callback)"}
+{"language": "javascript", "text": "function _getRandomDelayBetween (min, max, roundTo)"}
+{"language": "javascript", "text": "function resolveEnv(path, options, mod)"}
+{"language": "javascript", "text": "function emailStatByCampaigns(callback,email)"}
+{"language": "javascript", "text": "function Logger(name, options)"}
+{"language": "javascript", "text": "function FieldValue(subject, name, value)"}
+{"language": "javascript", "text": "function removeListener(obj, eventName, target, method)"}
+{"language": "javascript", "text": "function _removeListener(target, method)"}
+{"language": "javascript", "text": "function pluginActions (Firebase)"}
+{"language": "javascript", "text": "function storeUpdateFn(_doc)"}
+{"language": "javascript", "text": "function storeUpdateFn(_doc)"}
+{"language": "javascript", "text": "function storeUpdateFn(_docs)"}
+{"language": "javascript", "text": "function storeUpdateFn(_val)"}
+{"language": "javascript", "text": "function storeUpdateFn(_doc, _ids)"}
+{"language": "javascript", "text": "function storeUpdateFn(_id)"}
+{"language": "javascript", "text": "function storeUpdateFn(_ids)"}
+{"language": "javascript", "text": "function transformValue(propSpec, inputVal, fallbackValue)"}
+{"language": "javascript", "text": "function instrumentRenderToBuffer()"}
+{"language": "javascript", "text": "function WhiteListPolicy (childPolicy, whiteList)"}
+{"language": "javascript", "text": "function Botkit(configuration)"}
+{"language": "javascript", "text": "function Conversation(task, message)"}
+{"language": "javascript", "text": "function Task(bot, message, botkit)"}
+{"language": "javascript", "text": "function initialize()"}
+{"language": "javascript", "text": "function random( dims, dt, mu, sigma, rand )"}
+{"language": "javascript", "text": "function format(formatter, value, encode, lengthRequirement)"}
+{"language": "javascript", "text": "function md5(data)"}
+{"language": "javascript", "text": "function setState(stateUpdates)"}
+{"language": "javascript", "text": "function Delegate(root)"}
+{"language": "javascript", "text": "function convert_to_alloy_path(resolved_path)"}
+{"language": "javascript", "text": "function setAttributes (oldAttributes, newAttributes)"}
+{"language": "javascript", "text": "function formatQuantityOrTag(value, encode)"}
+{"language": "javascript", "text": "function readNext(sr)"}
+{"language": "javascript", "text": "function createNode (media)"}
+{"language": "javascript", "text": "function MouseEdges(parent, options)"}
+{"language": "javascript", "text": "function validateProps(element, props)"}
+{"language": "javascript", "text": "function insertSorted(records, record, primaryKey, comparator)"}
+{"language": "javascript", "text": "function getColors (image, cb)"}
+{"language": "javascript", "text": "function setupListeners(chat, displayWorker)"}
+{"language": "javascript", "text": "function preparePlatforms (platformList, projectRoot, options)"}
+{"language": "javascript", "text": "function ClientHintsMetaTag(options)"}
+{"language": "javascript", "text": "function negateSlash(str)"}
+{"language": "javascript", "text": "function Advertisement(props)"}
+{"language": "javascript", "text": "function parseArgs()"}
+{"language": "javascript", "text": "function decodeJoinGroupResponse (resp)"}
+{"language": "javascript", "text": "function campaignStatByReferrals(callback,id)"}
+{"language": "javascript", "text": "function Client(options)"}
+{"language": "javascript", "text": "function FormField(props)"}
+{"language": "javascript", "text": "function Radio(props)"}
+{"language": "javascript", "text": "function buildApexInstances(processPidReferences)"}
+{"language": "javascript", "text": "function generateSqlSchema (dbDialect, metadata, prefix = undefined)"}
+{"language": "javascript", "text": "function brackets(pattern, options)"}
+{"language": "javascript", "text": "function metric(name, val, message)"}
+{"language": "javascript", "text": "function timeuuid(options, buffer, offset)"}
+{"language": "javascript", "text": "function installPlatformsFromConfigXML (platforms, opts)"}
+{"language": "javascript", "text": "function filterAndSortOne (args, adapters)"}
+{"language": "javascript", "text": "function mapOfArrays ()"}
+{"language": "javascript", "text": "function supportsCodeConstraint(identifier, dataElementSpecs)"}
+{"language": "javascript", "text": "function fetchFromObject(obj, prop, newValue)"}
+{"language": "javascript", "text": "function ModifyRequest(options)"}
+{"language": "javascript", "text": "function identifier(fnparam, prop)"}
+{"language": "javascript", "text": "function LoggerFactory(options)"}
+{"language": "javascript", "text": "function noop()"}
+{"language": "javascript", "text": "function log()"}
+{"language": "javascript", "text": "function kebabDestRewriter(pathObj: Object, innerPath: string, options: Object)"}
+{"language": "javascript", "text": "function reset(store, data)"}
+{"language": "javascript", "text": "function RemainingTimeDisplay(player, options)"}
+{"language": "javascript", "text": "function TravisStatusChecker(options)"}
+{"language": "javascript", "text": "function LocationHtml5Url(appBase, basePrefix)"}
+{"language": "javascript", "text": "function checkZoom(hfov)"}
+{"language": "javascript", "text": "function generateUapCapabilities(capabilities)"}
+{"language": "javascript", "text": "function hasCapabilityChange(change)"}
+{"language": "javascript", "text": "function createPrefixedCapabilityChange(change)"}
+{"language": "javascript", "text": "function setAppConsts()"}
+{"language": "javascript", "text": "function _rsaHash(publicKey)"}
+{"language": "javascript", "text": "function _create(crud, schema, data)"}
+{"language": "javascript", "text": "function loadWebpackConfig ()"}
+{"language": "javascript", "text": "function runScriptsSerially (scripts, context)"}
+{"language": "javascript", "text": "function remove(repoState, driver, branch)"}
+{"language": "javascript", "text": "function toUint(str)"}
+{"language": "javascript", "text": "function calculateDiagonalArea(pattern, p1, p2, left, offset, result)"}
+{"language": "javascript", "text": "function parseVersion(versionString)"}
+{"language": "javascript", "text": "function getFile(backend, file, cb)"}
+{"language": "javascript", "text": "function generateExpiry(headers = {}, defaultCacheControl)"}
+{"language": "javascript", "text": "function isValidMarker(editor, marker)"}
+{"language": "javascript", "text": "function handleWebGLError1286()"}
+{"language": "javascript", "text": "function uniq(array, isSorted, iteratee, thisArg)"}
+{"language": "javascript", "text": "function countLabel()"}
+{"language": "javascript", "text": "function generateUsername(base)"}
+{"language": "javascript", "text": "function isEvented(object)"}
+{"language": "javascript", "text": "function ChaptersTrackMenuItem(player, options)"}
+{"language": "javascript", "text": "function wrapCondition(decision, lineId, parentPos)"}
+{"language": "javascript", "text": "function writePackageManifest (packageName)"}
+{"language": "javascript", "text": "function assignSlotableForTree(root)"}
+{"language": "javascript", "text": "function FriendsOfFriends(mongoose, options)"}
+{"language": "javascript", "text": "function fmtShort(ms)"}
+{"language": "javascript", "text": "function isDependencyIgnoredInGroups (groups, packageFilePath, dependencyName)"}
+{"language": "javascript", "text": "function anError(errorMsg)"}
+{"language": "javascript", "text": "function addRoute (verb)"}
+{"language": "javascript", "text": "function postNotification(options, cb)"}
+{"language": "javascript", "text": "function resetPreviousTimer(newMessage)"}
+{"language": "javascript", "text": "function stat(repoState, filepath)"}
+{"language": "javascript", "text": "function isIndependentFunctionLikeDeclaration(node)"}
+{"language": "javascript", "text": "function getContextuallyTypedParameterType(parameter)"}
+{"language": "javascript", "text": "function isSingleCondition(decision)"}
+{"language": "javascript", "text": "function wrapPromise(promise)"}
+{"language": "javascript", "text": "function startAll()"}
+{"language": "javascript", "text": "function cacheModules(ModCache)"}
+{"language": "javascript", "text": "function make_mults(Outer, outerProps, data, gridScales, renderDataFunc)"}
+{"language": "javascript", "text": "function processProp(value, data)"}
+{"language": "javascript", "text": "function Mock(mount, options)"}
+{"language": "javascript", "text": "function inHandler (err, res, next)"}
+{"language": "javascript", "text": "function renamedOption (originalName, newName)"}
+{"language": "javascript", "text": "function snapshotFramework(files, config, emitter, loggerFactory)"}
+{"language": "javascript", "text": "function _e(fn, msg)"}
+{"language": "javascript", "text": "function getMediaTypePriority(type, accepted, index)"}
+{"language": "javascript", "text": "function FormDropdown(props)"}
+{"language": "javascript", "text": "function GifCli(path, callback)"}
+{"language": "javascript", "text": "function kw(name, options = {})"}
+{"language": "javascript", "text": "function passportCallback(provider, options, operation)"}
+{"language": "javascript", "text": "function detectDeviceClass()"}
+{"language": "javascript", "text": "function TimeUuid(value, ticks, nodeId, clockId)"}
+{"language": "javascript", "text": "function fetch(store, key, url, options)"}
+{"language": "javascript", "text": "function getJsDocTagAtPosition(sourceFile, position)"}
+{"language": "javascript", "text": "function replaceS(matcher, str, replacement)"}
+{"language": "javascript", "text": "function replacer(key)"}
+{"language": "javascript", "text": "function _exportPublicKey(key)"}
+{"language": "javascript", "text": "function matcher(pattern, opts)"}
+{"language": "javascript", "text": "function\n  if (typeof pattern === 'function')"}
+{"language": "javascript", "text": "function ConjunctionMap()"}
+{"language": "javascript", "text": "function add(conjunction, value)"}
+{"language": "javascript", "text": "function get(conjunction)"}
+{"language": "javascript", "text": "function WMURL_decode(source)"}
+{"language": "javascript", "text": "function FixedValueHistory(maxLength, initial)"}
+{"language": "javascript", "text": "function postinstall ()"}
+{"language": "javascript", "text": "function createClient(xhr)"}
+{"language": "javascript", "text": "function doRequest()"}
+{"language": "javascript", "text": "function requireBody(key, req, res)"}
+{"language": "javascript", "text": "function declare(v)"}
+{"language": "javascript", "text": "function use(v)"}
+{"language": "javascript", "text": "function createHotSpot(hs)"}
+{"language": "javascript", "text": "function allSettled(promises)"}
+{"language": "javascript", "text": "function uploadSliceComplete(params, callback)"}
+{"language": "javascript", "text": "function deepExtend(target)"}
+{"language": "javascript", "text": "function csvLoader()"}
+{"language": "javascript", "text": "function namespaceToSchema(ns, dataElementsSpecs, baseSchemaURL, baseTypeURL)"}
+{"language": "javascript", "text": "function checkEnumMember(enumname, enumarr, obj, callback)"}
+{"language": "javascript", "text": "function getBucketCors(params, callback)"}
+{"language": "javascript", "text": "function GridColumn(props)"}
+{"language": "javascript", "text": "function fire(event, target, listener)"}
+{"language": "javascript", "text": "function multiresDraw()"}
+{"language": "javascript", "text": "function Selector(filter, timeout, window, http, q)"}
+{"language": "javascript", "text": "function execFile(options, callback)"}
+{"language": "javascript", "text": "function compareTimes(a, b)"}
+{"language": "javascript", "text": "function ReconnectingWebSocket(url, opts)"}
+{"language": "javascript", "text": "function getOpt(name, def)"}
+{"language": "javascript", "text": "function unreliableOnOpen(e)"}
+{"language": "javascript", "text": "function unreliableOnClose(e)"}
+{"language": "javascript", "text": "function unreliableOnMessage(e)"}
+{"language": "javascript", "text": "function connect()"}
+{"language": "javascript", "text": "function cleanupStyles(item)"}
+{"language": "javascript", "text": "function defaultMapFn(data)"}
+{"language": "javascript", "text": "function loadFilters(loadedFiles)"}
+{"language": "javascript", "text": "function snapshot (options, detector, filter)"}
+{"language": "javascript", "text": "function injectProxyHeaders(req, rule)"}
+{"language": "javascript", "text": "function add(app, route, method, destination)"}
+{"language": "javascript", "text": "function getRange()"}
+{"language": "javascript", "text": "function Operations ()"}
+{"language": "javascript", "text": "function objectInterface(config)"}
+{"language": "javascript", "text": "function watcherFn(schemaFilepath, watchInterval, reinitBabelRelayPlugin, prevMtime)"}
+{"language": "javascript", "text": "function client(protocol)"}
+{"language": "javascript", "text": "function inherit(child, parent)"}
+{"language": "javascript", "text": "function ctor()"}
+{"language": "javascript", "text": "function getValueForProperty(node, name, expected, propertyInfo)"}
+{"language": "javascript", "text": "function _isZero(val, options)"}
+{"language": "javascript", "text": "function queueAttributeMutationRecord(target, name, namespace, oldValue)"}
+{"language": "javascript", "text": "function AkamaiPurge(username, password, objects, options)"}
+{"language": "javascript", "text": "function sshExecSingleCommand(cnxParams, cmd, fnOutput)"}
+{"language": "javascript", "text": "function getRealWidth( element )"}
+{"language": "javascript", "text": "function isPlain(value)"}
+{"language": "javascript", "text": "function applySelection(options, chart)"}
+{"language": "javascript", "text": "function convertProperty(originalKey, originalValue, isRtl)"}
+{"language": "javascript", "text": "function getReferencedNestedRedeclaration(node)"}
+{"language": "javascript", "text": "function parseSimpleString(parser)"}
+{"language": "javascript", "text": "function getIssues( query, client, cacheKey )"}
+{"language": "javascript", "text": "function authenticate(helper, paramsValues, credentials)"}
+{"language": "javascript", "text": "function Request(options)"}
+{"language": "javascript", "text": "function contextualTypeHasIndexSignature(type, kind)"}
+{"language": "javascript", "text": "function FrameReader(header, body, offset)"}
+{"language": "javascript", "text": "function createCubehelix (steps, opts)"}
+{"language": "javascript", "text": "function load_as_directory(request, startpath)"}
+{"language": "javascript", "text": "function EventualSubject(subject, promise)"}
+{"language": "javascript", "text": "function getRouteIndexFromPatternId (pattern: string | number)"}
+{"language": "javascript", "text": "function AuthorizationCodeGrantType(options)"}
+{"language": "javascript", "text": "function delay(data, definedLoop)"}
+{"language": "javascript", "text": "function filterEnv(env, defaults)"}
+{"language": "javascript", "text": "function getParametersFromRightHandSideOfAssignment(rightHandSide)"}
+{"language": "javascript", "text": "function erdosRenyiSparse(GraphClass, options)"}
+{"language": "javascript", "text": "function groupPatternsByBaseDirectory(patterns)"}
+{"language": "javascript", "text": "function setup()"}
+{"language": "javascript", "text": "function editAddressBook(callback,id,bookName)"}
+{"language": "javascript", "text": "function parseCharset(str, i)"}
+{"language": "javascript", "text": "function registerDefaultDecorators(instance)"}
+{"language": "javascript", "text": "function flush()"}
+{"language": "javascript", "text": "function _beginBatchMaybe(next)"}
+{"language": "javascript", "text": "function _makeCallOrCallsToAppropriateIteratee(proceed)"}
+{"language": "javascript", "text": "function _eachRecordInBatch(record, next)"}
+{"language": "javascript", "text": "function _afterIteratingOverRecordsInBatch(err)"}
+{"language": "javascript", "text": "function _afterCallingIteratee(err)"}
+{"language": "javascript", "text": "function CardContent(props)"}
+{"language": "javascript", "text": "function collapse(evt)"}
+{"language": "javascript", "text": "function createAction (type, payload = {}, meta)"}
+{"language": "javascript", "text": "function convertToRealPathSafe (path)"}
+{"language": "javascript", "text": "function inspectProgram(emitted)"}
+{"language": "javascript", "text": "function multijob(req, res)"}
+{"language": "javascript", "text": "function parseHost (hostString)"}
+{"language": "javascript", "text": "function fixRedirectPost()"}
+{"language": "javascript", "text": "function createMarkdownSerializer(indentCodeBlocks)"}
+{"language": "javascript", "text": "function compareRefs(driver, base, head)"}
+{"language": "javascript", "text": "function rstr_hmac_sha512(key, data)"}
+{"language": "javascript", "text": "function InfCodes()"}
+{"language": "javascript", "text": "function inflate_fast(bl, bd, tl, tl_index, td, td_index, s, z)"}
+{"language": "javascript", "text": "function DAOImplementation(config)"}
+{"language": "javascript", "text": "function findAllParents( p )"}
+{"language": "javascript", "text": "function renderInitCallback()"}
+{"language": "javascript", "text": "function create(opts, cb)"}
+{"language": "javascript", "text": "function isDisjunctiveFacetRefined(facet, value)"}
+{"language": "javascript", "text": "function findInsertIndex(records, record, comparator)"}
+{"language": "javascript", "text": "function resolve(instance, newState, value)"}
+{"language": "javascript", "text": "function validate (schema)"}
+{"language": "javascript", "text": "function cmd(request, response)"}
+{"language": "javascript", "text": "function cpuEntropy(cpuEntropyBits = 128)"}
+{"language": "javascript", "text": "function clean(src)"}
+{"language": "javascript", "text": "function synctos(doc, oldDoc)"}
+{"language": "javascript", "text": "function isValueNullOrUndefined(value)"}
+{"language": "javascript", "text": "function isDocumentMissingOrDeleted(candidate)"}
+{"language": "javascript", "text": "function simpleTypeFilter(doc, oldDoc, candidateDocType)"}
+{"language": "javascript", "text": "function resolveOldDoc()"}
+{"language": "javascript", "text": "function padRight(value, desiredLength, padding)"}
+{"language": "javascript", "text": "function isValueAnInteger(value)"}
+{"language": "javascript", "text": "function resolveDocumentConstraint(constraintDefinition)"}
+{"language": "javascript", "text": "function getDocumentType()"}
+{"language": "javascript", "text": "function serializeVerbatim (obj)"}
+{"language": "javascript", "text": "function prepareSortingOptimization(storages, simplifiedOrderFieldPaths)"}
+{"language": "javascript", "text": "function reportRequiredEndingSpace( node, token )"}
+{"language": "javascript", "text": "function validateProtocolOptions(protocolOptions)"}
+{"language": "javascript", "text": "function prepare(repoState, opts)"}
+{"language": "javascript", "text": "function checkout(repoState, branch)"}
+{"language": "javascript", "text": "function calculateScore(password)"}
+{"language": "javascript", "text": "function AudioTrackList()"}
+{"language": "javascript", "text": "function hexRgb(hex)"}
+{"language": "javascript", "text": "function getEffectiveArgument(node, args, argIndex)"}
+{"language": "javascript", "text": "function parse_issues(body)"}
+{"language": "javascript", "text": "function checkParameterTypeAnnotationsAsExpressions(node)"}
+{"language": "javascript", "text": "function before(fn, callback)"}
+{"language": "javascript", "text": "function lookupOrRegister(name, target)"}
+{"language": "javascript", "text": "function writeError(type, file, line, message)"}
+{"language": "javascript", "text": "function headObject(params, callback)"}
+{"language": "javascript", "text": "function mergeExcel(src1, src2)"}
+{"language": "javascript", "text": "function requireAllEnum(dir)"}
+{"language": "javascript", "text": "function writeFile(resHtml, outputPath)"}
+{"language": "javascript", "text": "function getResolveDICallback(oMapping)"}
+{"language": "javascript", "text": "function NoHostAvailableError(innerErrors, message)"}
+{"language": "javascript", "text": "function characterListhasEntities(characterList)"}
+{"language": "javascript", "text": "function Filter(e)"}
+{"language": "javascript", "text": "function iterateKeys(value, callback, accumulate)"}
+{"language": "javascript", "text": "function ddReporter(runner)"}
+{"language": "javascript", "text": "function indent()"}
+{"language": "javascript", "text": "function slope2(that, t)"}
+{"language": "javascript", "text": "function lint(userConfig, input, ignore, errorReporter)"}
+{"language": "javascript", "text": "function replaceMatchFilesSync(match, source, destination)"}
+{"language": "javascript", "text": "function setMeta ({ payload, meta }, { getService })"}
+{"language": "javascript", "text": "function isNamedFunction(node)"}
+{"language": "javascript", "text": "function getActualIndentationForNode(current, parent, currentLineAndChar, parentAndChildShareLine, sourceFile, options)"}
+{"language": "javascript", "text": "function bindify (fn, thisArg, args)"}
+{"language": "javascript", "text": "function findChild(info, children, handler, reverse)"}
+{"language": "javascript", "text": "function finalizeResourceType(resourceType = \"image\", type = \"upload\", urlSuffix, useRootPath, shorten)"}
+{"language": "javascript", "text": "function add (opts, cb)"}
+{"language": "javascript", "text": "function Cookie(options)"}
+{"language": "javascript", "text": "function create(repoState, filepath, content)"}
+{"language": "javascript", "text": "function getActualIndentationForListItemBeforeComma(commaToken, sourceFile, options)"}
+{"language": "javascript", "text": "function StepGroup(props)"}
+{"language": "javascript", "text": "function run(cmd, opts)"}
+{"language": "javascript", "text": "function errorHandler(err)"}
+{"language": "javascript", "text": "function closeHandler(exitCode)"}
+{"language": "javascript", "text": "function updateGraphData()"}
+{"language": "javascript", "text": "function styleParser(style)"}
+{"language": "javascript", "text": "function instrument (ac, name, options)"}
+{"language": "javascript", "text": "function getFetchByStateCallback(callback)"}
+{"language": "javascript", "text": "function absolute (...parts)"}
+{"language": "javascript", "text": "function OffTextTrackMenuItem(player, options)"}
+{"language": "javascript", "text": "function TriggerPromiseReactions ( reactions, argument )"}
+{"language": "javascript", "text": "function _addPackage( pname, bowerJson, depOptions, firstLevel, dotBowerJson )"}
+{"language": "javascript", "text": "function loadTemplate (name)"}
+{"language": "javascript", "text": "function render ()"}
+{"language": "javascript", "text": "function specify(language, spec, index)"}
+{"language": "javascript", "text": "function loadBuffers (ac, name, options)"}
+{"language": "javascript", "text": "function snapshotPreprocessor(basePath, loggerFactory)"}
+{"language": "javascript", "text": "function babel(options = {})"}
+{"language": "javascript", "text": "function setResult(result, message)"}
+{"language": "javascript", "text": "function scopeUrl(options, inst)"}
+{"language": "javascript", "text": "function getFilterString(selectedValues)"}
+{"language": "javascript", "text": "function bnShiftRight(n)"}
+{"language": "javascript", "text": "function normalize (obj)"}
+{"language": "javascript", "text": "function builder(envList, envName)"}
+{"language": "javascript", "text": "function defaults(obj)"}
+{"language": "javascript", "text": "function defaults()"}
+{"language": "javascript", "text": "function defaults(obj)"}
+{"language": "javascript", "text": "function resolve()"}
+{"language": "javascript", "text": "function relateTime(time, extendedDur, resolution)"}
+{"language": "javascript", "text": "function MousePosition()"}
+{"language": "javascript", "text": "function findVersion (versions, version)"}
+{"language": "javascript", "text": "function fixFiles()"}
+{"language": "javascript", "text": "function createWebpackCompiler(onFirstReadyCallback = () => {}, onError = () => {})"}
+{"language": "javascript", "text": "function lifecycleInserted()"}
+{"language": "javascript", "text": "function off(that, listenerList, root, eventType, selector, handler)"}
+{"language": "javascript", "text": "function diffArrays(arr1, arr2)"}
+{"language": "javascript", "text": "function MouseTimeDisplay(player, options)"}
+{"language": "javascript", "text": "function getFunctionCall(expr)"}
+{"language": "javascript", "text": "function CustomEvent(type, eventInitDict)"}
+{"language": "javascript", "text": "function httpMiddleware (req, res, arr, done)"}
+{"language": "javascript", "text": "function iterator (fn, next)"}
+{"language": "javascript", "text": "function tryApplyUpdates (onHotUpdateSuccess)"}
+{"language": "javascript", "text": "function handleApplyUpdates (err, updatedModules)"}
+{"language": "javascript", "text": "function Ebus(p)"}
+{"language": "javascript", "text": "function processExpr(value, data)"}

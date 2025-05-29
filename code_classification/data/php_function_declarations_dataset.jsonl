@@ -1,0 +1,982 @@
+{"language": "php", "text": "function validate()"}
+{"language": "php", "text": "function deletePublicKey($keyId)"}
+{"language": "php", "text": "function getNewGUID($conn, $dbType, $table=null, $column=null)"}
+{"language": "php", "text": "function get_relation( $attribute )"}
+{"language": "php", "text": "function resume()"}
+{"language": "php", "text": "function getDisplayDirname()"}
+{"language": "php", "text": "function sign($keypairsOrsecretKeyStrings, Server $server = null)"}
+{"language": "php", "text": "function mediaUpload($fileName = 'file', $useFile = false)"}
+{"language": "php", "text": "function render()"}
+{"language": "php", "text": "function getRow()"}
+{"language": "php", "text": "function addVariable(Variable $variable)"}
+{"language": "php", "text": "function toJson($option = null)"}
+{"language": "php", "text": "function addValuesOptions($dom, $elem)"}
+{"language": "php", "text": "function getInstance($name)"}
+{"language": "php", "text": "function next(ProcessState $state)"}
+{"language": "php", "text": "function prepareAttributeOptionSwatch($optionId, $storeId, $value, $type)"}
+{"language": "php", "text": "function create(string $name, array $config)"}
+{"language": "php", "text": "function startsWith($string, $search)"}
+{"language": "php", "text": "function encrypt()"}
+{"language": "php", "text": "function getSynopsis($short = false)"}
+{"language": "php", "text": "function validateAttribute($model, $attribute)"}
+{"language": "php", "text": "function isType($typeName)"}
+{"language": "php", "text": "function getFormatterByExtension($location)"}
+{"language": "php", "text": "function setScheduledDate($ts)"}
+{"language": "php", "text": "function getNextUrl()"}
+{"language": "php", "text": "function getUserByIdentifier($identifier)"}
+{"language": "php", "text": "function checkDomainsList(array $domainParts, $listNode)"}
+{"language": "php", "text": "function execute(InputInterface $input, OutputInterface $output)"}
+{"language": "php", "text": "function parseConfig( array $config )"}
+{"language": "php", "text": "function renderButton($label = '', array $options = [], array $attributes = [])"}
+{"language": "php", "text": "function getSlice()"}
+{"language": "php", "text": "function renderMarkers(MarkerCluster $markerCluster, Map $map)"}
+{"language": "php", "text": "function setEnv($key, $value = null)"}
+{"language": "php", "text": "function copyEnv()"}
+{"language": "php", "text": "function loadDateTimeCell($sDateTime, $sNoData = '&mdash;')"}
+{"language": "php", "text": "function getNotificationCount(UserInterface $participant, $seen = null)"}
+{"language": "php", "text": "function getFunc(string $name)"}
+{"language": "php", "text": "function switchContext(Context $context, bool $keepCurrentInStack = false)"}
+{"language": "php", "text": "function execute(CommandInterface $command)"}
+{"language": "php", "text": "function set($name, $value = null)"}
+{"language": "php", "text": "function _errorOutput($errMsg)"}
+{"language": "php", "text": "function count(string $field = '*', string $alias = 'row_count')"}
+{"language": "php", "text": "function findArgumentFiles(array $paths, array $searchDirectories, array $files)"}
+{"language": "php", "text": "function read($session_id)"}
+{"language": "php", "text": "function ModelAdminItems()"}
+{"language": "php", "text": "function is(string $pattern)"}
+{"language": "php", "text": "function destroy(UserRemoverListener $listener, $id)"}
+{"language": "php", "text": "function updatePackage2($info)"}
+{"language": "php", "text": "function setMethod(string $method)"}
+{"language": "php", "text": "function Add($entity)"}
+{"language": "php", "text": "function optimizeProcess()"}
+{"language": "php", "text": "function cleanExport(string $string)"}
+{"language": "php", "text": "function setDomain(string $domain)"}
+{"language": "php", "text": "function dotGet($array, $key, $default = NULL)"}
+{"language": "php", "text": "function convert($data)"}
+{"language": "php", "text": "function requestUniversal($action)"}
+{"language": "php", "text": "function init()"}
+{"language": "php", "text": "function addCurrencyFacade(Container $container)"}
+{"language": "php", "text": "function attach()"}
+{"language": "php", "text": "function make($name, $view, $icon, callable $displayable = null)"}
+{"language": "php", "text": "function random($length, $numeric = 0)"}
+{"language": "php", "text": "function _instantiateByConstructor(BeanDefinition $definition)"}
+{"language": "php", "text": "function doRequest(array $fields)"}
+{"language": "php", "text": "function make($path, array $params = [])"}
+{"language": "php", "text": "function getDate()"}
+{"language": "php", "text": "function parse(string $payload)"}
+{"language": "php", "text": "function sha256(string $string, string $key = '')"}
+{"language": "php", "text": "function type($type)"}
+{"language": "php", "text": "function _create_from_source()"}
+{"language": "php", "text": "function addDelete($pattern, $paths = null)"}
+{"language": "php", "text": "function authorize(Request $Request, Response $Response, callable $callback)"}
+{"language": "php", "text": "function Adjust ($string, $to_encoding = null, $encoding_list = self::ENCOFING_LIST)"}
+{"language": "php", "text": "function headerParse($rawHeader)"}
+{"language": "php", "text": "function addAll(CriteriaSet $criteriaSet)"}
+{"language": "php", "text": "function getLocation(array $position)"}
+{"language": "php", "text": "function getStringRepresentation()"}
+{"language": "php", "text": "function getId($autoGenerate = true)"}
+{"language": "php", "text": "function setCommonHeadersForPHPSDK($AuthorizationHeader, $requestUri, $ContentType, $requestBody)"}
+{"language": "php", "text": "function _runCommand($command, $callback = null)"}
+{"language": "php", "text": "function lower($string)"}
+{"language": "php", "text": "function getCacheFile(callable $encoder = null)"}
+{"language": "php", "text": "function create()"}
+{"language": "php", "text": "function setOptions(array $options)"}
+{"language": "php", "text": "function getName()"}
+{"language": "php", "text": "function setBucketCounts($var)"}
+{"language": "php", "text": "function getTypedDataIds(array $types, array $context = [])"}
+{"language": "php", "text": "function decimalValue()"}
+{"language": "php", "text": "function update(SplSubject $subject)"}
+{"language": "php", "text": "function doWithFormat(string $format, $value, array $parameter, bool $before = false)"}
+{"language": "php", "text": "function deleteSnapshotAction(Request $request)"}
+{"language": "php", "text": "function hash($password)"}
+{"language": "php", "text": "function call($string, $method, $args)"}
+{"language": "php", "text": "function is(string $string, bool $strict = false)"}
+{"language": "php", "text": "function makeLocaleRoutesPath($locale, $localeKeys)"}
+{"language": "php", "text": "function getRequestID()"}
+{"language": "php", "text": "function set_config_data( $key, $value, $temp = false )"}
+{"language": "php", "text": "function getArguments(string $key = null)"}
+{"language": "php", "text": "function authorizeCreate(Request $request)"}
+{"language": "php", "text": "function transliterate( $string, $flag = self::DIACRITICS )"}
+{"language": "php", "text": "function findList($condition, $fieldValue, ?string $fieldKey = null)"}
+{"language": "php", "text": "function has(string $name = 'app\\\\')"}
+{"language": "php", "text": "function initConfig($app_name, array $runtime_config)"}
+{"language": "php", "text": "function getUriRequest($prefix = '/', &$url_config = array(), $clear_ampersand = true, $convert_html_entities = true)"}
+{"language": "php", "text": "function replicateFlags($resource, $original_resource)"}
+{"language": "php", "text": "function useXml()"}
+{"language": "php", "text": "function create($key, $amount = 1)"}
+{"language": "php", "text": "function scriptWithCallback(array $captchas, $callbackName = 'captchaRenderCallback')"}
+{"language": "php", "text": "function add($object)"}
+{"language": "php", "text": "function absoluteURI($url = null, $protocol = null, $port = null)"}
+{"language": "php", "text": "function getTransformResultsAsElem($dom)"}
+{"language": "php", "text": "function replaceFirst($string, $search, $replacement, $noCase = false)"}
+{"language": "php", "text": "function terminate(Closure $next, IRequest $request, IResponse $response)"}
+{"language": "php", "text": "function joinRecord($joinDataObj, $joinName = \"\")"}
+{"language": "php", "text": "function number($name, $value = null, array $attributes = [])"}
+{"language": "php", "text": "function titleize($s, $ignore=[])"}
+{"language": "php", "text": "function getCalcMoneyVat()"}
+{"language": "php", "text": "function setup_groups( $key )"}
+{"language": "php", "text": "function setRootName(IndexConfig $indexConfig, Index $index)"}
+{"language": "php", "text": "function getDirFileInfo(string $source_dir, bool $top_level_only = true, bool $_recursion = false)"}
+{"language": "php", "text": "function parseParameters($params)"}
+{"language": "php", "text": "function purgeUnneeded()"}
+{"language": "php", "text": "function actionProfile()"}
+{"language": "php", "text": "function doesTableExist($name, $returnName = false)"}
+{"language": "php", "text": "function get()"}
+{"language": "php", "text": "function handle($request, $next)"}
+{"language": "php", "text": "function getSelectedPaymentMethod($nice = false)"}
+{"language": "php", "text": "function handleException(\\Throwable $exception)"}
+{"language": "php", "text": "function forgetCustomProperty($name)"}
+{"language": "php", "text": "function parseUri()"}
+{"language": "php", "text": "function code(Field $field, $attr = [])"}
+{"language": "php", "text": "function handle()"}
+{"language": "php", "text": "function showPost($slug, Request $request)"}
+{"language": "php", "text": "function setMin($m)"}
+{"language": "php", "text": "function fromXdr(XdrBuffer $xdr)"}
+{"language": "php", "text": "function escape($value, $ignore = null, $flags = null)"}
+{"language": "php", "text": "function renderPartial(RequestApplicationInterface $app, $viewName, $params = [], $asResponse = false)"}
+{"language": "php", "text": "function doVoid(array $fields)"}
+{"language": "php", "text": "function getSmartyTemplate()"}
+{"language": "php", "text": "function getTableMetadata($name, $type = self::META_SCHEMA, $refresh = false)"}
+{"language": "php", "text": "function toCollection(array $array, $class)"}
+{"language": "php", "text": "function addSoftDelete(&$stub)"}
+{"language": "php", "text": "function makeDirectory($path)"}
+{"language": "php", "text": "function setMeta(array $meta, $argumentName = 'name')"}
+{"language": "php", "text": "function applySiteConditions()"}
+{"language": "php", "text": "function getStatusMessagesAsHtml($what = null)"}
+{"language": "php", "text": "function parseQueryString()"}
+{"language": "php", "text": "function with($params = null)"}
+{"language": "php", "text": "function render(View $view)"}
+{"language": "php", "text": "function keyExists(array $array, $key)"}
+{"language": "php", "text": "function offsetUnset($index)"}
+{"language": "php", "text": "function createTableRelated($table_name, $related)"}
+{"language": "php", "text": "function getSex(string $name = 'sex', string $msg = '')"}
+{"language": "php", "text": "function set($id, $data)"}
+{"language": "php", "text": "function getBindUsername(UserInterface $user, $queryAttribute)"}
+{"language": "php", "text": "function execute($request)"}
+{"language": "php", "text": "function publish($data_table, array $ids = [], $primary_key = '')"}
+{"language": "php", "text": "function optimizeMatcher(SegmentMatcherContract $matcher)"}
+{"language": "php", "text": "function setup( array $rule )"}
+{"language": "php", "text": "function isMiddlewareEnabled(string $key = '', string $group = null)"}
+{"language": "php", "text": "function has(string $name)"}
+{"language": "php", "text": "function executeCommand($command)"}
+{"language": "php", "text": "function createPluginInstances($plugins, $init=false)"}
+{"language": "php", "text": "function prepareData(ClassMetadata $metadata, array $data)"}
+{"language": "php", "text": "function view($view = null, $params = null, $display = false, $exit = false)"}
+{"language": "php", "text": "function formatBytes($bytes, $unit = \"\", $decimals = 2, $numberOnly = null)"}
+{"language": "php", "text": "function getFormat(string $payload)"}
+{"language": "php", "text": "function getIntMust(string $name, string $msg = '')"}
+{"language": "php", "text": "function performSave($model, array $attributes)"}
+{"language": "php", "text": "function deleteAll($condition = null, $params = [], $connection = null)"}
+{"language": "php", "text": "function rconSend($command)"}
+{"language": "php", "text": "function _escapeString(string $str)"}
+{"language": "php", "text": "function addRoute(Route $route)"}
+{"language": "php", "text": "function linesToCharsMunge($text, array &$lineArray, array &$lineHash)"}
+{"language": "php", "text": "function setForm(array $params, bool $multipart = false)"}
+{"language": "php", "text": "function getColumnNames($columns)"}
+{"language": "php", "text": "function valid_direct_scope( $stackPtr, array $valid_scopes )"}
+{"language": "php", "text": "function setAccountId($config)"}
+{"language": "php", "text": "function top(int $count = 30)"}
+{"language": "php", "text": "function onCommandMessage(Wrapper $wrapper, $message)"}
+{"language": "php", "text": "function setAuthority(string $str)"}
+{"language": "php", "text": "function prepare_post_data( $data )"}
+{"language": "php", "text": "function versionNewerThan($major, $minor = 0, $patch = 0)"}
+{"language": "php", "text": "function where($field, $value, $dbConn = NULL)"}
+{"language": "php", "text": "function generateQuery(IDruidQueryParameters $params)"}
+{"language": "php", "text": "function getScriptUrl()"}
+{"language": "php", "text": "function _query($sql, &$errnum, &$errmsg, $offset = 0, $limit = null)"}
+{"language": "php", "text": "function getStaticPropertyValue($name, $default = null)"}
+{"language": "php", "text": "function buildDistanceMatrixRow($row)"}
+{"language": "php", "text": "function renderExceptionWithWhoops(Exception $e)"}
+{"language": "php", "text": "function amOnAction($action, $params = [])"}
+{"language": "php", "text": "function sum(string $field, string $alias = 'sum_value')"}
+{"language": "php", "text": "function callbackReadBody($ch, $fd, $length)"}
+{"language": "php", "text": "function _limit(string $sql)"}
+{"language": "php", "text": "function getDefaultDatabaseName($environment = null)"}
+{"language": "php", "text": "function getDownloadURL($base, $packageinfo, $prefstate, $installed, $channel = false)"}
+{"language": "php", "text": "function validateNotEmpty($required, $throwOnInvalid = true)"}
+{"language": "php", "text": "function createAppendStream(array $elements)"}
+{"language": "php", "text": "function setPortrait($portrait)"}
+{"language": "php", "text": "function remove($hookName, $function_to_remove, $priority = 10)"}
+{"language": "php", "text": "function handleViewException(Throwable $exception, int $obLevel)"}
+{"language": "php", "text": "function connection(MemcachedExtension $memcached, array $servers)"}
+{"language": "php", "text": "function register()"}
+{"language": "php", "text": "function formAction(Request $request)"}
+{"language": "php", "text": "function addRelationship(Request $request)"}
+{"language": "php", "text": "function parseRecord($record, $fields_info, $filter_info = null, $for_update = false, $old_record = null)"}
+{"language": "php", "text": "function addAssociation($assoc)"}
+{"language": "php", "text": "function getAbsolutePath($path)"}
+{"language": "php", "text": "function fire()"}
+{"language": "php", "text": "function calculate()"}
+{"language": "php", "text": "function getRules($spec = null)"}
+{"language": "php", "text": "function upperToUnderscores($str)"}
+{"language": "php", "text": "function warn(...$args)"}
+{"language": "php", "text": "function collectSyncData()"}
+{"language": "php", "text": "function registerExtensionConfigManager()"}
+{"language": "php", "text": "function waitForReadyRead($time = 0)"}
+{"language": "php", "text": "function doUpdateModel($model)"}
+{"language": "php", "text": "function putContentToFile(string $file, string $content, string $key)"}
+{"language": "php", "text": "function unregister($msgHeader)"}
+{"language": "php", "text": "function getFunctionType($eventHandlerName)"}
+{"language": "php", "text": "function clearUsername($s)"}
+{"language": "php", "text": "function definedBy($key, $returnchannel = false)"}
+{"language": "php", "text": "function setCurrentViewName($viewname)"}
+{"language": "php", "text": "function parseContextValues(InputInterface $input)"}
+{"language": "php", "text": "function next()"}
+{"language": "php", "text": "function getList($field)"}
+{"language": "php", "text": "function set_option( $key, $value )"}
+{"language": "php", "text": "function fetchObject(\\ManiaLivePlugins\\Standard\\TeamSpeak\\TeamSpeak3\\Node\\AbstractNode $node, array $siblings = array())"}
+{"language": "php", "text": "function slugabize($str, $defaultChar = \"\")"}
+{"language": "php", "text": "function getNodeBody(array $theme)"}
+{"language": "php", "text": "function bind_dynamic_path_param( $dynamic_path , $params = array() )"}
+{"language": "php", "text": "function getFrom()"}
+{"language": "php", "text": "function sendNotification($participant, $notification)"}
+{"language": "php", "text": "function setActiveRecord($record)"}
+{"language": "php", "text": "function deleteEmptyTaxonomies()"}
+{"language": "php", "text": "function make($kernelClass)"}
+{"language": "php", "text": "function shorten(LinkInterface $link, $domain = null)"}
+{"language": "php", "text": "function viewFail(string $message, string $url = '', int $time = 3, int $status = 404, array $headers = [])"}
+{"language": "php", "text": "function desensitization(string $host)"}
+{"language": "php", "text": "function copyConfigurationDistFileWithinTarget()"}
+{"language": "php", "text": "function getTaskDescription(TaskConfiguration $task)"}
+{"language": "php", "text": "function searchClassMap()"}
+{"language": "php", "text": "function setEntries($entries)"}
+{"language": "php", "text": "function rearrange($direction = Maths::DIRECTION_POSITIVE)"}
+{"language": "php", "text": "function process_single_line_array( $stackPtr, $opener, $closer )"}
+{"language": "php", "text": "function t($category, $message, $params = [], $language = null)"}
+{"language": "php", "text": "function hasLayout()"}
+{"language": "php", "text": "function maybeTokenizeMdLinks()"}
+{"language": "php", "text": "function getTeamRoles()"}
+{"language": "php", "text": "function _subBuilder(Closure $callback)"}
+{"language": "php", "text": "function normalizeAndTruncatePath($path, $maxLength)"}
+{"language": "php", "text": "function calculateMatchScore( SplFileInfo $file, array $matchers = [] )"}
+{"language": "php", "text": "function copyDirectory(string $directory, string $destination, array $options = [])"}
+{"language": "php", "text": "function usagePath()"}
+{"language": "php", "text": "function writeLine(string $text)"}
+{"language": "php", "text": "function tell()"}
+{"language": "php", "text": "function dropAllTables()"}
+{"language": "php", "text": "function printTime(string $text)"}
+{"language": "php", "text": "function adjustFormName($formName)"}
+{"language": "php", "text": "function addValidator(ValidatorInterface $validator, bool $interrupt = null)"}
+{"language": "php", "text": "function verify($response, $clientIp = null)"}
+{"language": "php", "text": "function get($id)"}
+{"language": "php", "text": "function revokeAll($userId)"}
+{"language": "php", "text": "function register()"}
+{"language": "php", "text": "function convertObjectToArray($object)"}
+{"language": "php", "text": "function mapProperty(string $key)"}
+{"language": "php", "text": "function form(WorkOrder $workOrder, Comment $comment)"}
+{"language": "php", "text": "function _loadParts()"}
+{"language": "php", "text": "function exportViews()"}
+{"language": "php", "text": "function getTemplate($templateName)"}
+{"language": "php", "text": "function createFromInstance($object)"}
+{"language": "php", "text": "function addSubContext($name, $subContext)"}
+{"language": "php", "text": "function formatContent($content)"}
+{"language": "php", "text": "function rollbackFileTransaction()"}
+{"language": "php", "text": "function getGeoFieldsForAQL($collection)"}
+{"language": "php", "text": "function accept(bool $autoClose = true)"}
+{"language": "php", "text": "function setupFromCache()"}
+{"language": "php", "text": "function maybeTokenizeIfCondTags()"}
+{"language": "php", "text": "function buildProxy()"}
+{"language": "php", "text": "function prepare($sql, array $driver_options = [])"}
+{"language": "php", "text": "function getPointHistoryLabel(PointHistoryInterface $history)"}
+{"language": "php", "text": "function doParse($content)"}
+{"language": "php", "text": "function prepareAttributes()"}
+{"language": "php", "text": "function find($id)"}
+{"language": "php", "text": "function findAdderMethod($obj, $key)"}
+{"language": "php", "text": "function setAggregators($aggregatorsArray)"}
+{"language": "php", "text": "function isSeekable()"}
+{"language": "php", "text": "function get()"}
+{"language": "php", "text": "function setArguments(Kernel $kernel, $config)"}
+{"language": "php", "text": "function getTypeName($type)"}
+{"language": "php", "text": "function call($callback, array $parameters = [])"}
+{"language": "php", "text": "function createAssetsAction(Request $request, $token)"}
+{"language": "php", "text": "function listContents($directory = '', $recursive = false)"}
+{"language": "php", "text": "function sendConfirmation()"}
+{"language": "php", "text": "function createJs()"}
+{"language": "php", "text": "function format(IReport $report)"}
+{"language": "php", "text": "function texturize(array $args)"}
+{"language": "php", "text": "function equals(Number $comparedNumber)"}
+{"language": "php", "text": "function convert_file_to_file($xmlPath, $pdfPath, &$msgs = array(), &$dats = array())"}
+{"language": "php", "text": "function getPreviousChangeDateTime(\\DateTime $date)"}
+{"language": "php", "text": "function setResolver(string $type, SubResolver $resolver)"}
+{"language": "php", "text": "function attached($presenter)"}
+{"language": "php", "text": "function create($typo3CommandPath, array $commandLine = [], array $environmentVars = [], PhpExecutableFinder $phpFinder = null)"}
+{"language": "php", "text": "function makeImageResizes(ARef $aRef, ImageSettingInterface $imageSetting, array $attrs = [], $tmp = false)"}
+{"language": "php", "text": "function createService(ServiceLocatorInterface $serviceLocator)"}
+{"language": "php", "text": "function invoke($slug, $a, $b = null)"}
+{"language": "php", "text": "function updatePackage($package, $info, $merge = true)"}
+{"language": "php", "text": "function getLibFileWithPath($className, $packageName = \"\")"}
+{"language": "php", "text": "function apply(callable $handler)"}
+{"language": "php", "text": "function _render_join()"}
+{"language": "php", "text": "function getDefaultAttributes($link)"}
+{"language": "php", "text": "function isBetween($date, $from, $to, $strict = false)"}
+{"language": "php", "text": "function getApi()"}
+{"language": "php", "text": "function defineFunctionMock($namespace, $name)"}
+{"language": "php", "text": "function setRejected($failedReason)"}
+{"language": "php", "text": "function addService(int $containerId, string $serviceId, Argument $argument)"}
+{"language": "php", "text": "function delete($permissionId)"}
+{"language": "php", "text": "function getUnprocessedMails($markProcessed = true, \\Closure $callbackFunction = null)"}
+{"language": "php", "text": "function initialize()"}
+{"language": "php", "text": "function isSubpackage($p)"}
+{"language": "php", "text": "function write(string $data, float $timeout = 0)"}
+{"language": "php", "text": "function getNewRecord()"}
+{"language": "php", "text": "function authenticate(LoginRequest $request)"}
+{"language": "php", "text": "function cleanLogEvent(string $event)"}
+{"language": "php", "text": "function getCurrentAction(RequestApplicationInterface $app = null)"}
+{"language": "php", "text": "function removeField(string $name)"}
+{"language": "php", "text": "function blade($view, $data = array(), $viewPath = EVENTMANAGERINTEGRATION_VIEW_PATH)"}
+{"language": "php", "text": "function assertJsonMatched(string $pattern, string $actual, string $message = '')"}
+{"language": "php", "text": "function transform($json)"}
+{"language": "php", "text": "function update(InventoryStockRequest $request, $itemId, $stockId)"}
+{"language": "php", "text": "function buildColumn(ColumnInterface $column, array $options)"}
+{"language": "php", "text": "function getLog(string $message, PriorityInterface $priority = null, array $metaData = null)"}
+{"language": "php", "text": "function processResponseData($rawResponseData)"}
+{"language": "php", "text": "function up()"}
+{"language": "php", "text": "function listNodeCompiler(array &$theme)"}
+{"language": "php", "text": "function renameTable($from, $to, $schema = null)"}
+{"language": "php", "text": "function setCacheInvalidationSettings($settings)"}
+{"language": "php", "text": "function forget(&$array, $keys)"}
+{"language": "php", "text": "function extract($object)"}
+{"language": "php", "text": "function setUnixSocket($unixSocket = null)"}
+{"language": "php", "text": "function up()"}
+{"language": "php", "text": "function changeObjectType($newType)"}
+{"language": "php", "text": "function send($data)"}
+{"language": "php", "text": "function registerCommands()"}
+{"language": "php", "text": "function process($content)"}
+{"language": "php", "text": "function main($route = 'mca')"}
+{"language": "php", "text": "function start()"}
+{"language": "php", "text": "function init()"}
+{"language": "php", "text": "function getFile(string $fileID)"}
+{"language": "php", "text": "function addHead($pattern, $paths = null)"}
+{"language": "php", "text": "function buildLogicalScreenDescriptor()"}
+{"language": "php", "text": "function push($job)"}
+{"language": "php", "text": "function findFollowingThreadsTopicsQuery(UserInterface $user, Criteria $criteria = null)"}
+{"language": "php", "text": "function delete($id = null)"}
+{"language": "php", "text": "function bootstrap(IDispatch $dispatch)"}
+{"language": "php", "text": "function resolveRelations($dataTypeContent, DataType $dataType)"}
+{"language": "php", "text": "function translateWalletHistoryType($history)"}
+{"language": "php", "text": "function _etag($id, $type = 'strong')"}
+{"language": "php", "text": "function createStringToCompareReferences($v)"}
+{"language": "php", "text": "function getTotals(array $markers)"}
+{"language": "php", "text": "function shellArg($value)"}
+{"language": "php", "text": "function beforeInitSuccess()"}
+{"language": "php", "text": "function getGlobalData()"}
+{"language": "php", "text": "function runOnAllRedisServer(\\Closure $func)"}
+{"language": "php", "text": "function get(Context $context, $number)"}
+{"language": "php", "text": "function saveAs($filename)"}
+{"language": "php", "text": "function runCommandInForeground()"}
+{"language": "php", "text": "function getDBTables($force_fetch = false)"}
+{"language": "php", "text": "function getReply()"}
+{"language": "php", "text": "function onOneServer($idServer, $strict = true)"}
+{"language": "php", "text": "function renderBlock($name, $parameters)"}
+{"language": "php", "text": "function invalidateTags(array $tags)"}
+{"language": "php", "text": "function identifyHeadline($line, $lines, $current)"}
+{"language": "php", "text": "function processSingleLineArray(PHP_CodeSniffer_File $phpcsFile, $stackPtr, $arrayStart, $arrayEnd)"}
+{"language": "php", "text": "function simpleQuery(string $sql)"}
+{"language": "php", "text": "function store(Request $request)"}
+{"language": "php", "text": "function filterEventDate($the_time, $d, $post)"}
+{"language": "php", "text": "function setRanges(array $ranges)"}
+{"language": "php", "text": "function display(string $file, array $vars = [], ?string $ext = null)"}
+{"language": "php", "text": "function parse($str)"}
+{"language": "php", "text": "function process(ContainerBuilder $container)"}
+{"language": "php", "text": "function connect(array $clientCredentials, array $endPoints, $userDataUrl)"}
+{"language": "php", "text": "function mysql_version()"}
+{"language": "php", "text": "function execute(ContextInterface $context)"}
+{"language": "php", "text": "function _addPackage($package, $info)"}
+{"language": "php", "text": "function isValid($value)"}
+{"language": "php", "text": "function findAllByAccountId($accountId)"}
+{"language": "php", "text": "function processParams(PHP_CodeSniffer_File $phpcsFile, $stackPtr, $commentStart)"}
+{"language": "php", "text": "function _getResponseFromConnection(Rediska_Connection $connection)"}
+{"language": "php", "text": "function setTypes($var)"}
+{"language": "php", "text": "function refreshToken()"}
+{"language": "php", "text": "function timeLoaded($module)"}
+{"language": "php", "text": "function createForbiddenResponseForAPI()"}
+{"language": "php", "text": "function get($key)"}
+{"language": "php", "text": "function addTokenizer($tokenizer)"}
+{"language": "php", "text": "function execute(InputInterface $input, OutputInterface $output)"}
+{"language": "php", "text": "function getListeners(string ...$classes)"}
+{"language": "php", "text": "function iteratorToArray(RecursiveIteratorIterator $iterator, Iterator $subIterator, array $outputArray, $preventKeys = false)"}
+{"language": "php", "text": "function rewind()"}
+{"language": "php", "text": "function aliasMany(array $alias)"}
+{"language": "php", "text": "function fillEntityAttributes($entity, array $attributes)"}
+{"language": "php", "text": "function setupServiceProviders()"}
+{"language": "php", "text": "function getCalleeData($trace, $pos = 0)"}
+{"language": "php", "text": "function CSRFSetCookie(RequestInterface $request)"}
+{"language": "php", "text": "function compiles(Finder $finder, string $path)"}
+{"language": "php", "text": "function buildUrl($apiMethod, $parameters)"}
+{"language": "php", "text": "function safeDown(ConnectionInterface $connection)"}
+{"language": "php", "text": "function getValues($section = 0)"}
+{"language": "php", "text": "function cancelSubscription()"}
+{"language": "php", "text": "function processResult($results)"}
+{"language": "php", "text": "function log(string $message, bool $force = false, string $formatTime = 'H:i:s')"}
+{"language": "php", "text": "function isSuccessful()"}
+{"language": "php", "text": "function register(Container $app)"}
+{"language": "php", "text": "function getPropertyByName($name)"}
+{"language": "php", "text": "function sanitize($value)"}
+{"language": "php", "text": "function getCertificate(IlluminateRequest $request)"}
+{"language": "php", "text": "function getComponentRestriction($type)"}
+{"language": "php", "text": "function issueRefs($value, array $args = [], array $___refs = [])"}
+{"language": "php", "text": "function configureOptions(OptionsResolver $resolver)"}
+{"language": "php", "text": "function subChannelGetByName($name)"}
+{"language": "php", "text": "function isKeyInComplexList($key, $complexList = NULL)"}
+{"language": "php", "text": "function engine()"}
+{"language": "php", "text": "function getProcess($command, $args = array())"}
+{"language": "php", "text": "function registerExtensionProvider()"}
+{"language": "php", "text": "function addConnectSrc($uri, ?bool $explicitReporting = null)"}
+{"language": "php", "text": "function setOption( $name, $value )"}
+{"language": "php", "text": "function addRoute(RouteContract $route, array $parameterIndexNameMap)"}
+{"language": "php", "text": "function getParents($includeSelf = true)"}
+{"language": "php", "text": "function hash($password, $hash_with = self::HASHED_WITH_PHP)"}
+{"language": "php", "text": "function add(EntityInterface $entity)"}
+{"language": "php", "text": "function has($property, $value)"}
+{"language": "php", "text": "function getHtmlName()"}
+{"language": "php", "text": "function warn($message)"}
+{"language": "php", "text": "function notFound(?string $message = null, ?string $text = null)"}
+{"language": "php", "text": "function validate()"}
+{"language": "php", "text": "function validateNumberValue($value)"}
+{"language": "php", "text": "function resolve($data)"}
+{"language": "php", "text": "function resolveAlias(string $alias)"}
+{"language": "php", "text": "function run($arguments)"}
+{"language": "php", "text": "function save($dir, $filename = null)"}
+{"language": "php", "text": "function refresh()"}
+{"language": "php", "text": "function get(string $key, $default = null)"}
+{"language": "php", "text": "function hasAncestor(TaskConfiguration $taskConfig)"}
+{"language": "php", "text": "function renderStep($step)"}
+{"language": "php", "text": "function getLocationInformation()"}
+{"language": "php", "text": "function toXml($state = PEAR_VALIDATE_NORMAL, $nofilevalidation = false)"}
+{"language": "php", "text": "function ownsTeam($team)"}
+{"language": "php", "text": "function vksprintf($format, array $args)"}
+{"language": "php", "text": "function next()"}
+{"language": "php", "text": "function errorCommand(\\TYPO3\\CMS\\Extbase\\Mvc\\Exception\\CommandException $exception)"}
+{"language": "php", "text": "function formatAddress(array $contacts)"}
+{"language": "php", "text": "function passwordChange($newPassword, $userID = null)"}
+{"language": "php", "text": "function build_table( array $arr, $child = false )"}
+{"language": "php", "text": "function calculateFilePath($certificateChainUri)"}
+{"language": "php", "text": "function getCreditCardInfo($part = null, $defaults = array())"}
+{"language": "php", "text": "function runTask($command, $groupName)"}
+{"language": "php", "text": "function save_has_foreign_relations()"}
+{"language": "php", "text": "function getBaseUrl()"}
+{"language": "php", "text": "function getQueryBuilder()"}
+{"language": "php", "text": "function getRevisedLocationAttribute($id)"}
+{"language": "php", "text": "function setAttributeValues($values)"}
+{"language": "php", "text": "function onSubmit(array $data, array $item, FormRead $formRead = null, FormInterface $form)"}
+{"language": "php", "text": "function add($data = '', $options = [], $replace = false)"}
+{"language": "php", "text": "function processTemplate(Definition $definition, $name, array $variables = array())"}
+{"language": "php", "text": "function clearRow()"}
+{"language": "php", "text": "function getTooltip()"}
+{"language": "php", "text": "function getValue($value, $type)"}
+{"language": "php", "text": "function handle($request, Closure $next)"}
+{"language": "php", "text": "function getFrontendFilterValue($arrWidget, $arrFilterUrl, $strKeyOption)"}
+{"language": "php", "text": "function isMemoryTooHigh()"}
+{"language": "php", "text": "function getListingOrderArray()"}
+{"language": "php", "text": "function setHeader(string $key, string $value, bool $replace = true)"}
+{"language": "php", "text": "function normalizeFastRoute(array $routers)"}
+{"language": "php", "text": "function transform($value)"}
+{"language": "php", "text": "function withMiddleware(string $middlewareClassName, array $middlewareProperties = [])"}
+{"language": "php", "text": "function parseScopeArguments(array $scope)"}
+{"language": "php", "text": "function rerender($redrawForm = true, $hasRecordChange = true)"}
+{"language": "php", "text": "function boot(Factory $view)"}
+{"language": "php", "text": "function loadManifest()"}
+{"language": "php", "text": "function setupAnnotations()"}
+{"language": "php", "text": "function getFileAsset($assets_dir)"}
+{"language": "php", "text": "function equivalentTo(Expression $other)"}
+{"language": "php", "text": "function update(AttachmentUpdateRequest $request, $workOrderId, $attachmentId)"}
+{"language": "php", "text": "function mapFieldToSQLDefinition($object_type, $field, $qb_type)"}
+{"language": "php", "text": "function fetchColumn(string $alias, bool & $eof)"}
+{"language": "php", "text": "function t($category, $message, $params = [], $language = null)"}
+{"language": "php", "text": "function _bootstrapMailMessage($messageId)"}
+{"language": "php", "text": "function createMailer(Swift_Transport $transport, array $config)"}
+{"language": "php", "text": "function log($level, $message, array $context = [])"}
+{"language": "php", "text": "function insertSpans($text, array $spans, $linkResolver = null)"}
+{"language": "php", "text": "function marshalIpv6HostAndPort(stdClass $accumulator, array $server)"}
+{"language": "php", "text": "function destroy($record = null, string $alias = null)"}
+{"language": "php", "text": "function setupRequestToken()"}
+{"language": "php", "text": "function getAction(int $id)"}
+{"language": "php", "text": "function process_token( $stack_ptr )"}
+{"language": "php", "text": "function dispatch(IRequest $request)"}
+{"language": "php", "text": "function getAllError()"}
+{"language": "php", "text": "function connect($config = '', $linkNum = 0)"}
+{"language": "php", "text": "function RSSItems()"}
+{"language": "php", "text": "function getJobsByTemplate(Template $template)"}
+{"language": "php", "text": "function createCookieTab(ServerRequestInterface $serverRequest, ResponseInterface $response)"}
+{"language": "php", "text": "function unregisterFlash()"}
+{"language": "php", "text": "function getPrevRender()"}
+{"language": "php", "text": "function optionsArray($config = [])"}
+{"language": "php", "text": "function handleParameterDefinition(ParameterDefinitionNode $definition)"}
+{"language": "php", "text": "function registerConsoleCommand($key, $class)"}
+{"language": "php", "text": "function log($level, $message, array $loggedParameters = array())"}
+{"language": "php", "text": "function addMaintainedWorker(\\CharlotteDunois\\Phoebe\\Worker $worker)"}
+{"language": "php", "text": "function connect(Application $app)"}
+{"language": "php", "text": "function validatePackageInfo($info, &$errors, &$warnings, $dir_prefix = '')"}
+{"language": "php", "text": "function toString()"}
+{"language": "php", "text": "function addMaintainer($role, $handle, $name, $email, $active = 'yes')"}
+{"language": "php", "text": "function findPlaceholderStartPos($path)"}
+{"language": "php", "text": "function set($name, $value)"}
+{"language": "php", "text": "function checkForEmptyValue(string $valueName, $value)"}
+{"language": "php", "text": "function displayable()"}
+{"language": "php", "text": "function getFileLine($code, $params, $backtrace = null)"}
+{"language": "php", "text": "function createSerializer(CsvConfigurationInterface $configuration)"}
+{"language": "php", "text": "function connectionDefinition(AbstractType $type, $name = null, $config = [])"}
+{"language": "php", "text": "function saveAsHandler()"}
+{"language": "php", "text": "function create($driverClass = self::DRIVER_SERVER, array $options = [])"}
+{"language": "php", "text": "function loaded($plugin = null)"}
+{"language": "php", "text": "function prepare_regex()"}
+{"language": "php", "text": "function getCorsesArray()"}
+{"language": "php", "text": "function streamContextExec($context)"}
+{"language": "php", "text": "function getClassAlias($className)"}
+{"language": "php", "text": "function getItem(string $source, ?string $key, $defaults)"}
+{"language": "php", "text": "function twiceDaily(int $first = 1, int $second = 13)"}
+{"language": "php", "text": "function getBalanceEntry($current, $balances, $accId, $datestamp)"}
+{"language": "php", "text": "function existsDBKey(\\swoole_server $server, int $fd, string $model, string $key)"}
+{"language": "php", "text": "function getTokenizerWithKey($key)"}
+{"language": "php", "text": "function toArray()"}
+{"language": "php", "text": "function createFromPeekMessages(array $parsedResponse)"}
+{"language": "php", "text": "function findAll(array $orderBy = null, array $columns = null, bool $getRelations = null)"}
+{"language": "php", "text": "function getOrSetValue($object = null, $expire = null, $expireIsTimestamp = false)"}
+{"language": "php", "text": "function i($needle, $replace, $value)"}
+{"language": "php", "text": "function configureMappingOptions(OptionsResolver $resolver)"}
+{"language": "php", "text": "function configureOptions(OptionsResolver $resolver)"}
+{"language": "php", "text": "function display()"}
+{"language": "php", "text": "function getPath()"}
+{"language": "php", "text": "function getOrderBy()"}
+{"language": "php", "text": "function calibrate()"}
+{"language": "php", "text": "function getType()"}
+{"language": "php", "text": "function sumNodes(SimpleXMLElement $collection = null, $attribute = '')"}
+{"language": "php", "text": "function getCommentRepository()"}
+{"language": "php", "text": "function getSQL($only_sql = false)"}
+{"language": "php", "text": "function createInitAlbum($model = null, $model_id = null)"}
+{"language": "php", "text": "function checkSummaries()"}
+{"language": "php", "text": "function addToLog($caller, $message, $type = 'message')"}
+{"language": "php", "text": "function getTypeLabel($type, $constId)"}
+{"language": "php", "text": "function groupCount($block_name, $group_name)"}
+{"language": "php", "text": "function close()"}
+{"language": "php", "text": "function mergeOption(array $olds, array $options)"}
+{"language": "php", "text": "function renderToggleButton()"}
+{"language": "php", "text": "function create($workOrderId)"}
+{"language": "php", "text": "function cleanMatch(string $match = null)"}
+{"language": "php", "text": "function initView()"}
+{"language": "php", "text": "function setVariable(string $name, string $value = '')"}
+{"language": "php", "text": "function get_category_top( $path = null )"}
+{"language": "php", "text": "function editAction($slug, Request $request)"}
+{"language": "php", "text": "function isValidXML($xml)"}
+{"language": "php", "text": "function parse(string $payload)"}
+{"language": "php", "text": "function getCacheable()"}
+{"language": "php", "text": "function properties($row, Column $column)"}
+{"language": "php", "text": "function up()"}
+{"language": "php", "text": "function switchForm($formName = null, $id = null)"}
+{"language": "php", "text": "function validate(string $field, string $value, string $rules)"}
+{"language": "php", "text": "function match($pattern, $subject, $option = '')"}
+{"language": "php", "text": "function fromFiles($path)"}
+{"language": "php", "text": "function config($dbhost, $dbname, $dbuser, $dbpassword, $driver = \"mysqli\")"}
+{"language": "php", "text": "function whoamiSet($ident, $value = null)"}
+{"language": "php", "text": "function boot()"}
+{"language": "php", "text": "function getAllChildren()"}
+{"language": "php", "text": "function process(ScheduleInterface $schedule, \\DateTime $currentDateTime = null)"}
+{"language": "php", "text": "function redirect($url, $statusCode = 302, $checkAjax = true)"}
+{"language": "php", "text": "function assertValid(array $classes)"}
+{"language": "php", "text": "function readLine($token = \"\\n\", $useCR = false)"}
+{"language": "php", "text": "function lessThan($value, $max)"}
+{"language": "php", "text": "function getOnEventElements()"}
+{"language": "php", "text": "function getTagCloud($requestQuery = null)"}
+{"language": "php", "text": "function run()"}
+{"language": "php", "text": "function getMirror($server)"}
+{"language": "php", "text": "function addAcceptableJsonTypeForRequest(Closure $determination = null, Closure $callback = null)"}
+{"language": "php", "text": "function setKeyword($name, $keyword)"}
+{"language": "php", "text": "function nest(array $data, $seperator = '_')"}
+{"language": "php", "text": "function deleted(InventoryStock $stock)"}
+{"language": "php", "text": "function addTermOptions($dom, $elem)"}
+{"language": "php", "text": "function migrate(Extension $extension, $up = true)"}
+{"language": "php", "text": "function isEmpty()"}
+{"language": "php", "text": "function bytes($bytes, $decimals = 2, $mod = 1024)"}
+{"language": "php", "text": "function logout( $url = '', $service = '' )"}
+{"language": "php", "text": "function getSize()"}
+{"language": "php", "text": "function get($resource, array $query = [])"}
+{"language": "php", "text": "function write($filename = null, Zend_Config $config = null, $exclusiveLock = null)"}
+{"language": "php", "text": "function getEntitiesAction(ParamFetcherInterface $paramFetcher)"}
+{"language": "php", "text": "function prepare(Template $template)"}
+{"language": "php", "text": "function findByUser($userOrId)"}
+{"language": "php", "text": "function links(string $group = 'default', string $template = 'default_full')"}
+{"language": "php", "text": "function writeElement($name, $content = null)"}
+{"language": "php", "text": "function getXmlFromObj($phpObj)"}
+{"language": "php", "text": "function current()"}
+{"language": "php", "text": "function afterEntitySave(ORM_Entity $entity)"}
+{"language": "php", "text": "function parseRenderer($key, $value)"}
+{"language": "php", "text": "function readLine($bufferSize, $localTimeout = null)"}
+{"language": "php", "text": "function DMSLatitude($format = '%d %d %F %s')"}
+{"language": "php", "text": "function tell($user, $text)"}
+{"language": "php", "text": "function rename($path, $newpath)"}
+{"language": "php", "text": "function destroy($listener, $id)"}
+{"language": "php", "text": "function createTable(array $data, array $settings = [])"}
+{"language": "php", "text": "function get($id)"}
+{"language": "php", "text": "function findByOrFail(array $criteria, array $orderBy = null, int $limit = null, int $offset = null)"}
+{"language": "php", "text": "function getTableName()"}
+{"language": "php", "text": "function oneArrayStyleString(array $data, array $columnType, $indent = 0)"}
+{"language": "php", "text": "function getResource($resource)"}
+{"language": "php", "text": "function fetchSingleValue($default = 0, $throwException = false)"}
+{"language": "php", "text": "function _queueLeft($user, $queued = true)"}
+{"language": "php", "text": "function databaseEventDispatch()"}
+{"language": "php", "text": "function reset($paths = [], array $options = [])"}
+{"language": "php", "text": "function table(string $table)"}
+{"language": "php", "text": "function connect()"}
+{"language": "php", "text": "function resolveBaseUrlFrom(?string $root)"}
+{"language": "php", "text": "function select($question, $choices, $default = null, $multiSelect = false, $attempts = false)"}
+{"language": "php", "text": "function parseImports(array $imports, $configPath)"}
+{"language": "php", "text": "function authLogin($username, $password, &$company_file, &$wait_before_next_update, &$min_run_every_n_seconds, $override = false)"}
+{"language": "php", "text": "function listLicensingModels(Context $context)"}
+{"language": "php", "text": "function field($type, $name, $label = null, $value = null, $checked = null, array $options = array())"}
+{"language": "php", "text": "function getBlockImagesFlat($blockName)"}
+{"language": "php", "text": "function gc($maxlifetime)"}
+{"language": "php", "text": "function handle()"}
+{"language": "php", "text": "function num_pack($n, $blocksize, $unsigned)"}
+{"language": "php", "text": "function nullableTimestamps($precision = 0)"}
+{"language": "php", "text": "function setIpAddress($ip, $port = 80)"}
+{"language": "php", "text": "function add($value)"}
+{"language": "php", "text": "function send()"}
+{"language": "php", "text": "function getPath()"}
+{"language": "php", "text": "function is_publish_locked()"}
+{"language": "php", "text": "function buildAliasUpdateRequest($aliasedIndex, $aliasName, $newIndexName)"}
+{"language": "php", "text": "function handle(IApp $app)"}
+{"language": "php", "text": "function newColumn($name, array $options)"}
+{"language": "php", "text": "function _text(string $text, array $options = [])"}
+{"language": "php", "text": "function readMap(array $definition)"}
+{"language": "php", "text": "function toStdClass($data)"}
+{"language": "php", "text": "function isActive($code)"}
+{"language": "php", "text": "function register()"}
+{"language": "php", "text": "function urlMatchesRules(PHPCrawlerURLDescriptor $url)"}
+{"language": "php", "text": "function getTypeColor($type)"}
+{"language": "php", "text": "function groupExist($blockName, $groupName)"}
+{"language": "php", "text": "function attach(Listener $listener)"}
+{"language": "php", "text": "function bootstrapMenuHandler(Application $app)"}
+{"language": "php", "text": "function renderHTML()"}
+{"language": "php", "text": "function createKernel()"}
+{"language": "php", "text": "function populateRelationAsyncSingle($name, &$primaryModels)"}
+{"language": "php", "text": "function callHook($Driver, &$hooks, $hook, $requestID, $user, $ticket, &$err, $hook_data, $callback_config = array())"}
+{"language": "php", "text": "function authUser($user, $pass)"}
+{"language": "php", "text": "function clear($request)"}
+{"language": "php", "text": "function _indexData(string $table)"}
+{"language": "php", "text": "function load(array $configs, ContainerBuilder $container)"}
+{"language": "php", "text": "function iterator()"}
+{"language": "php", "text": "function unFollowThread(ThreadInterface $thread, UserInterface $user)"}
+{"language": "php", "text": "function merge($data = [], $key = null)"}
+{"language": "php", "text": "function has_changes( $old, $new )"}
+{"language": "php", "text": "function getByBuyersTeam($buyerTeamReference, $params)"}
+{"language": "php", "text": "function parseOption()"}
+{"language": "php", "text": "function handle(DomRequest $request, $type = self::MASTER_REQUEST, $catch = true)"}
+{"language": "php", "text": "function makeResize(ARef $aRef, ImageSettingInterface $imageSetting, ResizeSettingInterface $resizeSetting, array $item_attrs = [], $tmp = false)"}
+{"language": "php", "text": "function postPersist(PostInterface $post, LifecycleEventArgs $event)"}
+{"language": "php", "text": "function _parsePickerMap($pickerMap)"}
+{"language": "php", "text": "function set($value)"}
+{"language": "php", "text": "function initializeAttribute(array $attr)"}
+{"language": "php", "text": "function make(string $serviceId, array $arguments = null)"}
+{"language": "php", "text": "function query($sql, $look = true)"}
+{"language": "php", "text": "function copyFile($sourcePathOfFile, $destinationPath, $globExpressionList)"}
+{"language": "php", "text": "function bootstrap(KernelContract $kernel)"}
+{"language": "php", "text": "function sortGroupList(AbstractNode $a, AbstractNode $b)"}
+{"language": "php", "text": "function patch_make($a, $b = null, $c = null)"}
+{"language": "php", "text": "function createPath($share, $directory = '')"}
+{"language": "php", "text": "function getHttpRoutesInfos()"}
+{"language": "php", "text": "function getUrlSeo( $key, $idioma = null )"}
+{"language": "php", "text": "function getClientID()"}
+{"language": "php", "text": "function sanitizeFileData($files)"}
+{"language": "php", "text": "function generateHtmlAttributes($attributes)"}
+{"language": "php", "text": "function setType(int $type)"}
+{"language": "php", "text": "function getEditForm($id = null, $fields = null)"}
+{"language": "php", "text": "function get_allowed_attributes()"}
+{"language": "php", "text": "function translate($expression, $inputFormat = self::INPUT_POKENUMBER)"}
+{"language": "php", "text": "function staticPop($package)"}
+{"language": "php", "text": "function getParent()"}
+{"language": "php", "text": "function createServer()"}
+{"language": "php", "text": "function findBySql($type, $sql, ...$arguments)"}
+{"language": "php", "text": "function isAssoc()"}
+{"language": "php", "text": "function connect()"}
+{"language": "php", "text": "function getUsersAction(Request $request)"}
+{"language": "php", "text": "function getData()"}
+{"language": "php", "text": "function login(IdentityInterface $identity, $duration = 0)"}
+{"language": "php", "text": "function request(string $path, array $params = null, string $method = null, $body = null, array $headers = null)"}
+{"language": "php", "text": "function shouldReceive(...$params)"}
+{"language": "php", "text": "function readMetaData(&$xmlArr)"}
+{"language": "php", "text": "function valueToRep($value)"}
+{"language": "php", "text": "function getEmptyRecordArr()"}
+{"language": "php", "text": "function getHyphenationPattern(Tokenizer\\TokenRegistry $registry)"}
+{"language": "php", "text": "function hydrate($value)"}
+{"language": "php", "text": "function setCanEncrypt($canEncrypt)"}
+{"language": "php", "text": "function setSkipChecks()"}
+{"language": "php", "text": "function log($file, $batch)"}
+{"language": "php", "text": "function apiUnauthorized(?string $message = null, ?string $text = null)"}
+{"language": "php", "text": "function validate($totp, $key, $stamp = null)"}
+{"language": "php", "text": "function initComponent()"}
+{"language": "php", "text": "function convertExceptionToResponse(Exception $e)"}
+{"language": "php", "text": "function getGroupedLines()"}
+{"language": "php", "text": "function read(&$buffer, $length, $peek = false)"}
+{"language": "php", "text": "function set($name, $params, $expire = 0)"}
+{"language": "php", "text": "function loadAttributeOptionByAttributeCodeAndStoreIdAndValue($attributeCode, $storeId, $value)"}
+{"language": "php", "text": "function forUpdate(bool $flag = true)"}
+{"language": "php", "text": "function replace($source, $value)"}
+{"language": "php", "text": "function loginRequired($checkAjax = true, $checkAcceptHeader = true)"}
+{"language": "php", "text": "function setConsumerDestinations($var)"}
+{"language": "php", "text": "function getBundle($name)"}
+{"language": "php", "text": "function registerBindings()"}
+{"language": "php", "text": "function configureOptions(OptionsResolver $resolver)"}
+{"language": "php", "text": "function getOtherPartyId($partyId)"}
+{"language": "php", "text": "function getBodyParams()"}
+{"language": "php", "text": "function validateShardId(int $shard_id)"}
+{"language": "php", "text": "function getMobile(string $name = 'mobile', string $default = '')"}
+{"language": "php", "text": "function generateRandomKey($len = 32)"}
+{"language": "php", "text": "function detectURI(string $protocol, string $baseURL)"}
+{"language": "php", "text": "function getFunctions()"}
+{"language": "php", "text": "function getEntityAction(ParamFetcherInterface $paramFetcher, $id)"}
+{"language": "php", "text": "function requestXcdrRegister($host, $appUrl, array$options = array())"}
+{"language": "php", "text": "function createSource()"}
+{"language": "php", "text": "function _serializeValue($value, $tagName = null, $attributes = array())"}
+{"language": "php", "text": "function updateUser($listid,$email,$status)"}
+{"language": "php", "text": "function declinateThirdDeclension($word)"}
+{"language": "php", "text": "function render($template, array $data = [], $template_filter = Template::FILTER_ESCAPE, array $filters = [], Response $response = null, $template_path = null, $template_extension = 'tpl', $compress = false)"}
+{"language": "php", "text": "function renderWidget( $config = [] )"}
+{"language": "php", "text": "function reverse($latitude, $longitude)"}
+{"language": "php", "text": "function addProductIDs($productIDs)"}
+{"language": "php", "text": "function configureOptions(OptionsResolver $resolver)"}
+{"language": "php", "text": "function parseText(TokenStream $tokens, AstNode $currNode)"}
+{"language": "php", "text": "function getAsElem($dom)"}
+{"language": "php", "text": "function getArguments(string $arguments = null)"}
+{"language": "php", "text": "function filterButton($title = null, array $options = [])"}
+{"language": "php", "text": "function putShow($permissionId)"}
+{"language": "php", "text": "function addElement(ComponentHasElement $elements)"}
+{"language": "php", "text": "function fetch(string $tplname, string $parent = null)"}
+{"language": "php", "text": "function toLevel($arg, $defaultLevel = null)"}
+{"language": "php", "text": "function createSubject(SubjectConfigurationInterface $subjectConfiguration)"}
+{"language": "php", "text": "function options($actionID)"}
+{"language": "php", "text": "function route(string $name = null, $def = null)"}
+{"language": "php", "text": "function getValues()"}
+{"language": "php", "text": "function editTimeDiff($time)"}
+{"language": "php", "text": "function configureConditionOptions(OptionsResolver $resolver)"}
+{"language": "php", "text": "function getMyKey($data = null)"}
+{"language": "php", "text": "function setPath($path)"}
+{"language": "php", "text": "function findAllByEntityTypeAndEntityId($entityType, $entityId)"}
+{"language": "php", "text": "function handle()"}
+{"language": "php", "text": "function verify($password, $hash)"}
+{"language": "php", "text": "function getName($id)"}
+{"language": "php", "text": "function table(Priority $priority)"}
+{"language": "php", "text": "function buildIndexMapping(IndexConfigInterface $indexConfig)"}
+{"language": "php", "text": "function show($resourceId, $eventId)"}
+{"language": "php", "text": "function formatCharacters(string $str)"}
+{"language": "php", "text": "function assertListEmpty($document, string $pointer = '/data', string $message = '')"}
+{"language": "php", "text": "function initializeConfig(InputInterface $input, OutputInterface $output, $render = true)"}
+{"language": "php", "text": "function getOrderByQuery()"}
+{"language": "php", "text": "function setOptions($options = [])"}
+{"language": "php", "text": "function removeHeader($name)"}
+{"language": "php", "text": "function builder($entity)"}
+{"language": "php", "text": "function toArray()"}
+{"language": "php", "text": "function isValid($value)"}
+{"language": "php", "text": "function btnPutBackSomeForWorkOrder(WorkOrder $workOrder)"}
+{"language": "php", "text": "function getHumanSize( $decimals=2 )"}
+{"language": "php", "text": "function getAll()"}
+{"language": "php", "text": "function handle($request, Closure $next, $in, $type, $name, $transformer)"}
+{"language": "php", "text": "function checkAccessRecursive($user, $itemName, $params, $assignments)"}
+{"language": "php", "text": "function fetchStringMatches($value, $regex, $symbol)"}
+{"language": "php", "text": "function _bootstrapMailMessage($messageId)"}
+{"language": "php", "text": "function buildMutation($name, array $args, $output, callable $resolveFunction)"}
+{"language": "php", "text": "function init()"}
+{"language": "php", "text": "function _receiveResponse($removeId = false, $readUntil = \"\\n\")"}
+{"language": "php", "text": "function interpretFilterValue($value)"}
+{"language": "php", "text": "function getRoleAndUserFromIdUser($userId)"}
+{"language": "php", "text": "function setDiscountValue($discountValue, $fromRate = false)"}
+{"language": "php", "text": "function getTplBasePath()"}
+{"language": "php", "text": "function setupDependencies($text)"}
+{"language": "php", "text": "function fixNetworkAdminUrlFilter($path = '', $scheme = 'admin')"}
+{"language": "php", "text": "function checkLink($link_hash, $paragraph_id)"}
+{"language": "php", "text": "function fqcnToBlockPrefix(string $fqcn)"}
+{"language": "php", "text": "function error($arg = null)"}
+{"language": "php", "text": "function pagesTranslations()"}
+{"language": "php", "text": "function wrapTag($element, $element_tags = array())"}
+{"language": "php", "text": "function getCustomerToMailAddress($formData = [])"}
+{"language": "php", "text": "function actionClear()"}
+{"language": "php", "text": "function setCookies($cookies, $merge = false)"}
+{"language": "php", "text": "function addSource(ArticleSource $source)"}
+{"language": "php", "text": "function stmtFetch($_fetchAll = false, $fetch_style = PDO::FETCH_ASSOC)"}
+{"language": "php", "text": "function process(ScheduleInterface $schedule, \\DateTime $currentDateTime = null)"}
+{"language": "php", "text": "function getConfiguration()"}
+{"language": "php", "text": "function getEntitiesByFieldId($fieldId)"}
+{"language": "php", "text": "function addExtension(ExtensionInterface $extension, $forcePrepend = false)"}
+{"language": "php", "text": "function closeContainer()"}
+{"language": "php", "text": "function configureStfalconTinymceBundle(ContainerBuilder $container, array $config, array $bundles)"}
+{"language": "php", "text": "function dropIndex(array $columns)"}
+{"language": "php", "text": "function typeEnum(...$allowedTypes)"}
+{"language": "php", "text": "function saturate($pct)"}
+{"language": "php", "text": "function userExistsViaEmail($email)"}
+{"language": "php", "text": "function register()"}
+{"language": "php", "text": "function table()"}
+{"language": "php", "text": "function getKey($key, $default = null)"}
+{"language": "php", "text": "function renderMapBound(Map $map)"}
+{"language": "php", "text": "function instance(string $table)"}
+{"language": "php", "text": "function slugPattern()"}
+{"language": "php", "text": "function get_lines_details_by_phone_name($NAME)"}
+{"language": "php", "text": "function getBundles(ParserInterface $parser)"}
+{"language": "php", "text": "function matchePathInfo()"}
+{"language": "php", "text": "function up()"}
+{"language": "php", "text": "function getRemote(array $args = [])"}
+{"language": "php", "text": "function setQueues(array $queues)"}
+{"language": "php", "text": "function findByName($Context, $realmID, $name)"}
+{"language": "php", "text": "function getExpressionContext()"}
+{"language": "php", "text": "function isSubclassOf($class)"}
+{"language": "php", "text": "function setParameterActionTo($parameter, $action)"}
+{"language": "php", "text": "function existsTable(string $tbname)"}
+{"language": "php", "text": "function createCommand(string $commandID, array $arguments = [])"}
+{"language": "php", "text": "function setMaxAge($maxage)"}
+{"language": "php", "text": "function execute(ProcessState $state)"}
+{"language": "php", "text": "function compileInsert(Builder $query)"}
+{"language": "php", "text": "function serverGroupGetByName($name, $type = \\ManiaLivePlugins\\Standard\\TeamSpeak\\TeamSpeak3\\TeamSpeak3::GROUP_DBTYPE_REGULAR)"}
+{"language": "php", "text": "function create()"}
+{"language": "php", "text": "function insert($tablename, array $rows, array $options = [])"}
+{"language": "php", "text": "function getQuery(string $startKey, string $endKey)"}
+{"language": "php", "text": "function getVisibleAttribute(string $name, $default = null)"}
+{"language": "php", "text": "function triggerSuggestImport($download = false)"}
+{"language": "php", "text": "function extractForProperty(\\EasyRdf_Resource $property)"}
+{"language": "php", "text": "function ignore_token( $ptr )"}
+{"language": "php", "text": "function profile($message = null)"}
+{"language": "php", "text": "function updateTimestamp($sessionId, $data)"}
+{"language": "php", "text": "function isNull($column)"}
+{"language": "php", "text": "function getErrorString()"}
+{"language": "php", "text": "function valueToRep($value)"}
+{"language": "php", "text": "function softDelete()"}
+{"language": "php", "text": "function applyGt(Filter $left, Filter $right)"}
+{"language": "php", "text": "function parseDisjunction()"}
+{"language": "php", "text": "function getItem($crop_name)"}
+{"language": "php", "text": "function setupDefaultCriteria()"}
+{"language": "php", "text": "function unlockForEditorsCommand()"}
+{"language": "php", "text": "function retrieveCacheFirst($url, $accept = false, $forcestring = false, $channel = false)"}
+{"language": "php", "text": "function addForeignKey($name, $table, $columns, $refTable, $refColumns, $delete = null, $update = null)"}
+{"language": "php", "text": "function getConditionExpression(string $segmentVariable, int $uniqueKey = null)"}
+{"language": "php", "text": "function onFrom(ezcQuerySelect $query)"}
+{"language": "php", "text": "function typeCast(string $type, ?\\Throwable $throwable = null)"}
+{"language": "php", "text": "function get(?string $key = null)"}
+{"language": "php", "text": "function getTableUniques($name, $refresh = false)"}
+{"language": "php", "text": "function read(BinaryReader &$br, $length = null)"}
+{"language": "php", "text": "function rebind(float $timeout = 0)"}
+{"language": "php", "text": "function getContext(ContextInterface $context, ActionInterface $action = null, array $extraData = null, $logWholeContext = false)"}
+{"language": "php", "text": "function registerCompilers()"}
+{"language": "php", "text": "function response($text)"}
+{"language": "php", "text": "function toArray($start = 0, $end = -1, $responseIterator = false)"}
+{"language": "php", "text": "function translateMessage($message, $language = null)"}
+{"language": "php", "text": "function setupResultObject()"}
+{"language": "php", "text": "function createId(RequestApplicationInterface $app)"}
+{"language": "php", "text": "function build($siteKey, array $items = [])"}
+{"language": "php", "text": "function runWorker(callable $handler)"}
+{"language": "php", "text": "function getAll()"}
+{"language": "php", "text": "function loadData(IApp $app)"}
+{"language": "php", "text": "function radio($name, $checked = false, $options = [], $encoding = null)"}
+{"language": "php", "text": "function getQualifiedPivotTableName(string $class=null)"}
+{"language": "php", "text": "function makeIndex(array $url_config, $have_controller = false)"}
+{"language": "php", "text": "function fillType($type)"}
+{"language": "php", "text": "function createStreamFromFile(string $filename, string $mode = 'r')"}
+{"language": "php", "text": "function setExceptionHandler(Throwable $e)"}
+{"language": "php", "text": "function Info($tag = mull)"}
+{"language": "php", "text": "function lex($input)"}
+{"language": "php", "text": "function newXsltRetriever(DownloaderInterface $downloader = null)"}
+{"language": "php", "text": "function addMetas($key, $value = null)"}
+{"language": "php", "text": "function filterAnnotationsByType(string $type, Annotation ...$annotations)"}
+{"language": "php", "text": "function sendHeader()"}
+{"language": "php", "text": "function getLogger(ContainerInterface $container)"}
+{"language": "php", "text": "function setParent(&$obj, $val, $record)"}
+{"language": "php", "text": "function createWriter($element)"}
+{"language": "php", "text": "function compileTheme(array &$theme)"}
+{"language": "php", "text": "function validate( $hppRequest, Constraint $constraint )"}
+{"language": "php", "text": "function addTags($tags)"}
+{"language": "php", "text": "function getTopTracks(string $country, string $location = null, $limit = 50, int $page = 1)"}
+{"language": "php", "text": "function registerViserioTwigExtension(TwigEnvironment $twig, ContainerInterface $container)"}
+{"language": "php", "text": "function select($data = null, array $bind = [], bool $flag = false)"}
+{"language": "php", "text": "function handleMultiple(ProxyQueryInterface $queryBuilder, $alias, $data)"}
+{"language": "php", "text": "function getRootDir()"}
+{"language": "php", "text": "function setAspect(AspectDefinition $aspect)"}
+{"language": "php", "text": "function getTotalPlaytime($appId)"}
+{"language": "php", "text": "function setTravelMode($travelMode = null)"}
+{"language": "php", "text": "function negotiateMimeType($supported, $default)"}
+{"language": "php", "text": "function hyphenate($string)"}
+{"language": "php", "text": "function evaluate($value)"}
+{"language": "php", "text": "function getNamespacePrefixes($namespace)"}
+{"language": "php", "text": "function getFileSize($size)"}
+{"language": "php", "text": "function listDatabases()"}
+{"language": "php", "text": "function writeSelectQuery(Select $select)"}
+{"language": "php", "text": "function createStopElement($current, int $sorting)"}
+{"language": "php", "text": "function load_wordpress()"}
+{"language": "php", "text": "function setSourceUrl(PHPCrawlerURLDescriptor $SourceUrl)"}
+{"language": "php", "text": "function humpToUnderlineByIndexArray ($array = array())"}
+{"language": "php", "text": "function handleUnauthorized(UnauthorizedHttpException $e)"}
+{"language": "php", "text": "function actionConfigTemplate(RequestApplicationInterface $app, $filePath)"}
+{"language": "php", "text": "function saveAvailableBlock($blockUniqueKey, $renderedBlockContent)"}
+{"language": "php", "text": "function delete($id)"}
+{"language": "php", "text": "function dropView($viewName, $schemaName = null, $ifExists = true, ...$args)"}
+{"language": "php", "text": "function matches(Request $request, Application $app)"}
+{"language": "php", "text": "function backup(array $strings, $path, $filename)"}
+{"language": "php", "text": "function getCloner()"}
+{"language": "php", "text": "function current(Request $request = null)"}
+{"language": "php", "text": "function getPermissions()"}
+{"language": "php", "text": "function match($request, &$variables = null, &$hostVariables = null)"}
+{"language": "php", "text": "function store(AModel $model)"}
+{"language": "php", "text": "function validateSign(string $value, string $sign)"}
+{"language": "php", "text": "function rules()"}
+{"language": "php", "text": "function networkTraffic()"}
+{"language": "php", "text": "function isValid()"}
+{"language": "php", "text": "function loadClass($class)"}
+{"language": "php", "text": "function setCanvas($width, $height)"}
+{"language": "php", "text": "function handle($app_username, $app_tenant)"}
+{"language": "php", "text": "function write(Payload $payload)"}
+{"language": "php", "text": "function submitTransaction(TransactionBuilder $transactionBuilder, $signingAccountSeedString)"}
+{"language": "php", "text": "function addMediaSrc($uri, ?bool $explicitReporting = null)"}
+{"language": "php", "text": "function all( $as = null )"}
+{"language": "php", "text": "function unlink($provider)"}
+{"language": "php", "text": "function getSectionList()"}
+{"language": "php", "text": "function difference($items)"}
+{"language": "php", "text": "function describe(OutputInterface $output, $object, array $options = [])"}
+{"language": "php", "text": "function finalize()"}
+{"language": "php", "text": "function clientGetById($clid)"}
+{"language": "php", "text": "function convert($json)"}
+{"language": "php", "text": "function describeField($table, $field, $refresh = false)"}
+{"language": "php", "text": "function createAwait($resource, \\SplQueue $writeQueue)"}
+{"language": "php", "text": "function getPropertyReflection($objectOrName, $propertyName)"}
+{"language": "php", "text": "function delete($request)"}
+{"language": "php", "text": "function sendResponseStatus($code = 200, $descriptions = '')"}
+{"language": "php", "text": "function create($type = null, Source $source = null, array $options = [])"}
+{"language": "php", "text": "function getDirectMembership()"}
+{"language": "php", "text": "function calculate(FormulasInterface $formula)"}
+{"language": "php", "text": "function getEscapedTypeOrderBy($type)"}
+{"language": "php", "text": "function checkNamespace(Request $request)"}
+{"language": "php", "text": "function indentRecursive(\\DOMNode $currentNode, $depth)"}
+{"language": "php", "text": "function pushListWebsiteSubscriptions( $websiteId, $limit = NULL, $offset = NULL )"}
+{"language": "php", "text": "function createExtraImages($styles, $filename, $tmp_name, $album_id, $main_id, $image_name)"}
+{"language": "php", "text": "function readMetadata(&$xmlArr)"}
+{"language": "php", "text": "function parseWhere(bool $child = false)"}
+{"language": "php", "text": "function pluck($array, $value, $key = null)"}
+{"language": "php", "text": "function initializeIterator(ProcessState $state)"}
+{"language": "php", "text": "function displayWithStyling($text)"}
+{"language": "php", "text": "function implode(array $value = null, $delimiter = null)"}
+{"language": "php", "text": "function setClassName($className)"}
+{"language": "php", "text": "function get(Context $context, $number)"}
+{"language": "php", "text": "function handleResource(array $resources)"}
+{"language": "php", "text": "function process(EnvironmentInterface $environment)"}
+{"language": "php", "text": "function sortDependencies(array $dependencies)"}
+{"language": "php", "text": "function parseAutoFill(string $type, ?array $fill = null)"}
+{"language": "php", "text": "function destroy($id)"}
+{"language": "php", "text": "function initializeProvided(string $itemId)"}
+{"language": "php", "text": "function addString($p_filename, $p_string, $p_datetime = false)"}
+{"language": "php", "text": "function setupProperty($options, $name, $constant = null)"}
+{"language": "php", "text": "function buildQueryParamsUrl($url, $params)"}
+{"language": "php", "text": "function delete($force = FALSE)"}
+{"language": "php", "text": "function date(string $version, string $format = 'F jS, Y')"}
+{"language": "php", "text": "function asInteger($data, $default = null)"}
+{"language": "php", "text": "function getField($key)"}
+{"language": "php", "text": "function getDomains()"}
+{"language": "php", "text": "function paginate()"}
+{"language": "php", "text": "function getMessage($bundle, $message, array $arguments, $locale = 'default')"}
+{"language": "php", "text": "function onCommandConfigure(BasicConsoleEvent $event)"}
+{"language": "php", "text": "function filterSessions(SsoState $ssoState, Assertion $assertion, $ownEntityId, $partyEntityId)"}
+{"language": "php", "text": "function phpSelf($dropqs = true)"}
+{"language": "php", "text": "function match($methods, $pattern, $fn)"}
+{"language": "php", "text": "function restAfterKey($key)"}
+{"language": "php", "text": "function quoteVal($value, $quote = true)"}
+{"language": "php", "text": "function delete(string $key)"}
+{"language": "php", "text": "function getSqlFieldDefinition()"}
+{"language": "php", "text": "function execute(Expression $expr)"}
+{"language": "php", "text": "function register()"}
+{"language": "php", "text": "function process_token( $stackPtr )"}
+{"language": "php", "text": "function getUsername($search, $key, $blur = false)"}
+{"language": "php", "text": "function boot(Router $router)"}
+{"language": "php", "text": "function generateContaoBundles($path, &$bundles)"}

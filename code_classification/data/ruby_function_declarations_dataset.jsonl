@@ -1,0 +1,653 @@
+{"language": "ruby", "text": "def parse_row(result_code)"}
+{"language": "ruby", "text": "def concat(values, axis, name: \"concat\")"}
+{"language": "ruby", "text": "def to_datastream(*a)"}
+{"language": "ruby", "text": "def points(num_points, prime)"}
+{"language": "ruby", "text": "def enhance_content(value, separator = ', ')"}
+{"language": "ruby", "text": "def find(icon)"}
+{"language": "ruby", "text": "def perform_request(http_method, path, klass, key, options = {})"}
+{"language": "ruby", "text": "def job_locale_update(project_id, job_id, id, params)"}
+{"language": "ruby", "text": "def top(n, scores)"}
+{"language": "ruby", "text": "def habtm_check_boxes(method, choices, options = {})"}
+{"language": "ruby", "text": "def distance_of_time_in_words(from_time, to_time=Time.now)"}
+{"language": "ruby", "text": "def list_all_logs(filter:, sort: nil, page_limit: nil, cursor: nil)"}
+{"language": "ruby", "text": "def render_template(source, options = {})"}
+{"language": "ruby", "text": "def user_reactivate( attributes: )"}
+{"language": "ruby", "text": "def pkey_string_to_hash(pkey)"}
+{"language": "ruby", "text": "def retrieve_commit_comment(owner, repo, sha, id)"}
+{"language": "ruby", "text": "def remote_execution_proxies(provider, authorized = true)"}
+{"language": "ruby", "text": "def get_revision_info(src_session, dest_session, src_sha1)"}
+{"language": "ruby", "text": "def ensure_issue_labels(owner, repo, issue_id)"}
+{"language": "ruby", "text": "def bar_code_39(bar_code_string, x, y, params = {})"}
+{"language": "ruby", "text": "def get_random_number(bytes)"}
+{"language": "ruby", "text": "def get_parent(session, rev)"}
+{"language": "ruby", "text": "def log1p(input, name: nil)"}
+{"language": "ruby", "text": "def add_security_tokens(uri, tokens = {})"}
+{"language": "ruby", "text": "def job_locales_list(project_id, job_id, page, per_page, params)"}
+{"language": "ruby", "text": "def expire_publication(session_id, message_id)"}
+{"language": "ruby", "text": "def run_simple(cmd, fail_on_error=true)"}
+{"language": "ruby", "text": "def attach_to(ip)"}
+{"language": "ruby", "text": "def add_word(customization_id:, word:, translation:, part_of_speech: nil)"}
+{"language": "ruby", "text": "def register(name, fn = nil, &block)"}
+{"language": "ruby", "text": "def draw(alpha = 255, z_index = 0, color = 0xffffff)"}
+{"language": "ruby", "text": "def banner(str, color: GREEN)"}
+{"language": "ruby", "text": "def head(endpoint)"}
+{"language": "ruby", "text": "def app_version(app_name = self.current_app)"}
+{"language": "ruby", "text": "def check(activity)"}
+{"language": "ruby", "text": "def usable_executable_path_for(exe)"}
+{"language": "ruby", "text": "def broadcast_dimensions(input, dims = [])"}
+{"language": "ruby", "text": "def raise_if_block(obj, name, has_block, type)"}
+{"language": "ruby", "text": "def _get(cmd, *args)"}
+{"language": "ruby", "text": "def draw(alpha = 255, z_index = 0, color = 0xffffff)"}
+{"language": "ruby", "text": "def with_embedded_path(env = {})"}
+{"language": "ruby", "text": "def property(*)"}
+{"language": "ruby", "text": "def zeros(shape, dtype: :float32, name: nil)"}
+{"language": "ruby", "text": "def comments_from_page(pattern, page = nil)"}
+{"language": "ruby", "text": "def max(input_a, input_b, name: nil)"}
+{"language": "ruby", "text": "def ensure_orgs(user)"}
+{"language": "ruby", "text": "def link_to_trust_request(text, trust_url = \"http://#{request.host}/\", *args)"}
+{"language": "ruby", "text": "def floor_div(input_a, input_b, name: nil)"}
+{"language": "ruby", "text": "def parse_attributes(e)"}
+{"language": "ruby", "text": "def add(username, token)"}
+{"language": "ruby", "text": "def content(lang='')"}
+{"language": "ruby", "text": "def parse_fixtures( reader )"}
+{"language": "ruby", "text": "def glossaries_list(account_id, page, per_page)"}
+{"language": "ruby", "text": "def neighbors_of_cell_at(x, y)"}
+{"language": "ruby", "text": "def path_with_prefix(seedname, path)"}
+{"language": "ruby", "text": "def ensure_repo_label(owner, repo, name)"}
+{"language": "ruby", "text": "def get_columns(table_name)"}
+{"language": "ruby", "text": "def librarian_install_modules(directory, module_name)"}
+{"language": "ruby", "text": "def rev_sha1(rev)"}
+{"language": "ruby", "text": "def parse_user_info(node)"}
+{"language": "ruby", "text": "def user_create( attributes: )"}
+{"language": "ruby", "text": "def email_addresses(text)"}
+{"language": "ruby", "text": "def exec(cmd, options = {})"}
+{"language": "ruby", "text": "def vector_op(vector, vector2, switch = false, safe = true, &block)"}
+{"language": "ruby", "text": "def watch(options={})"}
+{"language": "ruby", "text": "def draw(alpha = 0xff, z_index = 0, color = 0xffffff)"}
+{"language": "ruby", "text": "def with_retries(&block)"}
+{"language": "ruby", "text": "def where(method)"}
+{"language": "ruby", "text": "def open_session(uri, listener_url = nil)"}
+{"language": "ruby", "text": "def irregular(singular, plural)"}
+{"language": "ruby", "text": "def set_timeout(timeout)"}
+{"language": "ruby", "text": "def image_url_for_name(name)"}
+{"language": "ruby", "text": "def delete(tokens)"}
+{"language": "ruby", "text": "def parse_service_name(path)"}
+{"language": "ruby", "text": "def node(name)"}
+{"language": "ruby", "text": "def build_lock_queue_enumerator(lock_queue, at_most_once:)"}
+{"language": "ruby", "text": "def rpm_safe(string)"}
+{"language": "ruby", "text": "def footnote_html(id, time)"}
+{"language": "ruby", "text": "def p_sign(secret, message)"}
+{"language": "ruby", "text": "def parse(str)"}
+{"language": "ruby", "text": "def get4 (k)"}
+{"language": "ruby", "text": "def store_summary_to_backend(feed, curl)"}
+{"language": "ruby", "text": "def app_version_file(app_name = self.current_app)"}
+{"language": "ruby", "text": "def get (k)"}
+{"language": "ruby", "text": "def basic_qos(**opts)"}
+{"language": "ruby", "text": "def gotcha(options = {})"}
+{"language": "ruby", "text": "def light_command(out_file, is_bundle: false)"}
+{"language": "ruby", "text": "def csv_read(path)"}
+{"language": "ruby", "text": "def call_callbacks(what, tag, *params)"}
+{"language": "ruby", "text": "def user_change_password( attributes: )"}
+{"language": "ruby", "text": "def event_summary(trim_at = 100)"}
+{"language": "ruby", "text": "def category(options = {})"}
+{"language": "ruby", "text": "def log(message)"}
+{"language": "ruby", "text": "def type_cast(values)"}
+{"language": "ruby", "text": "def verify_compatibility(values)"}
+{"language": "ruby", "text": "def at(column)"}
+{"language": "ruby", "text": "def ones_like(tensor, dtype: nil, name: nil)"}
+{"language": "ruby", "text": "def unlock(token = @tokens.pop)"}
+{"language": "ruby", "text": "def validate_node(instance)"}
+{"language": "ruby", "text": "def as_json(opts={})"}
+{"language": "ruby", "text": "def store_mention_data(mention)"}
+{"language": "ruby", "text": "def eye(num_rows, num_columns: nil, dtype: :float32, name: nil)"}
+{"language": "ruby", "text": "def grant_roles(user, roles, options = nil)"}
+{"language": "ruby", "text": "def delete(path, options = {})"}
+{"language": "ruby", "text": "def mark_filesystem_directories(fsdir)"}
+{"language": "ruby", "text": "def configure(*args)"}
+{"language": "ruby", "text": "def execute(program = nil, &block)"}
+{"language": "ruby", "text": "def new_fit_data_record(record_type, field_values = {})"}
+{"language": "ruby", "text": "def pow(input_a, input_b, name: nil)"}
+{"language": "ruby", "text": "def to_image(opts={})"}
+{"language": "ruby", "text": "def license_file_path(path = NULL)"}
+{"language": "ruby", "text": "def publish(klass, pattern, options)"}
+{"language": "ruby", "text": "def build_link(to_node)"}
+{"language": "ruby", "text": "def update_intent(workspace_id:, intent:, new_intent: nil, new_description: nil, new_examples: nil)"}
+{"language": "ruby", "text": "def method_missing(method, *args, &block)"}
+{"language": "ruby", "text": "def where(condition, true_t = nil, false_t = nil, name: nil)"}
+{"language": "ruby", "text": "def not_equal(input_a, input_b, name: nil)"}
+{"language": "ruby", "text": "def list_udf(options = nil)"}
+{"language": "ruby", "text": "def add (colname, operator, val, affirmative=true, no_index=false)"}
+{"language": "ruby", "text": "def pmmap_grouped(data)"}
+{"language": "ruby", "text": "def random_normal(shape, dtype: :float32, mean: 0.0, stddev: 1.0, seed: nil, name: nil)"}
+{"language": "ruby", "text": "def artifact_for(artifact)"}
+{"language": "ruby", "text": "def wrap_list(list, width)"}
+{"language": "ruby", "text": "def do_repeats(s)"}
+{"language": "ruby", "text": "def find(selector, options = {}, &block)"}
+{"language": "ruby", "text": "def delete (k)"}
+{"language": "ruby", "text": "def message(assistant_id:, session_id:, input: nil, context: nil)"}
+{"language": "ruby", "text": "def create_network(name, tenant, admin_state_up = true)"}
+{"language": "ruby", "text": "def whitelist_file(file)"}
+{"language": "ruby", "text": "def get(options={})"}
+{"language": "ruby", "text": "def vars(nid, vs={})"}
+{"language": "ruby", "text": "def classy_enum_attr(attribute, options={})"}
+{"language": "ruby", "text": "def get_node_by_name(node_name)"}
+{"language": "ruby", "text": "def method_missing(method, *args, &block)"}
+{"language": "ruby", "text": "def children(with_directory = true)"}
+{"language": "ruby", "text": "def variations(experiment_id)"}
+{"language": "ruby", "text": "def ldelete (*keys)"}
+{"language": "ruby", "text": "def export_module(message)"}
+{"language": "ruby", "text": "def set_color(bool)"}
+{"language": "ruby", "text": "def add(input_a, input_b, name: nil)"}
+{"language": "ruby", "text": "def get_by_alias_key(alias_key)"}
+{"language": "ruby", "text": "def ensure_participation(user, organization, members = true)"}
+{"language": "ruby", "text": "def apply_filter_param(attr_metadata, collection, opts = {})"}
+{"language": "ruby", "text": "def exists(key, options = nil)"}
+{"language": "ruby", "text": "def open(io)"}
+{"language": "ruby", "text": "def ensure_issue_label(owner, repo, issue_id, name)"}
+{"language": "ruby", "text": "def build_times_enumerator(number, cursor:)"}
+{"language": "ruby", "text": "def deals(options = {})"}
+{"language": "ruby", "text": "def char_to_codepoint(c)"}
+{"language": "ruby", "text": "def get_repo_events(owner, repo)"}
+{"language": "ruby", "text": "def find(e)"}
+{"language": "ruby", "text": "def call_func(method:, params: [], tx: {})"}
+{"language": "ruby", "text": "def enqueue(method, *args)"}
+{"language": "ruby", "text": "def classify(images_file: nil, images_filename: nil, images_file_content_type: nil, url: nil, threshold: nil, owners: nil, classifier_ids: nil, accept_language: nil)"}
+{"language": "ruby", "text": "def open_session(uri)"}
+{"language": "ruby", "text": "def get_crisis(identifier, params = nil)"}
+{"language": "ruby", "text": "def transfer(to:, private_key:, value:, quota: 30_000)"}
+{"language": "ruby", "text": "def league_fixtures(id, opts={})"}
+{"language": "ruby", "text": "def each_line(*args, &block)"}
+{"language": "ruby", "text": "def execute_udf_on_query(statement, package_name, function_name, function_args=[], options = nil)"}
+{"language": "ruby", "text": "def new_by_key(key)"}
+{"language": "ruby", "text": "def parse_group(receive_size)"}
+{"language": "ruby", "text": "def set_exists(policy, key)"}
+{"language": "ruby", "text": "def replace(template)"}
+{"language": "ruby", "text": "def group(*args, &block)"}
+{"language": "ruby", "text": "def join(*args)"}
+{"language": "ruby", "text": "def all_scenes_for(scenes)"}
+{"language": "ruby", "text": "def has_machete_workflow_of(jobs_active_record_relation_symbol)"}
+{"language": "ruby", "text": "def to_real_url(url, test_case = nil, &bl)"}
+{"language": "ruby", "text": "def ensure_pull_requests(owner, repo, refresh = false)"}
+{"language": "ruby", "text": "def upconfig(options = {})"}
+{"language": "ruby", "text": "def pid_exists(pid)"}
+{"language": "ruby", "text": "def ensure_user_followers(followed)"}
+{"language": "ruby", "text": "def ones_like(input, dtype: nil, name: nil)"}
+{"language": "ruby", "text": "def update_config_guess(target: \".\", install: [:config_guess, :config_sub])"}
+{"language": "ruby", "text": "def sort_by_ancestry(nodes, &block)"}
+{"language": "ruby", "text": "def pack_value(val, obj=nil)"}
+{"language": "ruby", "text": "def draw_bar_code_39(bar_code_string, x, y, height)"}
+{"language": "ruby", "text": "def mark_new_entries(response)"}
+{"language": "ruby", "text": "def html(id, time)"}
+{"language": "ruby", "text": "def expire_request(session_id, message_id)"}
+{"language": "ruby", "text": "def put(key, bins, options = nil)"}
+{"language": "ruby", "text": "def get_by_redis_key(redis_key)"}
+{"language": "ruby", "text": "def _reinterpret_related_changes(cookies)"}
+{"language": "ruby", "text": "def validate(form)"}
+{"language": "ruby", "text": "def link_to_route(text, destination_id, source_id = nil, *args)"}
+{"language": "ruby", "text": "def with_retries(&block)"}
+{"language": "ruby", "text": "def median(numbers_ary)"}
+{"language": "ruby", "text": "def load_auto_conf(confname, opts={})"}
+{"language": "ruby", "text": "def set_index (column_name, *types)"}
+{"language": "ruby", "text": "def validates(*args, &block)"}
+{"language": "ruby", "text": "def check_if_dense(value, expected_shape = nil)"}
+{"language": "ruby", "text": "def habtm_check_boxes_field_template(l = {})"}
+{"language": "ruby", "text": "def run_request(request, format)"}
+{"language": "ruby", "text": "def invmod(e, et)"}
+{"language": "ruby", "text": "def last_menu_at_depth(depth)"}
+{"language": "ruby", "text": "def extract_file_and_line(stack, short_name = false)"}
+{"language": "ruby", "text": "def session(evaluator = nil, thread_pool_class: Concurrent::ImmediateExecutor, log_device_placement: false, profile_enabled: false)"}
+{"language": "ruby", "text": "def shelter_pets(id, options = {})"}
+{"language": "ruby", "text": "def date_select(method, options = {})"}
+{"language": "ruby", "text": "def create(options = {})"}
+{"language": "ruby", "text": "def _recurse_(value, &block)"}
+{"language": "ruby", "text": "def replace_unicode_with_images(string)"}
+{"language": "ruby", "text": "def advance(progress = 1, tokens = {})"}
+{"language": "ruby", "text": "def with_nodes(selection)"}
+{"language": "ruby", "text": "def instances_metadata()"}
+{"language": "ruby", "text": "def xcopy(from,to,glob_files, opts={})"}
+{"language": "ruby", "text": "def detect_faces(images_file: nil, images_filename: nil, images_file_content_type: nil, url: nil, accept_language: nil)"}
+{"language": "ruby", "text": "def ones(shape, dtype: :float32, name: nil)"}
+{"language": "ruby", "text": "def strided_slice(input, _begin, _end, strides = nil, name: nil)"}
+{"language": "ruby", "text": "def i_op(code, *args)"}
+{"language": "ruby", "text": "def cond(pred, true_fn, false_fn, name: nil)"}
+{"language": "ruby", "text": "def find(*)"}
+{"language": "ruby", "text": "def field(label, start_node: nil, placeholder: false, id: false)"}
+{"language": "ruby", "text": "def strip_html_tags(html)"}
+{"language": "ruby", "text": "def ensure_parents(commit)"}
+{"language": "ruby", "text": "def process(file)"}
+{"language": "ruby", "text": "def relative_path_from(base_directory)"}
+{"language": "ruby", "text": "def weight(user_id, options = {})"}
+{"language": "ruby", "text": "def point_decompress(s)"}
+{"language": "ruby", "text": "def handle_schema(parent_schema, obj)"}
+{"language": "ruby", "text": "def n(msg, title='', image=nil)"}
+{"language": "ruby", "text": "def new_group_with_uuid(name, uuid, path = nil, source_tree = :group)"}
+{"language": "ruby", "text": "def location_filter(location)"}
+{"language": "ruby", "text": "def footnote_html(footnote_seed, time)"}
+{"language": "ruby", "text": "def v3_get(path, options = {})"}
+{"language": "ruby", "text": "def putkeep (k, v)"}
+{"language": "ruby", "text": "def set_read(policy, key, bin_names)"}
+{"language": "ruby", "text": "def p_secret_to_public(secret)"}
+{"language": "ruby", "text": "def singular(rule, replacement)"}
+{"language": "ruby", "text": "def glossary_create(account_id, params)"}
+{"language": "ruby", "text": "def log_internal(level, index, message = nil, payload = nil, exception = nil, &block)"}
+{"language": "ruby", "text": "def unpack(value, num: nil, axis: 0, name: \"unpack\")"}
+{"language": "ruby", "text": "def random_pet(options = {})"}
+{"language": "ruby", "text": "def apply_options(options={})"}
+{"language": "ruby", "text": "def ipc_set(shmid_ds)"}
+{"language": "ruby", "text": "def run(command, args = nil)"}
+{"language": "ruby", "text": "def ensure_pull_request_history(id, ts, act, actor)"}
+{"language": "ruby", "text": "def fetch_cell(row, column, *default_value, &default_block)"}
+{"language": "ruby", "text": "def run(args = ARGV)"}
+{"language": "ruby", "text": "def verify16(one, two)"}
+{"language": "ruby", "text": "def tagged(*tags, &block)"}
+{"language": "ruby", "text": "def is_numeric(table_name, column_name)"}
+{"language": "ruby", "text": "def save_with_version(*args)"}
+{"language": "ruby", "text": "def intercom_script_tag(user_details = nil, options={})"}
+{"language": "ruby", "text": "def get_userinfo(user)"}
+{"language": "ruby", "text": "def eager(command)"}
+{"language": "ruby", "text": "def pack(values, axis: 0, name: \"pack\")"}
+{"language": "ruby", "text": "def stats(experiment_id)"}
+{"language": "ruby", "text": "def on_destroy(recording_order = \"before\")"}
+{"language": "ruby", "text": "def build_http(uri, timeout)"}
+{"language": "ruby", "text": "def cell(*args, &proc)"}
+{"language": "ruby", "text": "def substitution_value(index)"}
+{"language": "ruby", "text": "def validate_instance_node(instance_node)"}
+{"language": "ruby", "text": "def parameter(*names)"}
+{"language": "ruby", "text": "def chop_basename(path)"}
+{"language": "ruby", "text": "def read_lines(filename, selector)"}
+{"language": "ruby", "text": "def on_event(channel_id, method, callable=nil, &block)"}
+{"language": "ruby", "text": "def within_exported_rev(rev, paths=[])"}
+{"language": "ruby", "text": "def touch(key, options = nil)"}
+{"language": "ruby", "text": "def lget (*keys)"}
+{"language": "ruby", "text": "def boolean_groups(reload=false)"}
+{"language": "ruby", "text": "def wix_light_delay_validation(val = false)"}
+{"language": "ruby", "text": "def validate(value)"}
+{"language": "ruby", "text": "def add_feedback(feedback_data:, user_id: nil, comment: nil)"}
+{"language": "ruby", "text": "def build_first_question(question_node)"}
+{"language": "ruby", "text": "def remove_response(session_id, request_message_id)"}
+{"language": "ruby", "text": "def keys (options={})"}
+{"language": "ruby", "text": "def build_objects(key, values)"}
+{"language": "ruby", "text": "def open_date(date)"}
+{"language": "ruby", "text": "def create_xml_declaration(version, encoding)"}
+{"language": "ruby", "text": "def mul(input_a, input_b, name: nil)"}
+{"language": "ruby", "text": "def reduce_mean(input_tensor, axis = nil, keepdims: false, name: nil)"}
+{"language": "ruby", "text": "def pow_mod(base, exponent, modulus)"}
+{"language": "ruby", "text": "def attach_tick_process(process, ticks_to_wait=0)"}
+{"language": "ruby", "text": "def default_savon_options(options)"}
+{"language": "ruby", "text": "def enqueue(args = [], at: nil, queue: nil, **options)"}
+{"language": "ruby", "text": "def size(input, name: nil, out_type: :int32)"}
+{"language": "ruby", "text": "def build_instances(template = nil)"}
+{"language": "ruby", "text": "def resource_path(name)"}
+{"language": "ruby", "text": "def validate(value)"}
+{"language": "ruby", "text": "def create_address_class(class_name, &block)"}
+{"language": "ruby", "text": "def enqueue_at(timestamp, method, *args)"}
+{"language": "ruby", "text": "def build_signature_buffer(result)"}
+{"language": "ruby", "text": "def check_hmac_key(string, _description)"}
+{"language": "ruby", "text": "def scan_all(namespace, set_name, bin_names = nil, options = nil)"}
+{"language": "ruby", "text": "def check_numerics(tensor, message, name: nil)"}
+{"language": "ruby", "text": "def get_commit_message(changed_modules)"}
+{"language": "ruby", "text": "def register_udf_from_file(client_path, server_path, language, options = nil)"}
+{"language": "ruby", "text": "def release_create(account_id, distribution_id, params)"}
+{"language": "ruby", "text": "def move_carrying(arg, speed, obstacles, obst_obstacles, obst_ramps)"}
+{"language": "ruby", "text": "def sign_package(package_file)"}
+{"language": "ruby", "text": "def invalidate(type, rel_path, options)"}
+{"language": "ruby", "text": "def set_delete(policy, key)"}
+{"language": "ruby", "text": "def dir(path)"}
+{"language": "ruby", "text": "def parse_row(result_code)"}
+{"language": "ruby", "text": "def parameters(val = NULL)"}
+{"language": "ruby", "text": "def user_delete( attributes: )"}
+{"language": "ruby", "text": "def on_mouse_movement(*args,&block)"}
+{"language": "ruby", "text": "def create_server(name, image, flavor, networks = nil, keypair = nil, security_group = nil, metadata = nil)"}
+{"language": "ruby", "text": "def account(id, head)"}
+{"language": "ruby", "text": "def get_concurrently(requests)"}
+{"language": "ruby", "text": "def find_columns(validate)"}
+{"language": "ruby", "text": "def read(len)"}
+{"language": "ruby", "text": "def acos(input, name: nil)"}
+{"language": "ruby", "text": "def ensure_user(user, followers = true, orgs = true)"}
+{"language": "ruby", "text": "def geolocate(location: nil, wait: config(:geolocation_wait).to_i, from_cache: true)"}
+{"language": "ruby", "text": "def css(*selectors, &block)"}
+{"language": "ruby", "text": "def output(elapsed)"}
+{"language": "ruby", "text": "def log(level, msg)"}
+{"language": "ruby", "text": "def configure_objects(confs={})"}
+{"language": "ruby", "text": "def add(model)"}
+{"language": "ruby", "text": "def read(path)"}
+{"language": "ruby", "text": "def compact_copy (target_path)"}
+{"language": "ruby", "text": "def merge_args(find_args, runtime_args, visibility_args = {})"}
+{"language": "ruby", "text": "def read(path)"}
+{"language": "ruby", "text": "def distance(other)"}
+{"language": "ruby", "text": "def measure(level, message, params = {}, &block)"}
+{"language": "ruby", "text": "def update_workspace(workspace_id:, name: nil, description: nil, language: nil, metadata: nil, learning_opt_out: nil, system_settings: nil, intents: nil, entities: nil, dialog_nodes: nil, counterexamples: nil, append: nil)"}
+{"language": "ruby", "text": "def ensure_issue_event(owner, repo, issue_id, event_id)"}
+{"language": "ruby", "text": "def update_assignee(owner, repo, issue, actor)"}
+{"language": "ruby", "text": "def create_classifier(metadata:, training_data:)"}
+{"language": "ruby", "text": "def default_class_for(collection)"}
+{"language": "ruby", "text": "def redirection(url = nil)"}
+{"language": "ruby", "text": "def parse_headers(content_file)"}
+{"language": "ruby", "text": "def produce_report(*args)"}
+{"language": "ruby", "text": "def execute_build(build_wrappers)"}
+{"language": "ruby", "text": "def add_word(customization_id:, word_name:, word: nil, sounds_like: nil, display_as: nil)"}
+{"language": "ruby", "text": "def ensure_forks(owner, repo)"}
+{"language": "ruby", "text": "def discover_repeatedly(opts = {})"}
+{"language": "ruby", "text": "def sec(input, name: nil)"}
+{"language": "ruby", "text": "def basic_get(queue, **opts)"}
+{"language": "ruby", "text": "def get_upload_revisions(session, rev)"}
+{"language": "ruby", "text": "def fetch_row(row, *default)"}
+{"language": "ruby", "text": "def add(objects)"}
+{"language": "ruby", "text": "def create_value(workspace_id:, entity:, value:, metadata: nil, value_type: nil, synonyms: nil, patterns: nil)"}
+{"language": "ruby", "text": "def avoid_duplicate_image_names(content)"}
+{"language": "ruby", "text": "def find_pages(filter)"}
+{"language": "ruby", "text": "def install_seed(seed, dirname)"}
+{"language": "ruby", "text": "def build(options={})"}
+{"language": "ruby", "text": "def queue_declare(name, **opts)"}
+{"language": "ruby", "text": "def package(id, &block)"}
+{"language": "ruby", "text": "def get_by_alias(alias_name, args = {})"}
+{"language": "ruby", "text": "def csv_to_stdout(rows, cols: nil)"}
+{"language": "ruby", "text": "def metadata_properties_for(package)"}
+{"language": "ruby", "text": "def exec(command, options={}, &block)"}
+{"language": "ruby", "text": "def action_link(action, prefix)"}
+{"language": "ruby", "text": "def request(*args, &block)"}
+{"language": "ruby", "text": "def large_enough_prime(input)"}
+{"language": "ruby", "text": "def process_control(control)"}
+{"language": "ruby", "text": "def get_riminfo_for_revision(session, sha1)"}
+{"language": "ruby", "text": "def leave_tags(message, node)"}
+{"language": "ruby", "text": "def new_group_with_uuid(name, uuid, path = nil, source_tree = :group)"}
+{"language": "ruby", "text": "def process_loop(loop)"}
+{"language": "ruby", "text": "def add_grammar(customization_id:, grammar_name:, grammar_file:, content_type:, allow_overwrite: nil)"}
+{"language": "ruby", "text": "def compiler_safe_path(*pieces)"}
+{"language": "ruby", "text": "def run_strategy(name, scope)"}
+{"language": "ruby", "text": "def after_vote(options = {}, method = :push, &block)"}
+{"language": "ruby", "text": "def deprecated(progname, &block)"}
+{"language": "ruby", "text": "def assit_equal(expected, actual, message = \"Object expected to be equal\")"}
+{"language": "ruby", "text": "def expand_and_post(text, *options)"}
+{"language": "ruby", "text": "def run(schema_path, options)"}
+{"language": "ruby", "text": "def min3(a, b, c)"}
+{"language": "ruby", "text": "def ensure_user_byuname(user)"}
+{"language": "ruby", "text": "def create( message = \"\" )"}
+{"language": "ruby", "text": "def read_value(from, key)"}
+{"language": "ruby", "text": "def reify(options = {})"}
+{"language": "ruby", "text": "def method_missing(method, *args, &_block)"}
+{"language": "ruby", "text": "def put_request(uri, body, token = nil, manage_errors = true)"}
+{"language": "ruby", "text": "def attr_parser(method, library)"}
+{"language": "ruby", "text": "def write(template = nil)"}
+{"language": "ruby", "text": "def get_screen_pos(map_x, map_y)"}
+{"language": "ruby", "text": "def add_audio(customization_id:, audio_name:, audio_resource:, contained_content_type: nil, allow_overwrite: nil, content_type: nil)"}
+{"language": "ruby", "text": "def get_httparty_config(options)"}
+{"language": "ruby", "text": "def parse(opts = {})"}
+{"language": "ruby", "text": "def run_with_lock(max_run_time, worker_name)"}
+{"language": "ruby", "text": "def booleans(reload=false)"}
+{"language": "ruby", "text": "def post_publication(session_id, content, topics, expiry = nil)"}
+{"language": "ruby", "text": "def remote_path_for(package)"}
+{"language": "ruby", "text": "def b64_encode(string)"}
+{"language": "ruby", "text": "def validate(value)"}
+{"language": "ruby", "text": "def key_show(project_id, id, params)"}
+{"language": "ruby", "text": "def pr_is_intra_branch(req)"}
+{"language": "ruby", "text": "def integer_select(method, options = {})"}
+{"language": "ruby", "text": "def gather_vars(executor, tconf, message)"}
+{"language": "ruby", "text": "def run(direction)"}
+{"language": "ruby", "text": "def install_librarian(opts = {})"}
+{"language": "ruby", "text": "def year_select(method, options = {})"}
+{"language": "ruby", "text": "def changed_files(rev, rev_from=nil)"}
+{"language": "ruby", "text": "def total_sqoot_deals(options = {})"}
+{"language": "ruby", "text": "def int_to_bytes( num , length )"}
+{"language": "ruby", "text": "def move_port_to_subnets(port_id, subnet_ids)"}
+{"language": "ruby", "text": "def process_batch(batch)"}
+{"language": "ruby", "text": "def do_query (&block)"}
+{"language": "ruby", "text": "def sub(pattern, *rest, &block)"}
+{"language": "ruby", "text": "def normalize(values)"}
+{"language": "ruby", "text": "def upload_module_changes(parent_sha1, sha1s)"}
+{"language": "ruby", "text": "def logger(obj)"}
+{"language": "ruby", "text": "def text_field(text, x, y, params = {})"}
+{"language": "ruby", "text": "def time_remaining(timeout)"}
+{"language": "ruby", "text": "def read(raw, predecessors=nil)"}
+{"language": "ruby", "text": "def find(args = {})"}
+{"language": "ruby", "text": "def update(data)"}
+{"language": "ruby", "text": "def with_rpm_signing(&block)"}
+{"language": "ruby", "text": "def process_report(report)"}
+{"language": "ruby", "text": "def show(ind = '')"}
+{"language": "ruby", "text": "def parse(target)"}
+{"language": "ruby", "text": "def request(http_verb, url, options = {})"}
+{"language": "ruby", "text": "def create_router(name, admin_state_up = true)"}
+{"language": "ruby", "text": "def library(domain, name=nil, opts={})"}
+{"language": "ruby", "text": "def to_png(options={})"}
+{"language": "ruby", "text": "def get_constant(name_sym)"}
+{"language": "ruby", "text": "def security_token_hash(tokens)"}
+{"language": "ruby", "text": "def do_parse(src, dst, parse_spec_str)"}
+{"language": "ruby", "text": "def apply_post_filters(new_scene,options)"}
+{"language": "ruby", "text": "def get(path, data = {})"}
+{"language": "ruby", "text": "def new_fit_data_record(record_type, field_values = {})"}
+{"language": "ruby", "text": "def validate_presence_of(value, name)"}
+{"language": "ruby", "text": "def open_session(uri, topics, listener_url = nil, xpath_expression = nil, xpath_namespaces = [])"}
+{"language": "ruby", "text": "def promote_keys( data )"}
+{"language": "ruby", "text": "def build_array_enumerator(enumerable, cursor:)"}
+{"language": "ruby", "text": "def read_publication(session_id)"}
+{"language": "ruby", "text": "def radio_buttons(method, choices, options = {})"}
+{"language": "ruby", "text": "def debug2(s, opts = {} )"}
+{"language": "ruby", "text": "def build_sale_data(sale_item)"}
+{"language": "ruby", "text": "def get_info(id_card)"}
+{"language": "ruby", "text": "def new_reference_with_uuid(path, uuid, source_tree = :group)"}
+{"language": "ruby", "text": "def strip(path)"}
+{"language": "ruby", "text": "def synthesize(text:, voice: nil, customization_id: nil, accept: nil)"}
+{"language": "ruby", "text": "def get(url)"}
+{"language": "ruby", "text": "def parse_row(result_code)"}
+{"language": "ruby", "text": "def library(domain, name=nil, opts={})"}
+{"language": "ruby", "text": "def head_and_get(path, codes = [200], params = {})"}
+{"language": "ruby", "text": "def open(*args)"}
+{"language": "ruby", "text": "def raw_put(path, body, options = {})"}
+{"language": "ruby", "text": "def placeholder(dtype, shape: nil, name: nil)"}
+{"language": "ruby", "text": "def method_missing(meth, *args, &block)"}
+{"language": "ruby", "text": "def super_print(paragraphes, space_number = 50, title = true)"}
+{"language": "ruby", "text": "def call(job)"}
+{"language": "ruby", "text": "def variable_text_field(x, y, params = {})"}
+{"language": "ruby", "text": "def string_to_bytes(str)"}
+{"language": "ruby", "text": "def add(severity, progname, &block)"}
+{"language": "ruby", "text": "def move_free(aim, speed)"}
+{"language": "ruby", "text": "def build_me(build_wrappers = [])"}
+{"language": "ruby", "text": "def method_missing(meth, opts = {})"}
+{"language": "ruby", "text": "def pack(files)"}
+{"language": "ruby", "text": "def construct_build_version(version_source = nil)"}
+{"language": "ruby", "text": "def experiments(project_id)"}
+{"language": "ruby", "text": "def delete (k)"}
+{"language": "ruby", "text": "def method_missing(method_name, *args, &block)"}
+{"language": "ruby", "text": "def select(query, filters)"}
+{"language": "ruby", "text": "def delete_user_data(customer_id:)"}
+{"language": "ruby", "text": "def putcat (k, v)"}
+{"language": "ruby", "text": "def process (&block)"}
+{"language": "ruby", "text": "def pmt(rate, nper, pv, fv = 0, end_or_beginning = 0)"}
+{"language": "ruby", "text": "def appbundle(software_name, lockdir: nil, gem: nil, without: nil, extra_bin_files: nil , **options)"}
+{"language": "ruby", "text": "def fixtures(opts={})"}
+{"language": "ruby", "text": "def floor(input_a, name: nil)"}
+{"language": "ruby", "text": "def auth(message)"}
+{"language": "ruby", "text": "def do_request(uri, request, manage_errors = true, timeout = 10)"}
+{"language": "ruby", "text": "def create_model(base_model_id:, forced_glossary: nil, parallel_corpus: nil, name: nil)"}
+{"language": "ruby", "text": "def filter(params)"}
+{"language": "ruby", "text": "def identify(text:)"}
+{"language": "ruby", "text": "def field_set(legend = nil, options = nil, &block)"}
+{"language": "ruby", "text": "def check_query_change(options = {})"}
+{"language": "ruby", "text": "def set_cursor_position(x, y)"}
+{"language": "ruby", "text": "def transaction(&block)"}
+{"language": "ruby", "text": "def release_publish(account_id, distribution_id, id)"}
+{"language": "ruby", "text": "def say(message, color=nil)"}
+{"language": "ruby", "text": "def execute_screens(control, timing = :before_post_process)"}
+{"language": "ruby", "text": "def add_strong_reference(obj)"}
+{"language": "ruby", "text": "def struct(name, opts={},&block)"}
+{"language": "ruby", "text": "def read_spell_config(file)"}
+{"language": "ruby", "text": "def ensure_issue_comments(owner, repo, issue_id, pull_req_id = nil)"}
+{"language": "ruby", "text": "def add_component(c)"}
+{"language": "ruby", "text": "def render_json_response(type, hash)"}
+{"language": "ruby", "text": "def validate_instance_node(instance_node, answer_node = nil)"}
+{"language": "ruby", "text": "def build_booking(params = {}, template_code = nil)"}
+{"language": "ruby", "text": "def add_value(name, type, subtype = nil)"}
+{"language": "ruby", "text": "def ovirt_legacy_postgresql_connection(config)"}
+{"language": "ruby", "text": "def sub(input_a, input_b, name: nil)"}
+{"language": "ruby", "text": "def stop(update: true)"}
+{"language": "ruby", "text": "def commissions(options = {})"}
+{"language": "ruby", "text": "def fetch_settings(trigger_name)"}
+{"language": "ruby", "text": "def encoding_for_bars(*bars)"}
+{"language": "ruby", "text": "def plural(rule, replacement)"}
+{"language": "ruby", "text": "def query(sql, *bind_values)"}
+{"language": "ruby", "text": "def screenshot_marker_delete(project_id, screenshot_id)"}
+{"language": "ruby", "text": "def alias_action(*args)"}
+{"language": "ruby", "text": "def get_attributes(column)"}
+{"language": "ruby", "text": "def validate_parent_instance_node(instance_node, child_node)"}
+{"language": "ruby", "text": "def get_local(message)"}
+{"language": "ruby", "text": "def delete_session(assistant_id:, session_id:)"}
+{"language": "ruby", "text": "def update_classifier(classifier_id:, positive_examples: nil, negative_examples: nil, negative_examples_filename: nil)"}
+{"language": "ruby", "text": "def batch_get(keys, bin_names = nil, options = nil)"}
+{"language": "ruby", "text": "def glossary_term_show(account_id, glossary_id, id)"}
+{"language": "ruby", "text": "def collect_transitive_dependency_licenses_for(software)"}
+{"language": "ruby", "text": "def find_files(ext)"}
+{"language": "ruby", "text": "def tan(input_a, name: nil)"}
+{"language": "ruby", "text": "def write_session(req, sid, session_data, options)"}
+{"language": "ruby", "text": "def v3_post(path, options = {})"}
+{"language": "ruby", "text": "def retrieve_commits(repo, sha, user, pages = -1)"}
+{"language": "ruby", "text": "def variable_scope(scope = nil, default_name = nil, reuse: nil, initializer: nil)"}
+{"language": "ruby", "text": "def do_request(request, format = @format, options = {})"}
+{"language": "ruby", "text": "def create_channel(uri, type, description = nil, tokens = {})"}
+{"language": "ruby", "text": "def perform_request(http, env)"}
+{"language": "ruby", "text": "def commit_user(githubuser, commituser)"}
+{"language": "ruby", "text": "def requires_version(cmd, version_)"}
+{"language": "ruby", "text": "def call_misc (function, list_pointer)"}
+{"language": "ruby", "text": "def execute(object, *args, &block)"}
+{"language": "ruby", "text": "def padout(message)"}
+{"language": "ruby", "text": "def set_location(torrent_hashes, path)"}
+{"language": "ruby", "text": "def output(place, &block)"}
+{"language": "ruby", "text": "def check_presence_of_item_subtype_column(options)"}
+{"language": "ruby", "text": "def update_all(attributes={})"}
+{"language": "ruby", "text": "def variable(value, name: nil, initializer: nil, graph: nil, dtype: nil, trainable: true)"}
+{"language": "ruby", "text": "def symlink(from_path, to_path)"}
+{"language": "ruby", "text": "def gather_versions(item_id = nil, date = :all)"}
+{"language": "ruby", "text": "def screenshot_marker_create(project_id, screenshot_id, params)"}
+{"language": "ruby", "text": "def api_request_raw(url, media_type = '')"}
+{"language": "ruby", "text": "def page(reload = false)"}
+{"language": "ruby", "text": "def flag_position(position)"}
+{"language": "ruby", "text": "def folder(folder = nil, &bl)"}
+{"language": "ruby", "text": "def fire_events_for_notification(event,sender)"}
+{"language": "ruby", "text": "def remove_answer(answer_node)"}
+{"language": "ruby", "text": "def transpose_with_perm(arr, new_arr, shape, new_shape, perm)"}
+{"language": "ruby", "text": "def glorot_uniform_initializer(seed: nil, dtype: nil)"}
+{"language": "ruby", "text": "def assert_it(message)"}
+{"language": "ruby", "text": "def ensure_user_follower(followed, follower, date_added = nil)"}
+{"language": "ruby", "text": "def determine_gotcha_validity(expected_gotcha_count = 1)"}
+{"language": "ruby", "text": "def run_definition(defin, &block)"}
+{"language": "ruby", "text": "def retrieve_master_branch_diff(owner, repo, branch, parent_owner, parent_repo, parent_branch)"}
+{"language": "ruby", "text": "def animate(actor_or_actor_name,options,&block)"}
+{"language": "ruby", "text": "def open(enciphered_message)"}
+{"language": "ruby", "text": "def process_filter_assoc_param(attr, metadata, assoc_values, value, opts)"}
+{"language": "ruby", "text": "def errors_for(field_name)"}
+{"language": "ruby", "text": "def mod(input_a, input_b, name: nil)"}
+{"language": "ruby", "text": "def get_value(key)"}
+{"language": "ruby", "text": "def option_group(*args)"}
+{"language": "ruby", "text": "def instance_metadata(name)"}
+{"language": "ruby", "text": "def embedding_lookup(params, ids, partition_strategy: \"mod\", name: nil, validate_indices: true, max_norm: nil)"}
+{"language": "ruby", "text": "def set2(selector, value=nil)"}
+{"language": "ruby", "text": "def route(name)"}
+{"language": "ruby", "text": "def label(method, text = nil, options = {})"}
+{"language": "ruby", "text": "def connect_to_address(address)"}
+{"language": "ruby", "text": "def check_for_bad_library(bad_libs, current_library, name, linked)"}
+{"language": "ruby", "text": "def maybe_append_timestamp(version)"}
+{"language": "ruby", "text": "def lookup_on_error_parent(message)"}
+{"language": "ruby", "text": "def experiment(id)"}
+{"language": "ruby", "text": "def message_for(corrections)"}
+{"language": "ruby", "text": "def update_by_expire_time(options = {})"}
+{"language": "ruby", "text": "def draw(map = nil, scale_x = 1, scale_y = 1, alpha = 0xff, color = 0xffffff, angle = nil, flip = nil, z_index = 0, round = false)"}
+{"language": "ruby", "text": "def secret_to_public(secret, form=:byte)"}
+{"language": "ruby", "text": "def drop_user(user, options = nil)"}
+{"language": "ruby", "text": "def to_filter_proc(filter)"}
+{"language": "ruby", "text": "def update_xml(xml, value)"}
+{"language": "ruby", "text": "def subject_should_not_raise(*args)"}
+{"language": "ruby", "text": "def add_to_services(name, type, description)"}
+{"language": "ruby", "text": "def screenshot_update(project_id, id, params)"}
+{"language": "ruby", "text": "def random_uniform(shape, name: nil, dtype: :float32, minval: 0, maxval: 1, seed: nil)"}
+{"language": "ruby", "text": "def each_param(&block)"}
+{"language": "ruby", "text": "def to_image(opts={})"}
+{"language": "ruby", "text": "def recombine_args(find_args, runtime_args, options)"}
+{"language": "ruby", "text": "def sync_modules(session, message)"}
+{"language": "ruby", "text": "def deal_with_valid_option(temp_tables, temp_columns, temp_column_types, res)"}
+{"language": "ruby", "text": "def remove_params(params)"}
+{"language": "ruby", "text": "def send_request(text)"}
+{"language": "ruby", "text": "def generate_unique(length = 32, &blk)"}
+{"language": "ruby", "text": "def atomic_write(path)"}
+{"language": "ruby", "text": "def user_suspend( attributes: )"}
+{"language": "ruby", "text": "def method_missing(name, *args, &block)"}
+{"language": "ruby", "text": "def delete(key)"}
+{"language": "ruby", "text": "def zero_pad(n, message)"}
+{"language": "ruby", "text": "def invalid_fts_filters(filters)"}
+{"language": "ruby", "text": "def lget (*keys)"}
+{"language": "ruby", "text": "def post(path, data = {})"}
+{"language": "ruby", "text": "def extract_filters(h)"}
+{"language": "ruby", "text": "def reschedule(message, backtrace = [], time = nil)"}
+{"language": "ruby", "text": "def logout(*scopes)"}
+{"language": "ruby", "text": "def validate_instance_node(instance_node, answer_node = nil)"}
+{"language": "ruby", "text": "def add(*options)"}
+{"language": "ruby", "text": "def connection(options={})"}
+{"language": "ruby", "text": "def assert_equal(x, y, data: nil, summarize: nil, message: nil, name: nil)"}
+{"language": "ruby", "text": "def start_timer(timer = DEFAULT_TIMER.new)"}
+{"language": "ruby", "text": "def load(pbfile)"}
+{"language": "ruby", "text": "def fire(clock = 0)"}
+{"language": "ruby", "text": "def send_request(channel_id, method, properties={})"}
+{"language": "ruby", "text": "def write_pid(pid)"}
+{"language": "ruby", "text": "def included(base)"}
+{"language": "ruby", "text": "def split_names(path)"}
+{"language": "ruby", "text": "def queue_client(queue, key = queue, ack = :after, block)"}
+{"language": "ruby", "text": "def floor_div(input_a, input_b, name: nil)"}
+{"language": "ruby", "text": "def find_marks_grid(group)"}
+{"language": "ruby", "text": "def ln_if_necessary(src, dst)"}
+{"language": "ruby", "text": "def disable_method(method_name, message = nil)"}
+{"language": "ruby", "text": "def users_list( attributes: {} )"}
+{"language": "ruby", "text": "def post_process(control)"}
+{"language": "ruby", "text": "def action(id, act, *args)"}
+{"language": "ruby", "text": "def tag_filter(model = nil, filters = nil, scope = :tagged_with)"}
+{"language": "ruby", "text": "def annotate_pdf(pdf, options={})"}
+{"language": "ruby", "text": "def assit_block(&block)"}
+{"language": "ruby", "text": "def javascripts_from_page(pattern, page = nil)"}
+{"language": "ruby", "text": "def range(start = 0, limit = 0, delta = 1, name: \"range\", dtype: nil, output_type: :int32)"}
+{"language": "ruby", "text": "def query_count (&block)"}
+{"language": "ruby", "text": "def incomplete_filters(filters)"}
+{"language": "ruby", "text": "def add_aliases(locale, page, path_hash)"}
+{"language": "ruby", "text": "def append(key, bins, options = nil)"}
+{"language": "ruby", "text": "def ensure_watcher(owner, repo, watcher, date_added = nil)"}
+{"language": "ruby", "text": "def atan(input, name: nil)"}
+{"language": "ruby", "text": "def usage( examples, explanation = nil )"}
+{"language": "ruby", "text": "def parameter(name,options={})"}
+{"language": "ruby", "text": "def audience(id)"}
+{"language": "ruby", "text": "def upgrade_file_key(key, save = true)"}
+{"language": "ruby", "text": "def extended(object)"}
+{"language": "ruby", "text": "def ext (func_name, key='', value='', opts={})"}
+{"language": "ruby", "text": "def upload_modules(info)"}
+{"language": "ruby", "text": "def subpatterns_from(locale)"}
+{"language": "ruby", "text": "def write_attribute(key, value)"}
+{"language": "ruby", "text": "def import_methods(source, names)"}
+{"language": "ruby", "text": "def check_file(file)"}
+{"language": "ruby", "text": "def recover_x(y, sign)"}
+{"language": "ruby", "text": "def update(options = {})"}
+{"language": "ruby", "text": "def read_response(session_id, request_message_id)"}
+{"language": "ruby", "text": "def validate_cache_version(version)"}
+{"language": "ruby", "text": "def _prepare_transition(new_scene)"}
+{"language": "ruby", "text": "def delete_session(req, sid, options)"}
+{"language": "ruby", "text": "def set_cursor_position(x, y)"}
+{"language": "ruby", "text": "def socket_write(data, timeout)"}
+{"language": "ruby", "text": "def fs_status(dir)"}
+{"language": "ruby", "text": "def measure_internal(level, index, message, params)"}
+{"language": "ruby", "text": "def submenu(item_name=nil)"}
+{"language": "ruby", "text": "def _get(cmd, *args)"}
+{"language": "ruby", "text": "def validate(value)"}
+{"language": "ruby", "text": "def build_rev_history_status(gs, rev, relevant_revs, status_cache={}, options={})"}
+{"language": "ruby", "text": "def load( name )"}
+{"language": "ruby", "text": "def block_option(key, lookup = true)"}
+{"language": "ruby", "text": "def children_until_node_not_ancestor_of(klass)"}
+{"language": "ruby", "text": "def parse(json)"}
+{"language": "ruby", "text": "def slice(input, start, size, name: nil)"}
+{"language": "ruby", "text": "def incr (key, val=1)"}
+{"language": "ruby", "text": "def extract_message(response)"}
+{"language": "ruby", "text": "def mod_exp(n, e, mod)"}
+{"language": "ruby", "text": "def set_operate(policy, key, operations)"}
+{"language": "ruby", "text": "def batch_exists(keys, options = nil)"}
+{"language": "ruby", "text": "def push_tags(*tags)"}
+{"language": "ruby", "text": "def override(name, val = NULL)"}
+{"language": "ruby", "text": "def retrieve_response_from_mimes(mimes, &block)"}
+{"language": "ruby", "text": "def fire_events_for_notification(event,sender)"}
+{"language": "ruby", "text": "def evaluate_polynomial_at(x, coefficients, prime)"}
+{"language": "ruby", "text": "def point_mul(s, pa)"}
+{"language": "ruby", "text": "def csv_write(path, rows, cols: nil)"}
+{"language": "ruby", "text": "def putdup (k, v)"}
+{"language": "ruby", "text": "def backtrace_from_config(file_path, exception)"}

@@ -1,0 +1,972 @@
+{"language": "python", "text": "def add_biomart_parser(subparsers):"}
+{"language": "python", "text": "def fetch_items(self, category, **kwargs):"}
+{"language": "python", "text": "def fit(self, y):"}
+{"language": "python", "text": "def mapper(y):"}
+{"language": "python", "text": "def reducer(a, b):"}
+{"language": "python", "text": "def require_secrets(self, params=None):"}
+{"language": "python", "text": "def get_import_status(self, sis_import):"}
+{"language": "python", "text": "def _chi_to_choi(data, input_dim, output_dim):"}
+{"language": "python", "text": "def get_file_splits(self, id, source, target, fsize, splitsize):"}
+{"language": "python", "text": "def _get_url(self, ticker, frequency):"}
+{"language": "python", "text": "def _get_dag_run(self, run_date, session=None):"}
+{"language": "python", "text": "def _proc_bspline(self, tokens, filled):"}
+{"language": "python", "text": "def gray2bgr(img):"}
+{"language": "python", "text": "def scale(self, center=True, scale=True):"}
+{"language": "python", "text": "def get_account_hash(self):"}
+{"language": "python", "text": "def __pauli_meas_gates(circuit, qreg, op):"}
+{"language": "python", "text": "def p_class_invocation_assignment_statement(self, p):"}
+{"language": "python", "text": "def _make_safe_label_value(string):"}
+{"language": "python", "text": "def name(...):"}
+{"language": "python", "text": "def show(self, *args, **kwargs):"}
+{"language": "python", "text": "def neuron_postproc(traj, result_list):"}
+{"language": "python", "text": "def delete_queue(self, name):"}
+{"language": "python", "text": "def send(self, message):"}
+{"language": "python", "text": "def _convert_pyx_sources_to_c(self):"}
+{"language": "python", "text": "def pyx_to_c(source):"}
+{"language": "python", "text": "def _aodata(echo, columns, xnxq=None, final_exam=False):"}
+{"language": "python", "text": "def to_string(self, indent=True, declaration=True):"}
+{"language": "python", "text": "def activate_matplotlib(backend):"}
+{"language": "python", "text": "def cache(self, code, number=0):"}
+{"language": "python", "text": "def _update_raw_input(self, p, sink_channel=None, input_type=None):"}
+{"language": "python", "text": "def set_mic_mode(self, index, mic_enabled):"}
+{"language": "python", "text": "def navigate_subtype(supertype, rel_id):"}
+{"language": "python", "text": "def getitem(self, obj, argument):"}
+{"language": "python", "text": "def process_call(self, addr, cmd, val):"}
+{"language": "python", "text": "def _up_pressed(self, shift_modifier):"}
+{"language": "python", "text": "def get_list(self, name):"}
+{"language": "python", "text": "def load_pkcs12(buffer, passphrase=None):"}
+{"language": "python", "text": "def get_memory_percent(self):"}
+{"language": "python", "text": "def _is_and_or_ternary(node):"}
+{"language": "python", "text": "def validate(self, format, args):"}
+{"language": "python", "text": "def log(out_str, o2=\"\", o3=\"\", o4=\"\"):"}
+{"language": "python", "text": "def fix_HTTPMessage():"}
+{"language": "python", "text": "def decode_monitoring(self, data):"}
+{"language": "python", "text": "def record_error(hostname, exc_info, preceding_stack=None, error_threshold=None, additional_info=None):"}
+{"language": "python", "text": "def render(self, context=None):"}
+{"language": "python", "text": "def _init_properties(self):"}
+{"language": "python", "text": "def set_console_handler(self, debug=False):"}
+{"language": "python", "text": "def add_project(self, project_name, token_name=None, public=None):"}
+{"language": "python", "text": "def f_contains(self, item, with_links=True, shortcuts=False, max_depth=None):"}
+{"language": "python", "text": "def facebook_request(self, method, callback, **args):"}
+{"language": "python", "text": "def get(self):"}
+{"language": "python", "text": "def _on_stream(self, stream):"}
+{"language": "python", "text": "def register_link(self, link):"}
+{"language": "python", "text": "def xml_to_dict(raw_xml):"}
+{"language": "python", "text": "def node_to_dict(node):"}
+{"language": "python", "text": "def _is_one_arg_pos_call(call):"}
+{"language": "python", "text": "def _maybe_assert_valid_concentration(self, concentration, validate_args):"}
+{"language": "python", "text": "def make_decoder(num_topics, num_words):"}
+{"language": "python", "text": "def decoder(topics):"}
+{"language": "python", "text": "def get_serial(self):"}
+{"language": "python", "text": "def setup(menu=True):"}
+{"language": "python", "text": "def get_long_running_output(response):"}
+{"language": "python", "text": "def _scan_step(self, vars):"}
+{"language": "python", "text": "def signal_update(self):"}
+{"language": "python", "text": "def img(url, alt='', classes='', style=''):"}
+{"language": "python", "text": "def results(self):"}
+{"language": "python", "text": "def update(self,dt):"}
+{"language": "python", "text": "def add_output_option(parser):"}
+{"language": "python", "text": "def _create_entry(entry_body):"}
+{"language": "python", "text": "def _argsort(values, axis=-1, direction='ASCENDING', stable=False, name=None):"}
+{"language": "python", "text": "def tv_list(self, **kwargs):"}
+{"language": "python", "text": "def get_filtered_sized_root_folder(self):"}
+{"language": "python", "text": "def _bulk_add_tasks(self, results_queue, chunk_tasks_to_add):"}
+{"language": "python", "text": "def save_screenshot(self, path=None, **kwargs):"}
+{"language": "python", "text": "def p_expression(p):"}
+{"language": "python", "text": "def _decode_thrift_annotations(self, thrift_annotations):"}
+{"language": "python", "text": "def _lnk_delete_link(self, link_name):"}
+{"language": "python", "text": "def run_hooks(obj, hooks, *args):"}
+{"language": "python", "text": "def _add_relationship_kwargs(self, kwargs, prop):"}
+{"language": "python", "text": "def explanation(self, index):"}
+{"language": "python", "text": "def visit_default(self, node):"}
+{"language": "python", "text": "def get_last_updated(self, node_id=None):"}
+{"language": "python", "text": "def login(self, username='', password=''):"}
+{"language": "python", "text": "def _reparameterize_sample(self, x):"}
+{"language": "python", "text": "def reshaped_distributional_transform(x_2d):"}
+{"language": "python", "text": "def write(self, output_buffer, kmip_version=enums.KMIPVersion.KMIP_1_0):"}
+{"language": "python", "text": "def do_REVERSE(self, latlon):"}
+{"language": "python", "text": "def getModel(self,name):"}
+{"language": "python", "text": "def refund(request, invoice_id):"}
+{"language": "python", "text": "def parallaxMinError(G, vmini, extension=0.0):"}
+{"language": "python", "text": "def register_module(self, module, **options):"}
+{"language": "python", "text": "def response_body(self):"}
+{"language": "python", "text": "def raw_filter(self, filters):"}
+{"language": "python", "text": "def write_touchstone(fname, options, data, noise=None, frac_length=10, exp_length=2):"}
+{"language": "python", "text": "def map_dict_list(ds, key_func=None, value_func=None, if_func=None):"}
+{"language": "python", "text": "def arcs(self):"}
+{"language": "python", "text": "def themes_path():"}
+{"language": "python", "text": "def find_node_type(ast, node_type):"}
+{"language": "python", "text": "def pkg_info(pkg_path):"}
+{"language": "python", "text": "def remove_ancestors_of(self, node):"}
+{"language": "python", "text": "def loggabor(self, x_pos, y_pos, sf_0, B_sf, theta, B_theta, preprocess=True):"}
+{"language": "python", "text": "def info(self, params=None):"}
+{"language": "python", "text": "def switch_to_dir(dirPath):"}
+{"language": "python", "text": "def decorator(func):"}
+{"language": "python", "text": "def wrapper(*args, **kwargs):"}
+{"language": "python", "text": "def load_additional_data(self, valid_data, many, original_data):"}
+{"language": "python", "text": "def backend_overview():"}
+{"language": "python", "text": "def widget(self, param_name):"}
+{"language": "python", "text": "def format_string(self, fmat_string):"}
+{"language": "python", "text": "def disambiguate_terms(self, terms, language=\"en\", entities=None):"}
+{"language": "python", "text": "def auth(self, user, pwd):"}
+{"language": "python", "text": "def fit_transform(self, Z, **fit_params):"}
+{"language": "python", "text": "def transform(self, words, aggregate_method):"}
+{"language": "python", "text": "def method(self, method):"}
+{"language": "python", "text": "def adjust_spines(ax, spines):"}
+{"language": "python", "text": "def main(arguments=None):"}
+{"language": "python", "text": "def scan(self, func, sequences=None, outputs=None, non_sequences=None, block=None, **kwargs):"}
+{"language": "python", "text": "def svm_score(self, x):"}
+{"language": "python", "text": "def load_audit_confusion_matrices(filename):"}
+{"language": "python", "text": "def assignHolidayDate(self, holiday, month, day):"}
+{"language": "python", "text": "def is_valid_plugin(plugin_obj, existing_plugins):"}
+{"language": "python", "text": "def featured_playlists(self, locale=None, country=None, timestamp=None, limit=20, offset=0):"}
+{"language": "python", "text": "def visit(self, visit_uri):"}
+{"language": "python", "text": "def resolve_neutral_types(storage, debug):"}
+{"language": "python", "text": "def enterEvent(self, event):"}
+{"language": "python", "text": "def tryToMerge(procA: HWProcess, procB: HWProcess):"}
+{"language": "python", "text": "def get_value_by_version(d):"}
+{"language": "python", "text": "def dataReceived(self, data):"}
+{"language": "python", "text": "def get_memory_maps(self, grouped=True):"}
+{"language": "python", "text": "def rewrite_redis_url(self):"}
+{"language": "python", "text": "def str(cls, value):"}
+{"language": "python", "text": "def normalize_enum_constant(s):"}
+{"language": "python", "text": "def _interp_dep_vector(wave, indep_vector):"}
+{"language": "python", "text": "def to_pickle(obj, filename, clean_memory=False):"}
+{"language": "python", "text": "def parse_object_id(collection, id):"}
+{"language": "python", "text": "def _handle_profile(request, prefix):"}
+{"language": "python", "text": "def check(func):"}
+{"language": "python", "text": "def wrapped(*args, **kwargs):"}
+{"language": "python", "text": "def init_webapp(self):"}
+{"language": "python", "text": "def mr_frequencies(tuning):"}
+{"language": "python", "text": "def video(request, video_id):"}
+{"language": "python", "text": "def merge_vert(script, threshold=0.0):"}
+{"language": "python", "text": "def visit_importfrom(self, node):"}
+{"language": "python", "text": "def t_FRACTION(self, t):"}
+{"language": "python", "text": "def mark_regex(regex, text, split_locations):"}
+{"language": "python", "text": "def read(self, input_stream, kmip_version=enums.KMIPVersion.KMIP_1_0):"}
+{"language": "python", "text": "def get_pid_from_file(self):"}
+{"language": "python", "text": "def get_random_voxels(dataset, n_voxels):"}
+{"language": "python", "text": "def one_step(self, current_state, previous_kernel_results):"}
+{"language": "python", "text": "def maybe_flatten(x):"}
+{"language": "python", "text": "def get_vatcode_for_ledger_line(self, ledger_line):"}
+{"language": "python", "text": "def with_it(obj):"}
+{"language": "python", "text": "def func():"}
+{"language": "python", "text": "def _wrap(func):"}
+{"language": "python", "text": "def wrapper(*args, **kwargs):"}
+{"language": "python", "text": "def _expand_and_maybe_replace():"}
+{"language": "python", "text": "def binary(length):"}
+{"language": "python", "text": "def turn_on_light(self, device_id, name):"}
+{"language": "python", "text": "def call_handlers(self, msg):"}
+{"language": "python", "text": "def from_dict(self, input_dict):"}
+{"language": "python", "text": "def filter_glyph_names( alist, filter ):"}
+{"language": "python", "text": "def parse_google(self,html):"}
+{"language": "python", "text": "def search(self, query=None, args=None):"}
+{"language": "python", "text": "def get_init(dirname):"}
+{"language": "python", "text": "def pid_exists(pid):"}
+{"language": "python", "text": "def normalize_text(text, line_len=80, indent=\"\"):"}
+{"language": "python", "text": "def getConstName(self, val):"}
+{"language": "python", "text": "def _deserialize(self, value, *args, **kwargs):"}
+{"language": "python", "text": "def require_oauth(self, *scopes):"}
+{"language": "python", "text": "def wrapper(f):"}
+{"language": "python", "text": "def decorated(*args, **kwargs):"}
+{"language": "python", "text": "def from_dict(cls, config):"}
+{"language": "python", "text": "def create_archive(self):"}
+{"language": "python", "text": "def _process_cnot(self, node):"}
+{"language": "python", "text": "def _re_pattern_pprint(obj, p, cycle):"}
+{"language": "python", "text": "def _crc(plaintext):"}
+{"language": "python", "text": "def _cut_off_drivers_of(self, sig: RtlSignalBase):"}
+{"language": "python", "text": "def download_layers(self, repo_name, digest=None, destination=None):"}
+{"language": "python", "text": "def images(self, **kwargs):"}
+{"language": "python", "text": "def setup(level='debug', output=None):"}
+{"language": "python", "text": "def clean_multigame_features(df):"}
+{"language": "python", "text": "def apply_next_patch(self, force=False, quiet=False):"}
+{"language": "python", "text": "def panel_export(store, panel_obj):"}
+{"language": "python", "text": "def enable_wx(self, app=None):"}
+{"language": "python", "text": "def process_example(attrs, act_name, act_metadata, dir_row_offset):"}
+{"language": "python", "text": "def validate(self):"}
+{"language": "python", "text": "def plot1d(self, grid=None, size=64, limits=None, weight=None, figsize=None, f=\"identity\", axes=None, xlabel=None, ylabel=None, **kwargs):"}
+{"language": "python", "text": "def read_key(self, key, bucket_name=None):"}
+{"language": "python", "text": "def get_uri(self):"}
+{"language": "python", "text": "def render(self, data):"}
+{"language": "python", "text": "def _merge_element_contents(el):"}
+{"language": "python", "text": "def process(self, context):"}
+{"language": "python", "text": "def loggabor_image(self, x_pos, y_pos, theta, sf_0, phase, B_sf, B_theta):"}
+{"language": "python", "text": "def resolve_adapter(uri):"}
+{"language": "python", "text": "def mapTypeToSql(fld_type=FieldType.NoType, fld_len=0):"}
+{"language": "python", "text": "def selected(self):"}
+{"language": "python", "text": "def DupFd(fd):"}
+{"language": "python", "text": "def create_server(self, admin_login, admin_password, location):"}
+{"language": "python", "text": "def acfun_download_by_vid(vid, title, output_dir='.', merge=True, info_only=False, **kwargs):"}
+{"language": "python", "text": "def _preparse_requirement(self, requires_dist):"}
+{"language": "python", "text": "def index_order(self, sources=True, destinations=True):"}
+{"language": "python", "text": "def read(self, queue):"}
+{"language": "python", "text": "def is_in(self, point_x, point_y):"}
+{"language": "python", "text": "def _put_trailer(self):"}
+{"language": "python", "text": "def load_disease_terms(adapter, genemap_lines, genes=None, hpo_disease_lines=None):"}
+{"language": "python", "text": "def pxrun_cell(self, raw_cell, store_history=False, silent=False):"}
+{"language": "python", "text": "def sales_payment_summary():"}
+{"language": "python", "text": "def value_or_zero(aggregate, key):"}
+{"language": "python", "text": "def sum_amount(payment_set):"}
+{"language": "python", "text": "def _simple_year_award(self, award_id):"}
+{"language": "python", "text": "def _apply_single_step(dist, params_event_ndims, slices, params_overrides):"}
+{"language": "python", "text": "def run(self):"}
+{"language": "python", "text": "def cleanup_html(html):"}
+{"language": "python", "text": "def _retry(func):"}
+{"language": "python", "text": "def retry_func(self, *args, **kwargs):"}
+{"language": "python", "text": "def build(self, traj, brian_list, network_dict):"}
+{"language": "python", "text": "def chain(self, *arg, **kw):"}
+{"language": "python", "text": "def _get_types_for_vcard_object(self, object, default_type):"}
+{"language": "python", "text": "def set_gtr(self, in_gtr, **kwargs):"}
+{"language": "python", "text": "def responsive(self):"}
+{"language": "python", "text": "def remove_interceptor(self, name):"}
+{"language": "python", "text": "def do_AUTOCOMPLETE(cmd, s):"}
+{"language": "python", "text": "def execute(self, root_allowed=False):"}
+{"language": "python", "text": "def digestSession(self, mecha=MechanismSHA1):"}
+{"language": "python", "text": "def start(self):"}
+{"language": "python", "text": "def do_help(self, options, args, parser):"}
+{"language": "python", "text": "def add_message(self, msg):"}
+{"language": "python", "text": "def print_inplace(msg):"}
+{"language": "python", "text": "def _get_notes(self):"}
+{"language": "python", "text": "def init_transformers(self):"}
+{"language": "python", "text": "def load_dataset(relative_path):"}
+{"language": "python", "text": "def ping(self, params=None):"}
+{"language": "python", "text": "def parse_commits(data):"}
+{"language": "python", "text": "def destroy(self, name):"}
+{"language": "python", "text": "def lookup_signame(num):"}
+{"language": "python", "text": "def isregex_expr(expr):"}
+{"language": "python", "text": "def process_item(self, item, spider):"}
+{"language": "python", "text": "def add(self, name, value):"}
+{"language": "python", "text": "def clock_on_right(mystring):"}
+{"language": "python", "text": "def _marginal_hidden_probs(self):"}
+{"language": "python", "text": "def forward_step(log_probs, _):"}
+{"language": "python", "text": "def read(self):"}
+{"language": "python", "text": "def get_diff(dio_cross,feedtype,**kwargs):"}
+{"language": "python", "text": "def set_center_freq(self, center_freq):"}
+{"language": "python", "text": "def handle_assignattr_type(node, parent):"}
+{"language": "python", "text": "def _match_long_opt(self, opt):"}
+{"language": "python", "text": "def set(self, state, value):"}
+{"language": "python", "text": "def stylesheet_params(**kwargs):"}
+{"language": "python", "text": "def render(self, name, value, attrs=None, renderer=None):"}
+{"language": "python", "text": "def info(self):"}
+{"language": "python", "text": "def coordinate_filter(self, query, mongo_query):"}
+{"language": "python", "text": "def print_ticks(d):"}
+{"language": "python", "text": "def rotate(self, word):"}
+{"language": "python", "text": "def write_constraints(self, table):"}
+{"language": "python", "text": "def maybe_check_wont_broadcast(flat_xs, validate_args):"}
+{"language": "python", "text": "def cmd_tool(args=None):"}
+{"language": "python", "text": "def before_request(self, f):"}
+{"language": "python", "text": "def get_rps_list(self):"}
+{"language": "python", "text": "def _einsum_matmul_index_helper(gate_indices, number_of_qubits):"}
+{"language": "python", "text": "def factored_joint_mvn(distributions):"}
+{"language": "python", "text": "def prepare(self):"}
+{"language": "python", "text": "def run(self, root_allowed=False):"}
+{"language": "python", "text": "def request_writes(self, offset, data):"}
+{"language": "python", "text": "def _leave_event_hide(self):"}
+{"language": "python", "text": "def save_model(self, request, obj, form, change):"}
+{"language": "python", "text": "def _build_metrics(func_name, namespace):"}
+{"language": "python", "text": "def make_init_files(self):"}
+{"language": "python", "text": "def update(self):"}
+{"language": "python", "text": "def get_settings(self, integration_id):"}
+{"language": "python", "text": "def read(self):"}
+{"language": "python", "text": "def style_is_false(style):"}
+{"language": "python", "text": "def analyze(self):"}
+{"language": "python", "text": "def get_dashboards(self):"}
+{"language": "python", "text": "def _build_tree_structure(cls):"}
+{"language": "python", "text": "def expired(self):"}
+{"language": "python", "text": "def export_xhtml(html, filename, image_tag=None):"}
+{"language": "python", "text": "def _update_segmentation_mask(segmentation_mask, onset_fronts, offset_fronts, onset_front_id, offset_front_id_most_overlap):"}
+{"language": "python", "text": "def wave_interp_option(obj):"}
+{"language": "python", "text": "def grad(f, delta=DELTA):"}
+{"language": "python", "text": "def grad_f(*args, **kwargs):"}
+{"language": "python", "text": "def find_files(directory, pattern, recursive=True):"}
+{"language": "python", "text": "def build_all_iop(self):"}
+{"language": "python", "text": "def _authorization_header(cls, credentials):"}
+{"language": "python", "text": "def gen_delay_selecting():"}
+{"language": "python", "text": "def get_records(self, sql, parameters=None):"}
+{"language": "python", "text": "def intersection(self, coordinates, objects=False):"}
+{"language": "python", "text": "def EntityLock(entity, acquire_timeout, lock_timeout):"}
+{"language": "python", "text": "def change_owner(document, new_owner):"}
+{"language": "python", "text": "def _select_file(user_id, api_path, fields, limit):"}
+{"language": "python", "text": "def build_parser():"}
+{"language": "python", "text": "def _end_batch(self):"}
+{"language": "python", "text": "def indices_to_global_iterator(self, indices):"}
+{"language": "python", "text": "def get_transfer_operation(self, operation_name):"}
+{"language": "python", "text": "def set_default_style(self, colors='lightbg'):"}
+{"language": "python", "text": "def start_capture(upcoming_event):"}
+{"language": "python", "text": "def read_row(self,rownumber,reverse=True):"}
+{"language": "python", "text": "def procs_dict_parser(procs_dict):"}
+{"language": "python", "text": "def skip_module(*modules):"}
+{"language": "python", "text": "def start(self):"}
+{"language": "python", "text": "def make_dispatcher(stream):"}
+{"language": "python", "text": "def dispatcher(msg):"}
+{"language": "python", "text": "def reject_connection(self, reason=None):"}
+{"language": "python", "text": "def result(self):"}
+{"language": "python", "text": "def _kl_independent(a, b, name=\"kl_independent\"):"}
+{"language": "python", "text": "def parse_tasks(raw_json):"}
+{"language": "python", "text": "def iplot_state(quantum_state, method='city', figsize=None):"}
+{"language": "python", "text": "def _search_files(self):"}
+{"language": "python", "text": "def store(self, msg, stuff_to_store, *args, **kwargs):"}
+{"language": "python", "text": "def absfile(path, where=None):"}
+{"language": "python", "text": "def write(self, msg):"}
+{"language": "python", "text": "def _get_group_signature_error(group, sponge_type):"}
+{"language": "python", "text": "def _file_in_next_patches(self, filename, patch):"}
+{"language": "python", "text": "def __load_symbol_maps(self):"}
+{"language": "python", "text": "def from_json(json, cutout=None):"}
+{"language": "python", "text": "def get( self, station, interval ):"}
+{"language": "python", "text": "def v2_runner_on_ok(self, result, **kwargs):"}
+{"language": "python", "text": "def f_set(self, *args, **kwargs):"}
+{"language": "python", "text": "def _get_backend_base():"}
+{"language": "python", "text": "def depth(self, d):"}
+{"language": "python", "text": "def load_privatekey(type, buffer, passphrase=None):"}
+{"language": "python", "text": "def create_user(self, user, account_id=None):"}
+{"language": "python", "text": "def pause_transfer_operation(self, operation_name):"}
+{"language": "python", "text": "def eligible_node(self, id, eligible=None, ineligible=None):"}
+{"language": "python", "text": "def _candidate_sort_key(self, candidate):"}
+{"language": "python", "text": "def advance_robots(self):"}
+{"language": "python", "text": "def get_authorisation_url(self, application_name, token_expire='1day'):"}
+{"language": "python", "text": "def is_virtual(value):"}
+{"language": "python", "text": "def resize(img, size, interpolation=Image.BILINEAR):"}
+{"language": "python", "text": "def unregister(self, mimetype, processor):"}
+{"language": "python", "text": "def mysql_timestamp_converter(s):"}
+{"language": "python", "text": "def get_protocol_version_name(self):"}
+{"language": "python", "text": "def is_cptp(self, atol=None, rtol=None):"}
+{"language": "python", "text": "def is_shutting_down():"}
+{"language": "python", "text": "def shutdown_all_workers():"}
+{"language": "python", "text": "def _build_mac_signature_key_information(self, value):"}
+{"language": "python", "text": "def monitor_run(self):"}
+{"language": "python", "text": "def _kl_dirichlet_dirichlet(d1, d2, name=None):"}
+{"language": "python", "text": "def quote_field(data, field):"}
+{"language": "python", "text": "def start(self, test_connection=True):"}
+{"language": "python", "text": "def poll_sysdig_capture(self, capture):"}
+{"language": "python", "text": "def next(self):"}
+{"language": "python", "text": "def error(self, status=None):"}
+{"language": "python", "text": "def decorator(callback):"}
+{"language": "python", "text": "def add_unique_identifiers(pipeline_str):"}
+{"language": "python", "text": "def discrete_likelihood(data, xmin, alpha):"}
+{"language": "python", "text": "def axis_sort(S, axis=-1, index=False, value=None):"}
+{"language": "python", "text": "def regex(expression, flags=re.IGNORECASE):"}
+{"language": "python", "text": "def _check_new_format(self, node, func):"}
+{"language": "python", "text": "def to_copy(self, column_names=None, selection=None, strings=True, virtual=False, selections=True):"}
+{"language": "python", "text": "def find(dataset, url):"}
+{"language": "python", "text": "def repeated(extractor, times, *, ignore_whitespace=False):"}
+{"language": "python", "text": "def locate(self):"}
+{"language": "python", "text": "def encode(self):"}
+{"language": "python", "text": "def drop_matching_records(self, check):"}
+{"language": "python", "text": "def output_raw(self, text):"}
+{"language": "python", "text": "def parse_hpo_phenotype(hpo_line):"}
+{"language": "python", "text": "def get_cluster(self, name, project_id=None, retry=DEFAULT, timeout=DEFAULT):"}
+{"language": "python", "text": "def as_dict(self):"}
+{"language": "python", "text": "def on_unregistered_type(self, typekey, packet):"}
+{"language": "python", "text": "def pca_calc(nc, d):"}
+{"language": "python", "text": "def remove_subscriber(self, ws):"}
+{"language": "python", "text": "def get_meteor_ids(model, object_ids):"}
+{"language": "python", "text": "def add_dashboard_panel(self, dashboard, name, panel_type, metrics, scope=None, sort_by=None, limit=None, layout=None):"}
+{"language": "python", "text": "def is_in(self, point_x, point_y):"}
+{"language": "python", "text": "def get(self, name):"}
+{"language": "python", "text": "def catch(fcn, *args, **kwargs):"}
+{"language": "python", "text": "def get_supported_platform():"}
+{"language": "python", "text": "def get_function(self, fn_name):"}
+{"language": "python", "text": "def run_git_log(git_dir=None, git_since=None):"}
+{"language": "python", "text": "def _root_nodes(self):"}
+{"language": "python", "text": "def walk(node):"}
+{"language": "python", "text": "def get_comments(self, post_id):"}
+{"language": "python", "text": "def str_strip(x, to_strip=None):"}
+{"language": "python", "text": "def create_typestr2type_dicts(dont_include_in_type2typestr=[\"lambda\"]):"}
+{"language": "python", "text": "def _normalize_tabular_data(tabular_data, headers, sort=True):"}
+{"language": "python", "text": "def concurrence(state):"}
+{"language": "python", "text": "def to_dict(self):"}
+{"language": "python", "text": "def get_true_anomaly(self):"}
+{"language": "python", "text": "def validate_verifier(self, client_key, token, verifier, request):"}
+{"language": "python", "text": "def _complete(self):"}
+{"language": "python", "text": "def remove_event_subscriber(self, name, ws):"}
+{"language": "python", "text": "def calculate_right_margin(self):"}
+{"language": "python", "text": "def empty_value(self):"}
+{"language": "python", "text": "def count(self, expression=None, binby=[], limits=None, shape=default_shape, selection=False, delay=False, edges=False, progress=None):"}
+{"language": "python", "text": "def mutex_opts(dict,ex_op):"}
+{"language": "python", "text": "def configure(self, options, config):"}
+{"language": "python", "text": "def _publish(self, subject, reply, payload, payload_size):"}
+{"language": "python", "text": "def generate_access_code():"}
+{"language": "python", "text": "def _activity_endpoint(self, athlete, filename):"}
+{"language": "python", "text": "def list_vm_images(self, location=None, publisher=None, category=None):"}
+{"language": "python", "text": "def polygon(self):"}
+{"language": "python", "text": "def manage_slas(self, dag, session=None):"}
+{"language": "python", "text": "def gmtime_adj_notBefore(self, amount):"}
+{"language": "python", "text": "def report_by_type_stats(sect, stats, _):"}
+{"language": "python", "text": "def is_unitary_matrix(mat, rtol=RTOL_DEFAULT, atol=ATOL_DEFAULT):"}
+{"language": "python", "text": "def _execute_core_transform(transform_context, inputs):"}
+{"language": "python", "text": "def withRes(opDef, operands, resT, outputs=[]):"}
+{"language": "python", "text": "def _get_selection(self):"}
+{"language": "python", "text": "def main(fw_name, args=None, items=None):"}
+{"language": "python", "text": "def parse_addr_list_cmd(proc, args, listsize=40):"}
+{"language": "python", "text": "def unfurl(jwt):"}
+{"language": "python", "text": "def model_choice_field_data(field, **kwargs):"}
+{"language": "python", "text": "def build_error_response(self, version, reason, message):"}
+{"language": "python", "text": "def viterbi_discriminative(prob, transition, p_state=None, p_init=None, return_logp=False):"}
+{"language": "python", "text": "def p_gate_body_0(self, program):"}
+{"language": "python", "text": "def get_grading_standards_for_course(self, course_id):"}
+{"language": "python", "text": "def importFromPath(self, path, fqname):"}
+{"language": "python", "text": "def follow_path(file_path, buffering=-1, encoding=None, errors='strict'):"}
+{"language": "python", "text": "def __init__(self):"}
+{"language": "python", "text": "def next(self):"}
+{"language": "python", "text": "def __iter__(self):"}
+{"language": "python", "text": "def __next__(self):"}
+{"language": "python", "text": "def dump(u, *args, **kwargs):"}
+{"language": "python", "text": "def stop_gradient(self, stop_layers, bigdl_type=\"float\"):"}
+{"language": "python", "text": "def main():"}
+{"language": "python", "text": "def poke(self, context):"}
+{"language": "python", "text": "def visit_ExceptHandler(self, node):"}
+{"language": "python", "text": "def headers_to_dict(headers):"}
+{"language": "python", "text": "def _prepare_file_payload(filename):"}
+{"language": "python", "text": "def insert_default_options():"}
+{"language": "python", "text": "def select_ellipse(self, x, y, xc, yc, width, height, angle=0, mode=\"replace\", name=\"default\", radians=False, inclusive=True):"}
+{"language": "python", "text": "def H15_mean(x):"}
+{"language": "python", "text": "def ncols(self):"}
+{"language": "python", "text": "def get_owned_repo_issues(self, tag):"}
+{"language": "python", "text": "def _set_status_channels(self):"}
+{"language": "python", "text": "def serial_time(self):"}
+{"language": "python", "text": "def fail_unreachable(self, msg_id, why=error.ImpossibleDependency):"}
+{"language": "python", "text": "def append_child_value(self, name, value):"}
+{"language": "python", "text": "def app_url_defaults(self, f):"}
+{"language": "python", "text": "def write_classes(self, diagram):"}
+{"language": "python", "text": "def _sentences(self, clean_visible):"}
+{"language": "python", "text": "def maybe_flatten(x):"}
+{"language": "python", "text": "def _register_handler(handler, file_formats):"}
+{"language": "python", "text": "def release(self, lockID, callback=None, sync=False, timeout=None):"}
+{"language": "python", "text": "def get_feature_names(self, features=None):"}
+{"language": "python", "text": "def freeze_matrix(script, all_layers=False):"}
+{"language": "python", "text": "def main():"}
+{"language": "python", "text": "def add(self, **kwargs):"}
+{"language": "python", "text": "def time_stretch(y, rate):"}
+{"language": "python", "text": "def _proc_polygon(self, tokens, filled):"}
+{"language": "python", "text": "def load_filters():"}
+{"language": "python", "text": "def _srvc_make_overview_tables(self, tables_to_make, traj=None):"}
+{"language": "python", "text": "def walkParams(intf, discovered):"}
+{"language": "python", "text": "def parse_host(host):"}
+{"language": "python", "text": "def every_other(iterable):"}
+{"language": "python", "text": "def loads(text, encoding='utf-8', handler=None, **defaults):"}
+{"language": "python", "text": "def _indent(self, text, depth=1, *, skip_first_line=False, suffix=\"\"):"}
+{"language": "python", "text": "def calc_next_run(self):"}
+{"language": "python", "text": "def write_report_data(self):"}
+{"language": "python", "text": "def setup(self):"}
+{"language": "python", "text": "def _getadvanced(self, index):"}
+{"language": "python", "text": "def key_check(key):"}
+{"language": "python", "text": "def key_func(key):"}
+{"language": "python", "text": "def f_find_idx(self, name_list, predicate):"}
+{"language": "python", "text": "def links_to_dynamic(self, ext):"}
+{"language": "python", "text": "def check_get_revoked(self):"}
+{"language": "python", "text": "def verboseRead(self, alphabet, context='', skipExtra=False):"}
+{"language": "python", "text": "def temp_pyfile(src, ext='.py'):"}
+{"language": "python", "text": "def _is_from_future_import(stmt, name):"}
+{"language": "python", "text": "def execute(self, query, args=None):"}
+{"language": "python", "text": "def get_process(self):"}
+{"language": "python", "text": "def default_configfile(base_filename):"}
+{"language": "python", "text": "def create(cls, path, N, column_names, dtypes=None, write=True):"}
+{"language": "python", "text": "def _values_of_same_type(self, val1, val2):"}
+{"language": "python", "text": "def status():"}
+{"language": "python", "text": "def get_first_name_last_name(self):"}
+{"language": "python", "text": "def read_as_binary(self):"}
+{"language": "python", "text": "def process_arguments(self, func, args):"}
+{"language": "python", "text": "def chunkiter(iterable, chunksize):"}
+{"language": "python", "text": "def _ensure_temp_path_exists(self):"}
+{"language": "python", "text": "def startwords(self):"}
+{"language": "python", "text": "def close(self):"}
+{"language": "python", "text": "def roll_sparse(x, shift, axis=0):"}
+{"language": "python", "text": "def run(self, initial_channels=[]):"}
+{"language": "python", "text": "def run(self, subcmd_name, arg):"}
+{"language": "python", "text": "def deregister_host():"}
+{"language": "python", "text": "def _is_valid_table(config_value):"}
+{"language": "python", "text": "def get_script_header(script_text, executable=sys_executable, wininst=False):"}
+{"language": "python", "text": "def skyline_inferred(self, gen=1.0, confidence=False):"}
+{"language": "python", "text": "def transform(self, Z):"}
+{"language": "python", "text": "def _create_idx_from_stream(self, stream):"}
+{"language": "python", "text": "def py_next_item(p_id, p_mins, p_maxs, p_dimension, p_data, p_length):"}
+{"language": "python", "text": "def _error_handler(self, data):"}
+{"language": "python", "text": "def gaussian_cost(X):"}
+{"language": "python", "text": "def visit_import(self, node):"}
+{"language": "python", "text": "def dispatch_commands(functions, *args, **kwargs):"}
+{"language": "python", "text": "def final(self):"}
+{"language": "python", "text": "def api(endpoint, data=None, json=None, filename=None, save_to=None):"}
+{"language": "python", "text": "def add_variable(self, name, expression, overwrite=True, unique=True):"}
+{"language": "python", "text": "def init_connection_file(self):"}
+{"language": "python", "text": "def up(tarball_url, auth_token, env, app_name):"}
+{"language": "python", "text": "def discover(interface=None):"}
+{"language": "python", "text": "def logger(name=__name__, output=None, uuid=False, timestamp=False):"}
+{"language": "python", "text": "def bind(self, graph, reset=True, initialize=True):"}
+{"language": "python", "text": "def transform(self, image_feature, bigdl_type=\"float\"):"}
+{"language": "python", "text": "def index_scan_prefix(self, idx_name, val_prefix):"}
+{"language": "python", "text": "def file_to_delete(cls):"}
+{"language": "python", "text": "def centroids_and_volumes(self, sort_index = True):"}
+{"language": "python", "text": "def mask(self, image, nan_to_num=True, layers=None, in_global_mask=False):"}
+{"language": "python", "text": "def _search(self, node, key, max_depth=float('inf'), with_links=True, crun=None):"}
+{"language": "python", "text": "def historical_content(self, content_id, version):"}
+{"language": "python", "text": "def construct_covariance_matrix(cvec, parallax, radial_velocity, radial_velocity_error):"}
+{"language": "python", "text": "def _prm_write_pandas_data(self, key, data, group, fullname, flag, **kwargs):"}
+{"language": "python", "text": "def _onOutgoingConnected(self, conn):"}
+{"language": "python", "text": "def select_rectangle(self, x, y, limits, mode=\"replace\", name=\"default\"):"}
+{"language": "python", "text": "def create(cls, name_value, name_type):"}
+{"language": "python", "text": "def models(cls, api_version=DEFAULT_API_VERSION):"}
+{"language": "python", "text": "def visit_call(self, node):"}
+{"language": "python", "text": "def change_style(style, representer):"}
+{"language": "python", "text": "def new_representer(dumper, data):"}
+{"language": "python", "text": "def fetch(self, category=CATEGORY_ISSUE, from_date=DEFAULT_DATETIME, to_date=DEFAULT_LAST_DATETIME):"}
+{"language": "python", "text": "def values(self):"}
+{"language": "python", "text": "def missing_pids(self):"}
+{"language": "python", "text": "def map(self, path):"}
+{"language": "python", "text": "def end(self):"}
+{"language": "python", "text": "def get_comment_lesson_info(self):"}
+{"language": "python", "text": "def connect(self):"}
+{"language": "python", "text": "def get_tokens(self):"}
+{"language": "python", "text": "def fit(self, fr):"}
+{"language": "python", "text": "def google_url(self,song_name,website):"}
+{"language": "python", "text": "def run_command(command):"}
+{"language": "python", "text": "def sum(self, expression, binby=[], limits=None, shape=default_shape, selection=False, delay=False, progress=None, edges=False):"}
+{"language": "python", "text": "def finish(*sums):"}
+{"language": "python", "text": "def pick_signed_metadata_statements_regex(self, pattern, context):"}
+{"language": "python", "text": "def process_non_raw_string_token(self, prefix, string_body, start_row):"}
+{"language": "python", "text": "def _init_client(self, from_archive=False):"}
+{"language": "python", "text": "def ip(private=True, public=True, max_attempts=10000):"}
+{"language": "python", "text": "def get_json(self, force=False, silent=False, cache=True):"}
+{"language": "python", "text": "def received(self, src, body):"}
+{"language": "python", "text": "def execute(self, command, path=None):"}
+{"language": "python", "text": "def call_inkscape(args_strings, inkscape_binpath=None):"}
+{"language": "python", "text": "def run(self, cmd, start_opts=None, globals_=None, locals_=None):"}
+{"language": "python", "text": "def get_stats(self, username='', password='', organization='llnl', force=True):"}
+{"language": "python", "text": "def render(self, code):"}
+{"language": "python", "text": "def iter_steps(self):"}
+{"language": "python", "text": "def get_settings():"}
+{"language": "python", "text": "def add_comment(self, comment_text):"}
+{"language": "python", "text": "def get_param_names(self):"}
+{"language": "python", "text": "def start(self, test_connection=True):"}
+{"language": "python", "text": "def loadModel(self,name):"}
+{"language": "python", "text": "def date(self):"}
+{"language": "python", "text": "def parse_file(cls, ctxt, fname, key=None, step_addr=None):"}
+{"language": "python", "text": "def children(self, parent_item, navigation_type, use_template, context):"}
+{"language": "python", "text": "def any_datetime_field(field, **kwargs):"}
+{"language": "python", "text": "def method_names(self):"}
+{"language": "python", "text": "def write(self, output_buffer, kmip_version=enums.KMIPVersion.KMIP_1_0):"}
+{"language": "python", "text": "def resolve_provider_class(class_):"}
+{"language": "python", "text": "def pprintInterface(intf, prefix=\"\", indent=0, file=sys.stdout):"}
+{"language": "python", "text": "def get_mean_insert_size(work_dir, bam_name):"}
+{"language": "python", "text": "def invoke_function(self, script_hash, operation, params, **kwargs):"}
+{"language": "python", "text": "def _check_protected_attribute_access(self, node):"}
+{"language": "python", "text": "def standard(cls, element):"}
+{"language": "python", "text": "def write(self, data_to_write, overwrite=False):"}
+{"language": "python", "text": "def ccx(self, ctl1, ctl2, tgt):"}
+{"language": "python", "text": "def forward(self, obj):"}
+{"language": "python", "text": "def find(self, search_term, index=False):"}
+{"language": "python", "text": "def parse_headers(obj):"}
+{"language": "python", "text": "def _pre_init(self):"}
+{"language": "python", "text": "def split_by_3(self, number):"}
+{"language": "python", "text": "def _find_player_url(response):"}
+{"language": "python", "text": "def generate_dataframe(self, symbols=None, date_index=None, price_type=\"mid\"):"}
+{"language": "python", "text": "def range(self, name=\"range\"):"}
+{"language": "python", "text": "def download(self, bucket_name, object_name, filename=None):"}
+{"language": "python", "text": "def list_filenames_in_directory(self, dirname):"}
+{"language": "python", "text": "def setPin(self, old_pin, new_pin):"}
+{"language": "python", "text": "def store_file(self, remote_full_path, local_full_path_or_buffer):"}
+{"language": "python", "text": "def task_with_callable(the_callable, label=None, schedule=DEFAULT_SCHEDULE, userdata=None, pk_override=None):"}
+{"language": "python", "text": "def getMessage(self):"}
+{"language": "python", "text": "def find_magic(self, magic_name, magic_kind='line'):"}
+{"language": "python", "text": "def most_likely_alpha(data, xmin, alpharange=(1.5,3.5), n_alpha=201):"}
+{"language": "python", "text": "def launch_ipython_shell(args):"}
+{"language": "python", "text": "def delete_job(self, cloud_service_id, job_collection_id, job_id):"}
+{"language": "python", "text": "def _log_normalization(self):"}
+{"language": "python", "text": "def to_python(self):"}
+{"language": "python", "text": "def escape(t):"}
+{"language": "python", "text": "def _add_attachments(self):"}
+{"language": "python", "text": "def _draw(self, mode, vertex_list=None):"}
+{"language": "python", "text": "def form_view(injector):"}
+{"language": "python", "text": "def create_key_file(path):"}
+{"language": "python", "text": "def mme_delete(case_obj, mme_base_url, mme_token):"}
+{"language": "python", "text": "def clear_all(self):"}
+{"language": "python", "text": "def dict_repr_html(dictionary):"}
+{"language": "python", "text": "def params_size(event_size, num_components, name=None):"}
+{"language": "python", "text": "def text_visible(self):"}
+{"language": "python", "text": "def assign_force_field(ampal_obj, ff):"}
+{"language": "python", "text": "def filter_report(self, filt=None, analytes=None, savedir=None, nbin=5):"}
+{"language": "python", "text": "def canonicalize_tautomer_smiles(smiles):"}
+{"language": "python", "text": "def find(self, item, logical=False):"}
+{"language": "python", "text": "def new_session(self, session):"}
+{"language": "python", "text": "def edit_syntax_error(self):"}
+{"language": "python", "text": "def get_request_token_secret(self, client_key, token, request):"}
+{"language": "python", "text": "def write(self, changes: Dict[str, StoreItem]):"}
+{"language": "python", "text": "def get_job_collection(self, cloud_service_id, job_collection_id):"}
+{"language": "python", "text": "def seek(self,index):"}
+{"language": "python", "text": "def close(self):"}
+{"language": "python", "text": "def _get_metadata(self):"}
+{"language": "python", "text": "def url(regex, view, kwargs=None, name=None, prefix=''):"}
+{"language": "python", "text": "def redraw_label(self):"}
+{"language": "python", "text": "def _imported_module(self, node, mod_path, relative):"}
+{"language": "python", "text": "def stats_per36(self, kind='R', summary=False):"}
+{"language": "python", "text": "def find(ellipsname, crstype, strict=False):"}
+{"language": "python", "text": "def input_dims(self, qargs=None):"}
+{"language": "python", "text": "def get_annotation_data_after_time(self, id_tier, time):"}
+{"language": "python", "text": "def turn_off(self, device_id, name):"}
+{"language": "python", "text": "def _maybe_parse_basic_type(self):"}
+{"language": "python", "text": "def __init__(self, n):"}
+{"language": "python", "text": "def main(argv):"}
+{"language": "python", "text": "def get_median(values, kdd):"}
+{"language": "python", "text": "def parse_ical(vcal):"}
+{"language": "python", "text": "def interpret_stats(results):"}
+{"language": "python", "text": "def from_epw(cls, buffer_or_path):"}
+{"language": "python", "text": "def resource_groups(self):"}
+{"language": "python", "text": "def callback(cls, user, query):"}
+{"language": "python", "text": "def _annotated_unpack_infer(stmt, context=None):"}
+{"language": "python", "text": "def configure(self, options, conf):"}
+{"language": "python", "text": "def reviews(self, **kwargs):"}
+{"language": "python", "text": "def deeplearning(interactive=True, echo=True, testing=False):"}
+{"language": "python", "text": "def demo_body(go):"}
+{"language": "python", "text": "def convert(self, value):"}
+{"language": "python", "text": "def _promote_and_split(s):"}
+{"language": "python", "text": "def _cursor_position_changed(self):"}
+{"language": "python", "text": "def create_directory(self, share_name, directory_name, **kwargs):"}
+{"language": "python", "text": "def _backwards_search(self, start_node, split_name, max_depth=float('inf'), shortcuts=True):"}
+{"language": "python", "text": "def _separate_bitstring(bitstring, creg_sizes):"}
+{"language": "python", "text": "def fetch_items(self, category, **kwargs):"}
+{"language": "python", "text": "def patch_request_class(app, size=64 * 1024 * 1024):"}
+{"language": "python", "text": "def shorten(self, url, keyword=None, title=None):"}
+{"language": "python", "text": "def gallery_images(self):"}
+{"language": "python", "text": "def validate_api_host_url(url):"}
+{"language": "python", "text": "def sort(self, by, ascending=[]):"}
+{"language": "python", "text": "def handle_print_stack(self, signame, print_stack):"}
+{"language": "python", "text": "def to_scientific_tuple(number):"}
+{"language": "python", "text": "def get_options(parser):"}
+{"language": "python", "text": "def get_object_id(model, meteor_id):"}
+{"language": "python", "text": "def enable_gtk(self, app=None):"}
+{"language": "python", "text": "def _process_msg(self, sid, subject, reply, data):"}
+{"language": "python", "text": "def convert(lines):"}
+{"language": "python", "text": "def parse(line):"}
+{"language": "python", "text": "def t_RSQBR(self, t):"}
+{"language": "python", "text": "def add_virtual_columns_cartesian_velocities_to_pmvr(self, x=\"x\", y=\"y\", z=\"z\", vx=\"vx\", vy=\"vy\", vz=\"vz\", vr=\"vr\", pm_long=\"pm_long\", pm_lat=\"pm_lat\", distance=None):"}
+{"language": "python", "text": "def list(self, request):"}
+{"language": "python", "text": "def intervals(context, build):"}
+{"language": "python", "text": "def close(self):"}
+{"language": "python", "text": "def setauth(self, user_or_apikey=None, user_password=None):"}
+{"language": "python", "text": "def get_check():"}
+{"language": "python", "text": "def new_author(name=None, email=None, affiliation=None, url=None):"}
+{"language": "python", "text": "def _swap_ops_from_edge(edge, layout):"}
+{"language": "python", "text": "def get_record(self, msg_id):"}
+{"language": "python", "text": "def char_tokens_to_char_offsets(si_tokens):"}
+{"language": "python", "text": "def add(self, part, override=True):"}
+{"language": "python", "text": "def fetch(self, category=CATEGORY_PAGE, from_date=DEFAULT_DATETIME, reviews_api=False):"}
+{"language": "python", "text": "def quiet(self):"}
+{"language": "python", "text": "def valid_int(x, cast=None):"}
+{"language": "python", "text": "def alternative_titles(self, **kwargs):"}
+{"language": "python", "text": "def _get_local_files(self, path):"}
+{"language": "python", "text": "def resize_image_to_fit(image, dest_w, dest_h):"}
+{"language": "python", "text": "def multiply(traj):"}
+{"language": "python", "text": "def geckoboard_geckometer(request):"}
+{"language": "python", "text": "def set_defaults(self):"}
+{"language": "python", "text": "def _line_segment_with_colons(linefmt, align, colwidth):"}
+{"language": "python", "text": "def Rock(*args, **kwargs):"}
+{"language": "python", "text": "def open_shift_managed_clusters(self):"}
+{"language": "python", "text": "def parse_dates(date_file):"}
+{"language": "python", "text": "def chown(path, uid, guid, recursive=True):"}
+{"language": "python", "text": "def return_type(type_name, formatter=None):"}
+{"language": "python", "text": "def _returns(func):"}
+{"language": "python", "text": "def resubmit(self, indices_or_msg_ids=None, subheader=None, block=None):"}
+{"language": "python", "text": "def from_connection_string(cls, conn_str, *, loop=None, **kwargs):"}
+{"language": "python", "text": "def get_builds(self, job_name):"}
+{"language": "python", "text": "def _sort_tensor(tensor):"}
+{"language": "python", "text": "def _continuation_inside_bracket(self, bracket, position):"}
+{"language": "python", "text": "def f_add_config(self, *args, **kwargs):"}
+{"language": "python", "text": "def wrap(func):"}
+{"language": "python", "text": "def wrapped_func(*args, **kwargs):"}
+{"language": "python", "text": "def resize_crop_image(image, dest_w, dest_h, pad_when_tall=False):"}
+{"language": "python", "text": "def get_conn(self):"}
+{"language": "python", "text": "def home_url():"}
+{"language": "python", "text": "def _lower(v):"}
+{"language": "python", "text": "def insert_bytes(fobj, size, offset, BUFFER_SIZE=2**16):"}
+{"language": "python", "text": "def reload(self):"}
+{"language": "python", "text": "def _onNavigate(self, index):"}
+{"language": "python", "text": "def unparse_headers(hdrs):"}
+{"language": "python", "text": "def plot_spectrum_min_max(self, t=0, f_start=None, f_stop=None, logged=False, if_id=0, c=None, **kwargs):"}
+{"language": "python", "text": "def prebuild_action(instance):"}
+{"language": "python", "text": "def session_new(self, **kwargs):"}
+{"language": "python", "text": "def f_remove(self, recursive=True, predicate=None):"}
+{"language": "python", "text": "def transform(self, data, allow_timestamps=False):"}
+{"language": "python", "text": "def parse_omim_line(line, header):"}
+{"language": "python", "text": "def update_caseid(self, case_obj, family_id):"}
+{"language": "python", "text": "def decode(self, x):"}
+{"language": "python", "text": "def update_alert(self, alertid, alert_description):"}
+{"language": "python", "text": "def issues(self, from_date=None):"}
+{"language": "python", "text": "def send(self, peer, typename, data):"}
+{"language": "python", "text": "def attempt_to_send(_):"}
+{"language": "python", "text": "def send_completed(result):"}
+{"language": "python", "text": "def make_cache_key(*args, **kwargs):"}
+{"language": "python", "text": "def get_valid_examples(self):"}
+{"language": "python", "text": "def ParseID3v1(data):"}
+{"language": "python", "text": "def fix(data):"}
+{"language": "python", "text": "def as_property_description(self):"}
+{"language": "python", "text": "def parse(source, handler):"}
+{"language": "python", "text": "def node_factory(**row_factory_kw):"}
+{"language": "python", "text": "def _form_returning(self):"}
+{"language": "python", "text": "def add_deformation(chn_names, data):"}
+{"language": "python", "text": "def _trj_check_version(self, version, python, force):"}
+{"language": "python", "text": "def url(self, sitetree_item, context=None):"}
+{"language": "python", "text": "def begin(self):"}
+{"language": "python", "text": "def _parse_lines(self, linesource):"}
+{"language": "python", "text": "def list_assets(self, status=None, asset_class=None):"}
+{"language": "python", "text": "def inkscape_export(input_file, output_file, export_flag=\"-A\", dpi=90, inkscape_binpath=None):"}
+{"language": "python", "text": "def login(self, ptrt_url):"}
+{"language": "python", "text": "def auth_check(res):"}
+{"language": "python", "text": "def converged_any(converged, failed):"}
+{"language": "python", "text": "def execute_pipeline(pipeline, environment_dict=None, run_config=None):"}
+{"language": "python", "text": "def apply(self, fun=None, axis=0):"}
+{"language": "python", "text": "def write(self, ostream, kmip_version=enums.KMIPVersion.KMIP_1_0):"}
+{"language": "python", "text": "def _get_num_cpus():"}
+{"language": "python", "text": "def render_function(obj, view):"}
+{"language": "python", "text": "def get_settings(cls, show_hidden=False):"}
+{"language": "python", "text": "def copy(self, dest, symlinks=False):"}
+{"language": "python", "text": "def _load_flag(self, cfg):"}
+{"language": "python", "text": "def revoke_token(self, token, token_type_hint, request, *args, **kwargs):"}
+{"language": "python", "text": "def _handle_results(self):"}
+{"language": "python", "text": "def download(self, path=None, **kwargs):"}
+{"language": "python", "text": "def write(self, data):"}
+{"language": "python", "text": "def get_kvlayer_stream_item_by_doc_id(client, doc_id):"}
+{"language": "python", "text": "def coactivation(dataset, seed, threshold=0.0, output_dir='.', prefix='', r=6):"}
+{"language": "python", "text": "def byte_href_anchors_state_machine(self):"}
+{"language": "python", "text": "def flush_figures():"}
+{"language": "python", "text": "def _with_meta(gen_node):"}
+{"language": "python", "text": "def read_data(data_file, dataformat, name_mode):"}
+{"language": "python", "text": "def sub_waterfall(df):"}
+{"language": "python", "text": "def run_from_argv(self, argv):"}
+{"language": "python", "text": "def merge(self, merge_id):"}
+{"language": "python", "text": "def escapeUnderscores(self):"}
+{"language": "python", "text": "def gauss(x, *p):"}
+{"language": "python", "text": "def _sendPendingMessages(self):"}
+{"language": "python", "text": "def s3errors(path):"}
+{"language": "python", "text": "def get_key_for_purpose_and_type(self, purpose, key_type):"}
+{"language": "python", "text": "def build(self):"}
+{"language": "python", "text": "def has_changed(self):"}
+{"language": "python", "text": "def remove_node(self, node_id=None):"}
+{"language": "python", "text": "def next_opcode(code, offset):"}
+{"language": "python", "text": "def _bloch_angles(pair_of_complex):"}
+{"language": "python", "text": "def _get_dataset_file(self, dir, ext):"}
+{"language": "python", "text": "def __window_ss_fill(x, win_sq, n_frames, hop_length):"}
+{"language": "python", "text": "def _load_features_from_array(self, features):"}
+{"language": "python", "text": "def documentation(self):"}
+{"language": "python", "text": "def _extend_support(self, x, f, alt):"}
+{"language": "python", "text": "def check(settings, states, location):"}
+{"language": "python", "text": "def get_default_options():"}
+{"language": "python", "text": "def stringReceived(self, string):"}
+{"language": "python", "text": "def request_ocsp(self):"}
+{"language": "python", "text": "def deep_copy(data, xid):"}
+{"language": "python", "text": "def mark_causative(self, institute, case, user, link, variant):"}
+{"language": "python", "text": "def findTranslationTo(self, t2: str) -> (bool, Signature, Translator):"}
+{"language": "python", "text": "def predict(self, x, distributed=True):"}
+{"language": "python", "text": "def invoke_string(self, line):"}
+{"language": "python", "text": "def getParser(self, doc=None):"}
+{"language": "python", "text": "def delete_cloud_service(self, cloud_service_id):"}
+{"language": "python", "text": "def adjust_brightness(img, brightness_factor):"}
+{"language": "python", "text": "def getecho (self):"}
+{"language": "python", "text": "def models(cls, api_version=DEFAULT_API_VERSION):"}
+{"language": "python", "text": "def repr_type(obj):"}
+{"language": "python", "text": "def positions_func(inputs, pad=0):"}
+{"language": "python", "text": "def get_last_name_first_name(self):"}
+{"language": "python", "text": "def deserialize_function(serial, function_type):"}
+{"language": "python", "text": "def mouse_down(self, evt):"}
+{"language": "python", "text": "def delete_variants(self, case_id, variant_type, category=None):"}
+{"language": "python", "text": "def get_table(self, table_name, db='default'):"}
+{"language": "python", "text": "def _serializeOnce_eval(parentUnit, obj, isDeclaration, priv):"}
+{"language": "python", "text": "def token_count_pandas(self):"}
+{"language": "python", "text": "def _hms(s):"}
+{"language": "python", "text": "def _sig(self, name, dtype=BIT, defVal=None):"}
+{"language": "python", "text": "def define_macro(self, name, themacro):"}
+{"language": "python", "text": "def _handle_exec_callback(self, msg):"}
+{"language": "python", "text": "def fromurl(cls, qs):"}
+{"language": "python", "text": "def getargspec(obj):"}
+{"language": "python", "text": "def pkginfo_to_metadata(egg_info_path, pkginfo_path):"}
+{"language": "python", "text": "def call(__self, __obj, *args, **kwargs):"}
+{"language": "python", "text": "def do_GET(self):"}
+{"language": "python", "text": "def SetProjection(self, sref):"}
+{"language": "python", "text": "def build(self, pipeline_def, artifacts_persisted):"}
+{"language": "python", "text": "def wrap(text, indent='    '):"}
+{"language": "python", "text": "def printCursor(self, fieldnames=None, datemap=None, time_format=None):"}
+{"language": "python", "text": "def _fetch_from_tuple(self, store_load, store_tuple, args, kwargs):"}
+{"language": "python", "text": "def from_url(url, format=None):"}
+{"language": "python", "text": "def forward(self, input, target):"}
+{"language": "python", "text": "def numeric_date(dt=None):"}
+{"language": "python", "text": "def _history_locked(self):"}
+{"language": "python", "text": "def _decode_stat_data(self, chunk):"}
+{"language": "python", "text": "def jaccard(self, other):"}
+{"language": "python", "text": "def comment_add(self, obj_id, message):"}
+{"language": "python", "text": "def select_non_missing(self, drop_nan=True, drop_masked=True, column_names=None, mode=\"replace\", name=\"default\"):"}
+{"language": "python", "text": "def create(current):"}
+{"language": "python", "text": "def init_date_constraints(self, ancestral_inference=False, clock_rate=None, **kwarks):"}
+{"language": "python", "text": "def weekday(year_or_num, month=None, day=None, full=False):"}
+{"language": "python", "text": "def send(self, commands):"}
+{"language": "python", "text": "def merge_(self, merge_dct):"}
+{"language": "python", "text": "def _handle_candles(self, dtype, data, ts):"}
+{"language": "python", "text": "def sum(self, skipna=True, axis=0, **kwargs):"}
+{"language": "python", "text": "def wordfreq(text, is_filename=False):"}
+{"language": "python", "text": "def runSamplesPermu(self, df, gmt=None):"}
+{"language": "python", "text": "def decorator(directname=None):"}
+{"language": "python", "text": "def wrapper(f):"}
+{"language": "python", "text": "def run(self, args_list=None):"}
+{"language": "python", "text": "def str_rjust(x, width, fillchar=' '):"}
+{"language": "python", "text": "def _set_options(self, qobj_config=None, backend_options=None):"}
+{"language": "python", "text": "def run(self, train_set, valid_set=None, test_set=None, train_size=None, epoch_controllers=None):"}
+{"language": "python", "text": "def object_to_primitive(obj):"}
+{"language": "python", "text": "def delete_globals(m, disconnect=False):"}
+{"language": "python", "text": "def commands(self, **params):"}
+{"language": "python", "text": "def f_supports(self, data):"}
+{"language": "python", "text": "def loadByteArray(self, context, page, resultLen, resultData, returnError):"}
+{"language": "python", "text": "def format_counts(counts, header=None):"}
+{"language": "python", "text": "def init_io(self):"}
+{"language": "python", "text": "def f_add_result(self, *args, **kwargs):"}
+{"language": "python", "text": "def on_error(self, error, items):"}
+{"language": "python", "text": "def discovery_print(pkt):"}
+{"language": "python", "text": "def split_trailing_whitespace(word):"}
+{"language": "python", "text": "def invoice_access(request, access_code):"}
+{"language": "python", "text": "def set_child_value(self, name, value):"}
+{"language": "python", "text": "def get_sender(self, message_timeout=0, session=None, **kwargs):"}
+{"language": "python", "text": "def _send_content(self, method=\"/sendMessage\"):"}
+{"language": "python", "text": "def p_reset(self, program):"}
+{"language": "python", "text": "def discover_gateways(self):"}
+{"language": "python", "text": "def make_encoder(activation, latent_size, base_depth):"}
+{"language": "python", "text": "def encoder(images):"}
+{"language": "python", "text": "def fileSave(self, filePath=None, updatePath=False):"}
+{"language": "python", "text": "def module(self):"}
+{"language": "python", "text": "def prepare_stepper(self):"}
+{"language": "python", "text": "def publish_info(stepper_info):"}
+{"language": "python", "text": "def errorScalingFactor(observable, beta):"}
+{"language": "python", "text": "def subscribe_to_raw_order_book(self, pair, prec=None, **kwargs):"}
+{"language": "python", "text": "def get_browser(browser_name, capabilities=None, **options):"}
+{"language": "python", "text": "def insert_instance(self, block):"}
+{"language": "python", "text": "def argmin(df, column: str, groups: Union[str, List[str]] = None):"}
+{"language": "python", "text": "def add_available_action(self, name, metadata, cls):"}
+{"language": "python", "text": "def enable_component_notification(self, openstack_component):"}
+{"language": "python", "text": "def jobs(self, job_key=None, timeoutSecs=10, **kwargs):"}
+{"language": "python", "text": "def url_for(endpoint, **values):"}
+{"language": "python", "text": "def external_url_handler(error, endpoint, **values):"}
+{"language": "python", "text": "def address_from_digest(digest):"}
+{"language": "python", "text": "def _get_container_string(cont_dict, pid):"}
+{"language": "python", "text": "def set_background_color(self, color):"}
+{"language": "python", "text": "def add_arguments(self):"}
+{"language": "python", "text": "def _main(self, client, fileobj, bucket, key, extra_args):"}
+{"language": "python", "text": "def case_report(institute_id, case_name):"}
+{"language": "python", "text": "def attach(word, josa=EUN_NEUN):"}
+{"language": "python", "text": "def default_option(self, fn, optstr):"}
+{"language": "python", "text": "def should_use_network(self, request):"}
+{"language": "python", "text": "def reg_on_resume(self, callable_object, *args, **kwargs):"}
+{"language": "python", "text": "def addCamera(self,camera):"}
+{"language": "python", "text": "def stop_spin_thread(self):"}
+{"language": "python", "text": "def read(self, input_stream, kmip_version=enums.KMIPVersion.KMIP_1_0):"}
+{"language": "python", "text": "def even_even(self):"}
+{"language": "python", "text": "def t_LPAREN(self, t):"}
+{"language": "python", "text": "def positionMinError(G, vmini, extension=0.0):"}
+{"language": "python", "text": "def get_item_metadata(self, handle):"}
+{"language": "python", "text": "def _write_header(po_path, lang, header):"}
+{"language": "python", "text": "def get_diadefs(self, project, linker):"}
+{"language": "python", "text": "def print(self, msg, *args, **kwargs):"}
+{"language": "python", "text": "def __init__(self, modelpath):"}
+{"language": "python", "text": "def predict(self, seg):"}
+{"language": "python", "text": "def setup_platform(hass, config, add_entities, discovery_info=None):"}
+{"language": "python", "text": "def _extract(self, element):"}
+{"language": "python", "text": "def ipaddress(not_valid=None):"}
+{"language": "python", "text": "def variant(institute_id, case_name, variant_id):"}
+{"language": "python", "text": "def _extract_base(self, element):"}
+{"language": "python", "text": "def _profile_module(self):"}
+{"language": "python", "text": "def _find_basename(self, name, basenames, is_prefix=False):"}
+{"language": "python", "text": "def get_buffer(self, *args):"}
+{"language": "python", "text": "def save_default_falco_rules_files(self, fsobj, save_dir):"}
+{"language": "python", "text": "def isometric_remesh(script, SamplingRate=10):"}
+{"language": "python", "text": "def download(self):"}
+{"language": "python", "text": "def _create_directory(cls, directory, loop=False):"}
+{"language": "python", "text": "def process_data(data, number_to_keep):"}
+{"language": "python", "text": "def concat(self, other):"}
+{"language": "python", "text": "def str_to_num(str_value):"}
+{"language": "python", "text": "def _normalize_params(params):"}
+{"language": "python", "text": "def get_grid_span(tc):"}
+{"language": "python", "text": "def _get_required_args(fn):"}
+{"language": "python", "text": "def upload(self, path, docs, **params):"}
+{"language": "python", "text": "def sub(self, pattern, replacement, ignore_case=False):"}
+{"language": "python", "text": "def process(in_path, out_file, n_jobs, framesync):"}
+{"language": "python", "text": "def _pair_delims(expr, ldelim=\"(\", rdelim=\")\"):"}
+{"language": "python", "text": "def slice_list(in_list, lens):"}
+{"language": "python", "text": "def update_template_context(self, context):"}
+{"language": "python", "text": "def switch_to_frame(self, frame):"}
+{"language": "python", "text": "def add(self, name, filt, info='', params=(), setn=None):"}
+{"language": "python", "text": "def _infer_from_metaclass_constructor(cls, func):"}
+{"language": "python", "text": "def string_length(ctx, s=None):"}
+{"language": "python", "text": "def handle(self, *args, **kwargs):"}
+{"language": "python", "text": "def data(self, **query):"}
+{"language": "python", "text": "def write(self, output_stream, kmip_version=enums.KMIPVersion.KMIP_1_0):"}
+{"language": "python", "text": "def add_plot_parser(subparsers):"}
+{"language": "python", "text": "def random(cls, num_qubits, seed=None):"}
+{"language": "python", "text": "def create_blueprint(endpoints):"}
+{"language": "python", "text": "def tombstone_errorhandler(error):"}
+{"language": "python", "text": "def inject_export_formats():"}
+{"language": "python", "text": "def update_activity(self, context: TurnContext, activity: Activity):"}
+{"language": "python", "text": "def filter(self, func=None):"}
+{"language": "python", "text": "def align_probability(i, j, source_sentences, target_sentences, alignment, params):"}
+{"language": "python", "text": "def get_pandas_df(self, hql, parameters=None):"}
+{"language": "python", "text": "def _update_process_resources(self, process, vals):"}
+{"language": "python", "text": "def addMenu(self,menu):"}
+{"language": "python", "text": "def _clean_longitudinal_data(cls, data, null=None):"}
+{"language": "python", "text": "def apply_Mueller(I,Q,U,V, gain_offsets, phase_offsets, chan_per_coarse, feedtype='l'):"}
+{"language": "python", "text": "def getResponse(self, context=\"\"):"}
+{"language": "python", "text": "def prepare_classpath():"}
+{"language": "python", "text": "def set_exception(self, exception):"}
+{"language": "python", "text": "def compute_tensor(self, x):"}
+{"language": "python", "text": "def parse(self, data):"}
+{"language": "python", "text": "def choose(is_accepted, accepted, rejected, name=None):"}
+{"language": "python", "text": "def _inject(self, fileobj):"}
+{"language": "python", "text": "def rlist_modules(mname):"}
+{"language": "python", "text": "def reject(self, pn_condition=None):"}
+{"language": "python", "text": "def get_method(self, args):"}
+{"language": "python", "text": "def filter_gradient_threshold(self, analyte, win, threshold, recalc=True):"}
+{"language": "python", "text": "def execute_work(self, key, command):"}
+{"language": "python", "text": "def _write_config_file(template_file):"}
+{"language": "python", "text": "def odd_odd(self):"}
+{"language": "python", "text": "def issue_funds(ctx, amount='uint256', rtgs_hash='bytes32', returns=STATUS):"}
+{"language": "python", "text": "def _resolve_ctx(rules):"}
+{"language": "python", "text": "def update_w(self):"}
+{"language": "python", "text": "def select_next(iterval):"}
+{"language": "python", "text": "def _analytic_host_file_directory(self):"}
+{"language": "python", "text": "def launch_new_instance():"}
+{"language": "python", "text": "def _leapfrog_one_step(*args):"}
+{"language": "python", "text": "def task_info(dag_id, task_id):"}
+{"language": "python", "text": "def isometric_build_atlased_mesh(script, BorderSize=0.1):"}
+{"language": "python", "text": "def makePlot(args):"}
+{"language": "python", "text": "def _observers_for_notification(self, ntype, sender):"}
+{"language": "python", "text": "def function(script, red=255, green=255, blue=255, alpha=255, color=None):"}
+{"language": "python", "text": "def memoise(cls, func):"}
+{"language": "python", "text": "def f(*a):"}
+{"language": "python", "text": "def build_route(relation):"}
+{"language": "python", "text": "def save_notebook_object(self, notebook_id, nb):"}
+{"language": "python", "text": "def prepare_search_queries(args):"}
+{"language": "python", "text": "def get_predictions(genes):"}
+{"language": "python", "text": "def __fetch_user_data(self, tag_type, user_link):"}
+{"language": "python", "text": "def is_italics(r):"}
+{"language": "python", "text": "def start_instance(self, zone, resource_id, project_id=None):"}
+{"language": "python", "text": "def _load_part(self, rel_type, name, data):"}
+{"language": "python", "text": "def new_releases(self, *, country=None, limit=20, offset=0):"}
+{"language": "python", "text": "def loadByteArray(self, page, returnError):"}
+{"language": "python", "text": "def value(self, index, extra):"}
+{"language": "python", "text": "def files_have_same_point_format_id(las_files):"}
+{"language": "python", "text": "def _insert_img(qr_img, icon_img=None, factor=4, icon_box=None, static_dir=None):"}
+{"language": "python", "text": "def filter(self, *filters, **kwargs):"}
+{"language": "python", "text": "def visit_unaryop(self, node):"}
+{"language": "python", "text": "def _compute_missing_rates(self, currency):"}
+{"language": "python", "text": "def starts_with(ctx, full, part):"}
+{"language": "python", "text": "def sample(self, n=None, frac=None, replace=False, weights=None, random_state=None):"}
+{"language": "python", "text": "def parse_pattern(pattern):"}
+{"language": "python", "text": "def _match_number(pattern):"}
+{"language": "python", "text": "def parse_precision(p):"}
+{"language": "python", "text": "def run_setup(setup_script, args):"}
+{"language": "python", "text": "def _setup_template_file(self, template_file_path):"}
+{"language": "python", "text": "def Trans(self, stateFrom, *condAndNextState):"}
+{"language": "python", "text": "def importFromDir(self, dir, fqname):"}
+{"language": "python", "text": "def string_input(prompt=''):"}
+{"language": "python", "text": "def t_RELID(self, t):"}
+{"language": "python", "text": "def compute(self, name, tdb):"}
+{"language": "python", "text": "def get_storage(self, script_hash, key, **kwargs):"}
+{"language": "python", "text": "def yield_sphinx_only_markup(lines):"}
+{"language": "python", "text": "def clean_line(line):"}
+{"language": "python", "text": "def update(self, **fields):"}
+{"language": "python", "text": "def make(self, analyte):"}
+{"language": "python", "text": "def seed_response(self, command, response):"}
+{"language": "python", "text": "def visit_dict(self, node):"}
+{"language": "python", "text": "def convert_to_type(self, value, typename, **kwargs):"}

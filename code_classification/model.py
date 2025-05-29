@@ -107,6 +107,8 @@ import tree_sitter_python as tspython
 import tree_sitter_javascript as tsjavascript
 import tree_sitter_go as tsgo
 import tree_sitter_ruby as tsruby
+import tree_sitter_php as tsphp
+import tree_sitter_java as tsjava
 
 from tree_sitter import Language, Parser
 
@@ -114,6 +116,8 @@ PY_LANGUAGE = Language(tspython.language())
 GO_LANGUAGE = Language(tsgo.language())
 JS_LANGUAGE = Language(tsjavascript.language())
 RB_LANGUAGE = Language(tsruby.language())
+# JAVA_LANGUAGE = Language(tsjava.language())
+PHP_LANGUAGE = Language(tsphp.language_php_only())
 
 from operator import itemgetter
 results = sorted(results[0], key=itemgetter("score"), reverse=True)
@@ -221,9 +225,9 @@ def get_errors(node, words):
         for child in node.children:
             errors += get_errors(child, words)
     return errors
-
-error_nodes = get_errors(guess_tree.root_node, important_words)
-print(error_nodes)
+if has_errors:
+    error_nodes = get_errors(guess_tree.root_node, important_words)
+    print(error_nodes)
 #%%
 # Get nodes with important words in the correct language tree
 def get_nodes_with_important_words(node, words):
@@ -245,13 +249,14 @@ def get_nodes_with_important_words(node, words):
         nodes += get_nodes_with_important_words(child, words)
     return nodes
 
-error_words = []
-for x in error_nodes:
-    error_words.append(x["text"])
+if has_errors:
+    error_words = []
+    for x in error_nodes:
+        error_words.append(x["text"])
 
-correct_nodes = get_nodes_with_important_words(correct_tree.root_node, error_words)
-for w in correct_nodes:
-    print(w)
+    correct_nodes = get_nodes_with_important_words(correct_tree.root_node, error_words)
+    for w in correct_nodes:
+        print(w)
 #%%
 # Eliminate bigger blocks from tree
 
@@ -294,12 +299,12 @@ def check_keywords(errors, keywords):
             print(f"Keyword found: {error}")
         else:
             print(f"Not a keyword: {error}")
+if has_errors:
+    keywords = open(f"./keywords/{results[0]['label']}.txt", "r").readlines()
+    keywords = [x.strip() for x in keywords]
+    # print(keywords)
 
-keywords = open(f"./keywords/{results[0]['label']}.txt", "r").readlines()
-keywords = [x.strip() for x in keywords]
-print(keywords)
-
-check_keywords([n["correct_language"]["text"] for n in correspondence], keywords)
+    check_keywords([n["correct_language"]["text"] for n in correspondence], keywords)
 #%%
 # Check other errors to analyse manually
 
@@ -307,6 +312,8 @@ def check_other_errors(errors, keywords):
     for error in errors:
         if error["text"] not in keywords:
             print(f"Error to analyse: {error['text']}")
-            
-check_other_errors([n["wrong_language"] for n in correspondence], keywords)
+
+if has_errors:            
+    check_other_errors([n["wrong_language"] for n in correspondence], keywords)
 # %%
+# Insert keywords in other code languages
