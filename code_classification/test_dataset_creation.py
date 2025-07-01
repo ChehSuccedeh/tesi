@@ -64,4 +64,4 @@ import random
 
 test_df = test_df.sample(frac=1, random_state=42).reset_index(drop=True)
 
-test_df.to_json("./code_classification/data/test_dataset.json", orient="records", lines=True)
+test_df.to_json("./code_classification/data/test2_dataset.jsonl", orient="records", lines=True)
