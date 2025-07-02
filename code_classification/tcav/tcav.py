@@ -1,6 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.optim as optim
+import torch.nn.functional as F
 import numpy as np
 from sklearn.linear_model import SGDClassifier
 import random
@@ -13,12 +14,19 @@ class TCAV:
         """ Inizializza la classe con variabili vuote """
         self.model = model
         self.tokenizer = tokenizer
-        self.model_f = None
-        self.model_h = None
         self.cav = None
         self.sensitivity = None
         self.tcav_score = []
         self.y_labels = None
+        self.bottleneck = None
+        self.model_activations = {}
+    
+    def hook_fn(self, name):
+        if name not in self.model_activations.keys():
+            self.model_activations[name] = []
+        def fn(module, input, output):
+            self.model_activations[name].append(output)
+        return fn
 
     def set_model(self, model):
         """ Imposta il modello PyTorch """
@@ -34,8 +42,10 @@ class TCAV:
             raise ValueError("Il layer di bottleneck deve essere valido!")
         
         layers = list(self.model.children())
-        self.model_f = nn.Sequential(*layers[:bottleneck+1])
-        self.model_h = nn.Sequential(*layers[bottleneck+1:])
+        print(layers)
+        self.bottleneck = str(bottleneck)
+        self.model.roberta.encoder.layer[bottleneck].register_forward_hook(self.hook_fn(str(bottleneck)))
+
 
     def _create_counterexamples(self, x_concept):
         """ Crea esempi casuali come controesempi """
@@ -51,7 +61,7 @@ class TCAV:
         """ Tokenizza gli input se il tokenizer è fornito """
         if self.tokenizer is not None:
             # Assumiamo che il tokenizer restituisca tensori PyTorch
-            return self.tokenizer(inputs, return_tensors="pt", padding=True, truncation=True).to(self.model_f.device)
+            return self.tokenizer(inputs, return_tensors="pt", padding=True, truncation=True)
         return inputs
 
     def train_cav(self, x_concept):
@@ -61,48 +71,65 @@ class TCAV:
         y_train_concept = torch.cat((torch.ones(x_concept.shape[0]), torch.zeros(counterexamples.shape[0])))
 
         # Tokenizza gli input se necessario
+        
         x_train_concept = self._tokenize(x_train_concept)
 
         with torch.no_grad():
-            concept_activations = self.model_f(x_train_concept).cpu().numpy()
+            _ = self.model(**x_train_concept)
+            concept_activations = self.model_activations[self.bottleneck]
         
         lm = SGDClassifier(loss="perceptron", eta0=1, learning_rate="constant", penalty=None)
         lm.fit(concept_activations, y_train_concept.numpy())
         self.cav = -lm.coef_.T
+        self.model_activations[self.bottleneck] = [] #once calculated all results, reset for next operations                           
 
-    def calculate_sensitivity(self, x_train, y_train):
-        """ Calcola e restituisce la sensibilità per ogni label (multi-label) """
-        # Tokenizza gli input se necessario
+
+    def calculate_sensitivity(self, x_train, y_train, device="cpu"):
+        """
+        Versione PyTorch della funzione, con commenti che rimandano
+        ai passaggi originali in Keras.
+        """
         x_train = self._tokenize(x_train)
-        x_train.requires_grad = True
-        model_f_activations = self.model_f(x_train)
+        print(x_train)
+        # --- (1) Predict di model_f, equivalente a model_f.predict(x_train)
+        x_train = x_train.to(device)
+        
+        output = self.model(**x_train)
 
-        criterion = nn.BCEWithLogitsLoss()
-        output = self.model_h(model_f_activations).squeeze()
+        activations = self.model_activations[self.bottleneck][0][0]  # Prendi l'ultima attivazione del bottleneck
+        print(output.logits.shape)
+        print(activations.shape)
+        
+        # --- (2) Reshape delle label, come reshape + tf.convert_to_tensor
+        if isinstance(y_train, list):
+            y_train = np.array(y_train)
+            print(y_train)
+        if not isinstance(y_train, torch.Tensor):
+            y_train = torch.from_numpy(y_train)
+        y_labels = y_train.view(-1).to(device)
+        print(y_labels)
 
-        if output.dim() == 1:
-            output = output.unsqueeze(1)
-        if y_train.dim() == 1:
-            y_train = y_train.unsqueeze(1)
+        # --- (3) Abilita il tracking dei gradienti su activations
+        #     corrisponde in Keras a usare self.model_h.input con grafo attivo
+        activations.requires_grad_(True)
 
-        grads = []
+        # --- (4) Forward pass in model_h e calcolo della loss
+        #     k.binary_crossentropy → F.binary_cross_entropy
+        
+        loss = F.cross_entropy(output.logits, y_labels)
 
-        for i in range(y_train.shape[1]):
-            self.model.zero_grad()
-            if x_train.grad is not None:
-                x_train.grad.zero_()
-            loss = criterion(output[:, i], y_train[:, i].float())
-            loss.backward(retain_graph=True)
-            grad = x_train.grad.detach().clone()
-            grads.append(grad.unsqueeze(2))  # (batch, features, 1)
-            x_train.grad.zero_()
+        # --- (5) Calcolo del gradiente di loss rispetto ad activations
+        #     k.gradients + k.function + chiamata → torch.autograd.grad
+        grads = torch.autograd.grad(loss, activations)[0]
 
-        grads = torch.cat(grads, dim=2)  # (batch, features, num_labels)
-        cav_tensor = torch.tensor(self.cav, dtype=torch.float)
-        if cav_tensor.dim() == 1:
-            cav_tensor = cav_tensor.unsqueeze(1)
-        self.sensitivity = torch.einsum('bfi,fi->bi', grads, cav_tensor)  # (batch, num_labels)
-        self.y_labels = y_train.cpu().numpy()
+        # --- (6) Prodotto scalare con CAV, equivalente a np.dot(calc_grad, self.cav)
+        cav_tensor = torch.from_numpy(self.cav).float().to(device)
+        sensitivity = torch.matmul(grads, cav_tensor)
+
+        # --- (7) Salvataggio dei risultati come NumPy array
+        self.sensitivity = sensitivity.detach().cpu().numpy()
+        self.y_labels    = y_train.detach().cpu().numpy().reshape(-1)
+
 
     def print_sensitivity(self):
         """ Stampa le sensibilità per tutte le label in modo leggibile """
