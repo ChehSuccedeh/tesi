@@ -1,8 +1,18 @@
-import pandas as pd
+import json
 
-with open("./data/test_dataset.jsonl", "r") as f:
-    df = pd.read_json(f, lines=True)
-    df = df.rename(columns={"code": "text", "language": "language"})
-    df.sample(1000).to_json("./data/random_concept_dataset.jsonl", orient="records", lines=True)
-    
-    
+input_file = "./code_classification/packets.txt"
+output_file = "output.jsonl"
+
+with open(input_file, "r") as f, open(output_file, "w") as out:
+    current_attack = None
+    for line in f:
+        line = line.strip()
+        if line.startswith("-----") and line.endswith("-----"):
+            # Nuova sezione di attacco
+            current_attack = line.strip("- ").lower()
+        elif line:
+            # Entry del pacchetto
+            out.write(json.dumps({
+                "attack_type": current_attack,
+                "packet": line
+            }, ensure_ascii=False) + "\n")
