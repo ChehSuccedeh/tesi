@@ -17,7 +17,7 @@ def parse_json_lines(file_path):
     return results
 
 # Esempio di utilizzo
-file_paths = ["./code_classification/results/tcav_auto", "./code_classification/results/tcav_fixed", "./code_classification/results/tcav_avg"]
+file_paths = ["./packet_inspection/results/tcav_auto", "./packet_inspection/results/tcav_fixed", "./packet_inspection/results/tcav_avg"]
 for f in file_paths:
     dizionario = parse_json_lines(f+".txt")
     
@@ -26,3 +26,4 @@ for f in file_paths:
         print(x)
         fo.write(json.dumps(x)+"\n")
         
+    fo.close()
