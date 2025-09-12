@@ -102,8 +102,8 @@ for i in range(len(files)):
     data = [json.loads(obj) for obj in json_objects]
 
     df = pd.DataFrame(data)
-    full_graphs(df, suffix[i])
-    summary_graphs(df, suffix[i])
+    # full_graphs(df, suffix[i])
+    # summary_graphs(df, suffix[i])
     df["tipo"] = suffix[i]
     dfs.append(df)
     
@@ -123,7 +123,7 @@ for concept in df_all['concept'].unique():
     tipi = subset['tipo'].unique() if 'tipo' in subset.columns else ['auto', 'fixed', 'avg']
     bottlenecks = sorted(df_all['bottleneck'].unique())
     n_classi = len(classi)
-    n_cols = min(5, n_classi)
+    n_cols = min(3, n_classi)
     n_rows = (n_classi + n_cols - 1) // n_cols
     fig, axes = plt.subplots(n_rows, n_cols, figsize=(6 * n_cols, 6 * n_rows), sharey=True)
     axes = axes.flatten() if n_classi > 1 else [axes]
