@@ -304,7 +304,7 @@ class TCAV_Avg:
                     sens_per_token.append([])
                     for j in range(grad_b.shape[1]):
                         g = grad_b[i, j, :]
-                        sens_per_token[i].append((x_train_words[i][j], np.dot(g, cav_b).to_list()[0]))  # (token, sensitivity)
+                        sens_per_token[i].append((x_train_words[i][j], np.dot(g, cav_b).tolist()[0]))  # (token, sensitivity)
                 token_sensitivities[concept][b] = sens_per_token
 
 
@@ -451,7 +451,7 @@ print("--------- Calculating sensitivities --------")
 tcav_avg.calculate_sensitivity([s["text"] for s in samples["test"]], [CLASSES[s["class"]] for s in samples["test"]])
 
 f_avg = open("./results/packet_inspection/validation.txt", "a")
-f_avg.write(json.dumps(tcav_avg.get_sensitivity_results(INV_CLASSES, include_per_sample=True), indent=4)+ "\n")
+f_avg.write(json.dumps(tcav_avg.get_sensitivity_results(INV_CLASSES, include_per_sample=True)) + "\n")
 f_avg.close()
 
 print("Avg TCAV Sensitivities:")
