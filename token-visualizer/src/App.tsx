@@ -23,28 +23,24 @@ type DataType = {
   token_sensitivities: [string, number][];
 };
 
-function getColorForValue(value: number): string {
-  // Usa un range morto tra -0.01 e 0.01: valori in questo range sono trasparenti
-  if (value >= -0.01 && value <= 0.01) {
+function getColorForValue(value: number, min_max: [number, number]): string {
+  // Usa un range morto tra -0.0000001 e 0.0000001: valori in questo range sono trasparenti
+  if (value >= -0.0000001 && value <= 0.0000001) {
     return 'transparent';
   }
 
-  // Clamp value tra -1 e 1
-  let clamped = Math.max(-1, Math.min(1, value));
-  let intensity = Math.abs(clamped);
+  const [min, max] = min_max;
 
-  if (clamped > 0) {
-    // Verde: più intenso più è grande il valore
-    const green = 255;
-    const red = Math.round(255 * (1 - intensity));
-    const blue = Math.round(255 * (1 - intensity));
-    return `rgb(${red},${green},${blue})`;
+  // Colori HSV: valori positivi -> verde, negativi -> rosso, 0 -> trasparente
+  // Hue: 120 (verde) per valori positivi, 0 (rosso) per negativi
+  if (value > 0) {
+    const perc = (value / max) * 100;
+    // Saturazione e valore pieni, hue 120 (verde)
+    return `hsl(120, ${100}%, ${100-perc}%)`;
   } else {
-    // Rosso: più intenso più è vicino a -1
-    const red = 255;
-    const green = Math.round(255 * (1 - intensity));
-    const blue = Math.round(255 * (1 - intensity));
-    return `rgb(${red},${green},${blue})`;
+    const perc = (value / min) * 100;
+    // Saturazione e valore pieni, hue 0 (rosso)
+  return `hsl(0, ${100}%, ${100-perc}%)`;
   }
 }
 
@@ -54,6 +50,7 @@ export default function App() {
   const fileOptions = ASSET_JSON_FILES.map(f => ({ value: f, label: f }));
   const [selectedFile, setSelectedFile] = useState(ASSET_JSON_FILES[0]);
   const [dataset, setDataset] = useState<DataType[]>([]);
+  const [minMax, setMinMax] = useState<[number, number]>([-1, 1]);
 
   // Caricamento dinamico del file selezionato
   useEffect(() => {
@@ -63,9 +60,24 @@ export default function App() {
         const mod = await import(/* @vite-ignore */ `./assets/${selectedFile}`);
         console.log("Loaded data: ", selectedFile);
         console.log(`Length: ${mod.default.length}`);
-        setDataset(mod.default as DataType[]);
+        const data = mod.default as DataType[];
+        setDataset(data);
+
+        // Trova min e max tra tutte le sensitivities dei token
+        let min = Infinity;
+        let max = -Infinity;
+        data.forEach(item => {
+          item.token_sensitivities.forEach(([_, value]) => {
+            if (value < min) min = value;
+            if (value > max) max = value;
+          });
+        });
+        setMinMax([min, max]);
+        console.log("Min-Max sensitivities: ", min, max);
       } catch (e) {
+        console.error("Error loading data: ", e);
         setDataset([]);
+        setMinMax([-1, 1]);
       }
     }
     loadData();
@@ -220,7 +232,7 @@ export default function App() {
                     key={idx}
                     className="font-mono"
                     style={{
-                      backgroundColor: getColorForValue(sensitivity),
+                      backgroundColor: getColorForValue(sensitivity, minMax),
                       padding: '2px',
                       margin: '2px',
                       display: 'inline-block'
