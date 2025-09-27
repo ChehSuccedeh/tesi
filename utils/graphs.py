@@ -6,7 +6,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import os
 
-CARTELLA = "code_classification"
+# CARTELLA = "code_classification"
+CARTELLA = "packet_inspection"
 # Parsing del file
 def full_graphs(df, suffix):
 
@@ -92,18 +93,21 @@ def summary_graphs(df, suffix):
 # %%
 if not os.path.exists(f'./{CARTELLA}/figures'):
     os.makedirs(f'./{CARTELLA}/figures')
-files = [f"./{CARTELLA}/results/tcav_auto_parsed.txt", f"./{CARTELLA}/results/tcav_fixed_parsed.txt", f"./{CARTELLA}/results/tcav_avg_parsed.txt"]
+# files = [f"./{CARTELLA}/results/tcav_auto_parsed.txt", f"./{CARTELLA}/results/tcav_fixed_parsed.txt", f"./{CARTELLA}/results/tcav_avg_parsed.txt"]
+# files = [f"./{CARTELLA}/results/results_c_auto_parsed.json", f"./{CARTELLA}/results/results_c_fixed_parsed.json", f"./{CARTELLA}/results/results_c_avg_parsed.json"]
+files = [f"./{CARTELLA}/results/results_p_auto_parsed.json", f"./{CARTELLA}/results/results_p_fixed_parsed.json", f"./{CARTELLA}/results/results_p_avg_parsed.json"]
 suffix = ["auto", "fixed", "avg"]
 dfs = []
 for i in range(len(files)):
     with open(files[i], "r") as f:
         text = f.read()
-    json_objects = re.findall(r'\{.*?\}', text, re.DOTALL)
-    data = [json.loads(obj) for obj in json_objects]
+    json_objects = json.loads(text)
+    # data = [json.loads(obj) for obj in json_objects]
+    data = json_objects
 
     df = pd.DataFrame(data)
-    # full_graphs(df, suffix[i])
-    # summary_graphs(df, suffix[i])
+    full_graphs(df, suffix[i])
+    summary_graphs(df, suffix[i])
     df["tipo"] = suffix[i]
     dfs.append(df)
     
@@ -123,7 +127,7 @@ for concept in df_all['concept'].unique():
     tipi = subset['tipo'].unique() if 'tipo' in subset.columns else ['auto', 'fixed', 'avg']
     bottlenecks = sorted(df_all['bottleneck'].unique())
     n_classi = len(classi)
-    n_cols = min(3, n_classi)
+    n_cols = min(5, n_classi)
     n_rows = (n_classi + n_cols - 1) // n_cols
     fig, axes = plt.subplots(n_rows, n_cols, figsize=(6 * n_cols, 6 * n_rows), sharey=True)
     axes = axes.flatten() if n_classi > 1 else [axes]
