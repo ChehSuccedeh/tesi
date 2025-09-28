@@ -19,8 +19,9 @@ def parse_json_lines(file_path):
     return results
 
 # Esempio di utilizzo
-# file_paths = ["./packet_inspection/results/tcav_auto", "./packet_inspection/results/tcav_fixed", "./packet_inspection/results/tcav_avg"]
-file_paths = ["./results_c_auto", "./results_c_fixed", "./results_c_avg", "./results_p_auto", "./results_p_fixed", "./results_p_avg"]
+file_paths = ["./packet_inspection/results/tcav_auto", "./packet_inspection/results/tcav_fixed", "./packet_inspection/results/tcav_avg"]
+# file_paths = ["./results_c_auto", "./results_c_fixed", "./results_c_avg", "./results_p_auto", "./results_p_fixed", "./results_p_avg"]
+# file_paths = ["./packet_inspection/new_interface/results/new_auto", "./packet_inspection/new_interface/results/new_fixed", "./packet_inspection/new_interface/results/new_avg"]
 for f in file_paths:
     dizionario = parse_json_lines(f+".txt")
 

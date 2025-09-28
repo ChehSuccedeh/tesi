@@ -17,22 +17,24 @@ def full_graphs(df, suffix):
     n_bottlenecks = len(bottlenecks)
 
     for concept in df['concept'].unique():
-        fig, axes = plt.subplots(2, 3, figsize=(18, 18), sharey=True)
+        # fig, axes = plt.subplots(2, 3, figsize=(18, 18), sharey=True)
+        fig, axes = plt.subplots((n_bottlenecks + 2) // 3, 3, figsize=(18, 6 * ((n_bottlenecks + 2) // 3)), sharey=True)
         fig.suptitle(f'Boxplot per concept: {concept}', fontsize=16)
         subset = df[df['concept'] == concept]
         classi = sorted(df['class'].unique())
         # Palette da 10 colori
         palette = sns.color_palette('tab10',  n_colors=len(classi))
+        # print(bottlenecks)
         for i, bottleneck in enumerate(bottlenecks):
             ax = axes[i // 3, i % 3]
             data_bottleneck = subset[subset['bottleneck'] == bottleneck]
             sns.boxplot(
-            data=data_bottleneck,
-            x='class',
-            y='sensitivity',
-            ax=ax,
-            medianprops=dict(color='black'),
-            palette=palette[:len(classi)]
+                data=data_bottleneck,
+                x='class',
+                y='sensitivity',
+                ax=ax,
+                medianprops=dict(color='black'),
+                palette=palette[:len(classi)]
             )
             ax.set_title(bottleneck)
             ax.set_xlabel('Classe')
@@ -93,9 +95,10 @@ def summary_graphs(df, suffix):
 # %%
 if not os.path.exists(f'./{CARTELLA}/figures'):
     os.makedirs(f'./{CARTELLA}/figures')
-# files = [f"./{CARTELLA}/results/tcav_auto_parsed.txt", f"./{CARTELLA}/results/tcav_fixed_parsed.txt", f"./{CARTELLA}/results/tcav_avg_parsed.txt"]
+files = [f"./{CARTELLA}/results/tcav_auto_parsed.json", f"./{CARTELLA}/results/tcav_fixed_parsed.json", f"./{CARTELLA}/results/tcav_avg_parsed.json"]
 # files = [f"./{CARTELLA}/results/results_c_auto_parsed.json", f"./{CARTELLA}/results/results_c_fixed_parsed.json", f"./{CARTELLA}/results/results_c_avg_parsed.json"]
-files = [f"./{CARTELLA}/results/results_p_auto_parsed.json", f"./{CARTELLA}/results/results_p_fixed_parsed.json", f"./{CARTELLA}/results/results_p_avg_parsed.json"]
+# files = [f"./{CARTELLA}/results/results_p_auto_parsed.json", f"./{CARTELLA}/results/results_p_fixed_parsed.json", f"./{CARTELLA}/results/results_p_avg_parsed.json"]
+# files = [f"./{CARTELLA}/results/new_auto_parsed.json", f"./{CARTELLA}/results/new_fixed_parsed.json", f"./{CARTELLA}/results/new_avg_parsed.json"]
 suffix = ["auto", "fixed", "avg"]
 dfs = []
 for i in range(len(files)):
