@@ -58,8 +58,8 @@ export default function App() {
       if (!selectedFile) return;
       try {
         const mod = await import(/* @vite-ignore */ `./assets/${selectedFile}`);
-        console.log("Loaded data: ", selectedFile);
-        console.log(`Length: ${mod.default.length}`);
+        // console.log("Loaded data: ", selectedFile);
+        // console.log(`Length: ${mod.default.length}`);
         const data = mod.default as DataType[];
         setDataset(data);
 
@@ -73,7 +73,7 @@ export default function App() {
           });
         });
         setMinMax([min, max]);
-        console.log("Min-Max sensitivities: ", min, max);
+        // console.log("Min-Max sensitivities: ", min, max);
       } catch (e) {
         console.error("Error loading data: ", e);
         setDataset([]);
@@ -106,7 +106,7 @@ export default function App() {
   }, [sampleIndices]);
 
   function setSelectedBottleneck(value: string) {
-    console.log("Setting bottleneck to: ", value);
+    // console.log("Setting bottleneck to: ", value);
     _setSelectedBottleneck(value);
   }
 
@@ -118,10 +118,10 @@ export default function App() {
 
   // Trova l'elemento selezionato
 
-  console.log("selectedConcept: ", selectedConcept);
-  console.log("selectedBottleneck: ", selectedBottleneck);
-  console.log("selectedSampleIndex: ", selectedSampleIndex);
-  console.log("dataset length: ", dataset.length);
+  // console.log("selectedConcept: ", selectedConcept);
+  // console.log("selectedBottleneck: ", selectedBottleneck);
+  // console.log("selectedSampleIndex: ", selectedSampleIndex);
+  // console.log("dataset length: ", dataset.length);
   const selectedItem = useMemo(() => {
     if (!selectedConcept || !selectedBottleneck || !selectedSampleIndex) return undefined;
     return dataset.find(
@@ -214,6 +214,88 @@ export default function App() {
                 </button>
               </div>
             </div>
+          </div>
+        </CardContent>
+        <CardContent>
+          <div className="mt-4">
+            <h3 className="font-semibold mb-2">Top 5 Token Sensitivities (positivi & negativi)</h3>
+            {selectedConcept && selectedBottleneck ? (
+              (() => {
+          // Filtra tutti i sample per concept e bottleneck selezionati
+          const filtered = dataset.filter(
+            d =>
+              d.concept === selectedConcept &&
+              Number(d.bottleneck) === Number(selectedBottleneck)
+          );
+          if (filtered.length === 0) {
+            return <p className="text-sm text-gray-500">Nessun dato per questa combinazione.</p>;
+          }
+          // Raccogli tutte le tuple (token, sensitivity, sample_index) dei sample filtrati
+          const tokenTuples: [string, number, number][] = [];
+          filtered.forEach(item => {
+            item.token_sensitivities.forEach(([token, sensitivity]) => {
+              tokenTuples.push([token, sensitivity, item.sample_index]);
+            });
+          });
+
+          // Top 5 positivi
+          const topPositives = tokenTuples
+            .filter(([_, val]) => val > 0)
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, 5);
+
+          // Top 5 negativi
+          const topNegatives = tokenTuples
+            .filter(([_, val]) => val < 0)
+            .sort((a, b) => a[1] - b[1])
+            .slice(0, 5);
+
+          return (
+            <div className="flex flex-col gap-2">
+              <div>
+                <span className="font-semibold text-green-700 mr-2">Top 5 positivi:</span>
+                {topPositives.length > 0 ? (
+            topPositives.map(([token, val, sampleIdx], idx) => (
+              <span
+                key={idx}
+                className="font-mono px-2 py-1 rounded"
+                style={{
+                  backgroundColor: getColorForValue(val, minMax),
+                }}
+                title={`Sensitivity: ${val.toFixed(4)} | Sample index: ${sampleIdx}`}
+              >
+                {token} <span className="text-xs text-gray-500">({val.toFixed(4)})</span>
+              </span>
+            ))
+                ) : (
+            <span className="text-sm text-gray-500">Nessun token positivo.</span>
+                )}
+              </div>
+              <div>
+                <span className="font-semibold text-red-700 mr-2">Top 5 negativi:</span>
+                {topNegatives.length > 0 ? (
+            topNegatives.map(([token, val, sampleIdx], idx) => (
+              <span
+                key={idx}
+                className="font-mono px-2 py-1 rounded"
+                style={{
+                  backgroundColor: getColorForValue(val, minMax),
+                }}
+                title={`Sensitivity: ${val.toFixed(4)} | Sample index: ${sampleIdx}`}
+              >
+                {token} <span className="text-xs text-gray-500">({val.toFixed(4)})</span>
+              </span>
+            ))
+                ) : (
+            <span className="text-sm text-gray-500">Nessun token negativo.</span>
+                )}
+              </div>
+            </div>
+          );
+              })()
+            ) : (
+              <p className="text-sm text-gray-500">Seleziona concept e bottleneck per vedere i top token.</p>
+            )}
           </div>
         </CardContent>
       </Card>
