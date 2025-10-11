@@ -3,3 +3,5 @@
 __pycache__
 datasets
 models
+./visual/token-visualizer/node_modules
+./visual/backend/node_modules
