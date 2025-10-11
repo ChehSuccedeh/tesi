@@ -1,7 +1,7 @@
 import ast
 from collections import defaultdict
-
-input_path = "d:\\fabio\\tesi\\packet_inspection\\lime\\lime_results_fixed.txt"
+DIR = "./packet_inspection/lime/"
+input_path = DIR + "lime_results_fixed.txt"
 
 dizionari = []
 with open(input_path, "r", encoding="utf-8") as f:
@@ -9,7 +9,7 @@ with open(input_path, "r", encoding="utf-8") as f:
         line = line.strip()
         if line:
             dizionari.append(ast.literal_eval(line))
-
+# print(dizionari[0])
 # Accumula valori delle parole per ogni classe
 class_word_values = defaultdict(lambda: defaultdict(list))
 
@@ -18,7 +18,8 @@ for d in dizionari:
         for word, value in word_list:
             class_word_values[cls][word].append(value)
 
-# print(class_word_values)
+# class_word_values: dict[class][word] = [valori]
+
 # Calcola la media e ordina
 for cls, words in class_word_values.items():
     avg_values = {word: (sum(vals)/len(vals), len(vals)) for word, vals in words.items()}
@@ -27,7 +28,7 @@ for cls, words in class_word_values.items():
     for word, (avg, count) in top_words:
         print(f"\t- {word}: {avg:.4f} (count: {count})")
 
-output_path = "d:\\fabio\\tesi\\packet_inspection\\lime\\lime_stats_results.txt"
+output_path = DIR + "lime_stats_results.txt"
 with open(output_path, "w", encoding="utf-8") as out_file:
         # Calcola e stampa la media dei valori delle parole per ogni classe
     print("\nMedia dei valori delle parole per ogni classe:")
@@ -54,7 +55,7 @@ with open(output_path, "w", encoding="utf-8") as out_file:
             out_file.write(f"\t- {word}: {avg:.4f} (count: {count})\n")
             print(f"\t- {word}: {avg:.4f} (count: {count})")
 
-top_words_path = "d:\\fabio\\tesi\\packet_inspection\\lime\\lime_stats_top_words.txt"
+top_words_path = DIR + "lime_stats_top_words.txt"
 with open(top_words_path, "w", encoding="utf-8") as top_file:
     for cls, words in class_word_values.items():
         # Trova i 10 valori massimi tra tutte le occorrenze delle parole, includendo l'indice originale

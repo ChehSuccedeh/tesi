@@ -165,13 +165,44 @@ export default function App() {
             </div>
             <div>
               <h2 className="text-lg font-semibold mb-1">Bottleneck</h2>
+              <div className="flex items-center gap-2">
+              <button
+                className="px-2 py-1 border rounded disabled:opacity-50"
+                onClick={() => {
+                const idx = bottlenecks.findIndex(b => String(b) === selectedBottleneck);
+                if (idx > 0) setSelectedBottleneck(String(bottlenecks[idx - 1]));
+                }}
+                disabled={
+                bottlenecks.length === 0 ||
+                bottlenecks.findIndex(b => String(b) === selectedBottleneck) <= 0
+                }
+                aria-label="Previous bottleneck"
+              >
+                Previous
+              </button>
               <Combobox
                 options={bottlenecks.map(b => ({ value: String(b), label: String(b) }))}
                 value={selectedBottleneck}
                 onChange={setSelectedBottleneck}
                 placeholder="Seleziona bottleneck..."
-                className="w-full"
+                className="flex-grow"
               />
+              <button
+                className="px-2 py-1 border rounded disabled:opacity-50"
+                onClick={() => {
+                const idx = bottlenecks.findIndex(b => String(b) === selectedBottleneck);
+                if (idx < bottlenecks.length - 1 && idx !== -1) setSelectedBottleneck(String(bottlenecks[idx + 1]));
+                }}
+                disabled={
+                bottlenecks.length === 0 ||
+                bottlenecks.findIndex(b => String(b) === selectedBottleneck) === -1 ||
+                bottlenecks.findIndex(b => String(b) === selectedBottleneck) >= bottlenecks.length - 1
+                }
+                aria-label="Next bottleneck"
+              >
+                Next
+              </button>
+              </div>
             </div>
             <div>
               <h2 className="text-lg font-semibold mb-1">Sample Index</h2>
