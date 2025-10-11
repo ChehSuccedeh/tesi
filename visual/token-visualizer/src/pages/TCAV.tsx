@@ -53,7 +53,7 @@ const HomePage: React.FC = () => {
     async function loadData() {
       if (!selectedFile) return;
       try {
-        const mod = await import(/* @vite-ignore */ `../assets/${selectedFile}`);
+        const mod = await import(/* @vite-ignore */ `./../assets/tcav/${selectedFile}`);
         const data = mod.default as DataType[];
         setDataset(data);
 

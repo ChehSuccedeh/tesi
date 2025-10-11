@@ -8,14 +8,17 @@ import {
 } from "@/components/ui/card";
 
 // Tipo dati per il file delle feature SAE
+type SingleActivation = [number, number]; // [feature_id, value]
 type TokenActivation = {
-  token: string;
-  activations: number[];
+  token_idx: number;
+  token_str: string;
+  activations: SingleActivation[];
 };
 type Sample = {
   sample_index: number;
   tokens: TokenActivation[];
 };
+
 
 const FEATURE_FILE = "sae/token_activations.json"; // Cambia con il nome reale del file
 
@@ -44,8 +47,8 @@ const SAEPage: React.FC = () => {
         let maxFeature = 0;
         for (const sample of data) {
           for (const t of sample.tokens) {
-            for (const [fid, val] of t.activations) {
-              if (fid > maxFeature) maxFeature = fid;
+            for (const fid of t.activations) {
+              if (fid[0] > maxFeature) maxFeature = fid[0];
             }
           }
         }
@@ -67,9 +70,9 @@ const SAEPage: React.FC = () => {
     let min = Infinity, max = -Infinity, found = false;
     for (const sample of samples) {
       for (const t of sample.tokens) {
-        const [foundFeature, val] = t.activations.find(([fid, val]) => fid === selectedFeature) || [];
+        const foundFeature = t.activations.find((fid) => fid[0] === selectedFeature) || [];
         if (foundFeature) {
-          const v = val;
+          const v = foundFeature[1];
           if (v < min) min = v;
           if (v > max) max = v;
           found = true;
@@ -101,7 +104,24 @@ const SAEPage: React.FC = () => {
             >
               Feature precedente
             </button>
-            <span className="font-mono text-lg">Feature {selectedFeature + 1} / {featureCount}</span>
+            <span className="font-mono text-lg">
+              Feature{" "}
+              <input
+              type="number"
+              min={1}
+              max={featureCount}
+              value={selectedFeature + 1}
+              onChange={e => {
+                let val = Number(e.target.value);
+                if (isNaN(val)) return;
+                val = Math.max(1, Math.min(featureCount, val));
+                setSelectedFeature(val - 1);
+              }}
+              className="w-16 px-1 border rounded text-center"
+              style={{ width: "3.5rem" }}
+              />{" "}
+              / {featureCount}
+            </span>
             <button
               className="px-2 py-1 border rounded disabled:opacity-50"
               onClick={goNext}
@@ -116,11 +136,12 @@ const SAEPage: React.FC = () => {
                 <div className="mb-1 text-xs text-gray-500">Sample {sample.sample_index}</div>
                 <div className="flex flex-wrap gap-1">
                   {sample.tokens.map((tok, idx) => {
-                    const foundTuple = tok.activations.find(([fid]) => fid === selectedFeature);
+                    // console.log(tok, idx);
+                    const foundTuple = tok.activations.find((fid) => {console.log(fid[0], selectedFeature); return fid[0] === selectedFeature;});
                     const value = foundTuple ? foundTuple[1] : 0;
                     return (
                       <span
-                        key={idx}
+                        key={tok.token_idx}
                         className="font-mono px-2 py-1 rounded"
                         style={{
                           backgroundColor: getColorForActivation(value, minMax.min, minMax.max),
@@ -128,7 +149,7 @@ const SAEPage: React.FC = () => {
                         }}
                         title={`Attivazione: ${value.toFixed(4)}`}
                       >
-                        {tok.token}
+                        {tok.token_str}
                         <span className="text-xs text-gray-500"> ({value.toFixed(2)})</span>
                       </span>
                     );
