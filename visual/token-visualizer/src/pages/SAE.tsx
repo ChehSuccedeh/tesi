@@ -18,9 +18,13 @@ type Sample = {
   sample_index: number;
   tokens: TokenActivation[];
 };
+type SamplesString = string[][];
+type TokenFeatureDict = { [feature_id: number]: number };
+type SamplesTokenFeatureDict = TokenFeatureDict[][];
 
 
-const FEATURE_FILE = "sae/token_activations.json"; // Cambia con il nome reale del file
+// const FEATURE_FILE = "sae/tokens_activations_12288.json"; // Cambia con il nome reale del file
+const FEATURE_FILE = "sae/token_activations_24576.json"
 
 function getColorForActivation(value: number, min: number, max: number): string {
   // Più alto il valore, più verde. Più basso, più trasparente.
@@ -35,6 +39,8 @@ const SAEPage: React.FC = () => {
   const [featureCount, setFeatureCount] = useState<number>(0);
   const [selectedFeature, setSelectedFeature] = useState<number>(0);
   const [minMax, setMinMax] = useState<{min: number, max: number}>({min: 0, max: 1});
+  const [samplesString, setSamplesString] = useState<SamplesString>([]);
+  const [samplesActivations, setSamplesActivations] = useState<SamplesTokenFeatureDict>([]);
 
   // Carica il file json
   useEffect(() => {
@@ -42,16 +48,30 @@ const SAEPage: React.FC = () => {
       try {
         const mod = await import(/* @vite-ignore */ `../assets/${FEATURE_FILE}`);
         const data = mod.default as Sample[];
-        setSamples(data);
-        // Trova il massimo feature_id
+        const samplesStr = [] as SamplesString;
+        const activations = [] as SamplesTokenFeatureDict;
         let maxFeature = 0;
+        setSamples(data);
+
+        // Parsing data
         for (const sample of data) {
-          for (const t of sample.tokens) {
-            for (const fid of t.activations) {
-              if (fid[0] > maxFeature) maxFeature = fid[0];
+          const tokenStrs = sample.tokens.map(t => t.token_str);
+          const tokenActivations = sample.tokens.map(t => {
+            const activations: TokenFeatureDict = {};
+            for (const [fid, val] of t.activations) {
+              activations[fid] = val;
+              if (fid > maxFeature) maxFeature = fid;
             }
-          }
+            return activations;
+          });
+          samplesStr.push(tokenStrs);
+          activations.push(tokenActivations);
         }
+
+        // Saving parsed data
+        setSamplesString(samplesStr);
+        setSamplesActivations(activations);
+
         setFeatureCount(maxFeature + 1);
       } catch (e) {
         setSamples([]);
@@ -67,19 +87,18 @@ const SAEPage: React.FC = () => {
       setMinMax({min: 0, max: 1});
       return;
     }
-    let min = Infinity, max = -Infinity, found = false;
-    for (const sample of samples) {
-      for (const t of sample.tokens) {
-        const foundFeature = t.activations.find((fid) => fid[0] === selectedFeature) || [];
+    let max = -Infinity, found = false;
+    for (const s of samplesActivations) {
+      for (const t of s) {
+        const foundFeature = t[selectedFeature] || [];
         if (foundFeature) {
-          const v = foundFeature[1];
-          if (v < min) min = v;
+          const v = foundFeature;
           if (v > max) max = v;
           found = true;
         }
       }
     }
-    setMinMax(found ? {min, max} : {min: 0, max: 1});
+    setMinMax(found ? {min: 0, max} : {min: 0, max: -1});
   }, [samples, selectedFeature, featureCount]);
 
   // Funzione per cambiare feature
@@ -98,7 +117,7 @@ const SAEPage: React.FC = () => {
         <CardContent>
           <div className="flex items-center gap-4 mb-4">
             <button
-              className="px-2 py-1 border rounded disabled:opacity-50"
+              className="px-2 py-1 border rounded disabled:opacity-50 hover:bg-gray-200 transition-colors"
               onClick={goPrev}
               disabled={selectedFeature <= 0}
             >
@@ -123,7 +142,7 @@ const SAEPage: React.FC = () => {
               / {featureCount}
             </span>
             <button
-              className="px-2 py-1 border rounded disabled:opacity-50"
+              className="px-2 py-1 border rounded disabled:opacity-50 hover:bg-gray-200 transition-colors"
               onClick={goNext}
               disabled={selectedFeature >= featureCount - 1}
             >
@@ -131,32 +150,45 @@ const SAEPage: React.FC = () => {
             </button>
           </div>
           <div className="flex flex-col gap-4">
-            {samples.map(sample => (
-              <div key={sample.sample_index} className="border rounded p-2 bg-gray-50">
-                <div className="mb-1 text-xs text-gray-500">Sample {sample.sample_index}</div>
-                <div className="flex flex-wrap gap-1">
-                  {sample.tokens.map((tok, idx) => {
-                    // console.log(tok, idx);
-                    const foundTuple = tok.activations.find((fid) => {console.log(fid[0], selectedFeature); return fid[0] === selectedFeature;});
-                    const value = foundTuple ? foundTuple[1] : 0;
-                    return (
+            {
+              (() => {
+                const sampleElements = [];
+                for (let sampleIdx = 0; sampleIdx < samplesString.length; sampleIdx++) {
+                  const tokens = samplesString[sampleIdx];
+                  let hasNonZeroActivation = false;
+                  const tokenElements = [];
+                  for (let tokenIdx = 0; tokenIdx < tokens.length; tokenIdx++) {
+                    const token = tokens[tokenIdx];
+                    const activation =
+                      samplesActivations[sampleIdx]?.[tokenIdx]?.[selectedFeature] ?? 0;
+                    if (activation !== 0) hasNonZeroActivation = true;
+                    const bg = getColorForActivation(activation, minMax.min, minMax.max);
+                    tokenElements.push(
                       <span
-                        key={tok.token_idx}
-                        className="font-mono px-2 py-1 rounded"
+                        key={tokenIdx}
+                        className="px-2 py-1 rounded text-sm font-mono"
                         style={{
-                          backgroundColor: getColorForActivation(value, minMax.min, minMax.max),
-                          border: value === minMax.max && value !== 0 ? '2px solid #16a34a' : undefined,
+                          background: bg,
+                          border: "1px solid #e5e7eb",
+                          transition: "background 0.2s",
                         }}
-                        title={`Attivazione: ${value.toFixed(4)}`}
+                        title={`Attivazione: ${activation}`}
                       >
-                        {tok.token_str}
-                        <span className="text-xs text-gray-500"> ({value.toFixed(2)})</span>
+                        {token}
                       </span>
                     );
-                  })}
-                </div>
-              </div>
-            ))}
+                  }
+                  if (!hasNonZeroActivation) continue;
+                  sampleElements.push(
+                    <div key={sampleIdx} className="flex flex-col gap-1 border rounded p-2">
+                      <div className="font-bold mb-1">Sample {sampleIdx + 1}</div>
+                      <div className="flex flex-wrap gap-1">{tokenElements}</div>
+                    </div>
+                  );
+                }
+                return sampleElements;
+              })()
+            }
           </div>
         </CardContent>
       </Card>
