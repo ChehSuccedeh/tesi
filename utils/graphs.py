@@ -36,7 +36,7 @@ def full_graphs(df, suffix):
                 medianprops=dict(color='black'),
                 palette=palette[:len(classi)]
             )
-            ax.set_title(bottleneck)
+            ax.set_title("Bottleneck: "+ bottleneck)
             ax.set_xlabel('Classe')
             ax.set_ylabel('Valore TCAV')
             ax.set_xticklabels(ax.get_xticklabels(), rotation=90)  # Etichette verticali
@@ -57,7 +57,13 @@ def summary_graphs(df, suffix):
         palette = sns.color_palette('tab10', n_colors=len(classi))
         class_colors = {cls: palette[i] for i, cls in enumerate(classi)}
         for class_name in classi:
-            class_data = agg_df[agg_df['class'] == class_name]
+            class_data = agg_df[agg_df['class'] == class_name].copy()
+            # Ordina i bottleneck numericamente se possibile
+            try:
+                class_data['bottleneck_num'] = class_data['bottleneck'].astype(int)
+                class_data = class_data.sort_values('bottleneck_num')
+            except ValueError:
+                class_data = class_data.sort_values('bottleneck')
             # Linea media
             plt.plot(
                 class_data['bottleneck'],
@@ -128,7 +134,11 @@ for concept in df_all['concept'].unique():
     subset = df_all[df_all['concept'] == concept]
     classi = subset['class'].unique()
     tipi = subset['tipo'].unique() if 'tipo' in subset.columns else ['auto', 'fixed', 'avg']
-    bottlenecks = sorted(df_all['bottleneck'].unique())
+    # Sort bottlenecks numerically if possible
+    try:
+        bottlenecks = sorted(df_all['bottleneck'].unique(), key=lambda x: int(x))
+    except ValueError:
+        bottlenecks = sorted(df_all['bottleneck'].unique())
     n_classi = len(classi)
     n_cols = min(5, n_classi)
     n_rows = (n_classi + n_cols - 1) // n_cols
