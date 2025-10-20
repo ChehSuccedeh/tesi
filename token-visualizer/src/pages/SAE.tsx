@@ -24,7 +24,9 @@ type SamplesTokenFeatureDict = TokenFeatureDict[][];
 
 
 // const FEATURE_FILE = "sae/tokens_activations_12288.json"; // Cambia con il nome reale del file
-const FEATURE_FILE = "sae/token_activations_24576.json"
+// const FEATURE_FILE = "sae/token_activations_24576.json"
+// const FEATURE_FILE = "sae/token_activations_6144.json";
+const FEATURE_FILE = "sae/tokens_with_activations_sparse_24576.json";
 
 function getColorForActivation(value: number, min: number, max: number): string {
   // Più alto il valore, più verde. Più basso, più trasparente.
