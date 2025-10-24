@@ -17,6 +17,7 @@ type TokenActivation = {
 type Sample = {
   sample_index: number;
   tokens: TokenActivation[];
+  class: string | null;
 };
 type SamplesString = string[][];
 type TokenFeatureDict = { [feature_id: number]: number };
@@ -26,7 +27,8 @@ type SamplesTokenFeatureDict = TokenFeatureDict[][];
 // const FEATURE_FILE = "sae/tokens_activations_12288.json"; // Cambia con il nome reale del file
 // const FEATURE_FILE = "sae/token_activations_24576.json"
 // const FEATURE_FILE = "sae/token_activations_6144.json";
-const FEATURE_FILE = "sae/tokens_with_activations_sparse_24576.json";
+// const FEATURE_FILE = "sae/tokens_with_activations_sparse_24576_full.json";
+const FEATURE_FILE = "sae/sae_layer_10_hiddim_24576_full_tokens_0_01.json";
 
 function getColorForActivation(value: number, min: number, max: number): string {
   // Più alto il valore, più verde. Più basso, più trasparente.
@@ -38,11 +40,12 @@ function getColorForActivation(value: number, min: number, max: number): string 
 
 const SAEPage: React.FC = () => {
   const [samples, setSamples] = useState<Sample[]>([]);
-  const [featureCount, setFeatureCount] = useState<number>(0);
+  const [featureList, setFeatureList] = useState<number[]>([]);
   const [selectedFeature, setSelectedFeature] = useState<number>(0);
   const [minMax, setMinMax] = useState<{min: number, max: number}>({min: 0, max: 1});
   const [samplesString, setSamplesString] = useState<SamplesString>([]);
   const [samplesActivations, setSamplesActivations] = useState<SamplesTokenFeatureDict>([]);
+  const [classes, setClasses] = useState<string[]>([]);
 
   // Carica il file json
   useEffect(() => {
@@ -52,32 +55,46 @@ const SAEPage: React.FC = () => {
         const data = mod.default as Sample[];
         const samplesStr = [] as SamplesString;
         const activations = [] as SamplesTokenFeatureDict;
-        let maxFeature = 0;
+        const featuresList: number[] = []; // elenco (con duplicati) delle feature incontrate
+        const class_list: string[] = []
+
         setSamples(data);
 
         // Parsing data
         for (const sample of data) {
+
           const tokenStrs = sample.tokens.map(t => t.token_str);
           const tokenActivations = sample.tokens.map(t => {
             const activations: TokenFeatureDict = {};
             for (const [fid, val] of t.activations) {
+              console.log(fid);
               activations[fid] = val;
-              if (fid > maxFeature) maxFeature = fid;
+              if (!featuresList.includes(fid)) {
+                featuresList.push(fid); // aggiunge fid solo se non presente
+              }
             }
             return activations;
           });
           samplesStr.push(tokenStrs);
           activations.push(tokenActivations);
+          if (sample.class === null) {
+            sample.class = "-";
+          }
+          class_list.push(sample.class);
         }
 
         // Saving parsed data
         setSamplesString(samplesStr);
         setSamplesActivations(activations);
+        setClasses(class_list);
 
-        setFeatureCount(maxFeature + 1);
+        const sortedFeaturesList = featuresList.sort((a, b) => a - b);
+        setFeatureList(sortedFeaturesList);
+
+
       } catch (e) {
         setSamples([]);
-        setFeatureCount(0);
+        setFeatureList([]);
       }
     }
     loadData();
@@ -85,7 +102,7 @@ const SAEPage: React.FC = () => {
 
   // Calcola min/max per la feature selezionata
   useEffect(() => {
-    if (samples.length === 0 || featureCount === 0) {
+    if (samples.length === 0 || featureList.length === 0) {
       setMinMax({min: 0, max: 1});
       return;
     }
@@ -101,11 +118,26 @@ const SAEPage: React.FC = () => {
       }
     }
     setMinMax(found ? {min: 0, max} : {min: 0, max: -1});
-  }, [samples, selectedFeature, featureCount]);
+  }, [samples, selectedFeature, featureList]);
 
+  const featureCount = featureList.length;
   // Funzione per cambiare feature
-  const goPrev = () => setSelectedFeature(f => Math.max(0, f - 1));
-  const goNext = () => setSelectedFeature(f => Math.min(featureCount - 1, f + 1));
+  const goPrev = () => {
+    if (featureList.length === 0) return;
+    const idx = Math.max(0, featureList.indexOf(selectedFeature));
+    const newIdx = Math.max(0, idx - 1);
+    setSelectedFeature(featureList[newIdx]);
+  };
+
+  const goNext = () => {
+    if (featureList.length === 0) return;
+    const idx = Math.max(0, featureList.indexOf(selectedFeature));
+    const newIdx = Math.min(featureList.length - 1, idx + 1);
+    setSelectedFeature(featureList[newIdx]);
+  };
+
+  console.log(samplesActivations);
+  console.log(samplesString);
 
   return (
     <div className="flex flex-col items-center p-4 gap-4">
@@ -126,21 +158,20 @@ const SAEPage: React.FC = () => {
               Feature precedente
             </button>
             <span className="font-mono text-lg">
-              Feature{" "}
-              <input
-              type="number"
-              min={1}
-              max={featureCount}
-              value={selectedFeature + 1}
-              onChange={e => {
-                let val = Number(e.target.value);
-                if (isNaN(val)) return;
-                val = Math.max(1, Math.min(featureCount, val));
-                setSelectedFeature(val - 1);
-              }}
-              className="w-16 px-1 border rounded text-center"
-              style={{ width: "3.5rem" }}
-              />{" "}
+              {" "}
+              <select
+                value={selectedFeature}
+                onChange={(e) => {setSelectedFeature(Number(e.target.value)); console.log(e.target.value)}}
+                className="w-48 px-1 border rounded text-center"
+                disabled={featureList.length === 0}
+              >
+                {featureList.map((fid, idx) => (
+                  <option key={idx} value={fid}>
+                    {idx + 1} - Feature {fid}
+                  </option>
+                ))}
+              </select>
+              {" "}
               / {featureCount}
             </span>
             <button
@@ -184,6 +215,9 @@ const SAEPage: React.FC = () => {
                   sampleElements.push(
                     <div key={sampleIdx} className="flex flex-col gap-1 border rounded p-2">
                       <div className="font-bold mb-1">Sample {sampleIdx + 1}</div>
+                      <div className="text-sm text-gray-600 text-right">
+                        Classe: <span className="font-mono font-semibold">{classes[sampleIdx] ?? "-"}</span>
+                      </div>
                       <div className="flex flex-wrap gap-1">{tokenElements}</div>
                     </div>
                   );
