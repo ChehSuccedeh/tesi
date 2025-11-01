@@ -14,11 +14,21 @@ type TokenActivation = {
   token_str: string;
   activations: SingleActivation[];
 };
-type Sample = {
+type SampleBase = {
   sample_index: number;
   tokens: TokenActivation[];
+};
+
+type SampleWithClass = SampleBase & {
   class: string | null;
 };
+
+type SampleWithTruePred = SampleBase & {
+  true_class?: string | null;
+  pred_class?: string | null;
+};
+
+type Sample = SampleWithClass | SampleWithTruePred;
 type SamplesString = string[][];
 type TokenFeatureDict = { [feature_id: number]: number };
 type SamplesTokenFeatureDict = TokenFeatureDict[][];
@@ -28,7 +38,8 @@ type SamplesTokenFeatureDict = TokenFeatureDict[][];
 // const FEATURE_FILE = "sae/token_activations_24576.json"
 // const FEATURE_FILE = "sae/token_activations_6144.json";
 // const FEATURE_FILE = "sae/tokens_with_activations_sparse_24576_full.json";
-const FEATURE_FILE = "sae/sae_layer_10_hiddim_12288_new_tokens_0_01.json";
+// const FEATURE_FILE = "sae/feature_visualizations_hiddim_24576_standard.json";
+const FEATURE_FILE = "sae/feature_visualizations_hiddim_3072_shuffle.json";
 
 function getColorForActivation(value: number, min: number, max: number): string {
   // Più alto il valore, più verde. Più basso, più trasparente.
@@ -77,10 +88,19 @@ const SAEPage: React.FC = () => {
           });
           samplesStr.push(tokenStrs);
           activations.push(tokenActivations);
-          if (sample.class === null) {
-            sample.class = "-";
+          // Support either a single `class` field or `true_class` + `pred_class` pair.
+          let displayClass: string;
+          if ("class" in sample) {
+            // SampleWithClass
+            displayClass = sample.class ?? "-";
+          } else {
+            // SampleWithTruePred
+            const s = sample as SampleWithTruePred;
+            const tc = s.true_class ?? "-";
+            const pc = s.pred_class ?? "-";
+            displayClass = `True: ${tc} / Pred: ${pc}`;
           }
-          class_list.push(sample.class);
+          class_list.push(displayClass);
         }
 
         // Saving parsed data
@@ -109,10 +129,9 @@ const SAEPage: React.FC = () => {
     let max = -Infinity, found = false;
     for (const s of samplesActivations) {
       for (const t of s) {
-        const foundFeature = t[selectedFeature] || [];
-        if (foundFeature) {
-          const v = foundFeature;
-          if (v > max) max = v;
+        const val = t[selectedFeature];
+        if (typeof val === "number") {
+          if (val > max) max = val;
           found = true;
         }
       }
