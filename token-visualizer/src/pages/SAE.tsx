@@ -39,7 +39,7 @@ type SamplesTokenFeatureDict = TokenFeatureDict[][];
 // const FEATURE_FILE = "sae/token_activations_6144.json";
 // const FEATURE_FILE = "sae/tokens_with_activations_sparse_24576_full.json";
 // const FEATURE_FILE = "sae/feature_visualizations_hiddim_24576_standard.json";
-const FEATURE_FILE = "sae/feature_visualizations_hiddim_3072_shuffle.json";
+const FEATURE_FILE = "sae/feature_visualizations_hiddim_12288_layer_10.json";
 
 function getColorForActivation(value: number, min: number, max: number): string {
   // Più alto il valore, più verde. Più basso, più trasparente.
